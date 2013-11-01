@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <dirent.h>
 #include <stdbool.h> //LIBRERIA PARA BINARIO AVERIGUAR
+#include "relativo.h"
 
 int main( int argc, char *argv[] ){
 	DIR *dir;
