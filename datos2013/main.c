@@ -5,7 +5,7 @@
 #include "relativo.h"
 #include "lista.h"
 
-#define NELEMS(x)  (sizeof(x) / sizeof(x[0]))
+#define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
 
 
 int main( int argc, char *argv[] ){
@@ -46,11 +46,17 @@ int main( int argc, char *argv[] ){
 	rel_nombres = R_CREATE(nombres, long_max, cantidad);
 
 	lista_iter_t* mi_iterador = lista_iter_crear(lista_aux);
+	cantidad = 0;
 	while( !lista_iter_al_final(mi_iterador) ){
-		printf("entra al while \n");
-		int res = R_WRITE (rel_nombres, cantidad, lista_iter_ver_actual(mi_iterador)); // CONTROLAR ESCRITURA
+		int res = R_WRITE (rel_nombres, cantidad, lista_iter_ver_actual(mi_iterador));
+		if (res < 0){
+			perror("Error de escritura en el archivo relativo de nombres");
+			remove("relativo_nombres"); //FALTA LIBERAR MEMORIA ACA
+			return -1;
+		}
 		printf( "ESCRIBO EN EL RELATIVO EN LA POSICION %d %s\n", cantidad, (char*) lista_iter_ver_actual(mi_iterador) );
 		lista_iter_avanzar(mi_iterador);
+		cantidad ++;
 	}
 	lista_iter_destruir(mi_iterador);
 	lista_destruir(lista_aux, NULL);
