@@ -11,12 +11,21 @@ int mi_cmp(char* string1, char* string2){
 
 int creador_shingles(char* nombre_archivo, int tamano){
 	remove("salida");
+	remove("salida_ordenada");
 	FILE* archivo;
 	FILE* salida;
-	char shingle_old[7] = "*******";
-	char shingle_new[7] = "*******";
+	FILE* salida_ordenada;
+	char shingle_old[tamano];
+	char shingle_new[tamano];
+	int i;
+	for (i = 0 ; i < tamano ; i ++){
+		shingle_old[i] = '*';
+		shingle_new[i] = '*';
+	}
+
 	archivo = fopen(nombre_archivo , "r");
 	salida = fopen("salida", "a");
+	salida_ordenada = fopen("salida_ordenada", "a");
 	if ( archivo == NULL){
 		printf("ERROR DE LECTURA \n");
 		return -1; //ERROR DE LECTURA
@@ -24,7 +33,6 @@ int creador_shingles(char* nombre_archivo, int tamano){
 	heap_t* mi_heap = heap_crear(mi_cmp);
 
 	while (feof(archivo) == 0){
-		int i;
 		for (i = 1 ; i < tamano ; i ++){
 			shingle_new[i-1] = shingle_old[i];
 			shingle_old[i-1] = shingle_new[i-1];
@@ -38,12 +46,22 @@ int creador_shingles(char* nombre_archivo, int tamano){
 		shingle_new[tamano - 1] = caracter;
 		shingle_old[tamano - 1] = caracter;
 
-		printf("ESTE ES SHINGLE NEW %s", shingle_new);
+		printf("ESTE ES SHINGLE NEW %s \n", shingle_new);
 		if (shingle_new[0] != '*' && shingle_new[tamano-1] != '*' && caracter != EOF ){
 				fputs( shingle_new , salida );//ESCRIBIR SHINGLES EN SALIDA
 				fputs( "\n" , salida);
+				bool res = heap_encolar(mi_heap, shingle_new);
 		}
 
+	}
+
+	while (!heap_esta_vacio(mi_heap)){ // anda para el culo y no teng la mas puta idea de porque
+		char* escribir;
+		escribir = malloc(sizeof(char)*tamano);
+		escribir = heap_desencolar(mi_heap);
+		printf("saco del heap %s \n", escribir);
+		fputs( escribir , salida_ordenada );
+		fputs( "\n" , salida_ordenada);
 	}
 
 	heap_destruir(mi_heap, NULL);
@@ -56,5 +74,5 @@ int creador_shingles(char* nombre_archivo, int tamano){
 
 
 int main( int argc, char *argv[] ){
-	return creador_shingles(argv[1] , 7);
+	return creador_shingles(argv[1] , 7); // 7 = TAMANO DE LOS SHINGLES
 }
