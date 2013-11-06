@@ -50,11 +50,9 @@ int creador_shingles(char* nombre_archivo, int tamano){
 		while (caracter == '.' && caracter == ','){ //COMPROBAR QUE NO ESTE DENTRO DE UNA LISTA DE CARACTERES PROHIBIDOS
 			caracter = fgetc(archivo);
 		}
-		printf("LEO ESTE CARACTER %c \n", caracter);
 		shingle_new[tamano - 1] = caracter;
 		shingle_old[tamano - 1] = caracter;
 
-		printf("ESTE ES SHINGLE NEW %s \n", shingle_new);
 		if (shingle_new[0] != '*' && shingle_new[tamano-1] != '*' && caracter != EOF ){
 				fputs( shingle_new , salida );//ESCRIBIR SHINGLES EN SALIDA
 				fputs( "\n" , salida);
@@ -64,11 +62,12 @@ int creador_shingles(char* nombre_archivo, int tamano){
 		}
 
 	}
+
 	while (!heap_esta_vacio(mi_heap)){ // sacar repetidos
 		char* escribir_new;
 		escribir_new = heap_desencolar(mi_heap);
 		printf("saco del heap %s \n", escribir_new);
-		while(strcmp(escribir_new, escribir_old)== 0){
+		while(strcmp(escribir_new, escribir_old)== 0 && !heap_esta_vacio(mi_heap)){
 			printf("REPETIDO, NO LO AGREGO \n");
 			escribir_new = heap_desencolar(mi_heap);
 			//free(escribir_new);
