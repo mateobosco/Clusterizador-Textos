@@ -1,20 +1,6 @@
 Organización de Datos [75.06]
 Clustering y Clasificación de Textos
-
-
-
-
-
-
-
-
-
-
-
-
-
 Fecha de entrega: 30/9/2013
-
 Integrantes
 Padrón
 E-Mail
@@ -27,9 +13,6 @@ german_2410@hotmail.com
 Juan Manuel Hidalgo
 93383
 juanmah_@hotmail.com
-
-
-	
 Introducción
 Para la resolución del trabajo práctico utilizaremos el algoritmo de clustering llamado K-Means, el cual funciona como se describirá a continuación:
 Primero se determina un “k” y un “j” (siendo “k” la cantidad de clusters y “j” la cantidad de documentos líderes), dependiendo de la cantidad de documentos que contenga la colección. El valor de “k” se lo puede asignar por parámetro al comienzo del algoritmo. 
@@ -38,16 +21,8 @@ Luego, se reasignarán los centros de los clusters, y se repetirá el paso anter
 El algoritmo termina cuando después de 2 iteraciones no cambia el centro, no cambian  los documentos del cluster o cuando se alcanza un máximo de iteraciones.
 Elección de k y j
 En el caso de que la k no sea ingresada por parámetro, el programa se encargara de encontrar el valor óptimo de ella. Comenzamos corriendo el algoritmo K-Means con k= 1, 2, 4, 8, 16... y observamos, para cada k, el valor promedio del diámetro de los clusters. Llegara un punto en el cual entre dos valores seguidos de k, que llamaremos 'u' y '2u', no se observara un cambio notorio en el valor promedio del diámetro de los clusters.
-
-
-
-
-
-
 Una vez encontrado el valor de 'u', se realizara una búsqueda binaria para hallar el valor óptimo de k. Se analizara diámetro de los clusters con  , si no hay un cambio notorio en el promedio de los diámetros de clusters con este valor de k y k=v, se procede a correr el algoritmos nuevamente entre  y 
 La variable “j” será la cantidad de documentos lideres a ser analizados para armar un índice de shingles y de ahí obtener una matriz de incidencias para luego armar un vector de hashmin (se vera luego). Para determinar el valor de “j” utilizaremos la siguiente formula, siendo “n” la cantidad de documentos en la colección . Elegimos esta función de tipo logarítmica ya que a medida la cantidad de textos de la colección es más grande, el valor de “j” no crece tanto. En el caso de que tengamos 10 textos en la colección, seran 30 lideres, y en el caso de 1.000.000 de textos, quedarán 130 lideres. Observamos cómo queda graficada la función:
-
-
 Algoritmo K-Means
 Inicialmente se eligen los “j” documentos al azar y de esos se elegirán los “k” centros también al azar. Luego se recorrerán esos “j” textos seleccionados buscando “shingles” para de esta forma crear una matriz. Esta será una matriz de incidencia de “k” columnas, que indicará con 1 y 0 si aparece el shingle en determinado documento centro. Esta matriz estará ordenada alfabéticamente para que la búsqueda y adición de nuevos shingles sea más rápida.  Al estar ordenado alfabéticamente, podemos utilizar una búsqueda binaria para encontrar si ya existe el shingle en la matriz. En caso contrario se agrega en forma ordenada. 
 Una vez terminada la matriz de incidencia se crea la matriz de hashmin con “m” filas, y “k” columnas (siendo “k” la cantidad de documentos centros y “m” la cantidad de funciones de hash). Por el momento elegimos que usaremos 50 funciones de hash, pero al momento de escribir el código y realizar pruebas se puede modificar buscando mejores resultados (se desarrollara este punto mas adelante). 

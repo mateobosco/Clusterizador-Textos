@@ -6,7 +6,7 @@
 #include "heap.h"
 
 
-#define CONSTANTE 20
+#define CONSTANTE 500
 
 
 /* ******************************************************************
