@@ -74,5 +74,7 @@ void *heap_desencolar(heap_t *heap);
 
 void mostrar_heap(heap_t* heap);
 
+bool heap_pertenece(heap_t* heap, void* elem);
+
 #endif // _HEAP_H
 

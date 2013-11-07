@@ -49,9 +49,10 @@ heap_t* heap_crear(cmp_func_t cmp){
  * dejó de ser válido. */
 
 bool heap_destruir(heap_t *heap, void destruir_elemento(void *e)){
+	int i = 0;
 	if (!heap) return false;
 	if (destruir_elemento){
-		for (int i=0; i < heap->cantidad; i++){
+		for (i=0; i < heap->cantidad; i++){
 			destruir_elemento(heap->vector[i]);
 		}
 	}
@@ -116,6 +117,11 @@ bool heap_encolar(heap_t* heap, void* elem){
 		heap->cantidad=1;
 		return true;
 	}
+	//if (heap_pertenece(heap, elem)){
+	//	printf("%s PERTENECE \n",elem);
+	//	return false;
+	//}
+	printf("%s NO PERTENECE \n",elem);
 
 	int posicion = (heap->cantidad);
 	heap->vector[posicion]=elem; // ubico al final al elemento 
@@ -156,7 +162,8 @@ void* heap_ver_max(const heap_t *heap){
 
 
 void mostrar_heap(heap_t* heap){
-	for (int i = 0; i<= heap_cantidad(heap) ; i++){
+	int i = 0;
+	for (i = 0; i<= heap_cantidad(heap) ; i++){
 		printf(" %d - %s \n", i, (char*) heap->vector[i]);
 	}
 }
@@ -309,12 +316,47 @@ void heapsort(void *elementos[], size_t cant, cmp_func_t cmp){
 
 
 void mostrar_vector(void* elementos[], size_t cantidad){
-	for (int i=0; i <= cantidad; i++){
+	int i = 0;
+	for (i=0; i <= cantidad; i++){
 		printf (" %d - %s \n", i, (char*) elementos[i]);
 	}
 }
 	
-	
+
+bool heap_pertenece(heap_t* heap, void* elem){
+	if (heap->cantidad == 0) return false;
+	int i = 0;
+	mostrar_heap(heap);
+	while (true){ // mientras se este dentro del arreglo
+
+		int hijo_mayor = -1;
+		if ( (i*2+1) >= heap->cantidad ) break;
+		if (heap->cmp(heap->vector[i*2+1], elem) > 0  ){
+			hijo_mayor = i*2+1;
+		}
+		if ( (i*2+2) >= heap->cantidad ) break;
+		if (heap->cmp(heap->vector[(i*2)+2], elem) > 0){
+			hijo_mayor = (i*2)+2;
+		}
+		if (heap->cmp(heap->vector[i*2+1], elem) == 0){
+			return true;
+		}
+		if (heap->cmp(heap->vector[i*2+2], elem) == 0){
+			return true;
+		}
+		if (hijo_mayor == -1){
+			printf("devuelve false porque hijo mayor es menos 1 \n");
+			return false ; // ninguno es mayor se queda ahi
+		}
+		if (heap->cmp(heap->vector[hijo_mayor], elem) == 0){
+			return true;
+		}
+			i=hijo_mayor;
+	}
+	printf("devuelve false porque sale del while \n");
+	return false;
+
+}
 	
 	
 	

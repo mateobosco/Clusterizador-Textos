@@ -5,6 +5,7 @@
 #include "relativo.h"
 #include "lista.h"
 
+
 #define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
 
 
@@ -14,6 +15,7 @@ int main( int argc, char *argv[] ){
 
 	if( argc != 2 ){
 		printf( "%s: %s directorio\n", argv[0], argv[0] );
+
 		exit( -1 );
 	}
 

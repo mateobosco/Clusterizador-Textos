@@ -1,15 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stddef.h>
 #include <string.h>
 #include "heap.h"
+#include "arbol.h"
 
 int mi_cmp(char* string1, char* string2){
-	//if (string1 < string2) return 1;
-	//if (string2 < string1) return -1;
-	//else return 0;
-
 	return 0-strcmp(string1,string2);
+}
+
+char* pasar_a_vector(abb_t* arbol){
+	size_t tamano = abb_cantidad(arbol);
+	char* vector = malloc(tamano * sizeof(char*));
+	abb_iter_t* iter = abb_iter_in_crear(arbol);
+	int i = 0;
+	while( !abb_iter_in_al_final(iter)){
+		vector[i] = abb_iter_in_ver_actual(iter);
+		abb_iter_in_avanzar(iter);
+		i++;
+	}
+	for (i=0;i<tamano;i++){
+		printf("IMPRIMO VECTOR\n");
+		//printf(vector[i]);
+		printf("\n");
+	}
+	//free(iter);
+	//abb_destruir(arbol);
+	return vector;
 }
 
 int creador_shingles(char* nombre_archivo, int tamano){
@@ -18,11 +36,10 @@ int creador_shingles(char* nombre_archivo, int tamano){
 	FILE* archivo;
 	FILE* salida;
 	FILE* salida_ordenada;
-	//char shingle_old[tamano+1];
-	//char shingle_new[tamano+1];
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
 	char* shingle_new = malloc((tamano+1) * sizeof(char));
 	char escribir_old[tamano+1];
+	abb_t* arbol = abb_crear(mi_cmp,free);
 	int i;
 	for (i = 0 ; i < tamano ; i ++){
 		shingle_old[i] = '*';
@@ -39,7 +56,6 @@ int creador_shingles(char* nombre_archivo, int tamano){
 		printf("ERROR DE LECTURA \n");
 		return -1; //ERROR DE LECTURA
 	}
-	heap_t* mi_heap = heap_crear(mi_cmp);
 	while (feof(archivo) == 0){
 		for (i = 1 ; i < tamano ; i ++){
 			shingle_new[i-1] = shingle_old[i];
@@ -53,71 +69,24 @@ int creador_shingles(char* nombre_archivo, int tamano){
 		shingle_new[tamano - 1] = caracter;
 		shingle_old[tamano - 1] = caracter;
 
-		if (shingle_new[0] != '*' && shingle_new[tamano-1] != '*' && caracter != EOF ){
-				fputs( shingle_new , salida );//ESCRIBIR SHINGLES EN SALIDA
-				fputs( "\n" , salida);
-				char* shingle = malloc((tamano+1) * sizeof(char));
-				memcpy(shingle , shingle_new , tamano+1);
-				bool res = heap_encolar(mi_heap, shingle);
+		if (shingle_new[0] != '*' && shingle_new[tamano-1] != '*' && caracter != EOF && !abb_pertenece(arbol,shingle_new) ){
+			fputs( shingle_new , salida );//ESCRIBIR SHINGLES EN SALIDA
+			fputs( "\n" , salida);
+			char* shingle = malloc((tamano+1) * sizeof(char));
+			memcpy(shingle , shingle_new , tamano+1);
+			bool res = abb_guardar(arbol, shingle, shingle);
 		}
 
 	}
-
-	while (!heap_esta_vacio(mi_heap)){ // sacar repetidos
-		char* escribir_new;
-		escribir_new = heap_desencolar(mi_heap);
-		printf("saco del heap %s \n", escribir_new);
-		while(strcmp(escribir_new, escribir_old)== 0 && !heap_esta_vacio(mi_heap)){
-			printf("REPETIDO, NO LO AGREGO \n");
-			escribir_new = heap_desencolar(mi_heap);
-			//free(escribir_new);
-		}
-		memcpy(escribir_old, escribir_new, tamano+1);
-		fputs( escribir_new , salida_ordenada );
-		fputs( "\n" , salida_ordenada);
-		free(escribir_new);
-	}
-	heap_destruir(mi_heap, NULL);
+	//abb_imprimir(arbol);
+	char* vector = pasar_a_vector(arbol);
 	fclose(archivo);
 	return 0;
 }
 
-
-/*
-int prueba_heap(void){
-	void* vector[10]={"hola","chau","puto","el","que","lee","8","7","5"};
-	heap_t* elheap = heap_crear(mi_cmp);
-	int i;
-	for (i=0; i<10;i++){
-		heap_encolar(elheap, vector[i]);
-	}
-	int numero;
-	while(!heap_esta_vacio(elheap)){
-		printf(heap_desencolar(elheap));
-		printf("\n");
-	}
-
-	return 0;
-}
-*/
-
-/*
-int prueba_cmp(void){
-	char cadena2[5] = "hola";
-	char cadena1[5] = "chau";
-	char vector2[5] = {'h','o','l','a','\0'};
-	char vector1[5] = {'c','h','a','u','\0'};
-	printf("STRCMP DE CADENA1 Y CADENA2 %d \n", strcmp(cadena1,cadena2));
-	printf("MICMP DE CADENA1 Y CADENA2 %d \n", mi_cmp(cadena1,cadena2));
-	printf("STRCMP DE vector1 Y vector2 %d \n", strcmp(vector1,vector2));
-	printf("MICMP DE vector1 Y vector2 %d \n", mi_cmp(vector1,vector2));
-	return 0;
-}
-*/
-
+//void* incidencia_texto(void* vector, char* archivo, int tamano)
 
 int main( int argc, char *argv[] ){
 	return creador_shingles(argv[1] , 7); // 7 = TAMANO DE LOS SHINGLES
-	//return prueba_heap();
-	//return prueba_cmp();
+
 }
