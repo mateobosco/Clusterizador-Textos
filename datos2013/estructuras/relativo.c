@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <fcntl.h>
 #include "relativo.h"
 
 int R_CREATE (char* nfisico, int long_reg, int max_reg)
