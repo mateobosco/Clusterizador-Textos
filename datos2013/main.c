@@ -9,7 +9,7 @@
 #define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
 
 
-int main( int argc, char *argv[] ){
+int creador_relativo_archivos( int argc, char *argv[] ){
 	DIR *dir;
 	struct dirent *mi_dirent;
 

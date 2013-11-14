@@ -3,12 +3,10 @@
 #include <stdbool.h>
 #include <stddef.h>
 #include <string.h>
-#include "heap.h"
-#include "arbol.h"
+#include "estructuras/heap.h"
+#include "estructuras/arbol.h"
+#include "estructuras/relativo.h"
 
-int mi_cmp(char* string1, char* string2){
-	return 0-strcmp(string1,string2);
-}
 
 char* pasar_a_vector(abb_t* arbol){
 	size_t tamano = abb_cantidad(arbol);
@@ -20,17 +18,12 @@ char* pasar_a_vector(abb_t* arbol){
 		abb_iter_in_avanzar(iter);
 		i++;
 	}
-	for (i=0;i<tamano;i++){
-		printf("IMPRIMO VECTOR\n");
-		//printf(vector[i]);
-		printf("\n");
-	}
-	//free(iter);
-	//abb_destruir(arbol);
+	abb_imprimir(arbol);
+	free(iter);
 	return vector;
 }
 
-int creador_shingles(char* nombre_archivo, int tamano){
+int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
 	remove("salida");
 	remove("salida_ordenada");
 	FILE* archivo;
@@ -39,7 +32,7 @@ int creador_shingles(char* nombre_archivo, int tamano){
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
 	char* shingle_new = malloc((tamano+1) * sizeof(char));
 	char escribir_old[tamano+1];
-	abb_t* arbol = abb_crear(mi_cmp,free);
+
 	int i;
 	for (i = 0 ; i < tamano ; i ++){
 		shingle_old[i] = '*';
@@ -78,15 +71,30 @@ int creador_shingles(char* nombre_archivo, int tamano){
 		}
 
 	}
-	//abb_imprimir(arbol);
-	char* vector = pasar_a_vector(arbol);
 	fclose(archivo);
 	return 0;
 }
 
-//void* incidencia_texto(void* vector, char* archivo, int tamano)
+int llamar_a_creador(int handler , int tamano, abb_t* arbol){
+	char* registro = malloc(100 * sizeof(char));
+	int status;
+	if(R_SEEK(handler,0) == R_OK ){
+		status = R_READNEXT(handler, registro);
+		while (status != R_ERROR){
+			creador_shingles(registro, tamano, arbol);
+			status = R_READNEXT(handler, registro);
+		}
+	}
+	return 0;
+}
+
 
 int main( int argc, char *argv[] ){
-	return creador_shingles(argv[1] , 7); // 7 = TAMANO DE LOS SHINGLES
+	abb_t* arbol_shingles = abb_crear(strcmp,NULL);
+	creador_shingles(argv[1] , 7, arbol_shingles); // 7 = TAMANO DE LOS SHINGLES
+	char* vector = pasar_a_vector(arbol_shingles);
 
+	abb_destruir(arbol_shingles);
+	free(vector); //hay que destruir cada shingle
+	return 0;
 }
