@@ -13,12 +13,16 @@
 #define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
 
 char* mi_strcat(const char * str1, const char * str2){
-   char * ret = malloc(strlen(str1)+strlen(str2)+1);
-   if(ret!=NULL){
-     sprintf(ret, "%s/%s", str1, str2);
-     return ret;
-   }
-   return NULL;
+	int largo1 = strlen(str1);
+	char aux1[largo1+2];
+	strcpy(aux1,str1);
+	aux1[largo1] = '/';
+	char * ret = malloc(strlen(str1)+strlen(str2)+2);
+	if(ret!=NULL){
+		sprintf(ret, "%s%s", aux1, str2);
+		return ret;
+	}
+	return NULL;
 }
 
 
@@ -40,17 +44,14 @@ int creador_relativo_archivos( int argc, char *argv[] ){
 
 	int cantidad = 0;
 	int long_max = 1;
-	lista_t* lista_aux;
-	lista_aux = lista_crear();
+	lista_t* lista_aux = lista_crear();
 
 	while( (mi_dirent = readdir( dir )) != NULL ){
 		int aux = NELEMS(mi_dirent->d_name);
 		if (aux > long_max) long_max = aux;
 		if(mi_dirent->d_name[0]!= '.'){ //NEGRADA. Y PROBLEMA SI HAY UNA CARPETA
 			printf( "agrego a la lista: %s\n", mi_strcat(argv[1], mi_dirent->d_name) );
-			//lista_insertar_ultimo(lista_aux, mi_strcat(argv[1], mi_dirent->d_name));
-			lista_insertar_ultimo(lista_aux, mi_dirent->d_name);
-
+			lista_insertar_ultimo(lista_aux, mi_strcat(argv[1], mi_dirent->d_name));
 			cantidad ++;
 		}
 	}
@@ -147,20 +148,19 @@ int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
 		}
 
 	}
-	abb_imprimir(arbol);
 	fclose(archivo);
 	return 0;
 }
 
-void llamar_a_creador(int handler , int tamano, abb_t* arbol){
+void llamar_a_creador(int fd_relativo_nombres , int tamano, abb_t* arbol_shingles){
 	char registro[100];
 	int status;
-	if(R_SEEK(handler,0) == R_OK ){
-		status = R_READNEXT(handler, registro);
+	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
+		status = R_READNEXT(fd_relativo_nombres, registro);
 		while (status != R_ERROR){
 			printf("proceso los shingles del documento: %s \n", registro);
-			creador_shingles(registro, tamano, arbol);
-			status = R_READNEXT(handler, registro);
+			creador_shingles(registro, tamano, arbol_shingles);
+			status = R_READNEXT(fd_relativo_nombres, registro);
 		}
 	}
 	printf("YA PROCESE TODOS LOS TEXTOS \n");
@@ -174,9 +174,19 @@ int main( int argc, char *argv[] ){
 	abb_t* arbol_shingles = abb_crear(strcmp,NULL);
 
 	llamar_a_creador(fd_relativo_nombres , 7 , arbol_shingles );
+	/*char registro[100];
+	int status;
+	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
+		status = R_READNEXT(fd_relativo_nombres, registro);
+		while (status != R_ERROR){
+			printf("proceso los shingles del documento: %s \n", registro);
+			creador_shingles(registro, 7, arbol_shingles);
+			status = R_READNEXT(fd_relativo_nombres, registro);
+		}
+	}*/
+
 
 	printf("YA PROCESE TODOS LOS TEXTOS2 \n");
-	abb_imprimir(arbol_shingles);
 
 	char* vector = pasar_a_vector(arbol_shingles);
 	abb_destruir(arbol_shingles);
