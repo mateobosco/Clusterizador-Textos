@@ -25,6 +25,26 @@ char* mi_strcat(const char * str1, const char * str2){
 	return NULL;
 }
 
+int devuelve_cantidad_archivos( int argc , char* argv[]){
+	int cantidad = 0;
+	DIR *dir;
+	struct dirent *mi_dirent;
+	if( argc != 2 ){
+		printf( "%s: %s directorio\n", argv[0], argv[0] );
+		exit( -1 );
+	}
+	if( (dir = opendir( argv[1] )) == NULL ){
+		perror( "opendir" );
+		exit( -1 );
+	}
+	while( (mi_dirent = readdir( dir )) != NULL ){
+		int aux = NELEMS(mi_dirent->d_name);
+		if(mi_dirent->d_name[0]!= '.'){ //NEGRADA. Y PROBLEMA SI HAY UNA CARPETA
+			cantidad ++;
+		}
+	}
+	return cantidad;
+}
 
 int creador_relativo_archivos( int argc, char *argv[] ){
 	remove("relativo_nombres"); //MEDIO VISHERO PERO ANDA
@@ -101,11 +121,7 @@ char* pasar_a_vector(abb_t* arbol){
 }
 
 int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
-	remove("salida");
-	remove("salida_ordenada");
 	FILE* archivo;
-	FILE* salida;
-	FILE* salida_ordenada;
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
 	char* shingle_new = malloc((tamano+1) * sizeof(char));
 	char escribir_old[tamano+1];
@@ -120,8 +136,6 @@ int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
 	shingle_new[tamano] = '\0';
 
 	archivo = fopen(nombre_archivo , "r");
-	salida = fopen("salida", "a");
-	salida_ordenada = fopen("salida_ordenada", "a");
 	if ( archivo == NULL){
 		printf("ERROR DE LECTURA \n");
 		return -1; //ERROR DE LECTURA
@@ -140,8 +154,6 @@ int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
 		shingle_old[tamano - 1] = caracter;
 
 		if (shingle_new[0] != '*' && shingle_new[tamano-1] != '*' && caracter != EOF && !abb_pertenece(arbol,shingle_new) ){
-			fputs( shingle_new , salida );//ESCRIBIR SHINGLES EN SALIDA
-			fputs( "\n" , salida);
 			char* shingle = malloc((tamano+1) * sizeof(char));
 			memcpy(shingle , shingle_new , tamano+1);
 			bool res = abb_guardar(arbol, shingle, shingle);
@@ -163,10 +175,27 @@ void llamar_a_creador(int fd_relativo_nombres , int tamano, abb_t* arbol_shingle
 		}
 	}
 	printf("YA PROCESE TODOS LOS TEXTOS \n");
+	//free(registro);// con esto se rompe todo
+}
+
+int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int cantidad_archivos){
+	remove("relativo_incidencia");
+	int rel_incidencia;
+	int cantidad_shingles = NELEMS(vector);
+	char nombres[] = "relativo_incidencia";
+	rel_incidencia = R_CREATE(nombres, cantidad_shingles*sizeof(char), cantidad_archivos);
+/*
+	HAY QUE IR LEYENDO EL RELATIVO DE NOMBRES, DE AHI LLAMAR A UNA FUNCION QUE VAYA LEYENDO TODOS LOS SHINGLES
+	DEL TEXTO Y FIJANDOSE SI ESTAN DENTRO DEL VECTOR PARA IR ARMANDO EL VECTOR DE INCIDENCIA
+	DESPUES ESCRIBIR ESE VECTOR DENTRO DEL RELATIVO
+*/
+	return rel_incidencia;
 }
 
 
 int main( int argc, char *argv[] ){
+
+	int cantidad_archivos = devuelve_cantidad_archivos(argc, argv);
 
 	int fd_relativo_nombres = creador_relativo_archivos( argc, argv);
 
@@ -174,10 +203,11 @@ int main( int argc, char *argv[] ){
 
 	llamar_a_creador(fd_relativo_nombres , 7 , arbol_shingles );
 
-	printf("YA PROCESE TODOS LOS TEXTOS2 \n");
-
 	char* vector = pasar_a_vector(arbol_shingles);
 	abb_destruir(arbol_shingles);
+	printf("CREO EL RELATVIVO DE INCIDENCIA \n");
+	int fd_relativo_incidencia = creador_relativo_incidencia(fd_relativo_nombres, vector, cantidad_archivos);
+
 	free(vector); //hay que destruir cada shingle
 	return 0;
 }
