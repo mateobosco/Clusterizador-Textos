@@ -153,12 +153,11 @@ int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
 }
 
 void llamar_a_creador(int fd_relativo_nombres , int tamano, abb_t* arbol_shingles){
-	char registro[100];
+	char registro = malloc(100 * sizeof(char));
 	int status;
 	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
 		status = R_READNEXT(fd_relativo_nombres, registro);
 		while (status != R_ERROR){
-			printf("proceso los shingles del documento: %s \n", registro);
 			creador_shingles(registro, tamano, arbol_shingles);
 			status = R_READNEXT(fd_relativo_nombres, registro);
 		}
@@ -174,17 +173,6 @@ int main( int argc, char *argv[] ){
 	abb_t* arbol_shingles = abb_crear(strcmp,NULL);
 
 	llamar_a_creador(fd_relativo_nombres , 7 , arbol_shingles );
-	/*char registro[100];
-	int status;
-	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
-		status = R_READNEXT(fd_relativo_nombres, registro);
-		while (status != R_ERROR){
-			printf("proceso los shingles del documento: %s \n", registro);
-			creador_shingles(registro, 7, arbol_shingles);
-			status = R_READNEXT(fd_relativo_nombres, registro);
-		}
-	}*/
-
 
 	printf("YA PROCESE TODOS LOS TEXTOS2 \n");
 
