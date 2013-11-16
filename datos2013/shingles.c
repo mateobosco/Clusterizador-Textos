@@ -176,13 +176,23 @@ void llamar_a_creador(int fd_relativo_nombres , int tamano, abb_t* arbol_shingle
 	//free(registro);// con esto se rompe todo
 }
 
-int busq_binaria(char vector_shingles, char shingle_new,int tamano_vector){
-	return 0;
+int busq_binaria(char vector_shingles[], char shingle, int tamano_vector){
+	int inicio = 0;
+	int final = tamano_vector - 1;
+	int medio;
+	while (inicio <= final){
+		medio = (final - inicio) / 2;
+		int res = strcmp(vector_shingles[medio], shingle);
+		if (res == 0) return medio;
+		else if (res < 0) inicio = medio;
+		else if (res > 0) final = medio;
+	}
+	return -1;
 }
 
 
 char* vector_incidencia(char nombre_archivo, char* vector_shingles, int tamano_vector, int tamano){
-	char incidencia = malloc(sizeof(char) * tamano_vector);
+	char* incidencia = malloc(sizeof(char) * tamano_vector);
 	FILE* archivo;
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
 	char* shingle_new = malloc((tamano+1) * sizeof(char));
@@ -213,7 +223,7 @@ char* vector_incidencia(char nombre_archivo, char* vector_shingles, int tamano_v
 		shingle_old[tamano - 1] = caracter;
 		if (shingle_new[0] != '*' && shingle_new[tamano-1] != '*' && caracter != EOF){
 			int posicion = busq_binaria(vector_shingles, shingle_new, tamano_vector);
-			incidencia[posicion] = 1;
+			 if (posicion >= 0) incidencia[posicion] = 1;
 			}
 		}
 	fclose(archivo);
@@ -232,11 +242,21 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int canti
 */
 	char registro = malloc(100 * sizeof(char));
 	int status;
+	int i = 0;
 	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
-	status = R_READNEXT(fd_relativo_nombres, registro);
+		status = R_READNEXT(fd_relativo_nombres, registro); // ACA ESTA EL PROBLEMA
+		printf ("REGISTRO %s, STATUS %d \n", &registro, status);
 		while (status != R_ERROR){
 			char* incidencia = vector_incidencia(registro, vector, cantidad_shingles, tamano_shingle);
+			printf("IMPRIMO EN EL VECTOR DE INCIDENCIA %s: %s \n", registro, incidencia);
+			int res = R_WRITE (rel_incidencia, i , &incidencia);
+			if (res < 0){
+				perror("Error de escritura en el archivo relativo de nombres");
+				remove("relativo_nombres"); //FALTA LIBERAR MEMORIA ACA
+				return -1;
+			}
 			status = R_READNEXT(fd_relativo_nombres, registro);
+			i ++;
 		}
 	}
 	//free(registro); no probe pero seguro se rompe, (igual que el anterior)
@@ -244,8 +264,7 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int canti
 }
 
 
-int main( int argc, char *argv[] ){
-	int tamano_shingle = 7;
+int el_main( int argc, char *argv[] , int tamano_shingle ){
 
 	int cantidad_archivos = devuelve_cantidad_archivos(argc, argv);
 
@@ -260,7 +279,14 @@ int main( int argc, char *argv[] ){
 	abb_destruir(arbol_shingles);
 	printf("CREO EL RELATVIVO DE INCIDENCIA \n");
 	int fd_relativo_incidencia = creador_relativo_incidencia(fd_relativo_nombres, vector, cantidad_archivos, tamano_arbol, tamano_shingle);
-
+	printf(" RELATIVO DE INCIDENCIA CREADO \n");
 	free(vector); //hay que destruir cada shingle
+	return 0;
+}
+
+int main( int argc, char *argv[] ){
+
+	el_main(argc, argv, 7);
+
 	return 0;
 }
