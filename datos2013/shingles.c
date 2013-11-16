@@ -9,8 +9,8 @@
 #include "estructuras/relativo.h"
 #include "estructuras/lista.h"
 
-
 #define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
+
 
 char* mi_strcat(const char * str1, const char * str2){
 	int largo1 = strlen(str1);
@@ -124,13 +124,11 @@ int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
 	FILE* archivo;
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
 	char* shingle_new = malloc((tamano+1) * sizeof(char));
-	char escribir_old[tamano+1];
 
 	int i;
 	for (i = 0 ; i < tamano ; i ++){
 		shingle_old[i] = '*';
 		shingle_new[i] = '*';
-		escribir_old[i] = '*';
 	}
 	shingle_old[tamano] = '\0';
 	shingle_new[tamano] = '\0';
@@ -178,10 +176,53 @@ void llamar_a_creador(int fd_relativo_nombres , int tamano, abb_t* arbol_shingle
 	//free(registro);// con esto se rompe todo
 }
 
-int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int cantidad_archivos){
+int busq_binaria(char vector_shingles, char shingle_new,int tamano_vector){
+	return 0;
+}
+
+
+char* vector_incidencia(char nombre_archivo, char* vector_shingles, int tamano_vector, int tamano){
+	char incidencia = malloc(sizeof(char) * tamano_vector);
+	FILE* archivo;
+	char* shingle_old = malloc((tamano+1) * sizeof(char));
+	char* shingle_new = malloc((tamano+1) * sizeof(char));
+	int i;
+	for (i = 0 ; i < tamano ; i ++){
+		shingle_old[i] = '*';
+		shingle_new[i] = '*';
+	}
+	shingle_old[tamano] = '\0';
+	shingle_new[tamano] = '\0';
+
+	archivo = fopen(nombre_archivo , "r");
+	if ( archivo == NULL){
+		printf("ERROR DE LECTURA \n");
+		return -1; //ERROR DE LECTURA
+	}
+	while (feof(archivo) == 0){
+		for (i = 1 ; i < tamano ; i ++){
+			shingle_new[i-1] = shingle_old[i];
+			shingle_old[i-1] = shingle_new[i-1];
+		}
+		char caracter;
+		caracter = fgetc(archivo);
+		while (caracter == '.' && caracter == ','){ //COMPROBAR QUE NO ESTE DENTRO DE UNA LISTA DE CARACTERES PROHIBIDOS
+			caracter = fgetc(archivo);
+		}
+		shingle_new[tamano - 1] = caracter;
+		shingle_old[tamano - 1] = caracter;
+		if (shingle_new[0] != '*' && shingle_new[tamano-1] != '*' && caracter != EOF){
+			int posicion = busq_binaria(vector_shingles, shingle_new, tamano_vector);
+			incidencia[posicion] = 1;
+			}
+		}
+	fclose(archivo);
+	return incidencia;
+}
+
+int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int cantidad_archivos, int cantidad_shingles, int tamano_shingle){
 	remove("relativo_incidencia");
 	int rel_incidencia;
-	int cantidad_shingles = NELEMS(vector);
 	char nombres[] = "relativo_incidencia";
 	rel_incidencia = R_CREATE(nombres, cantidad_shingles*sizeof(char), cantidad_archivos);
 /*
@@ -189,11 +230,22 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int canti
 	DEL TEXTO Y FIJANDOSE SI ESTAN DENTRO DEL VECTOR PARA IR ARMANDO EL VECTOR DE INCIDENCIA
 	DESPUES ESCRIBIR ESE VECTOR DENTRO DEL RELATIVO
 */
+	char registro = malloc(100 * sizeof(char));
+	int status;
+	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
+	status = R_READNEXT(fd_relativo_nombres, registro);
+		while (status != R_ERROR){
+			char* incidencia = vector_incidencia(registro, vector, cantidad_shingles, tamano_shingle);
+			status = R_READNEXT(fd_relativo_nombres, registro);
+		}
+	}
+	//free(registro); no probe pero seguro se rompe, (igual que el anterior)
 	return rel_incidencia;
 }
 
 
 int main( int argc, char *argv[] ){
+	int tamano_shingle = 7;
 
 	int cantidad_archivos = devuelve_cantidad_archivos(argc, argv);
 
@@ -201,12 +253,13 @@ int main( int argc, char *argv[] ){
 
 	abb_t* arbol_shingles = abb_crear(strcmp,NULL);
 
-	llamar_a_creador(fd_relativo_nombres , 7 , arbol_shingles );
+	llamar_a_creador(fd_relativo_nombres , tamano_shingle , arbol_shingles );
 
 	char* vector = pasar_a_vector(arbol_shingles);
+	int tamano_arbol = abb_cantidad(arbol_shingles);
 	abb_destruir(arbol_shingles);
 	printf("CREO EL RELATVIVO DE INCIDENCIA \n");
-	int fd_relativo_incidencia = creador_relativo_incidencia(fd_relativo_nombres, vector, cantidad_archivos);
+	int fd_relativo_incidencia = creador_relativo_incidencia(fd_relativo_nombres, vector, cantidad_archivos, tamano_arbol, tamano_shingle);
 
 	free(vector); //hay que destruir cada shingle
 	return 0;
