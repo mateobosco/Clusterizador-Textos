@@ -97,7 +97,7 @@ int creador_relativo_archivos( int argc, char *argv[] ){
 
 	int rel_nombres;
 	char nombres[] = "relativo_nombres";
-	rel_nombres = R_CREATE(nombres, long_max, cantidad);
+	rel_nombres = R_CREATE(nombres, 30, cantidad); //esta linea rompia todo, decia long_max y le puse 30, despues ver bien
 
 	lista_iter_t* mi_iterador = lista_iter_crear(lista_aux);
 	cantidad = 0;
@@ -213,7 +213,7 @@ int busq_binaria(char* vector_shingles, char* shingle, int tamano_vector){
 
 
 char* vector_incidencia(char* nombre_archivo, char* vector_shingles, int tamano_vector, int tamano){
-	char* incidencia = malloc(sizeof(char) * tamano_vector);
+	char* incidencia = malloc(tamano_vector * sizeof(char));
 	FILE* archivo;
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
 	char* shingle_new = malloc((tamano+1) * sizeof(char));
@@ -225,13 +225,15 @@ char* vector_incidencia(char* nombre_archivo, char* vector_shingles, int tamano_
 	shingle_old[tamano] = '\0';
 	shingle_new[tamano] = '\0';
 	//nombre_archivo[11] = "a";
-	printf("nombres del archivo es %s \n", nombre_archivo);
-
+	printf("nombre del archivo es %s \n", nombre_archivo);
 	archivo = fopen(nombre_archivo , "r");
+	printf("LLEGA HASTA ACAAAAAAAAAAAAAAAAAAAAAAAAAA \n");
+
 	if ( archivo == NULL){
 		printf("ERROR DE LECTURA \n");
 		//return -1; //ERROR DE LECTURA
 	}
+
 	while (feof(archivo) == 0){
 		for (i = 1 ; i < tamano ; i ++){
 			shingle_new[i-1] = shingle_old[i];
@@ -249,6 +251,7 @@ char* vector_incidencia(char* nombre_archivo, char* vector_shingles, int tamano_
 			 if (posicion >= 0) incidencia[posicion] = 1;
 			}
 		}
+
 	fclose(archivo);
 	return incidencia;
 }
@@ -270,6 +273,7 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int canti
 		status = R_READNEXT(fd_relativo_nombres, registro); // ACA ESTA EL PROBLEMA
 		printf ("REGISTRO %s, STATUS %d \n", registro, status);
 		while (status != R_ERROR){
+			//printf ("REGISTRO %s, STATUS %d \n", registro, status);
 			char* incidencia = vector_incidencia(registro, vector, cantidad_shingles, tamano_shingle);
 			printf("IMPRIMO EN EL VECTOR DE INCIDENCIA %s: %s \n", registro, incidencia);
 			int res = R_WRITE (rel_incidencia, i , incidencia);
