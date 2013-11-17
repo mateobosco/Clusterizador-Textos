@@ -11,6 +11,21 @@
 
 #define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
 
+void imprimir_relativo(int fd){
+	char* registro = malloc(50 * sizeof(char));
+	int status;
+	int i = 0;
+	if(R_SEEK(fd,0) == R_OK ){
+		status = R_READNEXT(fd, registro);
+		while (status != R_ERROR){
+			printf ("Posicion: %d - Registro: %s \n", i , registro);
+			status = R_READNEXT(fd, registro);
+			i ++;
+		}
+	}
+	printf("FIN DEL RELATIVO \n");
+	free(registro);
+}
 
 char* mi_strcat(const char * str1, const char * str2){
 	int largo1 = strlen(str1);
@@ -77,6 +92,7 @@ int creador_relativo_archivos( int argc, char *argv[] ){
 	}
 	printf("cantidad de archivos %d \n", cantidad);
 	printf("largo de la lista %d \n", (int) lista_largo(lista_aux));
+	printf("longitud maxima %d \n", long_max);
 
 
 	int rel_nombres;
@@ -102,6 +118,10 @@ int creador_relativo_archivos( int argc, char *argv[] ){
 
 	closedir( dir );
 
+	//imprimir_relativo(rel_nombres);
+
+	printf("RELATIVO DE NOMBRES CREADO \n");
+
 	return rel_nombres;
 }
 
@@ -124,7 +144,6 @@ int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
 	FILE* archivo;
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
 	char* shingle_new = malloc((tamano+1) * sizeof(char));
-
 	int i;
 	for (i = 0 ; i < tamano ; i ++){
 		shingle_old[i] = '*';
@@ -132,8 +151,7 @@ int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
 	}
 	shingle_old[tamano] = '\0';
 	shingle_new[tamano] = '\0';
-
-	archivo = fopen(nombre_archivo , "r");
+	archivo = fopen(nombre_archivo , "r");// ACA HAY UN ERROR Y LA PUTA MADRE
 	if ( archivo == NULL){
 		printf("ERROR DE LECTURA \n");
 		return -1; //ERROR DE LECTURA
@@ -156,27 +174,30 @@ int creador_shingles(char* nombre_archivo, int tamano, abb_t* arbol){
 			memcpy(shingle , shingle_new , tamano+1);
 			bool res = abb_guardar(arbol, shingle, shingle);
 		}
-
 	}
 	fclose(archivo);
 	return 0;
 }
 
 void llamar_a_creador(int fd_relativo_nombres , int tamano, abb_t* arbol_shingles){
-	char registro = malloc(100 * sizeof(char));
+	char* registro = malloc(50 * sizeof(char));
+	//char registro[100];
 	int status;
 	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
 		status = R_READNEXT(fd_relativo_nombres, registro);
+		printf ("en la llamada a creador shingles: REGISTRO %s, STATUS %d \n", registro, status);
 		while (status != R_ERROR){
+			printf ("llamo al creador de shingles con el archivo: REGISTRO %s, STATUS %d \n", registro, status);
 			creador_shingles(registro, tamano, arbol_shingles);
 			status = R_READNEXT(fd_relativo_nombres, registro);
+			printf("LLAMO AL PROXIMO \n");
 		}
 	}
 	printf("YA PROCESE TODOS LOS TEXTOS \n");
-	//free(registro);// con esto se rompe todo
+	free(registro);
 }
 
-int busq_binaria(char vector_shingles[], char shingle, int tamano_vector){
+int busq_binaria(char* vector_shingles, char* shingle, int tamano_vector){
 	int inicio = 0;
 	int final = tamano_vector - 1;
 	int medio;
@@ -191,7 +212,7 @@ int busq_binaria(char vector_shingles[], char shingle, int tamano_vector){
 }
 
 
-char* vector_incidencia(char nombre_archivo, char* vector_shingles, int tamano_vector, int tamano){
+char* vector_incidencia(char* nombre_archivo, char* vector_shingles, int tamano_vector, int tamano){
 	char* incidencia = malloc(sizeof(char) * tamano_vector);
 	FILE* archivo;
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
@@ -207,7 +228,7 @@ char* vector_incidencia(char nombre_archivo, char* vector_shingles, int tamano_v
 	archivo = fopen(nombre_archivo , "r");
 	if ( archivo == NULL){
 		printf("ERROR DE LECTURA \n");
-		return -1; //ERROR DE LECTURA
+		//return -1; //ERROR DE LECTURA
 	}
 	while (feof(archivo) == 0){
 		for (i = 1 ; i < tamano ; i ++){
@@ -240,16 +261,16 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int canti
 	DEL TEXTO Y FIJANDOSE SI ESTAN DENTRO DEL VECTOR PARA IR ARMANDO EL VECTOR DE INCIDENCIA
 	DESPUES ESCRIBIR ESE VECTOR DENTRO DEL RELATIVO
 */
-	char registro = malloc(100 * sizeof(char));
+	char* registro = malloc(25 * sizeof(char));
 	int status;
 	int i = 0;
 	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
 		status = R_READNEXT(fd_relativo_nombres, registro); // ACA ESTA EL PROBLEMA
-		printf ("REGISTRO %s, STATUS %d \n", &registro, status);
+		printf ("REGISTRO %s, STATUS %d \n", registro, status);
 		while (status != R_ERROR){
 			char* incidencia = vector_incidencia(registro, vector, cantidad_shingles, tamano_shingle);
 			printf("IMPRIMO EN EL VECTOR DE INCIDENCIA %s: %s \n", registro, incidencia);
-			int res = R_WRITE (rel_incidencia, i , &incidencia);
+			int res = R_WRITE (rel_incidencia, i , incidencia);
 			if (res < 0){
 				perror("Error de escritura en el archivo relativo de nombres");
 				remove("relativo_nombres"); //FALTA LIBERAR MEMORIA ACA
@@ -270,7 +291,11 @@ int el_main( int argc, char *argv[] , int tamano_shingle ){
 
 	int fd_relativo_nombres = creador_relativo_archivos( argc, argv);
 
+	printf("CREO EL ARBOL \n");
+
 	abb_t* arbol_shingles = abb_crear(strcmp,NULL);
+
+	printf("LLAMO AL CREADOR DE SHINGLES \n");
 
 	llamar_a_creador(fd_relativo_nombres , tamano_shingle , arbol_shingles );
 
