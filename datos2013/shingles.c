@@ -186,7 +186,7 @@ void llamar_a_creador(int fd_relativo_nombres , int tamano, abb_t* arbol_shingle
 	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
 		status = R_READNEXT(fd_relativo_nombres, registro);
 		printf ("en la llamada a creador shingles: REGISTRO %s, STATUS %d \n", registro, status);
-		while (status != R_ERROR){
+		while (status != R_ERROR ){
 			printf ("llamo al creador de shingles con el archivo: REGISTRO %s, STATUS %d \n", registro, status);
 			creador_shingles(registro, tamano, arbol_shingles);
 			status = R_READNEXT(fd_relativo_nombres, registro);
