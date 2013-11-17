@@ -133,6 +133,7 @@ char** pasar_a_vector(abb_t* arbol){
 	while( !abb_iter_in_al_final(iter)){
 		vector[i] = abb_iter_in_ver_actual(iter);
 		abb_iter_in_avanzar(iter);
+		//printf("posicion %d - %s \n",i ,vector[i]); imprime el vector, anda bien esto
 		i++;
 	}
 	//abb_imprimir(arbol);
@@ -202,7 +203,7 @@ int busq_binaria(char** vector_shingles, char* shingle, int tamano_vector){
 	int final = tamano_vector - 1;
 	int medio;
 	while (inicio <= final){
-		medio = (final - inicio) / 2;
+		medio = (final + inicio) / 2;
 		int res = strcmp(vector_shingles[medio], shingle);
 		if (res == 0) return medio;
 		else if (res < 0) inicio = medio + 1;
