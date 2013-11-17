@@ -97,7 +97,7 @@ int creador_relativo_archivos( int argc, char *argv[] ){
 
 	int rel_nombres;
 	char nombres[] = "relativo_nombres";
-	rel_nombres = R_CREATE(nombres, 30, cantidad); //esta linea rompia todo, decia long_max y le puse 30, despues ver bien
+	rel_nombres = R_CREATE(nombres, 50, cantidad); //esta linea rompia todo, decia long_max y le puse 30, despues ver bien
 
 	lista_iter_t* mi_iterador = lista_iter_crear(lista_aux);
 	cantidad = 0;
@@ -183,7 +183,7 @@ void llamar_a_creador(int fd_relativo_nombres , int tamano, abb_t* arbol_shingle
 	char* registro = malloc(50 * sizeof(char));
 	//char registro[100];
 	int status;
-	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
+	if(R_SEEK(fd_relativo_nombres,0) >= R_OK ){
 		status = R_READNEXT(fd_relativo_nombres, registro);
 		printf ("en la llamada a creador shingles: REGISTRO %s, STATUS %d \n", registro, status);
 		while (status != R_ERROR ){
@@ -213,7 +213,7 @@ int busq_binaria(char* vector_shingles, char* shingle, int tamano_vector){
 
 
 char* vector_incidencia(char* nombre_archivo, char* vector_shingles, int tamano_vector, int tamano){
-	char* incidencia = malloc(tamano_vector * sizeof(char));
+	char* incidencia = malloc(sizeof(char) * tamano_vector);
 	FILE* archivo;
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
 	char* shingle_new = malloc((tamano+1) * sizeof(char));
@@ -307,6 +307,7 @@ int el_main( int argc, char *argv[] , int tamano_shingle ){
 
 	char* vector = pasar_a_vector(arbol_shingles);
 	int tamano_arbol = abb_cantidad(arbol_shingles);
+	printf("EL ARBOL TIENE %d SHINGLES \n", tamano_arbol);
 	abb_destruir(arbol_shingles);
 	printf("CREO EL RELATVIVO DE INCIDENCIA \n");
 	int fd_relativo_incidencia = creador_relativo_incidencia(fd_relativo_nombres, vector, cantidad_archivos, tamano_arbol, tamano_shingle);
