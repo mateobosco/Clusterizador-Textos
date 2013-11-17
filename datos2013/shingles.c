@@ -125,9 +125,9 @@ int creador_relativo_archivos( int argc, char *argv[] ){
 	return rel_nombres;
 }
 
-char* pasar_a_vector(abb_t* arbol){
+char** pasar_a_vector(abb_t* arbol){
 	size_t tamano = abb_cantidad(arbol);
-	char* vector = malloc(tamano * sizeof(char*));
+	char** vector = malloc(tamano * sizeof(char*));
 	abb_iter_t* iter = abb_iter_in_crear(arbol);
 	int i = 0;
 	while( !abb_iter_in_al_final(iter)){
@@ -135,7 +135,7 @@ char* pasar_a_vector(abb_t* arbol){
 		abb_iter_in_avanzar(iter);
 		i++;
 	}
-	abb_imprimir(arbol);
+	//abb_imprimir(arbol);
 	free(iter);
 	return vector;
 }
@@ -197,7 +197,7 @@ void llamar_a_creador(int fd_relativo_nombres , int tamano, abb_t* arbol_shingle
 	free(registro);
 }
 
-int busq_binaria(char* vector_shingles, char* shingle, int tamano_vector){
+int busq_binaria(char** vector_shingles, char* shingle, int tamano_vector){
 	int inicio = 0;
 	int final = tamano_vector - 1;
 	int medio;
@@ -205,14 +205,14 @@ int busq_binaria(char* vector_shingles, char* shingle, int tamano_vector){
 		medio = (final - inicio) / 2;
 		int res = strcmp(vector_shingles[medio], shingle);
 		if (res == 0) return medio;
-		else if (res < 0) inicio = medio;
-		else if (res > 0) final = medio;
+		else if (res < 0) inicio = medio + 1;
+		else if (res > 0) final = medio - 1;
 	}
 	return -1;
 }
 
 
-char* vector_incidencia(char* nombre_archivo, char* vector_shingles, int tamano_vector, int tamano){
+char* vector_incidencia(char* nombre_archivo, char** vector_shingles, int tamano_vector, int tamano){
 	char* incidencia = malloc(sizeof(char) * tamano_vector);
 	FILE* archivo;
 	char* shingle_old = malloc((tamano+1) * sizeof(char));
@@ -247,16 +247,21 @@ char* vector_incidencia(char* nombre_archivo, char* vector_shingles, int tamano_
 		shingle_new[tamano - 1] = caracter;
 		shingle_old[tamano - 1] = caracter;
 		if (shingle_new[0] != '*' && shingle_new[tamano-1] != '*' && caracter != EOF){
+			printf("Busco este shingle en el vector: %s\n",shingle_new);
 			int posicion = busq_binaria(vector_shingles, shingle_new, tamano_vector);
-			 if (posicion >= 0) incidencia[posicion] = 1;
+			printf("La busqueda binaria devuelve: %d \n", posicion);
+			if (posicion >= 0){
+				incidencia[posicion] = 1;
+				printf("Encuentro un shingle en vector \n");
 			}
 		}
+	}
 
 	fclose(archivo);
 	return incidencia;
 }
 
-int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int cantidad_archivos, int cantidad_shingles, int tamano_shingle){
+int creador_relativo_incidencia(int fd_relativo_nombres, char** vector, int cantidad_archivos, int cantidad_shingles, int tamano_shingle){
 	remove("relativo_incidencia");
 	int rel_incidencia;
 	char nombres[] = "relativo_incidencia";
@@ -305,7 +310,7 @@ int el_main( int argc, char *argv[] , int tamano_shingle ){
 
 	llamar_a_creador(fd_relativo_nombres , tamano_shingle , arbol_shingles );
 
-	char* vector = pasar_a_vector(arbol_shingles);
+	char** vector = pasar_a_vector(arbol_shingles);
 	int tamano_arbol = abb_cantidad(arbol_shingles);
 	printf("EL ARBOL TIENE %d SHINGLES \n", tamano_arbol);
 	abb_destruir(arbol_shingles);
@@ -319,6 +324,4 @@ int el_main( int argc, char *argv[] , int tamano_shingle ){
 int main( int argc, char *argv[] ){
 
 	el_main(argc, argv, 7);
-
-	return 0;
 }
