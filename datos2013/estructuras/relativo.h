@@ -14,7 +14,7 @@
 /* Resultados */
 #ifndef		R_OK
 #define		R_OK		0
-#endif		R_OK
+#endif
 
 #define    R_ERROR		-1
 	
@@ -50,5 +50,5 @@ int R_SEEK (int handler, int nrec);
 int R_UPDATE (int handler, int nrec, char* reg);
 int R_DELETE (int handler, int nrec);
 
-#endif RELATIVO_H
+#endif
 
