@@ -217,8 +217,9 @@ int busq_binaria(char** vector_shingles, char* shingle, int tamano_vector){
 }
 
 
-char* vector_incidencia(char* nombre_archivo, char** vector_shingles, int tamano_vector){
+char* vector_incidencia(char* nombre_archivo, char** vector_shingles, int tamano_vector, char* vector_vacio){
 	char* incidencia = malloc(sizeof(char) * tamano_vector);
+	strcpy(incidencia, vector_vacio);
 	FILE* archivo;
 	char* shingle_old = malloc((TAM_SHINGLE+1) * sizeof(char));
 	char* shingle_new = malloc((TAM_SHINGLE+1) * sizeof(char));
@@ -253,7 +254,7 @@ char* vector_incidencia(char* nombre_archivo, char** vector_shingles, int tamano
 			int posicion = busq_binaria(vector_shingles, shingle_new, tamano_vector);
 			printf("La busqueda binaria devuelve: %d \n", posicion);
 			if (posicion >= 0){
-				incidencia[posicion] = 1;
+				incidencia[posicion] = '1';
 				printf("Encuentro un shingle en vector \n");
 			}
 		}
@@ -268,6 +269,11 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char** vector, int cant
 	int rel_incidencia;
 	char nombres[] = "relativo_incidencia";
 	rel_incidencia = R_CREATE(nombres, cantidad_shingles*sizeof(char), cantidad_archivos);
+	char* vector_vacio = malloc(sizeof(char) * (cantidad_shingles+1));
+	for (int i = 0 ; i < cantidad_shingles ; i++){
+		vector_vacio[i] = '0';
+	}
+	vector_vacio[cantidad_shingles] = '\0';
 /*
 	HAY QUE IR LEYENDO EL RELATIVO DE NOMBRES, DE AHI LLAMAR A UNA FUNCION QUE VAYA LEYENDO TODOS LOS SHINGLES
 	DEL TEXTO Y FIJANDOSE SI ESTAN DENTRO DEL VECTOR PARA IR ARMANDO EL VECTOR DE INCIDENCIA
@@ -281,7 +287,7 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char** vector, int cant
 		printf ("REGISTRO %s, STATUS %d \n", registro, status);
 		while (status != R_ERROR){
 			//printf ("REGISTRO %s, STATUS %d \n", registro, status);
-			char* incidencia = vector_incidencia(registro, vector, cantidad_shingles);
+			char* incidencia = vector_incidencia(registro, vector, cantidad_shingles, vector_vacio);
 			printf("IMPRIMO EN EL VECTOR DE INCIDENCIA de %s: %s \n", registro, incidencia);
 			int res = R_WRITE (rel_incidencia, i , incidencia);
 			if (res < 0){
@@ -317,8 +323,6 @@ int el_main( int argc, char *argv[] ){
 	printf("EL ARBOL TIENE %d SHINGLES \n", tamano_arbol);
 	abb_destruir(arbol_shingles);
 	printf("CREO EL RELATVIVO DE INCIDENCIA \n");
-
-
 
 	int fd_relativo_incidencia = creador_relativo_incidencia(fd_relativo_nombres, vector, cantidad_archivos, tamano_arbol);
 	printf(" RELATIVO DE INCIDENCIA CREADO \n");
