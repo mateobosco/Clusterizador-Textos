@@ -224,6 +224,8 @@ char* vector_incidencia(char* nombre_archivo, char* vector_shingles, int tamano_
 	}
 	shingle_old[tamano] = '\0';
 	shingle_new[tamano] = '\0';
+	//nombre_archivo[11] = "a";
+	printf("nombres del archivo es %s \n", nombre_archivo);
 
 	archivo = fopen(nombre_archivo , "r");
 	if ( archivo == NULL){
@@ -264,7 +266,7 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char* vector, int canti
 	char* registro = malloc(25 * sizeof(char));
 	int status;
 	int i = 0;
-	if(R_SEEK(fd_relativo_nombres,0) == R_OK ){
+	if(R_SEEK(fd_relativo_nombres,0) >= R_OK ){
 		status = R_READNEXT(fd_relativo_nombres, registro); // ACA ESTA EL PROBLEMA
 		printf ("REGISTRO %s, STATUS %d \n", registro, status);
 		while (status != R_ERROR){
