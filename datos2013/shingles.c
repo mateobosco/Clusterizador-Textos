@@ -11,6 +11,7 @@
 
 #define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
 #define TAM_SHINGLE 7
+#define CANTIDAD_FUNCIONES 50
 
 void imprimir_relativo(int fd){
 	char* registro = malloc(50 * sizeof(char));
@@ -28,7 +29,7 @@ void imprimir_relativo(int fd){
 	free(registro);
 }
 
-char* mi_strcat(const char * str1, const char * str2){
+char* mistrcat(const char * str1, const char * str2){
 	int largo1 = strlen(str1);
 	char aux1[largo1+2];
 	strcpy(aux1,str1);
@@ -40,6 +41,20 @@ char* mi_strcat(const char * str1, const char * str2){
 	}
 	return NULL;
 }
+
+char* mi_strcat(const char * str1, const char * str2){
+	int largo1 = strlen(str1);
+	int largo2 = strlen(str2);
+	char * fin = malloc (sizeof(char)*(largo1+largo2+1));
+	char barra[]="/";
+	strcat(fin,str1);
+	strcat(fin,barra);
+	strcat(fin,str2);
+	return fin;
+}
+
+
+
 
 int devuelve_cantidad_archivos( int argc , char* argv[]){
 	int cantidad = 0;
@@ -304,6 +319,58 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char** vector, int cant
 }
 
 
+
+int* creador_vector_hashmin(char* vector_incidencia, int cantidad){
+	int funciones[CANTIDAD_FUNCIONES];
+	int* vector_hasmin = malloc (sizeof(int) * CANTIDAD_FUNCIONES);
+	for (int i=0; i<CANTIDAD_FUNCIONES;i++){
+		funciones[i]=random();
+	}
+	for (int j = 0; j<CANTIDAD_FUNCIONES ; j++){
+		for (int k = 0 ; k < cantidad ; k++){
+			char valor = vector_incidencia[j];
+			if (valor == '1'){
+				//SEGUIR ACA
+			}
+		}
+	}
+	return vector_hasmin;
+}
+
+int fd_relativo_hashmin (int relativo_incidencia,char** vector, int cantidad_archivos){
+	int rel_hashmin;
+	char nombres[] = "relativo_hashmin";
+	rel_incidencia = R_CREATE(nombres, cantidad_shingles*sizeof(char), cantidad_archivos);
+	char* vector_vacio = malloc(sizeof(char) * (cantidad_shingles+1));
+	for (int i = 0 ; i < cantidad_shingles ; i++){
+		vector_vacio[i] = '0';
+	}
+	vector_vacio[cantidad_shingles] = '\0';
+	char* registro = malloc(25 * sizeof(char));
+	int status;
+	int i = 0;
+	if(R_SEEK(fd_relativo_incidencia,0) >= R_OK ){
+		status = R_READNEXT(fd_relativo_nombres, registro);
+		printf ("REGISTRO %s, STATUS %d \n", registro, status);
+		while (status != R_ERROR){
+			//printf ("REGISTRO %s, STATUS %d \n", registro, status);
+			char* incidencia_actual = registro;
+			char* incidencia_con_hashmin = hashmin(incidencia_actual);
+			printf("IMPRIMO EN EL VECTOR DE INCIDENCIA de %s: %s \n", registro, incidencia);
+			int res = R_WRITE (rel_incidencia, i , incidencia);
+			if (res < 0){
+				perror("Error de escritura en el archivo relativo de nombres");
+				remove("relativo_nombres"); //FALTA LIBERAR MEMORIA ACA
+				return -1;
+			}
+			status = R_READNEXT(fd_relativo_nombres, registro);
+			i ++;
+		}
+	}
+	//free(registro); no probe pero seguro se rompe, (igual que el anterior)
+	return rel_hashmin;
+}
+
 int el_main( int argc, char *argv[] ){
 
 	int cantidad_archivos = devuelve_cantidad_archivos(argc, argv);
@@ -326,6 +393,8 @@ int el_main( int argc, char *argv[] ){
 
 	int fd_relativo_incidencia = creador_relativo_incidencia(fd_relativo_nombres, vector, cantidad_archivos, tamano_arbol);
 	printf(" RELATIVO DE INCIDENCIA CREADO \n");
+	int fd_relativo_hashmin = creador_relativo_vectores_hashmin(fd_relativo_incidencia, vector, cantidad_archivos);
+
 	free(vector); //hay que destruir cada shingle
 	return 0;
 }
