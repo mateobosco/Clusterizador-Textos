@@ -13,8 +13,8 @@
 #define TAM_SHINGLE 7
 #define CANTIDAD_FUNCIONES 50
 
-void imprimir_relativo(int fd){
-	char* registro = malloc(50 * sizeof(char));
+void imprimir_relativo(int fd, int tam_registro){
+	char* registro = malloc(tam_registro * sizeof(char));
 	int status;
 	int i = 0;
 	if(R_SEEK(fd,0) == R_OK ){
@@ -279,21 +279,48 @@ char* vector_incidencia(char* nombre_archivo, char** vector_shingles, int tamano
 	return incidencia;
 }
 
-int creador_relativo_incidencia(int fd_relativo_nombres, char** vector, int cantidad_archivos, int cantidad_shingles){
-	remove("relativo_incidencia");
-	int rel_incidencia;
-	char nombres[] = "relativo_incidencia";
-	rel_incidencia = R_CREATE(nombres, cantidad_shingles*sizeof(char), cantidad_archivos);
+
+int hash(int funcion, int entrada){
+	return (funcion * entrada)%32000;
+}
+
+int* generador_funciones_hasmin(void){
+	int* funciones = malloc(sizeof(int) * CANTIDAD_FUNCIONES);
+	printf("LAS FUNCIONES DE HASMIN SON :");
+	for (int i=0; i<CANTIDAD_FUNCIONES;i++){
+		funciones[i] = (rand() % 126);
+		printf(" &d ",funciones[i]);
+	}
+	printf("\n");
+	return funciones;
+}
+
+char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funciones){
+	char* vector_hasmin = malloc (sizeof(char) * CANTIDAD_FUNCIONES);
+	for (int j = 0; j<CANTIDAD_FUNCIONES ; j++){
+		char anterior = 126;
+		for (int k = 0 ; k < cantidad ; k++){
+			char valor = vector_incidencia[j];
+			if (valor == '1'){
+				char nuevo = hash( k , funciones[j] );
+				if (nuevo < anterior) anterior = nuevo;
+			}
+		}
+		vector_hasmin[j] = anterior;
+	}
+	return vector_hasmin;
+}
+
+int creador_relativo_hasmin(int fd_relativo_nombres, char** vector, int cantidad_archivos, int cantidad_shingles, int* funciones){
+	remove("relativo_hasmin");
+	int rel_hasmin;
+	char nombres[] = "relativo_hasmin";
+	rel_hasmin = R_CREATE(nombres, cantidad_shingles*sizeof(char), cantidad_archivos);
 	char* vector_vacio = malloc(sizeof(char) * (cantidad_shingles+1));
 	for (int i = 0 ; i < cantidad_shingles ; i++){
 		vector_vacio[i] = '0';
 	}
 	vector_vacio[cantidad_shingles] = '\0';
-/*
-	HAY QUE IR LEYENDO EL RELATIVO DE NOMBRES, DE AHI LLAMAR A UNA FUNCION QUE VAYA LEYENDO TODOS LOS SHINGLES
-	DEL TEXTO Y FIJANDOSE SI ESTAN DENTRO DEL VECTOR PARA IR ARMANDO EL VECTOR DE INCIDENCIA
-	DESPUES ESCRIBIR ESE VECTOR DENTRO DEL RELATIVO
-*/
 	char* registro = malloc(25 * sizeof(char));
 	int status;
 	int i = 0;
@@ -304,7 +331,9 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char** vector, int cant
 			//printf ("REGISTRO %s, STATUS %d \n", registro, status);
 			char* incidencia = vector_incidencia(registro, vector, cantidad_shingles, vector_vacio);
 			printf("IMPRIMO EN EL VECTOR DE INCIDENCIA de %s: %s \n", registro, incidencia);
-			int res = R_WRITE (rel_incidencia, i , incidencia);
+			char* vector_hashmin = creador_vector_hashmin(incidencia, cantidad_shingles, funciones);
+			printf("IMPRIMO EN EL VECTOR DE HASMIN de %s: %d \n", registro, (int) vector_hashmin);
+			int res = R_WRITE (rel_hasmin, i , vector_hashmin);
 			if (res < 0){
 				perror("Error de escritura en el archivo relativo de nombres");
 				remove("relativo_nombres"); //FALTA LIBERAR MEMORIA ACA
@@ -315,60 +344,7 @@ int creador_relativo_incidencia(int fd_relativo_nombres, char** vector, int cant
 		}
 	}
 	//free(registro); no probe pero seguro se rompe, (igual que el anterior)
-	return rel_incidencia;
-}
-
-
-
-int* creador_vector_hashmin(char* vector_incidencia, int cantidad){
-	int funciones[CANTIDAD_FUNCIONES];
-	int* vector_hasmin = malloc (sizeof(int) * CANTIDAD_FUNCIONES);
-	for (int i=0; i<CANTIDAD_FUNCIONES;i++){
-		funciones[i]=random();
-	}
-	for (int j = 0; j<CANTIDAD_FUNCIONES ; j++){
-		for (int k = 0 ; k < cantidad ; k++){
-			char valor = vector_incidencia[j];
-			if (valor == '1'){
-				//SEGUIR ACA
-			}
-		}
-	}
-	return vector_hasmin;
-}
-
-int fd_relativo_hashmin (int relativo_incidencia,char** vector, int cantidad_archivos){
-	int rel_hashmin;
-	char nombres[] = "relativo_hashmin";
-	rel_incidencia = R_CREATE(nombres, cantidad_shingles*sizeof(char), cantidad_archivos);
-	char* vector_vacio = malloc(sizeof(char) * (cantidad_shingles+1));
-	for (int i = 0 ; i < cantidad_shingles ; i++){
-		vector_vacio[i] = '0';
-	}
-	vector_vacio[cantidad_shingles] = '\0';
-	char* registro = malloc(25 * sizeof(char));
-	int status;
-	int i = 0;
-	if(R_SEEK(fd_relativo_incidencia,0) >= R_OK ){
-		status = R_READNEXT(fd_relativo_nombres, registro);
-		printf ("REGISTRO %s, STATUS %d \n", registro, status);
-		while (status != R_ERROR){
-			//printf ("REGISTRO %s, STATUS %d \n", registro, status);
-			char* incidencia_actual = registro;
-			char* incidencia_con_hashmin = hashmin(incidencia_actual);
-			printf("IMPRIMO EN EL VECTOR DE INCIDENCIA de %s: %s \n", registro, incidencia);
-			int res = R_WRITE (rel_incidencia, i , incidencia);
-			if (res < 0){
-				perror("Error de escritura en el archivo relativo de nombres");
-				remove("relativo_nombres"); //FALTA LIBERAR MEMORIA ACA
-				return -1;
-			}
-			status = R_READNEXT(fd_relativo_nombres, registro);
-			i ++;
-		}
-	}
-	//free(registro); no probe pero seguro se rompe, (igual que el anterior)
-	return rel_hashmin;
+	return rel_hasmin;
 }
 
 int el_main( int argc, char *argv[] ){
@@ -389,11 +365,13 @@ int el_main( int argc, char *argv[] ){
 	int tamano_arbol = abb_cantidad(arbol_shingles);
 	printf("EL ARBOL TIENE %d SHINGLES \n", tamano_arbol);
 	abb_destruir(arbol_shingles);
+
+	int* funciones = generador_funciones_hasmin();
+
 	printf("CREO EL RELATVIVO DE INCIDENCIA \n");
 
-	int fd_relativo_incidencia = creador_relativo_incidencia(fd_relativo_nombres, vector, cantidad_archivos, tamano_arbol);
+	int fd_relativo_hasmin = creador_relativo_hasmin(fd_relativo_nombres, vector, cantidad_archivos, tamano_arbol, funciones);
 	printf(" RELATIVO DE INCIDENCIA CREADO \n");
-	int fd_relativo_hashmin = creador_relativo_vectores_hashmin(fd_relativo_incidencia, vector, cantidad_archivos);
 
 	free(vector); //hay que destruir cada shingle
 	return 0;
