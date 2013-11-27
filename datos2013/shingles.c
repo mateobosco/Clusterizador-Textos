@@ -345,7 +345,9 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funcion
                 short anterior = 32000;
                 for (int k = 0 ; k < cantidad ; k++){
                         char valor = vector_incidencia[j];
+                        //printf("VECTOR INCIDENCIA J ES : %d \n", vector_incidencia[j]);
                         if (valor == '1'){
+                        		//printf("VALOR ESSSSSSSSSS: %d", valor);
                                 short nuevo = hash( k , funciones[j] );
                                 if (nuevo < anterior) anterior = nuevo;
                         }
@@ -357,6 +359,7 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funcion
                 vector_hasmin[j * 3 + 2] = numero[2];
                 //vector_hasmin[j]=numero;
         }
+        printf("EL VECTOR HASHMIN QUEDA ASI : %s \n", vector_hasmin);
         return vector_hasmin;
 }
 
@@ -364,7 +367,9 @@ int jaccard (char* vector1,  char* vector2, int largo){
 	int contador_diferentes;
 	int contador_iguales;
 	for(int i=0; i<largo; i++){
+
 		if (vector1[i] == vector2[i]){
+			printf("*************************************************** \n");
 			contador_iguales++;
 			contador_diferentes++;
 		}
@@ -408,13 +413,6 @@ char* creador_clusters(int cantidad_clusters, int cantidad_archivos, char* lider
 		printf("ESTO ES LISTA_CLUSTERS I %d \n" , lista_clusters[i]);
 		//printf("ESTO ES LISTA_CLUSTERSSSSSSSSSSSS%d \n" , cluster);
 		printf("AGREGO AL CLUSTER %d EL CENTRO %d \n", i, centro);
-		/*
-		for (int j=0; j < cantidad_clusters; j++){
-			int aux = rand() % cantidad_lideres;
-			centro = lideres[aux];
-			cluster->centro = centro;
-		}
-		*/
 	}
 	printf("=============================================================== \n");
 	printf("ESTO ES LISTA_CLUSTERS 0 DESPUES DEL FOR %d \n" , lista_clusters[0]);
@@ -443,20 +441,21 @@ short* creador_matriz_hashmin(int rel_hashmin, int* lista_clusters, int cantidad
 		//printf("REL_HASHMIN ES %d \n", rel_hashmin);
 		cluster_t* cluster;
 		char* registro = malloc(25 * sizeof(char));
+		printf("REGISTRO ES %s \n", registro);
 		for(int i = 0; i< cantidad_clusters; i++){
 			cluster = lista_clusters[i];
-			printf("ESTE ES EL CENTRO DE CLUSTER %d,  %d \n", i, obtener_centro(cluster));  //SE ROMPE EN ESTA LINEAAA
-			centro = obtener_centro(cluster); //SE ROMPE EN ESTA LINEAAA
-			printf("LLEGA HASTA ACAAAA \n");
-			printf("EL CENTRO ES %d \n", centro);
+			printf("ESTE ES EL CENTRO DE CLUSTER %d,  %d \n", i, obtener_centro(cluster));
+			centro = obtener_centro(cluster);
+			//printf("LLEGA HASTA ACAAAA \n");
+			//printf("EL CENTRO ES %d \n", centro);
 			status = R_READ(rel_hashmin, centro, registro);
 			printf("EL STATUS DEL R_READ ES %d \n", status);
-			printf("escribo en la matriz esto %d en la posicion %d \n", registro, w);
+			printf("escribo en la matriz esto %s en la posicion %d \n", registro, w);
 			matriz[w]= registro; //guardo en la matriz el vector hashmin del lider actual
 			w++;
 		}
-		free(registro);
 		printf("MATRIZ[0] ES %d \n", matriz[0]);
+		free(registro);
 		return matriz;
 }
 
@@ -469,9 +468,9 @@ void asignar_documento_a_cluster(short* matriz, int rel_hashmin, int cantidad_li
 	int j = 0;
 	//char* registro;
 	//printf("MATRIZ[0] ES %d \n", matriz[0]);
-	char* registro = malloc(sizeof(char)*25);
-
 	printf("LLEGA HASTA ACAAaaaaaaaaaaaaaaaaaaaaaaaA1 \n");
+	char* registro = malloc (sizeof(char)*25);
+
 	//if(R_SEEK(rel_hashmin,0) >= R_OK ){
 	//for (int j = 0; j<cantidad_archivos; j++ ){
 	status = R_READ(rel_hashmin, j, registro);
@@ -479,7 +478,7 @@ void asignar_documento_a_cluster(short* matriz, int rel_hashmin, int cantidad_li
 		//status = R_READNEXT(rel_hashmin, registro);
 		for (int i=0; i < cantidad_lideres; i++ ){
 			printf("LLEGA HASTA ACAAaaaaaaaaaaaaaaaaaaaaaaaA2 \n");
-			printf("REGISTRO ES %d \n", registro);
+			printf("REGISTRO ES %s \n", registro);
 			printf("MATRIZ[I] ES %d \n", matriz[i]);
 			similitud_aux = jaccard(registro, matriz[i], 25 ); // SE ROMPE ACAAAAA
 			printf("LLEGA HASTA ACAAaaaaaaaaaaaaaaaaaaaaaaaA3 \n");
@@ -518,9 +517,10 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
                         char* incidencia = vector_incidencia(registro, vector, cantidad_shingles, vector_vacio);
                         printf("IMPRIMO EN EL VECTOR DE INCIDENCIA de %s: %s \n", registro, incidencia);
                         char* vector_hashmin = creador_vector_hashmin(incidencia, cantidad_shingles, funciones);
-                        printf("IMPRIMO EN EL VECTOR DE HASMIN de %s: %d \n", registro, vector_hashmin);
+                        printf("IMPRIMO EN EL VECTOR DE HASMIN de %s: %s \n", registro, vector_hashmin);
                         //matriz[w]=vector_hashmin;
                         //w++;
+                        //int res = R_WRITE (rel_hasmin, i , vector_hashmin);
                         int res = R_WRITE (rel_hasmin, i , vector_hashmin);
                         if (res < 0){
                                 perror("Error de escritura en el archivo relativo de nombres");
