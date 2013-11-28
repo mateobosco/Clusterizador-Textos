@@ -468,7 +468,7 @@ void asignar_documento_a_cluster(short* matriz, int rel_hashmin, int cantidad_li
 	//char* registro;
 	//printf("MATRIZ[0] ES %d \n", matriz[0]);
 	printf("LLEGA HASTA ACAAaaaaaaaaaaaaaaaaaaaaaaaA1 \n");
-	char* registro = malloc (sizeof(char)*CANTIDAD_FUNCIONES * 3);
+	char* registro = malloc (sizeof(char)* CANTIDAD_FUNCIONES * 3);
 	//if(R_SEEK(rel_hashmin,0) >= R_OK ){
 	//for (int j = 0; j<cantidad_archivos; j++ ){
 	status = R_READ(rel_hashmin, j, registro);
@@ -478,7 +478,7 @@ void asignar_documento_a_cluster(short* matriz, int rel_hashmin, int cantidad_li
 			printf("LLEGA HASTA ACAAaaaaaaaaaaaaaaaaaaaaaaaA2 \n");
 			printf("REGISTRO ES %s \n", registro);
 			printf("MATRIZ[I] ES %d \n", matriz[i]);
-			similitud_aux = jaccard(registro, matriz[i], 25 ); // SE ROMPE ACAAAAA
+			similitud_aux = jaccard(registro, matriz[i], CANTIDAD_FUNCIONES * 3 ); // SE ROMPE ACAAAAA LINEA DEL ORTOO NOSE QUE PONER EN EL 3ER PARAMETRO
 			printf("LLEGA HASTA ACAAaaaaaaaaaaaaaaaaaaaaaaaA3 \n");
 			if (similitud_aux < similitud){
 				similitud=similitud_aux;
