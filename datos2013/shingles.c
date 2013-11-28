@@ -348,7 +348,7 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funcion
                         //printf("VECTOR INCIDENCIA J ES : %d \n", vector_incidencia[j]);
                         if (valor == '1'){
                         		//printf("VALOR ESSSSSSSSSS: %d", valor);
-                                short nuevo = hash( k , funciones[j] );
+                                short nuevo = hash( j , funciones[j] );
                                 if (nuevo < anterior) anterior = nuevo;
                         }
                 }
@@ -378,7 +378,6 @@ int jaccard (char* vector1,  char* vector2, int largo){
 		}
 	}
 	return (contador_iguales/contador_diferentes);
-
 }
 
 char* selector_lideres(int cantidad_clusters, int cantidad_archivos, int cantidad_lideres){
@@ -440,7 +439,7 @@ short* creador_matriz_hashmin(int rel_hashmin, int* lista_clusters, int cantidad
 		//rel_hashmin=R_OPEN(nombres, "read");
 		//printf("REL_HASHMIN ES %d \n", rel_hashmin);
 		cluster_t* cluster;
-		char* registro = malloc(25 * sizeof(char));
+		char* registro = malloc(CANTIDAD_FUNCIONES * 3 * sizeof(char));
 		printf("REGISTRO ES %s \n", registro);
 		for(int i = 0; i< cantidad_clusters; i++){
 			cluster = lista_clusters[i];
@@ -455,7 +454,7 @@ short* creador_matriz_hashmin(int rel_hashmin, int* lista_clusters, int cantidad
 			w++;
 		}
 		printf("MATRIZ[0] ES %d \n", matriz[0]);
-		free(registro);
+		//free(registro);
 		return matriz;
 }
 
@@ -469,8 +468,7 @@ void asignar_documento_a_cluster(short* matriz, int rel_hashmin, int cantidad_li
 	//char* registro;
 	//printf("MATRIZ[0] ES %d \n", matriz[0]);
 	printf("LLEGA HASTA ACAAaaaaaaaaaaaaaaaaaaaaaaaA1 \n");
-	char* registro = malloc (sizeof(char)*25);
-
+	char* registro = malloc (sizeof(char)*CANTIDAD_FUNCIONES * 3);
 	//if(R_SEEK(rel_hashmin,0) >= R_OK ){
 	//for (int j = 0; j<cantidad_archivos; j++ ){
 	status = R_READ(rel_hashmin, j, registro);
@@ -506,7 +504,7 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
                 vector_vacio[i] = '0';
         }
         vector_vacio[cantidad_shingles] = '\0';
-        char* registro = malloc(25 * sizeof(char));
+        char* registro = malloc(100 * sizeof(char));
         int status;
         int i = 0;
         if(R_SEEK(fd_relativo_nombres,0) >= R_OK ){
@@ -531,13 +529,13 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
                         i ++;
                 }
         }
-        //free(registro); no probe pero seguro se rompe, (igual que el anterior)
+        //free(registro); // no probe pero seguro se rompe, (igual que el anterior)
+        free(vector_vacio);
         //free(registro);
         return rel_hasmin;
 }
 
 int el_main( int argc, char *argv[] ){
-
         int cantidad_archivos = devuelve_cantidad_archivos(argc, argv);
         //int cantidad_lideres;
         int fd_relativo_nombres = creador_relativo_archivos( argc, argv);
@@ -552,17 +550,12 @@ int el_main( int argc, char *argv[] ){
         printf("LLAMO AL CREADOR DE SHINGLES \n");
         llamar_a_creador(fd_relativo_nombres , arbol_shingles );
         printf("PASO LOS SHINGLES AL VECTOR \n");
-
         char** vector = pasar_a_vector(arbol_shingles);
-
-
         int tamano_arbol = abb_cantidad(arbol_shingles);
         printf("EL ARBOL TIENE %d SHINGLES \n", tamano_arbol);
-
         abb_destruir(arbol_shingles);
         int* funciones = generador_funciones_hasmin();
         printf("CREO EL RELATIVO DE INCIDENCIA \n");
-
         int fd_relativo_hasmin = creador_relativo_hashmin(fd_relativo_nombres, vector, cantidad_archivos, tamano_arbol, funciones, cantidad_clusters);
         printf(" RELATIVO DE INCIDENCIA CREADO \n");
        // printf("LIDERES ELEGIDOS SON: %d", lideres);
