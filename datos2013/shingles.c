@@ -377,7 +377,6 @@ void** creador_vector_clusters(int cantidad_clusters, int cantidad_archivos, int
 		cluster_t* cluster = cluster_crear(centro);
 		void* puntero = vector_clusters[i];
 		vector_clusters[i] = cluster;
-		printf("aca anda \n");
 	}
 	return vector_clusters;
 	//elegir k clusters
@@ -415,9 +414,7 @@ short** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int canti
 		for(int i = 0; i< cantidad_clusters; i++){
 			cluster = lista_clusters[i];
 			printf("ESTE ES EL CENTRO DE CLUSTER %d,  %d \n", i, obtener_centro(cluster));
-			printf("aca anda \n");
 			centro = obtener_centro(cluster);
-			printf("aca anda \n");
 			status = R_READ(rel_hashmin, centro, registro);
 			printf("escribo en la matriz esto %s en la posicion %d \n", registro, i);
 			short* registro_short = vector_a_short(registro);
@@ -452,7 +449,7 @@ void asignar_documento_a_cluster(short** matriz, int rel_hashmin, int cantidad_l
 				mas_parecido =  i;
 			}
 		cluster_t* cluster = lista_clusters[i];
-		//lista_t* lista_elementos = obtener_lista_elementos(cluster);
+		lista_t* lista_elementos = obtener_lista_elementos(cluster);
 		}
 		status = R_READNEXT(rel_hashmin, registro_char);
 	}
