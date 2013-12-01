@@ -364,21 +364,21 @@ int* selector_lideres(int cantidad_clusters, int cantidad_archivos, int cantidad
 }
 
 
-int* creador_vector_clusters(int cantidad_clusters, int cantidad_archivos, int* lideres, int cantidad_lideres){
+void** creador_vector_clusters(int cantidad_clusters, int cantidad_archivos, int* lideres, int cantidad_lideres){
 	//elegir J lideres
 	/**********************************************
 	 * ESTO DEBERIA DEVOLVER UN VOID** Y NO TENGO LA MAS PUTA IDEA DE PORQUE NO SE PUEDE
 	 */
 
 	int centro;
-	int* vector_clusters = malloc(cantidad_clusters * sizeof(cluster_t*));
+	void** vector_clusters = malloc(cantidad_clusters * sizeof(cluster_t*));
 	for(int i=0; i< cantidad_clusters; i++){
 		centro = lideres[i];
 		cluster_t* cluster = cluster_crear(centro);
+		void* puntero = vector_clusters[i];
 		vector_clusters[i] = cluster;
-
+		printf("aca anda \n");
 	}
-
 	return vector_clusters;
 	//elegir k clusters
 }
@@ -405,7 +405,7 @@ short* vector_a_short(char* vector){
 	return salida;
 }
 
-short** creador_matriz_hashmin(int rel_hashmin, int* lista_clusters, int cantidad_clusters, int cantidad_lideres,  char* lideres){
+short** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int cantidad_clusters, int cantidad_lideres,  char* lideres){
 		short** matriz = malloc(sizeof(short*)*cantidad_clusters); // K
 		int status;
 		int centro;
@@ -415,7 +415,9 @@ short** creador_matriz_hashmin(int rel_hashmin, int* lista_clusters, int cantida
 		for(int i = 0; i< cantidad_clusters; i++){
 			cluster = lista_clusters[i];
 			printf("ESTE ES EL CENTRO DE CLUSTER %d,  %d \n", i, obtener_centro(cluster));
+			printf("aca anda \n");
 			centro = obtener_centro(cluster);
+			printf("aca anda \n");
 			status = R_READ(rel_hashmin, centro, registro);
 			printf("escribo en la matriz esto %s en la posicion %d \n", registro, i);
 			short* registro_short = vector_a_short(registro);
