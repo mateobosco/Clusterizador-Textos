@@ -66,20 +66,24 @@ int devuelve_cantidad_archivos( int argc , char* argv[]){
         int cantidad = 0;
         DIR *dir;
         struct dirent *mi_dirent;
-        if( argc != 2 ){
+        if( argc != 3 ){
+        		//printf("ENTRA ACAA \n");
                 printf( "%s: %s directorio\n", argv[0], argv[0] );
                 exit( -1 );
         }
         if( (dir = opendir( argv[1] )) == NULL ){
-                perror( "opendir" );
+        		//printf("ENTRA ACAA2 \n");
+        		perror( "opendir" );
                 exit( -1 );
         }
         while( (mi_dirent = readdir( dir )) != NULL ){
-                int aux = NELEMS(mi_dirent->d_name);
+        		//printf("ENTRA ACAA3 \n");
+        		int aux = NELEMS(mi_dirent->d_name);
                 if(mi_dirent->d_name[0]!= '.'){ //NEGRADA. Y PROBLEMA SI HAY UNA CARPETA
                         cantidad ++;
                 }
         }
+        //printf("termina bien \n");
         return cantidad;
 }
 
@@ -88,7 +92,7 @@ int creador_relativo_archivos( int argc, char *argv[] ){
         DIR *dir;
         struct dirent *mi_dirent;
 
-        if( argc != 2 ){
+        if( argc != 3 ){
                 printf( "%s: %s directorio\n", argv[0], argv[0] );
 
                 exit( -1 );
@@ -345,7 +349,7 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funcion
 }
 
 int jaccard (short* vector1, short* vector2){
-	int iguales;
+	int iguales=0;
 	for(int i=0; i<CANTIDAD_FUNCIONES; i++){
 		if (vector1[i] == vector2[i]){
 			iguales++;
@@ -408,7 +412,6 @@ short** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int canti
 		short** matriz = malloc(sizeof(short*)*cantidad_clusters); // K
 		int status;
 		int centro;
-
 		cluster_t* cluster;
 		char* registro = malloc(CANTIDAD_FUNCIONES * 3 * sizeof(char));
 		for(int i = 0; i< cantidad_clusters; i++){
@@ -425,32 +428,36 @@ short** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int canti
 		return matriz;
 }
 
-void asignar_documento_a_cluster(short** matriz, int rel_hashmin, int cantidad_lideres, int* lideres, void** lista_clusters){
+void asignar_documentos_a_clusters(short** matriz, int rel_hashmin, int cantidad_lideres, int* lideres, void** lista_clusters){
 	int similitud = 9999;
 	int status;
 	int mas_parecido;
 	int similitud_aux;
 	int j = 0;
-
+	bool status2;
 	char* registro_char = malloc (sizeof(char)* CANTIDAD_FUNCIONES * 3);
-
+	short* registro_short;
 	status = R_READ(rel_hashmin, j, registro_char);
 	while (status != R_ERROR){
 		for (int i=0; i < cantidad_lideres; i++ ){
 			printf("REGISTRO EN CHAR ES %s \n", registro_char);
 			//printf("MATRIZ[I] ES %d \n", matriz[i]);
-			short* registro_short = malloc(sizeof(short) * CANTIDAD_FUNCIONES);
+			registro_short = malloc(sizeof(short) * CANTIDAD_FUNCIONES);
 			registro_short = vector_a_short(registro_char);
 			similitud_aux = jaccard(registro_short, matriz[i]);
 			printf("JACCARD DEVUELVE ESTO %d \n",similitud_aux);
+			printf("LLEGA ACA \n");
 			free(registro_short);
 			if (similitud_aux < similitud){
 				similitud = similitud_aux;
 				mas_parecido =  i;
 			}
-		cluster_t* cluster = lista_clusters[i];
-		lista_t* lista_elementos = obtener_lista_elementos(cluster);
 		}
+		cluster_t* cluster = lista_clusters[mas_parecido];
+		lista_t* lista_elementos = obtener_lista_elementos(cluster);
+		status2 = lista_insertar_primero(lista_elementos, registro_short );
+		printf ("AGREGO AL CLUSTER %d, el elemento %d", mas_parecido, registro_short);
+
 		status = R_READNEXT(rel_hashmin, registro_char);
 	}
 	free(registro_char);
@@ -500,45 +507,48 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
 }
 
 int el_main( int argc, char *argv[] ){
+		printf("ARGC es %d", argc);
+		int k;
+		printf("La Cantidad de Clusters es: %s \n", argv[2]);
+		if (argc == 3){
+			k = (int)atoi(argv[2]);
+
+		}
+		else{
+			k = 4;
+		}
+		printf("La Cantidad de Clusters es: %d \n", k);
         int cantidad_archivos = devuelve_cantidad_archivos(argc, argv);
         int fd_relativo_nombres = creador_relativo_archivos( argc, argv);
-        int cantidad_clusters = 3;
+        int cantidad_clusters = k;
         int cantidad_lideres = 3;
-
         int* lideres = selector_lideres(cantidad_clusters, cantidad_archivos, cantidad_lideres);
         void* vector_clusters = creador_vector_clusters(cantidad_clusters, cantidad_archivos, lideres, cantidad_lideres);
         printf("CREO EL ARBOL \n");
         abb_t* arbol_shingles = abb_crear(strcmp,NULL);
-
         printf("LLAMO AL CREADOR DE SHINGLES \n");
         llamar_a_creador(fd_relativo_nombres , arbol_shingles );
-
         printf("PASO LOS SHINGLES AL VECTOR \n");
         char** vector = pasar_a_vector(arbol_shingles);
         int tamano_arbol = abb_cantidad(arbol_shingles);
         printf("EL ARBOL TIENE %d SHINGLES \n", tamano_arbol);
         abb_destruir(arbol_shingles);
-
         int* funciones = generador_funciones_hasmin();
-
         printf("CREO EL RELATIVO DE INCIDENCIA \n");
         int fd_relativo_hasmin = creador_relativo_hashmin(fd_relativo_nombres, vector, cantidad_archivos, tamano_arbol, funciones, cantidad_clusters);
         printf(" RELATIVO DE INCIDENCIA CREADO \n");
-
        // printf("LIDERES ELEGIDOS SON: %d", lideres);
         for(int u = 0; u < cantidad_lideres; u++){
         	printf("LIDER %d es el doc numero %d \n", u, lideres[u]);
         }
         short** matriz = creador_matriz_hashmin(fd_relativo_hasmin, vector_clusters, cantidad_clusters, cantidad_lideres, lideres);
         printf("MATRIZ DE HASHMIN CREADA \n");
-
-        asignar_documento_a_cluster(matriz, fd_relativo_hasmin, cantidad_lideres, lideres, vector_clusters);
+        asignar_documentos_a_clusters(matriz, fd_relativo_hasmin, cantidad_lideres, lideres, vector_clusters);
         //free(vector); //hay que destruir cada shingle
         return 0;
 }
 
 int main( int argc, char *argv[] ){
-
         el_main(argc, argv);
 		return 0;
 }
