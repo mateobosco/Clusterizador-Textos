@@ -350,6 +350,7 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funcion
 
 int jaccard (short* vector1, short* vector2){
 	int iguales=0;
+
 	for(int i=0; i<CANTIDAD_FUNCIONES; i++){
 		if (vector1[i] == vector2[i]){
 			iguales++;
@@ -517,13 +518,24 @@ int el_main( int argc, char *argv[] ){
 		else{
 			k = 4;
 		}
+		//int j = 20*log10(cantidad);
 		printf("La Cantidad de Clusters es: %d \n", k);
         int cantidad_archivos = devuelve_cantidad_archivos(argc, argv);
         int fd_relativo_nombres = creador_relativo_archivos( argc, argv);
         int cantidad_clusters = k;
         int cantidad_lideres = 3;
+        if (cantidad_lideres > cantidad_archivos){
+        	printf("CAMBIA LA CANTIDAD D LIDERES \n");
+        	cantidad_lideres = cantidad_archivos;
+        }
+        /*
+        int cantidad_lideres = 20*log10(cantidad_archivos);
+        if (cantidad_lideres > cantidad_archivos){
+        	cantidad_lideres = cantidad_archivos;
+        }
+        */
         int* lideres = selector_lideres(cantidad_clusters, cantidad_archivos, cantidad_lideres);
-        void* vector_clusters = creador_vector_clusters(cantidad_clusters, cantidad_archivos, lideres, cantidad_lideres);
+        void** vector_clusters = creador_vector_clusters(cantidad_clusters, cantidad_archivos, lideres, cantidad_lideres);
         printf("CREO EL ARBOL \n");
         abb_t* arbol_shingles = abb_crear(strcmp,NULL);
         printf("LLAMO AL CREADOR DE SHINGLES \n");
@@ -545,6 +557,19 @@ int el_main( int argc, char *argv[] ){
         printf("MATRIZ DE HASHMIN CREADA \n");
         asignar_documentos_a_clusters(matriz, fd_relativo_hasmin, cantidad_lideres, lideres, vector_clusters);
         //free(vector); //hay que destruir cada shingle
+        printf("LOS TEXTOS QUEDARON ASIGNADOS DE LA SIGUIENTE MANERA: \n");
+        for (int i = 0; i<cantidad_clusters; i++){
+        	printf("CLUSTER %d \n", i);
+        	cluster_t* cluster = vector_clusters[i];
+        	lista_t* elementos = obtener_lista_elementos(cluster);
+        	lista_iter_t* mi_iterador = lista_iter_crear(elementos);
+        	while( !lista_iter_al_final(mi_iterador) ){
+        		printf("EN EL CLUSTER %d, tenemos el elemento %d \n", i, lista_iter_ver_actual(mi_iterador));
+        		lista_iter_avanzar(mi_iterador);
+
+        	}
+
+        }
         return 0;
 }
 
