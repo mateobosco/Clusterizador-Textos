@@ -29,6 +29,7 @@ cluster_t* cluster_crear(int centro){
 	cluster->centro=centro;
 	lista_t* lista_elementos = lista_crear();
 	cluster->lista_elementos = lista_elementos;
+	bool status = lista_insertar_primero(lista_elementos, centro);
 	return cluster;
 }
 
@@ -506,30 +507,69 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
 }
 
 bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cantidad_clusters){
-	bool iterar = false;
+	bool iterar = true;
 	char* registro_char = malloc (sizeof(char)* CANTIDAD_FUNCIONES * 30);
 	short* registro_short;
 	short* acumulador = malloc (sizeof(short)* CANTIDAD_FUNCIONES * 10);
+
 	for (int i=0; i < cantidad_clusters; i++){
+		for(int w=0; w< CANTIDAD_FUNCIONES; w++){
+			acumulador[w]= 0;
+		}
+		int status;
+		int similitud=9999;
+		int mas_parecido;
 		cluster_t* cluster = vector_clusters[i];
 		int centro = obtener_centro(cluster);
 		lista_t* lista_elementos = obtener_lista_elementos(cluster);
+		size_t cantidad = lista_largo(lista_elementos);
 		lista_iter_t* mi_iterador = lista_iter_crear(lista_elementos);
 		while(!lista_iter_al_final(mi_iterador) ){
-			status = R_READ(rel_hashmin, j, registro_char);
+
+			status = R_READ(fd_relativo_hasmin, lista_iter_ver_actual(mi_iterador), registro_char);
 			int documento = lista_iter_ver_actual(mi_iterador);
 		    registro_short = vector_a_short(registro_char);
-
+		    for(int j=0; j< CANTIDAD_FUNCIONES; j++){
+		    	acumulador[j]+= registro_short[j];
+		    }
 			lista_iter_avanzar(mi_iterador);
 		}
+		for(int x=0; x< CANTIDAD_FUNCIONES; x++){
+			//printf("SE ROMPE ACA LOCOOOOO \n");
+			acumulador[x]= acumulador[x]/cantidad;
+
+		}
+		//printf("LLEGA HASTA ACA \n");
+		free(mi_iterador);
+		lista_iter_t* iter = lista_iter_crear(lista_elementos);
+		while(!lista_iter_al_final(iter) ){
+			status = R_READ(fd_relativo_hasmin, lista_iter_ver_actual(mi_iterador), registro_char);
+			registro_short = vector_a_short(registro_char);
+			int similitud_aux = jaccard(registro_short, acumulador );
+			if (similitud_aux < similitud){
+				similitud = similitud_aux;
+				mas_parecido =  i;
+			}
+			if (centro != mas_parecido){
+				iterar=false;
+			}
+			lista_iter_avanzar(iter);
+		}
+		free(iter);
+		cluster->centro = mas_parecido;
+
 
 	}
+	free(registro_short);
+	free(registro_char);
+	return iterar;
 }
 
 
 int el_main( int argc, char *argv[] ){
 		printf("ARGC es %d", argc);
 		int k;
+		bool iterar;
 		printf("La Cantidad de Clusters es: %s \n", argv[2]);
 		if (argc == 3){
 			k = (int)atoi(argv[2]);
@@ -599,7 +639,7 @@ int el_main( int argc, char *argv[] ){
         	}
 
         }
-        recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters);
+        iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters);
         return 0;
 }
 
