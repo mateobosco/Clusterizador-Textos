@@ -342,7 +342,7 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funcion
                 vector_hasmin[j * 3 + 2] = numero[2];
                 //vector_hasmin[j]=numero;
         }
-        printf("EL VECTOR HASHMIN QUEDA ASI : %s \n", vector_hasmin);
+        printf("EL VECTOR HASHMIN QUEDA ASI \n");
         return vector_hasmin;
 }
 
@@ -468,6 +468,7 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
         remove("relativo_hasmin");
         int rel_hasmin;
         char nombres[] = "relativo_hasmin";
+        printf("cantidad de archivos %d \n" ,cantidad_archivos);
         rel_hasmin = R_CREATE(nombres, cantidad_shingles*sizeof(char), cantidad_archivos);
         char* vector_vacio = malloc(sizeof(char) * (cantidad_shingles+1));
        // char* matriz_hashmin = malloc(sizeof(char) * (cantidad_lideres));
@@ -484,15 +485,15 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
                 while (status != R_ERROR){
                         //printf ("REGISTRO %s, STATUS %d \n", registro, status);
                         char* incidencia = vector_incidencia(registro, vector, cantidad_shingles, vector_vacio);
-                        printf("IMPRIMO EN EL VECTOR DE INCIDENCIA de %s: %s \n", registro, incidencia);
+                        //printf("IMPRIMO EN EL VECTOR DE INCIDENCIA de %s: %s \n", registro, incidencia);
                         char* vector_hashmin = creador_vector_hashmin(incidencia, cantidad_shingles, funciones);
-                        printf("IMPRIMO EN EL VECTOR DE HASMIN de %s: %s \n", registro, vector_hashmin);
+                        //printf("IMPRIMO EN EL VECTOR DE HASMIN de %s: %s \n", registro, vector_hashmin);
                         //matriz[w]=vector_hashmin;
                         //w++;
-                        //int res = R_WRITE (rel_hasmin, i , vector_hashmin);
+                        printf("largo del relativo %d, escribo en la posicion %d \n" ,cantidad_archivos,i);
                         int res = R_WRITE (rel_hasmin, i , vector_hashmin);
                         if (res < 0){
-                                perror("Error de escritura en el archivo relativo de nombres");
+                                perror("Error de escritura en el archivo relativo de hasmin");
                                 remove("relativo_nombres"); //FALTA LIBERAR MEMORIA ACA
                                 return -1;
                         }
