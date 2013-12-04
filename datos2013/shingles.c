@@ -436,13 +436,14 @@ void asignar_documentos_a_clusters(short** matriz, int rel_hashmin, int cantidad
 	float similitud_aux;
 	int j = 0;
 	bool status2;
-	char* registro_char = malloc (sizeof(char)* CANTIDAD_FUNCIONES * 3);
+	char* registro_char = malloc (sizeof(char)* CANTIDAD_FUNCIONES * 3 *10);
 	short* registro_short;
 	status = R_READ(rel_hashmin, j, registro_char);
-	registro_short = malloc(sizeof(short) * CANTIDAD_FUNCIONES);
+	registro_short = malloc(sizeof(short) * CANTIDAD_FUNCIONES * 10);
 	while (status != R_ERROR){
 		for (int i=0; i < cantidad_clusters; i++ ){
 			registro_short = vector_a_short(registro_char);
+
 			similitud_aux = jaccard(registro_short, matriz[i]);
 			printf(" JACCARD DEVUELVE ESTO %f con el cluster %d \n ",similitud_aux, i);
 
@@ -460,7 +461,7 @@ void asignar_documentos_a_clusters(short** matriz, int rel_hashmin, int cantidad
 		j++;
 		status = R_READNEXT(rel_hashmin, registro_char);
 	}
-	free(registro_char);
+	//free(registro_char); //free del diablo
 	free(registro_short);
 }
 
