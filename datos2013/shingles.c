@@ -346,7 +346,7 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funcion
         return vector_hasmin;
 }
 
-int jaccard (short* vector1, short* vector2){
+float jaccard (short* vector1, short* vector2){
 	int iguales=0;
 
 	for(int i=0; i<CANTIDAD_FUNCIONES; i++){
@@ -354,7 +354,7 @@ int jaccard (short* vector1, short* vector2){
 			iguales++;
 		}
 	}
-	return iguales/CANTIDAD_FUNCIONES;
+	return (iguales*1.0)/CANTIDAD_FUNCIONES;
 }
 
 int* selector_lideres(int cantidad_clusters, int cantidad_archivos, int cantidad_lideres){
@@ -433,34 +433,35 @@ void asignar_documentos_a_clusters(short** matriz, int rel_hashmin, int cantidad
 	int similitud = 9999;
 	int status;
 	int mas_parecido;
-	int similitud_aux;
+	float similitud_aux;
 	int j = 0;
 	bool status2;
 	char* registro_char = malloc (sizeof(char)* CANTIDAD_FUNCIONES * 3);
 	short* registro_short;
 	status = R_READ(rel_hashmin, j, registro_char);
+	registro_short = malloc(sizeof(short) * CANTIDAD_FUNCIONES);
 	while (status != R_ERROR){
 		for (int i=0; i < cantidad_clusters; i++ ){
-			printf(" REGISTRO EN CHAR ES %s \n ", registro_char);
-			//printf("MATRIZ[I] ES %d \n", matriz[i]);
-			registro_short = malloc(sizeof(short) * CANTIDAD_FUNCIONES);
 			registro_short = vector_a_short(registro_char);
 			similitud_aux = jaccard(registro_short, matriz[i]);
-			printf(" JACCARD DEVUELVE ESTO %d \n ",similitud_aux);
-			free(registro_short);
+			printf(" JACCARD DEVUELVE ESTO %f con el cluster %d \n ",similitud_aux, i);
+
 			if (similitud_aux < similitud){
 				similitud = similitud_aux;
 				mas_parecido =  i;
 			}
+
 		}
+
 		cluster_t* cluster = lista_clusters[mas_parecido];
 		lista_t* lista_elementos = obtener_lista_elementos(cluster);
 		status2 = lista_insertar_primero(lista_elementos, j );
-		printf ("AGREGO AL CLUSTER %d, el elemento %d", mas_parecido, j);
+		printf ("AGREGO AL CLUSTER %d, el elemento %d \n", mas_parecido, j);
 		j++;
 		status = R_READNEXT(rel_hashmin, registro_char);
 	}
 	free(registro_char);
+	free(registro_short);
 }
 
 
@@ -587,6 +588,7 @@ int el_main( int argc, char *argv[] ){
 		printf("La Cantidad de Clusters es: %d \n", k);
 
         int cantidad_archivos = devuelve_cantidad_archivos(argc, argv);
+        printf("La Cantidad de archivos es: %d \n", cantidad_archivos);
         int fd_relativo_nombres = creador_relativo_archivos( argc, argv);
         int cantidad_clusters = k;
         //int cantidad_lideres = 3;
