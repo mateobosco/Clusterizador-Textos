@@ -15,7 +15,7 @@
 
 #define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
 #define TAM_SHINGLE 7
-#define CANTIDAD_FUNCIONES 50
+#define CANTIDAD_FUNCIONES 35
 
 struct cluster{
 	lista_t* lista_elementos;
@@ -323,7 +323,7 @@ char* short_a_char(short numero){
 }
 
 char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funciones){
-        char* vector_hasmin = malloc (sizeof(char) * CANTIDAD_FUNCIONES * 3);
+        char* vector_hasmin = malloc (sizeof(char) * CANTIDAD_FUNCIONES * 3*10);
         for (int j = 0; j<CANTIDAD_FUNCIONES ; j++){
                 short anterior = 32000;
                 for (int k = 0 ; k < cantidad ; k++){
@@ -335,14 +335,16 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad, int* funcion
                                 if (nuevo < anterior) anterior = nuevo;
                         }
                 }
-                //char* numero = anterior;
                 char* numero = short_a_char(anterior);
                 vector_hasmin[j * 3] = numero[0];
                 vector_hasmin[j * 3 + 1] = numero[1];
                 vector_hasmin[j * 3 + 2] = numero[2];
-                //vector_hasmin[j]=numero;
         }
-        printf("EL VECTOR HASHMIN QUEDA ASI \n");
+        printf("EL VECTOR HASHMIN QUEDA ASI:  \n");
+        for(int i =0 ;i<CANTIDAD_FUNCIONES ; i++){
+        	printf("%d " , vector_hasmin[i]);
+        }
+        printf("\n");
         return vector_hasmin;
 }
 
@@ -424,7 +426,6 @@ short** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int canti
 
 		}
 		free(registro);
-		printf("SE ROMPE ACAAA \n");
 		//printf("MATRIZ[0] ES %d \n", matriz[0]);
 		return matriz;
 }
@@ -496,8 +497,8 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
                         int res = R_WRITE (rel_hasmin, i , vector_hashmin);
                         if (res < 0){
                                 perror("Error de escritura en el archivo relativo de hasmin");
-                                remove("relativo_nombres"); //FALTA LIBERAR MEMORIA ACA
-                                return -1;
+                                //remove("relativo_nombres"); //FALTA LIBERAR MEMORIA ACA
+                                //return -1;
                         }
                         status = R_READNEXT(fd_relativo_nombres, registro);
                         i ++;
@@ -529,7 +530,7 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 		lista_iter_t* mi_iterador = lista_iter_crear(lista_elementos);
 		while(!lista_iter_al_final(mi_iterador) ){
 
-			status = R_READ(fd_relativo_hasmin, lista_iter_ver_actual(mi_iterador), registro_char);
+			status = R_READ(fd_relativo_hasmin,atoi( lista_iter_ver_actual(mi_iterador)), registro_char);
 			int documento = lista_iter_ver_actual(mi_iterador);
 		    registro_short = vector_a_short(registro_char);
 		    for(int j=0; j< CANTIDAD_FUNCIONES; j++){
@@ -547,7 +548,7 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 		lista_iter_t* iter = lista_iter_crear(lista_elementos);
 
 		while(!lista_iter_al_final(iter) ){
-			status = R_READ(fd_relativo_hasmin, lista_iter_ver_actual(mi_iterador), registro_char);
+			status = R_READ(fd_relativo_hasmin,atoi(lista_iter_ver_actual(mi_iterador)), registro_char);
 			registro_short = vector_a_short(registro_char);
 
 			int similitud_aux = jaccard(registro_short, acumulador );
@@ -641,7 +642,7 @@ int el_main( int argc, char *argv[] ){
         	lista_t* elementos = obtener_lista_elementos(cluster);
         	lista_iter_t* mi_iterador = lista_iter_crear(elementos);
         	while( !lista_iter_al_final(mi_iterador) ){
-        		printf("EN EL CLUSTER %d, tenemos el elemento %d \n", i, (int)lista_iter_ver_actual(mi_iterador));
+        		printf("EN EL CLUSTER %d, tenemos el elemento %d \n", i, atoi(lista_iter_ver_actual(mi_iterador)));
         		lista_iter_avanzar(mi_iterador);
 
         	}
