@@ -425,7 +425,7 @@ short** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int canti
 		}
 		free(registro);
 		printf("SE ROMPE ACAAA \n");
-		printf("MATRIZ[0] ES %d \n", matriz[0]);
+		//printf("MATRIZ[0] ES %d \n", matriz[0]);
 		return matriz;
 }
 
@@ -540,13 +540,16 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 			acumulador[x]= acumulador[x]/cantidad;
 
 		}
-		//printf("LLEGA HASTA ACA \n");
+
 		free(mi_iterador);
 		lista_iter_t* iter = lista_iter_crear(lista_elementos);
+
 		while(!lista_iter_al_final(iter) ){
 			status = R_READ(fd_relativo_hasmin, lista_iter_ver_actual(mi_iterador), registro_char);
 			registro_short = vector_a_short(registro_char);
+
 			int similitud_aux = jaccard(registro_short, acumulador );
+			//printf("LLEGA HASTA ACA \n");
 			if (similitud_aux < similitud){
 				similitud = similitud_aux;
 				mas_parecido =  i;
@@ -556,6 +559,7 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 			}
 			lista_iter_avanzar(iter);
 		}
+		//printf("LLEGA HASTA ACAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa \n");
 		free(iter);
 		cluster->centro = mas_parecido;
 
@@ -634,7 +638,7 @@ int el_main( int argc, char *argv[] ){
         	lista_t* elementos = obtener_lista_elementos(cluster);
         	lista_iter_t* mi_iterador = lista_iter_crear(elementos);
         	while( !lista_iter_al_final(mi_iterador) ){
-        		printf("EN EL CLUSTER %d, tenemos el elemento %d \n", i, lista_iter_ver_actual(mi_iterador));
+        		printf("EN EL CLUSTER %d, tenemos el elemento %d \n", i, (int)lista_iter_ver_actual(mi_iterador));
         		lista_iter_avanzar(mi_iterador);
 
         	}
