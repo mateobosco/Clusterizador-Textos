@@ -22,6 +22,7 @@
 struct cluster{
 	lista_t* lista_elementos;
 	int centro;
+	int numero;
 };
 typedef struct cluster cluster_t;
 
@@ -480,6 +481,7 @@ void** creador_vector_clusters(int cantidad_clusters, int cantidad_archivos, int
 		cluster_t* cluster = cluster_crear(centro);
 		void* puntero = vector_clusters[i];
 		vector_clusters[i] = cluster;
+		cluster->numero = i;
 	}
 	return vector_clusters;
 	//elegir k clusters
@@ -574,6 +576,7 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 			status2 = lista_insertar_primero(lista_elementos, j );
 			doc->cluster1 = cluster ;
 		}
+
 
 		if (agregar_doble == true && mas_parecido!=mas_parecido2){
 			cluster_t* cluster2 = lista_clusters[mas_parecido];
@@ -697,8 +700,10 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 			iterar=true;
 		}
 		free(iter);
+		int nro_cluster = cluster->numero;
 		cluster_destruir(cluster);
 		cluster = cluster_crear(mas_parecido);
+		cluster->numero = nro_cluster;
 		//cluster->centro = mas_parecido;
 		documento_t* doc = vector_documentos[mas_parecido];
 		doc->cluster1=cluster;
@@ -799,34 +804,44 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 			}
 			printf("\n");
 			iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
-			reiniciar_cluster2_doc(vector_documentos, cantidad_archivos);
+			//reiniciar_cluster2_doc(vector_documentos, cantidad_archivos);
         	iteraciones ++;
+        	//iterar = false;
         }
 
 
 
-        for (int j=0; j < cantidad_archivos; j++){
-        	printf("en el vector documentos en la posicion %d hay %d \n", j, vector_documentos[j]);
-        }
+        //for (int j=0; j < cantidad_archivos; j++){
+        //	printf("en el vector documentos en la posicion %d hay %d \n", j, vector_documentos[j]);
+        //}
         if (opcion_l == true) {
         	printf("OPCION -l ACTIVADA \n");
         	for (int i=0; i<cantidad_archivos; i++){
-        		printf("LLEGA HASTA ACA 1 \n");
+        		//printf("LLEGA HASTA ACA 1 \n");
         		documento_t* doc = vector_documentos[i];
-        		printf("LLEGA HASTA ACA 2 \n");
+        		//printf("LLEGA HASTA ACA 2 \n");
         		cluster_t* cluster = doc->cluster1;
-        		printf("LLEGA HASTA ACA 3 \n");
+        		cluster_t* cluster2 = doc->cluster2;
+        		printf("E; documento %d esta en el cluster: %d ", doc->nro_doc , cluster->numero);
+        		if (cluster2 != NULL){
+        			printf("y en el cluster: %d ",cluster2->numero);
+        		}
+        		printf("\n");
+        		/*printf("LLEGA HASTA ACA 3 \n");
 				lista_t* elementos = obtener_lista_elementos(cluster);
 				printf("LLEGA HASTA ACA 4 \n");
 				lista_iter_t* mi_iterador = lista_iter_crear(elementos); // SE ROMPE ACAAAAAAAAA
 				printf("LLEGA HASTA ACA 5 \n");
 				printf("AL documento %d lo metio en el cluster que contiene estos documentos: \n", doc->nro_doc);
+				printf("CANTIDAD DE ELEMENTOS EN LA LISTA %d \n", lista_largo(elementos));
 				while( !lista_iter_al_final(mi_iterador) ){
 					printf("texto%d ", lista_iter_ver_actual(mi_iterador));
 					lista_iter_avanzar(mi_iterador);
 				}
+				lista_iter_destruir(mi_iterador);
 				printf("LLEGA HASTA ACA 6 \n");
 				printf("\n");
+				*/
         	}
         }
 
