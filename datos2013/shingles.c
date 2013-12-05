@@ -629,7 +629,7 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 }
 
 
-int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_doble ){
+int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_doble, bool listar_clusters ){
 		//bool agregar_doble = false; //ACA HAY QUE CAMBIAR CON LO QUE SE RECIBE POR PARAMETRO
 		printf("ARGC es %d", argc);
 		printf("La Cantidad de Clusters es: %d \n", cantidad_clusters);
@@ -693,20 +693,22 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
         printf("MATRIZ DE HASHMIN CREADA \n");
         asignar_documentos_a_clusters(matriz, fd_relativo_hasmin, cantidad_clusters, lideres, vector_clusters, agregar_doble);
         //free(vector); //hay que destruir cada shingle
-        printf("LOS TEXTOS QUEDARON ASIGNADOS DE LA SIGUIENTE MANERA: \n");
-        for (int i = 0; i<cantidad_clusters; i++){
-        	printf("CLUSTER %d \n", i);
-        	cluster_t* cluster = vector_clusters[i];
-        	lista_t* elementos = obtener_lista_elementos(cluster);
-        	lista_iter_t* mi_iterador = lista_iter_crear(elementos);
-        	while( !lista_iter_al_final(mi_iterador) ){
-        		printf("texto%d ", lista_iter_ver_actual(mi_iterador));
-        		lista_iter_avanzar(mi_iterador);
+
+        if (listar_clusters){
+        	printf("LOS TEXTOS QUEDARON ASIGNADOS DE LA SIGUIENTE MANERA: \n");
+        	for (int i = 0; i<cantidad_clusters; i++){
+        		printf("CLUSTER %d \n", i);
+        		cluster_t* cluster = vector_clusters[i];
+        		lista_t* elementos = obtener_lista_elementos(cluster);
+        		lista_iter_t* mi_iterador = lista_iter_crear(elementos);
+        		while( !lista_iter_al_final(mi_iterador) ){
+        			printf("texto%d ", lista_iter_ver_actual(mi_iterador));
+        			lista_iter_avanzar(mi_iterador);
+        		}
+        		printf("\n");
+
         	}
-        	printf("\n");
-
         }
-
         iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters);
         return 0;
 }
@@ -724,6 +726,7 @@ int main( int argc, char *argv[] ){
 		printf("EL NUMERO ES %d \n", char_a_int(int_a_char(char_a_int(int_a_char(numero)))));
 		*/
 		bool agregar_doble;
+		bool listar_clusters = false;
         int siguiente_opcion;
         int cantidad_clusters;
         char* directorio;
@@ -745,7 +748,7 @@ int main( int argc, char *argv[] ){
 
 		while (1) {
 				/* Llamamos a la función getopt */
-				siguiente_opcion = getopt_long(argc, argv, "d:c:o:", op_largas, NULL);
+				siguiente_opcion = getopt_long(argc, argv, "d:c:o:gla", op_largas, NULL);
 
 				if (siguiente_opcion == -1)
 					break; /* No hay más opciones. Rompemos el bucle */
@@ -775,11 +778,12 @@ int main( int argc, char *argv[] ){
 					// HACER QE UN DOC PUEDA ESTAR EN MAS D UN GRUPO O NO
 					//exit(EXIT_FAILURE);
 
-				case 'l': /* LISTA TODOS LOS DOCS Y CLUSTER AL CUAL PERTENECE */
+				case 'g': /* LISTA TODOS LOS DOCS Y CLUSTER AL CUAL PERTENECE */
+					listar_clusters = true;
 					break;
 
 
-				case 'g': /* LISTA LOS GRUPOS EXISTENTES Y LOS DOCS DENTRO DE CADA GRUPO */
+				case 'l': /* LISTA LOS GRUPOS EXISTENTES Y LOS DOCS DENTRO DE CADA GRUPO */
 					break;
 
 				default: /* Algo más? No esperado. Abortamos */
@@ -788,7 +792,7 @@ int main( int argc, char *argv[] ){
 				}
 		}
 		printf("LLEGA HASTA ACA \n");
-		el_main(argc, directorio, cantidad_clusters, agregar_doble);
+		el_main(argc, directorio, cantidad_clusters, agregar_doble, listar_clusters);
 		return 0;
 
 }
