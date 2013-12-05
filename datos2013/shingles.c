@@ -4,6 +4,7 @@
 #include <stddef.h>
 #include <string.h>
 #include <math.h>
+#include <getopt.h>
 
 #include <dirent.h>
 #include "estructuras/heap.h"
@@ -63,16 +64,16 @@ char* mi_strcat(const char * str1, const char * str2){
 
 
 
-int devuelve_cantidad_archivos( int argc , char* argv[]){
+int devuelve_cantidad_archivos( int argc , char* directorio){
         int cantidad = 0;
         DIR *dir;
         struct dirent *mi_dirent;
-        if( argc != 3 ){
-        		//printf("ENTRA ACAA \n");
-                printf( "%s: %s directorio\n", argv[0], argv[0] );
-                exit( -1 );
-        }
-        if( (dir = opendir( argv[1] )) == NULL ){
+        //if( argc != 3 ){
+        //		//printf("ENTRA ACAA \n");
+         //       printf( "%s: %s directorio\n", argv[0], argv[0] );
+          //      exit( -1 );
+        //}
+        if( (dir = opendir( directorio )) == NULL ){
         		//printf("ENTRA ACAA2 \n");
         		perror( "opendir" );
                 exit( -1 );
@@ -88,18 +89,18 @@ int devuelve_cantidad_archivos( int argc , char* argv[]){
         return cantidad;
 }
 
-int creador_relativo_archivos( int argc, char *argv[] ){
+int creador_relativo_archivos( int argc, char* directorio ){
         remove("relativo_nombres"); //MEDIO VISHERO PERO ANDA
         DIR *dir;
         struct dirent *mi_dirent;
 
-        if( argc != 3 ){
-                printf( "%s: %s directorio\n", argv[0], argv[0] );
+        //if( argc != 3 ){
+         //       printf( "%s: %s directorio\n", argv[0], argv[0] );
+//
+  //              exit( -1 );
+    //    }
 
-                exit( -1 );
-        }
-
-        if( (dir = opendir( argv[1] )) == NULL ){
+        if( (dir = opendir( directorio )) == NULL ){
                 perror( "opendir" );
                 exit( -1 );
         }
@@ -112,8 +113,8 @@ int creador_relativo_archivos( int argc, char *argv[] ){
                 int aux = NELEMS(mi_dirent->d_name);
                 if (aux > long_max) long_max = aux;
                 if(mi_dirent->d_name[0]!= '.'){ //NEGRADA. Y PROBLEMA SI HAY UNA CARPETA
-                        printf( "agrego a la lista: %s\n", mi_strcat(argv[1], mi_dirent->d_name) );
-                        lista_insertar_primero(lista_aux, mi_strcat(argv[1], mi_dirent->d_name));
+                        printf( "agrego a la lista: %s\n", mi_strcat(directorio, mi_dirent->d_name) );
+                        lista_insertar_primero(lista_aux, mi_strcat(directorio, mi_dirent->d_name));
                         cantidad ++;
                 }
         }
@@ -125,7 +126,7 @@ int creador_relativo_archivos( int argc, char *argv[] ){
         int rel_nombres;
         char nombres[] = "relativo_nombres";
         // ELEGIR 'J' LIDERES EN ESTA PARTE.
-        //int j = 20*log10(cantidad); // J lideres
+        //int j = 20*log10(cantidad); // J lideres1
         lista_t* lideres = lista_crear();
         rel_nombres = R_CREATE(nombres, 50, cantidad); //esta linea rompia todo, decia long_max y le puse 30, despues ver bien
 
@@ -628,26 +629,28 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 }
 
 
-int el_main( int argc, char *argv[] ){
+int el_main( int argc, char* directorio, int cantidad_clusters ){
 		bool agregar_doble = false; //ACA HAY QUE CAMBIAR CON LO QUE SE RECIBE POR PARAMETRO
 		printf("ARGC es %d", argc);
-		int k;
+		printf("La Cantidad de Clusters es: %d \n", cantidad_clusters);
+		//cantidad_clusters = atoi(cantidad_clusters);;
 		bool iterar;
-		printf("La Cantidad de Clusters es: %s \n", argv[2]);
-		if (argc == 3){
-			k = (int)atoi(argv[2]);
 
-		}
-		else{
-			k = 4;
-		}
+
+		//if (argc == 3){
+		//	k = (int)atoi(cantidad_clusters);/
+//
+	//	}
+		//else{
+		//	k = 4;
+		//}
 		//int j = 20*log10(cantidad);s
-		printf("La Cantidad de Clusters es: %d \n", k);
+		printf("La Cantidad de Clusters es: %d \n", cantidad_clusters);
 
-        int cantidad_archivos = devuelve_cantidad_archivos(argc, argv);
+        int cantidad_archivos = devuelve_cantidad_archivos(argc, directorio);
         printf("La Cantidad de archivos es: %d \n", cantidad_archivos);
-        int fd_relativo_nombres = creador_relativo_archivos( argc, argv);
-        int cantidad_clusters = k;
+        int fd_relativo_nombres = creador_relativo_archivos( argc, directorio);
+        //cantidad_clusters = k;
         //int cantidad_lideres = 3;
         int cantidad_lideres = 20*log10(cantidad_archivos);
         if (cantidad_lideres > cantidad_archivos){
@@ -709,7 +712,7 @@ int el_main( int argc, char *argv[] ){
 }
 
 int main( int argc, char *argv[] ){
-        el_main(argc, argv);
+
 		/*int numero = 1000000000;
 		char* vector = int_a_char(numero);
 		printf("paso a char %d \n",vector[0]);
@@ -720,6 +723,63 @@ int main( int argc, char *argv[] ){
 		printf("EL NUMERO ES %d \n", char_a_int(int_a_char(numero)));
 		printf("EL NUMERO ES %d \n", char_a_int(int_a_char(char_a_int(int_a_char(numero)))));
 		*/
+        int siguiente_opcion;
+        int cantidad_clusters;
+        char* directorio;
+		for (int i = 0; i < argc; i++){
+			printf("argv[%d] es %s \n",i, argv[i]);
+		}
+		//printf("argv[0] es %s \n", argv[0]);
+		//printf("argv[1] es %s \n", argv[1]);
+		const char* const op_cortas = "dcolahg";
+		const struct option op_largas[] = {
+				{ "dir", 1, NULL, 'd' },
+				{ "cantidad", 1, NULL, 'c' },
+				{ "repetido", 1, NULL, 'o' },
+				{ "listar", 0, NULL, 'l' },
+				{ "agregar", 1, 0, 'a' },
+				{"listargrupos", 0, 0, 'g' },
+				{ NULL, 0, NULL, 0 }
+		};
+
+		while (1) {
+				/* Llamamos a la función getopt */
+				siguiente_opcion = getopt_long(argc, argv, "d:c:", op_largas, NULL);
+
+				if (siguiente_opcion == -1)
+					break; /* No hay más opciones. Rompemos el bucle */
+
+				switch (siguiente_opcion) {
+				case 'd': /* -d lee el path donde estan almacenados los docs */
+					printf("caso d con %s como argumento \n", optarg);
+					directorio = optarg;
+					break;
+
+				case 'c': /* -h o --help */
+					//imprime_ayuda();
+					cantidad_clusters = atoi(optarg);
+					printf("caso c con %d como argumento \n", cantidad_clusters);
+					//exit(EXIT_SUCCESS);
+					break;
+
+				case 'o': /* opción invalida */
+					fprintf(stderr, "Pruebe `tp0 --help' para más información.\n");
+					exit(EXIT_FAILURE);
+
+				case 'l': /* No hay más opciones */
+					break;
+
+
+				case 'g': /* No hay más opciones */
+					break;
+
+				default: /* Algo más? No esperado. Abortamos */
+					abort();
+					break;
+				}
+		}
+		printf("LLEGA HASTA ACA \n");
+		el_main(argc, directorio, cantidad_clusters);
 		return 0;
 
 }
