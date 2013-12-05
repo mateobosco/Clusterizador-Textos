@@ -57,6 +57,56 @@ void cluster_destruir(cluster_t* cluster){
 	free(cluster);
 }
 
+float jaccard (int* vector1, int* vector2){
+	int iguales=0;
+
+	for(int i=0; i<CANTIDAD_FUNCIONES; i++){
+		if (vector1[i] == vector2[i]){
+			iguales++;
+		}
+	}
+	return (iguales*1.0)/CANTIDAD_FUNCIONES;
+}
+
+int* vector_a_int(char* vector){
+	int* salida = malloc(sizeof(int) * CANTIDAD_FUNCIONES);
+	char numero[5];
+	for (int i = 0 ; i < CANTIDAD_FUNCIONES ; i++){
+		numero[0] = vector[i*3];
+		numero[1] = vector[i*3+1];
+		numero[2] = vector[i*3+2];
+		numero[3] = vector[i*3+3];
+		numero[4] = vector[i*3+4];
+		salida[i] = char_a_int(numero);
+	}
+	return salida;
+}
+
+float cluster_radio(cluster_t* cluster, int fd_hashmin){
+	//distancia = 1 - similitud
+	float distancia_max = 0;
+	lista_t* lista = cluster->lista_elementos;
+	lista_iter_t* iter = lista_iter_crear(lista);
+	int centro = cluster->centro;
+	char* hashmin_centro_char = malloc(sizeof(char) * CANTIDAD_FUNCIONES * 5 * 10);
+	char* hashmin_actual_char = malloc(sizeof(char) * CANTIDAD_FUNCIONES * 5 * 10);
+	int status = R_READ(fd_hashmin, hashmin_centro_char, centro );
+	int* hashmin_centro_int = vector_a_int(hashmin_centro_char);
+	//free(hashmin_centro_char);
+	while(lista_iter_al_final(iter)){
+		int actual = lista_iter_ver_actual(iter);
+		int status2 = R_READ(fd_hashmin, hashmin_actual_char, actual );
+		int* hashmin_actual_int = vector_a_int(hashmin_actual_char);
+		float similitud = jaccard(hashmin_centro_int , hashmin_actual_int);
+		float distancia = 1-similitud;
+		if (distancia > distancia_max){
+			distancia_max = distancia;
+		}
+		//free(hashmin_actual_int);
+	}
+	return distancia_max;
+}
+
 void imprimir_relativo(int fd, int tam_registro){
         char* registro = malloc(tam_registro * sizeof(char));
         int status;
@@ -224,45 +274,6 @@ int creador_shingles(char* nombre_archivo, abb_t* arbol){
 	return 0;
 }
 
-int creador_shingles2(char* nombre_archivo, abb_t* arbol){
-        FILE* archivo;
-        char* shingle_old = malloc((TAM_SHINGLE+1) * sizeof(char));
-        char* shingle_new = malloc((TAM_SHINGLE+1) * sizeof(char));
-        int i;
-        for (i = 0 ; i < TAM_SHINGLE ; i ++){
-                shingle_old[i] = '*';
-                shingle_new[i] = '*';
-        }
-        shingle_old[TAM_SHINGLE] = '\0';
-        shingle_new[TAM_SHINGLE] = '\0';
-        archivo = fopen(nombre_archivo , "r");// ACA HAY UN ERROR Y LA PUTA MADRE
-        if ( archivo == NULL){
-                printf("ERROR DE LECTURA \n");
-                return -1; //ERROR DE LECTURA
-        }
-        while (feof(archivo) == 0){
-                for (i = 1 ; i < TAM_SHINGLE ; i ++){
-                        shingle_new[i-1] = shingle_old[i];
-                        shingle_old[i-1] = shingle_new[i-1];
-                }
-                char caracter;
-                caracter = fgetc(archivo);
-                while (caracter == '.' && caracter == ','){ //COMPROBAR QUE NO ESTE DENTRO DE UNA LISTA DE CARACTERES PROHIBIDOS
-                        caracter = fgetc(archivo);
-                }
-                shingle_new[TAM_SHINGLE - 1] = caracter;
-                shingle_old[TAM_SHINGLE - 1] = caracter;
-
-                if (shingle_new[0] != '*' && shingle_new[TAM_SHINGLE-1] != '*' && caracter != EOF && !abb_pertenece(arbol,shingle_new) ){
-                        char* shingle = malloc((TAM_SHINGLE+1) * sizeof(char));
-                        memcpy(shingle , shingle_new , TAM_SHINGLE+1);
-                        bool res = abb_guardar(arbol, shingle, shingle);
-                }
-        }
-        fclose(archivo);
-        return 0;
-}
-*/
 
 void llamar_a_creador(int fd_relativo_nombres , abb_t* arbol_shingles){
         char* registro = malloc(50 * sizeof(char));
@@ -331,53 +342,6 @@ char* vector_incidencia(char* nombre_archivo, char** vector_shingles, int tamano
 }
 
 
-/*char* vector_incidencia2(char* nombre_archivo, char** vector_shingles, int tamano_vector, char* vector_vacio){
-        char* incidencia = malloc(sizeof(char) * tamano_vector);
-        strcpy(incidencia, vector_vacio);
-        FILE* archivo;
-        char* shingle_old = malloc((TAM_SHINGLE+1) * sizeof(char));
-        char* shingle_new = malloc((TAM_SHINGLE+1) * sizeof(char));
-        int i;
-        for (i = 0 ; i < TAM_SHINGLE ; i ++){
-                shingle_old[i] = '*';
-                shingle_new[i] = '*';
-        }
-        shingle_old[TAM_SHINGLE] = '\0';
-        shingle_new[TAM_SHINGLE] = '\0';
-        //nombre_archivo[11] = "a";
-        printf("nombre del archivo es %s \n", nombre_archivo);
-        archivo = fopen(nombre_archivo , "r");
-        if ( archivo == NULL){
-                printf("ERROR DE LECTURA \n");
-                //return -1; //ERROR DE LECTURA
-        }
-        while (feof(archivo) == 0){
-                for (i = 1 ; i < TAM_SHINGLE ; i ++){
-                        shingle_new[i-1] = shingle_old[i];
-                        shingle_old[i-1] = shingle_new[i-1];
-                }
-                char caracter;
-                caracter = fgetc(archivo);
-                while (caracter == '.' && caracter == ','){ //COMPROBAR QUE NO ESTE DENTRO DE UNA LISTA DE CARACTERES PROHIBIDOS
-                        caracter = fgetc(archivo);
-                }
-                shingle_new[TAM_SHINGLE - 1] = caracter;
-                shingle_old[TAM_SHINGLE - 1] = caracter;
-                if (shingle_new[0] != '*' && shingle_new[TAM_SHINGLE-1] != '*' && caracter != EOF){
-                        //printf("Busco este shingle en el vector: %s\n",shingle_new);
-                        int posicion = busq_binaria(vector_shingles, shingle_new, tamano_vector);
-                        //printf("La busqueda binaria devuelve: %d \n", posicion);
-                        if (posicion >= 0){
-                                incidencia[posicion] = '1';
-                                //printf("Encuentro un shingle en vector \n");
-                        }
-                }
-        }
-
-        fclose(archivo);
-        return incidencia;
-}
-*/
 
 int* generador_funciones_hasmin(void){
         int* funciones = malloc(sizeof(int) * CANTIDAD_FUNCIONES);
@@ -407,13 +371,6 @@ char* int_a_char(int numero){
 	resultado[2] = ( ( numero - (resultado[0] * pow(2,24)) - (resultado[2] * pow(2,16)) ) / pow(2,8));
 	resultado[3] =  numero - (resultado[0] * pow(2,24)) - (resultado[2] * pow(2,16)) - (resultado[3] * pow(2,8))  ;
 	resultado[4] = '-';
-//	int aux = numero;
-//	for(int i = 0; i<4 ; i++){
-//		int divisor = pow(2,(3-i)*8);
-//		resultado[i] = aux / divisor;
-//		aux = aux - resultado[i];
-//	}
-
 	return resultado;
 }
 
@@ -445,17 +402,6 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad_shingles, int
         }
         printf("\n");
         return vector_hasmin;
-}
-
-float jaccard (int* vector1, int* vector2){
-	int iguales=0;
-
-	for(int i=0; i<CANTIDAD_FUNCIONES; i++){
-		if (vector1[i] == vector2[i]){
-			iguales++;
-		}
-	}
-	return (iguales*1.0)/CANTIDAD_FUNCIONES;
 }
 
 int* selector_lideres(int cantidad_clusters, int cantidad_archivos, int cantidad_lideres){
@@ -497,20 +443,6 @@ lista_t* obtener_lista_elementos(cluster_t* cluster){
 	return (cluster->lista_elementos);
 }
 
-int* vector_a_int(char* vector){
-	int* salida = malloc(sizeof(int) * CANTIDAD_FUNCIONES);
-	char numero[5];
-	for (int i = 0 ; i < CANTIDAD_FUNCIONES ; i++){
-		numero[0] = vector[i*3];
-		numero[1] = vector[i*3+1];
-		numero[2] = vector[i*3+2];
-		numero[3] = vector[i*3+3];
-		numero[4] = vector[i*3+4];
-		salida[i] = char_a_int(numero);
-	}
-	return salida;
-}
-
 int** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int cantidad_clusters){
 		int** matriz = malloc(sizeof(int*)*cantidad_clusters); // K
 		int status;
@@ -533,7 +465,7 @@ int** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int cantida
 }
 
 void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_clusters, int* lideres, void** lista_clusters, bool agregar_doble, void** vector_documentos){
-	int similitud = 0;
+	float similitud = 0;
 	int status;
 	int mas_parecido;
 	int mas_parecido2;
@@ -552,7 +484,6 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 
 			similitud_aux = jaccard(registro_int, matriz[i]);
 			printf("  %f (cluster %d) -",similitud_aux, i);
-
 			if (similitud_aux > similitud){
 				similitud = similitud_aux;
 				mas_parecido =  i;
@@ -565,7 +496,7 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 		printf("\n");
 		if (similitud == 0){
 			mas_parecido=rand()%(cantidad_clusters-1);
-			printf("NO SE PARECE A NINGUNO, ASIGNO RANDOM A %d \n",mas_parecido);
+			printf("similitud % d , NO SE PARECE A NINGUNO, ASIGNO RANDOM A %d \n",similitud ,mas_parecido);
 		}
 		similitud = 0;
 		cluster_t* cluster = lista_clusters[mas_parecido];
@@ -658,7 +589,7 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 			acumulador[w]= 0;
 		}
 		int status;
-		int similitud=-1;
+		float similitud=-1;
 		int mas_parecido;
 		cluster_t* cluster = vector_clusters[i];
 		int centro = obtener_centro(cluster);
@@ -768,6 +699,7 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
         // HACER EL WHILE NO CAMBIEN LOS CENTROS/
         // crear vector centros
         bool iterar_k = false;
+        int radio_viejo = 23423407268;
         while (iterar_k){
 
         }
@@ -784,6 +716,8 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 				for (int i = 0; i<cantidad_clusters; i++){
 					printf("CLUSTER %d \n", i);
 					cluster_t* cluster = vector_clusters[i];
+					float radio = cluster_radio(cluster, fd_relativo_hasmin);
+					printf("EL RADIO DEL CLUSTER ES %f \n", radio);
 					lista_t* elementos = obtener_lista_elementos(cluster);
 					lista_iter_t* mi_iterador = lista_iter_crear(elementos);
 					while( !lista_iter_al_final(mi_iterador) ){
@@ -817,9 +751,7 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
         if (opcion_l == true) {
         	printf("OPCION -l ACTIVADA \n");
         	for (int i=0; i<cantidad_archivos; i++){
-        		//printf("LLEGA HASTA ACA 1 \n");
         		documento_t* doc = vector_documentos[i];
-        		//printf("LLEGA HASTA ACA 2 \n");
         		cluster_t* cluster = doc->cluster1;
         		cluster_t* cluster2 = doc->cluster2;
         		printf("El documento %d esta en el cluster: %d ", doc->nro_doc , cluster->numero);
@@ -835,16 +767,6 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 
 int main( int argc, char *argv[] ){
 
-		/*int numero = 1000000000;
-		char* vector = int_a_char(numero);
-		printf("paso a char %d \n",vector[0]);
-		printf("paso a char %d \n",vector[1]);
-		printf("paso a char %d \n",vector[2]);
-		printf("paso a char %d \n",(unsigned char)vector[3]);
-		printf("paso a char %d \n",vector[4]);
-		printf("EL NUMERO ES %d \n", char_a_int(int_a_char(numero)));
-		printf("EL NUMERO ES %d \n", char_a_int(int_a_char(char_a_int(int_a_char(numero)))));
-		*/
 		bool opcion_l = false;
 		bool agregar_doble;
 		bool listar_clusters = false;
@@ -855,8 +777,7 @@ int main( int argc, char *argv[] ){
 		for (int i = 0; i < argc; i++){
 			printf("argv[%d] es %s \n",i, argv[i]);
 		}
-		//printf("argv[0] es %s \n", argv[0]);
-		//printf("argv[1] es %s \n", argv[1]);
+
 		const char* const op_cortas = "dcolahg";
 		const struct option op_largas[] = {
 				{ "dir", 1, NULL, 'd' },
@@ -920,7 +841,6 @@ int main( int argc, char *argv[] ){
 					break;
 				}
 		}
-		printf("LLEGA HASTA ACA \n");
 		el_main(argc, directorio, cantidad_clusters, agregar_doble, listar_clusters, nombre_doc, opcion_l);
 		return 0;
 
