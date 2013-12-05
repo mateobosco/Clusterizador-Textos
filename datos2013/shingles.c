@@ -56,7 +56,6 @@ void cluster_destruir(cluster_t* cluster){
 	free(cluster);
 }
 
-
 void imprimir_relativo(int fd, int tam_registro){
         char* registro = malloc(tam_registro * sizeof(char));
         int status;
@@ -83,9 +82,6 @@ char* mi_strcat(const char * str1, const char * str2){
         strcat(fin,str2);
         return fin;
 }
-
-
-
 
 int devuelve_cantidad_archivos( int argc , char* directorio){
         int cantidad = 0;
@@ -206,6 +202,28 @@ char** pasar_a_vector(abb_t* arbol){
 }
 
 int creador_shingles(char* nombre_archivo, abb_t* arbol){
+	FILE* archivo;
+	char* shingle = malloc((TAM_SHINGLE+1) * sizeof(char));
+	char* shingle2 = malloc((TAM_SHINGLE+1) * sizeof(char));
+    int i;
+    for (i = 0 ; i < TAM_SHINGLE ; i ++){
+            shingle[i] = '*';
+            shingle2[i] = '*';
+    }
+    shingle[TAM_SHINGLE] = '\0';
+    shingle2[TAM_SHINGLE] = '\0';
+    archivo = fopen(nombre_archivo , "r");
+    while (shingle2 != NULL){
+    	shingle2 = fgets(shingle,TAM_SHINGLE+1,archivo);
+    	char* guardar = malloc((TAM_SHINGLE+1) * sizeof(char));
+    	memcpy(guardar , shingle , TAM_SHINGLE+1);
+    	bool res = abb_guardar(arbol, guardar , guardar);
+    }
+    fclose(archivo);
+	return 0;
+}
+
+/*int creador_shingles2(char* nombre_archivo, abb_t* arbol){
         FILE* archivo;
         char* shingle_old = malloc((TAM_SHINGLE+1) * sizeof(char));
         char* shingle_new = malloc((TAM_SHINGLE+1) * sizeof(char));
@@ -243,6 +261,7 @@ int creador_shingles(char* nombre_archivo, abb_t* arbol){
         fclose(archivo);
         return 0;
 }
+*/
 
 void llamar_a_creador(int fd_relativo_nombres , abb_t* arbol_shingles){
         char* registro = malloc(50 * sizeof(char));
@@ -282,8 +301,36 @@ int hash(int funcion, int entrada){
     int numero = (funcion * entrada)%1000000000;
 	return numero;
 }
-
 char* vector_incidencia(char* nombre_archivo, char** vector_shingles, int tamano_vector, char* vector_vacio){
+    char* incidencia = malloc(sizeof(char) * tamano_vector);
+    strcpy(incidencia, vector_vacio);
+    FILE* archivo;
+	char* shingle = malloc((TAM_SHINGLE+1) * sizeof(char));
+	char* shingle2 = malloc((TAM_SHINGLE+1) * sizeof(char));
+    int i;
+    for (i = 0 ; i < TAM_SHINGLE ; i ++){
+            shingle[i] = '*';
+            shingle2[i] = '*';
+    }
+    shingle[TAM_SHINGLE] = '\0';
+    shingle2[TAM_SHINGLE] = '\0';
+    archivo = fopen(nombre_archivo , "r");
+    while (shingle2 != NULL){
+    	shingle2 = fgets(shingle,TAM_SHINGLE+1,archivo);
+    	char* guardar = malloc((TAM_SHINGLE+1) * sizeof(char));
+    	memcpy(guardar , shingle , TAM_SHINGLE+1);
+    	int posicion = busq_binaria(vector_shingles, shingle, tamano_vector);
+    	//printf("La busqueda binaria devuelve: %d \n", posicion);
+    	if (posicion >= 0){
+    		incidencia[posicion] = '1';
+    	}
+    }
+    fclose(archivo);
+	return incidencia;
+}
+
+
+/*char* vector_incidencia2(char* nombre_archivo, char** vector_shingles, int tamano_vector, char* vector_vacio){
         char* incidencia = malloc(sizeof(char) * tamano_vector);
         strcpy(incidencia, vector_vacio);
         FILE* archivo;
@@ -329,7 +376,7 @@ char* vector_incidencia(char* nombre_archivo, char** vector_shingles, int tamano
         fclose(archivo);
         return incidencia;
 }
-
+*/
 
 int* generador_funciones_hasmin(void){
         int* funciones = malloc(sizeof(int) * CANTIDAD_FUNCIONES);
