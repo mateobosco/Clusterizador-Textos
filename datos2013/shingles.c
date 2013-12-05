@@ -99,7 +99,7 @@ float cluster_radio(cluster_t* cluster, int fd_hashmin){
 		int* hashmin_actual_int = vector_a_int(hashmin_actual_char);
 		float similitud = jaccard(hashmin_centro_int , hashmin_actual_int);
 		float distancia = 1-similitud;
-		if (distancia > distancia_max){
+		if (distancia > distancia_max ){
 			distancia_max = distancia;
 		}
 		//free(hashmin_actual_int);
