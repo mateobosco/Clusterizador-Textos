@@ -755,22 +755,22 @@ int main( int argc, char *argv[] ){
 					directorio = optarg;
 					break;
 
-				case 'c': /* -h o --help */
+				case 'c': /* -c recibe cantidad d clusters por parametro */
 					//imprime_ayuda();
 					cantidad_clusters = atoi(optarg);
 					printf("caso c con %d como argumento \n", cantidad_clusters);
 					//exit(EXIT_SUCCESS);
 					break;
 
-				case 'o': /* opción invalida */
-					fprintf(stderr, "Pruebe `tp0 --help' para más información.\n");
-					exit(EXIT_FAILURE);
+				case 'o': /* indica si un documento puede estar en mas de un grupo */
+					// HACER QE UN DOC PUEDA ESTAR EN MAS D UN GRUPO O NO
+					//exit(EXIT_FAILURE);
 
-				case 'l': /* No hay más opciones */
+				case 'l': /* LISTA TODOS LOS DOCS Y CLUSTER AL CUAL PERTENECE */
 					break;
 
 
-				case 'g': /* No hay más opciones */
+				case 'g': /* LISTA LOS GRUPOS EXISTENTES Y LOS DOCS DENTRO DE CADA GRUPO */
 					break;
 
 				default: /* Algo más? No esperado. Abortamos */
