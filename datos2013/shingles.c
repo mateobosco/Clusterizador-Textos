@@ -650,7 +650,7 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 }
 
 
-int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_doble, bool listar_clusters, char* nombre_doc ){
+int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_doble, bool listar_clusters, char* nombre_doc, bool opcion_l ){
 		//bool agregar_doble = false; //ACA HAY QUE CAMBIAR CON LO QUE SE RECIBE POR PARAMETRO
 		printf("ARGC es %d", argc);
 		printf("La Cantidad de Clusters es: %d \n", cantidad_clusters);
@@ -740,14 +740,40 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
         	cluster_t* cluster = doc->cluster1;
         	lista_t* elementos = obtener_lista_elementos(cluster);
         	lista_iter_t* mi_iterador = lista_iter_crear(elementos);
-        	printf("AL documento que le pasamos por parametro %s lo agrego al cluster Que contiene estos documentos \n", nombre_doc);
+        	printf("AL documento que le pasamos por parametro %s lo metio en el cluster que contiene estos documentos \n", nombre_doc);
         	while( !lista_iter_al_final(mi_iterador) ){
 				printf("texto%d ", lista_iter_ver_actual(mi_iterador));
 				lista_iter_avanzar(mi_iterador);
 			}
 
         }
+        printf("\n");
         iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
+        for (int j=0; j < cantidad_archivos; j++){
+        	printf("en el vector documentos en la posicion %d hay %d \n", j, vector_documentos[j]);
+        }
+        if (opcion_l == true) {
+        	printf("OPCION -l ACTIVADA \n");
+        	for (int i=0; i<cantidad_archivos; i++){
+        		printf("LLEGA HASTA ACA 1 \n");
+        		documento_t* doc = vector_documentos[i];
+        		printf("LLEGA HASTA ACA 2 \n");
+        		cluster_t* cluster = doc->cluster1;
+        		printf("LLEGA HASTA ACA 3 \n");
+				lista_t* elementos = obtener_lista_elementos(cluster);
+				printf("LLEGA HASTA ACA 4 \n");
+				lista_iter_t* mi_iterador = lista_iter_crear(elementos); // SE ROMPE ACAAAAAAAAA
+				printf("LLEGA HASTA ACA 5 \n");
+				printf("AL documento %d lo metio en el cluster que contiene estos documentos: \n", doc->nro_doc);
+				while( !lista_iter_al_final(mi_iterador) ){
+					printf("texto%d ", lista_iter_ver_actual(mi_iterador));
+					lista_iter_avanzar(mi_iterador);
+				}
+				printf("LLEGA HASTA ACA 6 \n");
+				printf("\n");
+        	}
+        }
+
         return 0;
 }
 
@@ -763,6 +789,7 @@ int main( int argc, char *argv[] ){
 		printf("EL NUMERO ES %d \n", char_a_int(int_a_char(numero)));
 		printf("EL NUMERO ES %d \n", char_a_int(int_a_char(char_a_int(int_a_char(numero)))));
 		*/
+		bool opcion_l = false;
 		bool agregar_doble;
 		bool listar_clusters = false;
         int siguiente_opcion;
@@ -823,6 +850,7 @@ int main( int argc, char *argv[] ){
 
 
 				case 'l': /* LISTA LOS GRUPOS EXISTENTES Y LOS DOCS DENTRO DE CADA GRUPO */
+					opcion_l = true;
 					break;
 
 				case 'a': /* LISTA LOS GRUPOS EXISTENTES Y LOS DOCS DENTRO DE CADA GRUPO */
@@ -837,7 +865,7 @@ int main( int argc, char *argv[] ){
 				}
 		}
 		printf("LLEGA HASTA ACA \n");
-		el_main(argc, directorio, cantidad_clusters, agregar_doble, listar_clusters, nombre_doc);
+		el_main(argc, directorio, cantidad_clusters, agregar_doble, listar_clusters, nombre_doc, opcion_l);
 		return 0;
 
 }
