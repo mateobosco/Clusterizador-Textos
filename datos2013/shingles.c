@@ -139,6 +139,7 @@ int creador_relativo_archivos( int argc, char* directorio, void** vector_documen
         if (nombre_doc != NULL){
         	printf( "agrego a la lista: %s\n", nombre_doc );
         	lista_insertar_primero(lista_aux, nombre_doc);
+        	cantidad++;
         }
         printf("cantidad de archivos %d \n", cantidad);
         printf("largo de la lista %d \n", (int) lista_largo(lista_aux));
