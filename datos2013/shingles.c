@@ -589,6 +589,13 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
         return rel_hasmin;
 }
 
+void reiniciar_cluster2_doc(void** vector_documentos, int cantidad_documentos){
+	for(int i = 0 ; i < cantidad_documentos ; i++){
+		documento_t* doc = vector_documentos[i];
+		doc->cluster2 = NULL;
+	}
+}
+
 bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cantidad_clusters, void** vector_documentos){
 	bool iterar = false;
 
@@ -745,6 +752,7 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 			}
 			printf("\n");
 			iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
+			reiniciar_cluster2_doc(vector_documentos, cantidad_archivos);
         	iteraciones ++;
         }
 
