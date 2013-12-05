@@ -105,7 +105,9 @@ int devuelve_cantidad_archivos( int argc , char* directorio){
         return cantidad;
 }
 
-int creador_relativo_archivos( int argc, char* directorio, void** vector_documentos ){
+
+int creador_relativo_archivos( int argc, char* directorio, void** vector_documentos, char* nombre_doc ){
+
         remove("relativo_nombres"); //MEDIO VISHERO PERO ANDA
         DIR *dir;
         struct dirent *mi_dirent;
@@ -133,6 +135,10 @@ int creador_relativo_archivos( int argc, char* directorio, void** vector_documen
                         lista_insertar_primero(lista_aux, mi_strcat(directorio, mi_dirent->d_name));
                         cantidad ++;
                 }
+        }
+        if (nombre_doc != NULL){
+        	printf( "agrego a la lista: %s\n", nombre_doc );
+        	lista_insertar_primero(lista_aux, nombre_doc);
         }
         printf("cantidad de archivos %d \n", cantidad);
         printf("largo de la lista %d \n", (int) lista_largo(lista_aux));
@@ -643,7 +649,7 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 }
 
 
-int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_doble, bool listar_clusters ){
+int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_doble, bool listar_clusters, char* nombre_doc ){
 		//bool agregar_doble = false; //ACA HAY QUE CAMBIAR CON LO QUE SE RECIBE POR PARAMETRO
 		printf("ARGC es %d", argc);
 		printf("La Cantidad de Clusters es: %d \n", cantidad_clusters);
@@ -662,9 +668,14 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 		printf("La Cantidad de Clusters es: %d \n", cantidad_clusters);
 
         int cantidad_archivos = devuelve_cantidad_archivos(argc, directorio);
+        if (nombre_doc != NULL){
+        	cantidad_archivos++;
+        }
         printf("La Cantidad de archivos es: %d \n", cantidad_archivos);
+
         void** vector_documentos = malloc(sizeof(documento_t*) * cantidad_archivos);
-        int fd_relativo_nombres = creador_relativo_archivos( argc, directorio, vector_documentos);
+        int fd_relativo_nombres = creador_relativo_archivos( argc, directorio, vector_documentos, nombre_doc);
+
         //cantidad_clusters = k;
         //int cantidad_lideres = 3;
         int cantidad_lideres = 20*log10(cantidad_archivos);
@@ -744,6 +755,7 @@ int main( int argc, char *argv[] ){
         int siguiente_opcion;
         int cantidad_clusters;
         char* directorio;
+        char* nombre_doc = NULL;
 		for (int i = 0; i < argc; i++){
 			printf("argv[%d] es %s \n",i, argv[i]);
 		}
@@ -762,7 +774,7 @@ int main( int argc, char *argv[] ){
 
 		while (1) {
 				/* Llamamos a la función getopt */
-				siguiente_opcion = getopt_long(argc, argv, "d:c:o:gla", op_largas, NULL);
+				siguiente_opcion = getopt_long(argc, argv, "d:c:o:gla:", op_largas, NULL);
 
 				if (siguiente_opcion == -1)
 					break; /* No hay más opciones. Rompemos el bucle */
@@ -800,13 +812,19 @@ int main( int argc, char *argv[] ){
 				case 'l': /* LISTA LOS GRUPOS EXISTENTES Y LOS DOCS DENTRO DE CADA GRUPO */
 					break;
 
+				case 'a': /* LISTA LOS GRUPOS EXISTENTES Y LOS DOCS DENTRO DE CADA GRUPO */
+					printf("caso a con %s como argumento \n", optarg);
+					nombre_doc = optarg;
+					break;
+
+
 				default: /* Algo más? No esperado. Abortamos */
 					abort();
 					break;
 				}
 		}
 		printf("LLEGA HASTA ACA \n");
-		el_main(argc, directorio, cantidad_clusters, agregar_doble, listar_clusters);
+		el_main(argc, directorio, cantidad_clusters, agregar_doble, listar_clusters, nombre_doc);
 		return 0;
 
 }
