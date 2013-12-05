@@ -735,6 +735,18 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
         		printf("\n");
         	}
         }
+        if(nombre_doc != NULL){
+        	documento_t* doc = vector_documentos[0];
+        	cluster_t* cluster = doc->cluster1;
+        	lista_t* elementos = obtener_lista_elementos(cluster);
+        	lista_iter_t* mi_iterador = lista_iter_crear(elementos);
+        	printf("AL documento que le pasamos por parametro %s lo agrego al cluster Que contiene estos documentos \n", nombre_doc);
+        	while( !lista_iter_al_final(mi_iterador) ){
+				printf("texto%d ", lista_iter_ver_actual(mi_iterador));
+				lista_iter_avanzar(mi_iterador);
+			}
+
+        }
         iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
         return 0;
 }
