@@ -23,6 +23,7 @@ struct cluster{
 	lista_t* lista_elementos;
 	int centro;
 	int numero;
+	float radio;
 };
 typedef struct cluster cluster_t;
 
@@ -49,6 +50,7 @@ cluster_t* cluster_crear(int centro){
 	lista_t* lista_elementos = lista_crear();
 	cluster->lista_elementos = lista_elementos;
 	bool status = lista_insertar_primero(lista_elementos, centro);
+	cluster->radio = 0;
 	return cluster;
 }
 void cluster_destruir(cluster_t* cluster){
@@ -81,11 +83,16 @@ int* vector_a_int(char* vector){
 	}
 	return salida;
 }
+float cluster_radio(cluster_t* cluster){
+	return cluster->radio;
+}
 
-float cluster_radio(cluster_t* cluster, int fd_hashmin){
+/*float cluster_radio2(cluster_t* cluster, int fd_hashmin){
 	//distancia = 1 - similitud
-	float distancia_max = 0;
+	float distancia_max = -1;
 	lista_t* lista = cluster->lista_elementos;
+	int cantidad_elementos = lista_largo(lista);
+	printf("CANTIDAD EN LA LISTA %d \n",cantidad_elementos );
 	lista_iter_t* iter = lista_iter_crear(lista);
 	int centro = cluster->centro;
 	char* hashmin_centro_char = malloc(sizeof(char) * CANTIDAD_FUNCIONES * 5 * 10);
@@ -93,20 +100,23 @@ float cluster_radio(cluster_t* cluster, int fd_hashmin){
 	int status = R_READ(fd_hashmin, hashmin_centro_char, centro );
 	int* hashmin_centro_int = vector_a_int(hashmin_centro_char);
 	//free(hashmin_centro_char);
-	while(lista_iter_al_final(iter)){
+	while(!lista_iter_al_final(iter)){
 		int actual = lista_iter_ver_actual(iter);
 		int status2 = R_READ(fd_hashmin, hashmin_actual_char, actual );
 		int* hashmin_actual_int = vector_a_int(hashmin_actual_char);
 		float similitud = jaccard(hashmin_centro_int , hashmin_actual_int);
 		float distancia = 1-similitud;
-		if (distancia > distancia_max ){
+		printf("jaccard da %f y la distancia es %f \n",similitud,distancia);
+		if (distancia > distancia_max){
+			printf("HAY UNA DISANCIA MAYOR");
 			distancia_max = distancia;
 		}
+		lista_iter_avanzar(iter);
 		//free(hashmin_actual_int);
 	}
 	return distancia_max;
 }
-
+*/
 void imprimir_relativo(int fd, int tam_registro){
         char* registro = malloc(tam_registro * sizeof(char));
         int status;
@@ -396,11 +406,11 @@ char* creador_vector_hashmin(char* vector_incidencia, int cantidad_shingles, int
                 vector_hasmin[j * 3 + 3] = numero[3];
                 vector_hasmin[j * 3 + 4] = numero[4];
         }
-        printf("EL VECTOR HASHMIN QUEDA ASI:  \n");
-        for(int i =0 ;i<CANTIDAD_FUNCIONES*5 ; i++){
-        	printf("%d " , vector_hasmin[i]);
-        }
-        printf("\n");
+        //printf("EL VECTOR HASHMIN QUEDA ASI:  \n");
+        //for(int i =0 ;i<CANTIDAD_FUNCIONES*5 ; i++){
+        //	printf("%d " , vector_hasmin[i]);
+        //}
+        //printf("\n");
         return vector_hasmin;
 }
 
@@ -466,6 +476,7 @@ int** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int cantida
 
 void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_clusters, int* lideres, void** lista_clusters, bool agregar_doble, void** vector_documentos){
 	float similitud = 0;
+	float radio_max = 0;
 	int status;
 	int mas_parecido;
 	int mas_parecido2;
@@ -507,7 +518,9 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 			status2 = lista_insertar_primero(lista_elementos, j );
 			doc->cluster1 = cluster ;
 		}
-
+		if(cluster->radio < similitud_aux){
+			cluster->radio = similitud_aux;
+		}
 
 		if (agregar_doble == true && mas_parecido!=mas_parecido2){
 			cluster_t* cluster2 = lista_clusters[mas_parecido];
@@ -716,7 +729,8 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 				for (int i = 0; i<cantidad_clusters; i++){
 					printf("CLUSTER %d \n", i);
 					cluster_t* cluster = vector_clusters[i];
-					float radio = cluster_radio(cluster, fd_relativo_hasmin);
+					float radio = cluster_radio(cluster);
+					//float radio = cluster_radio(cluster, fd_relativo_hasmin);
 					printf("EL RADIO DEL CLUSTER ES %f \n", radio);
 					lista_t* elementos = obtener_lista_elementos(cluster);
 					lista_iter_t* mi_iterador = lista_iter_crear(elementos);
