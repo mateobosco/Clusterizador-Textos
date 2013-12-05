@@ -450,10 +450,11 @@ int** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int cantida
 		return matriz;
 }
 
-void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_clusters, int* lideres, void** lista_clusters){
+void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_clusters, int* lideres, void** lista_clusters, bool agregar_doble){
 	int similitud = 0;
 	int status;
 	int mas_parecido;
+	int mas_parecido2;
 	float similitud_aux;
 	int j = 0;
 	bool status2;
@@ -471,6 +472,10 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 			if (similitud_aux > similitud){
 				similitud = similitud_aux;
 				mas_parecido =  i;
+				mas_parecido2 = i;
+			}
+			if(similitud == similitud_aux){
+				mas_parecido2=i;
 			}
 		}
 		if (similitud == 0){
@@ -481,11 +486,20 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 		cluster_t* cluster = lista_clusters[mas_parecido];
 		lista_t* lista_elementos = obtener_lista_elementos(cluster);
 		int centro = obtener_centro(cluster);
-		/*printf("CENTRO DEL CLUSTER %d\n",centro);
-		if(centro != mas_parecido){
+		printf("CENTRO DEL CLUSTER %d\n",centro);
+		if(centro != j){
 			status2 = lista_insertar_primero(lista_elementos, j );
-		}*/
+		}
 		status2 = lista_insertar_primero(lista_elementos, j );
+
+		if (agregar_doble == true && mas_parecido!=mas_parecido2){
+			cluster_t* cluster2 = lista_clusters[mas_parecido];
+			lista_t* lista_elementos2 = obtener_lista_elementos(cluster2);
+			int centro2 = obtener_centro(cluster2);
+			if(centro2 != j){
+				status2 = lista_insertar_primero(lista_elementos2, j );
+			}
+		}
 		printf ("AGREGO AL CLUSTER %d, el elemento %d \n", mas_parecido, j);
 		j++;
 		status = R_READNEXT(rel_hashmin, registro_char);
@@ -615,6 +629,7 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 
 
 int el_main( int argc, char *argv[] ){
+		bool agregar_doble = false; //ACA HAY QUE CAMBIAR CON LO QUE SE RECIBE POR PARAMETRO
 		printf("ARGC es %d", argc);
 		int k;
 		bool iterar;
@@ -673,7 +688,7 @@ int el_main( int argc, char *argv[] ){
 
         int** matriz = creador_matriz_hashmin(fd_relativo_hasmin, vector_clusters, cantidad_clusters, cantidad_lideres, lideres);
         printf("MATRIZ DE HASHMIN CREADA \n");
-        asignar_documentos_a_clusters(matriz, fd_relativo_hasmin, cantidad_clusters, lideres, vector_clusters);
+        asignar_documentos_a_clusters(matriz, fd_relativo_hasmin, cantidad_clusters, lideres, vector_clusters, agregar_doble);
         //free(vector); //hay que destruir cada shingle
         printf("LOS TEXTOS QUEDARON ASIGNADOS DE LA SIGUIENTE MANERA: \n");
         for (int i = 0; i<cantidad_clusters; i++){
