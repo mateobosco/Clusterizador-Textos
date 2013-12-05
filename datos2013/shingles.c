@@ -15,7 +15,7 @@
 
 #define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
 #define TAM_SHINGLE 7
-#define CANTIDAD_FUNCIONES 10
+#define CANTIDAD_FUNCIONES 50
 
 struct cluster{
 	lista_t* lista_elementos;
@@ -113,7 +113,7 @@ int creador_relativo_archivos( int argc, char *argv[] ){
                 if (aux > long_max) long_max = aux;
                 if(mi_dirent->d_name[0]!= '.'){ //NEGRADA. Y PROBLEMA SI HAY UNA CARPETA
                         printf( "agrego a la lista: %s\n", mi_strcat(argv[1], mi_dirent->d_name) );
-                        lista_insertar_ultimo(lista_aux, mi_strcat(argv[1], mi_dirent->d_name));
+                        lista_insertar_primero(lista_aux, mi_strcat(argv[1], mi_dirent->d_name));
                         cantidad ++;
                 }
         }
@@ -451,7 +451,7 @@ int** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int cantida
 }
 
 void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_clusters, int* lideres, void** lista_clusters){
-	int similitud = 9999;
+	int similitud = 0;
 	int status;
 	int mas_parecido;
 	float similitud_aux;
@@ -468,15 +468,23 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 			similitud_aux = jaccard(registro_int, matriz[i]);
 			printf(" JACCARD DEVUELVE ESTO %f con el cluster %d \n ",similitud_aux, i);
 
-			if (similitud_aux < similitud){
+			if (similitud_aux > similitud){
 				similitud = similitud_aux;
 				mas_parecido =  i;
 			}
-
 		}
-
+		if (similitud == 0){
+			mas_parecido=rand()%(cantidad_clusters-1);
+			printf("NO SE PARECE A NINGUNO, ASIGNO RANDOM A %d \n",mas_parecido);
+		}
+		similitud = 0;
 		cluster_t* cluster = lista_clusters[mas_parecido];
 		lista_t* lista_elementos = obtener_lista_elementos(cluster);
+		int centro = obtener_centro(cluster);
+		/*printf("CENTRO DEL CLUSTER %d\n",centro);
+		if(centro != mas_parecido){
+			status2 = lista_insertar_primero(lista_elementos, j );
+		}*/
 		status2 = lista_insertar_primero(lista_elementos, j );
 		printf ("AGREGO AL CLUSTER %d, el elemento %d \n", mas_parecido, j);
 		j++;
@@ -558,13 +566,13 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 			int documento = lista_iter_ver_actual(mi_iterador);
 		    registro_int = vector_a_int(registro_char);
 
-		    printf("IMPRIMO EL VECTOR HASHMIN: ");
-		    for(int j=0; j< CANTIDAD_FUNCIONES; j++){
-		    	printf("%d ", registro_int[j]);
-		    	acumulador[j]+= registro_int[j];
-		    }
-		    printf("\n");
-		    printf("\n");
+		    //printf("IMPRIMO EL VECTOR HASHMIN: ");
+		    //for(int j=0; j< CANTIDAD_FUNCIONES; j++){
+		    //	printf("%d ", registro_int[j]);
+		    //	acumulador[j]+= registro_int[j];
+		    //}
+		    //printf("\n");
+		    //printf("\n");
 
 			lista_iter_avanzar(mi_iterador);
 		}
@@ -674,9 +682,10 @@ int el_main( int argc, char *argv[] ){
         	lista_t* elementos = obtener_lista_elementos(cluster);
         	lista_iter_t* mi_iterador = lista_iter_crear(elementos);
         	while( !lista_iter_al_final(mi_iterador) ){
-        		printf("EN EL CLUSTER %d, tenemos el elemento %d \n", i, lista_iter_ver_actual(mi_iterador));
+        		printf("texto%d ", lista_iter_ver_actual(mi_iterador));
         		lista_iter_avanzar(mi_iterador);
         	}
+        	printf("\n");
 
         }
 
