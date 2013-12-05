@@ -629,8 +629,8 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 }
 
 
-int el_main( int argc, char* directorio, int cantidad_clusters ){
-		bool agregar_doble = false; //ACA HAY QUE CAMBIAR CON LO QUE SE RECIBE POR PARAMETRO
+int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_doble ){
+		//bool agregar_doble = false; //ACA HAY QUE CAMBIAR CON LO QUE SE RECIBE POR PARAMETRO
 		printf("ARGC es %d", argc);
 		printf("La Cantidad de Clusters es: %d \n", cantidad_clusters);
 		//cantidad_clusters = atoi(cantidad_clusters);;
@@ -723,6 +723,7 @@ int main( int argc, char *argv[] ){
 		printf("EL NUMERO ES %d \n", char_a_int(int_a_char(numero)));
 		printf("EL NUMERO ES %d \n", char_a_int(int_a_char(char_a_int(int_a_char(numero)))));
 		*/
+		bool agregar_doble;
         int siguiente_opcion;
         int cantidad_clusters;
         char* directorio;
@@ -744,7 +745,7 @@ int main( int argc, char *argv[] ){
 
 		while (1) {
 				/* Llamamos a la función getopt */
-				siguiente_opcion = getopt_long(argc, argv, "d:c:", op_largas, NULL);
+				siguiente_opcion = getopt_long(argc, argv, "d:c:o:", op_largas, NULL);
 
 				if (siguiente_opcion == -1)
 					break; /* No hay más opciones. Rompemos el bucle */
@@ -763,6 +764,14 @@ int main( int argc, char *argv[] ){
 					break;
 
 				case 'o': /* indica si un documento puede estar en mas de un grupo */
+					printf("caso o con %s como argumento \n", optarg);
+					if(optarg == "Y"){
+						agregar_doble = true;
+					}
+					else{
+						agregar_doble = false;
+					}
+					break;
 					// HACER QE UN DOC PUEDA ESTAR EN MAS D UN GRUPO O NO
 					//exit(EXIT_FAILURE);
 
@@ -779,7 +788,7 @@ int main( int argc, char *argv[] ){
 				}
 		}
 		printf("LLEGA HASTA ACA \n");
-		el_main(argc, directorio, cantidad_clusters);
+		el_main(argc, directorio, cantidad_clusters, agregar_doble);
 		return 0;
 
 }
