@@ -24,6 +24,22 @@ struct cluster{
 };
 typedef struct cluster cluster_t;
 
+struct documento{
+	cluster_t* cluster1;
+	cluster_t* cluster2;
+	int nro_doc;
+};
+typedef struct documento documento_t;
+
+documento_t* documento_crear(int numero){
+	documento_t* doc = malloc(sizeof(documento_t));
+	if (!doc) return NULL;
+	doc->nro_doc = numero;
+	doc->cluster1 = NULL;
+	doc->cluster2 = NULL;
+	return doc;
+}
+
 cluster_t* cluster_crear(int centro){
 	cluster_t* cluster= malloc (sizeof(cluster_t));
 	if (!cluster) return NULL;
@@ -89,7 +105,7 @@ int devuelve_cantidad_archivos( int argc , char* directorio){
         return cantidad;
 }
 
-int creador_relativo_archivos( int argc, char* directorio ){
+int creador_relativo_archivos( int argc, char* directorio, void** vector_documentos ){
         remove("relativo_nombres"); //MEDIO VISHERO PERO ANDA
         DIR *dir;
         struct dirent *mi_dirent;
@@ -142,6 +158,8 @@ int creador_relativo_archivos( int argc, char* directorio ){
                 printf( "ESCRIBO EN EL RELATIVO EN LA POSICION %d %s\n", cantidad, (char*) lista_iter_ver_actual(mi_iterador) );
                 // decidir si es lider o no
                 // agregarlo a la lista d lideres
+                documento_t* doc = documento_crear(cantidad);
+                vector_documentos[cantidad] = doc;
                 lista_iter_avanzar(mi_iterador);
                 cantidad ++;
         }
@@ -451,7 +469,7 @@ int** creador_matriz_hashmin(int rel_hashmin, void** lista_clusters, int cantida
 		return matriz;
 }
 
-void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_clusters, int* lideres, void** lista_clusters, bool agregar_doble){
+void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_clusters, int* lideres, void** lista_clusters, bool agregar_doble, void** vector_documentos){
 	int similitud = 0;
 	int status;
 	int mas_parecido;
@@ -464,6 +482,7 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 	status = R_READ(rel_hashmin, j, registro_char);
 	registro_int = malloc(sizeof(int) * CANTIDAD_FUNCIONES * 10);
 	while (status != R_ERROR){
+		documento_t* doc = vector_documentos[j];
 		for (int i=0; i < cantidad_clusters; i++ ){
 			registro_int = vector_a_int(registro_char);
 
@@ -490,6 +509,7 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 		printf("CENTRO DEL CLUSTER %d\n",centro);
 		if(centro != j){
 			status2 = lista_insertar_primero(lista_elementos, j );
+			doc->cluster1 = cluster ;
 		}
 		status2 = lista_insertar_primero(lista_elementos, j );
 
@@ -499,6 +519,7 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 			int centro2 = obtener_centro(cluster2);
 			if(centro2 != j){
 				status2 = lista_insertar_primero(lista_elementos2, j );
+				doc->cluster2 = cluster2;
 			}
 		}
 		printf ("AGREGO AL CLUSTER %d, el elemento %d \n", mas_parecido, j);
@@ -553,7 +574,7 @@ int creador_relativo_hashmin(int fd_relativo_nombres, char** vector, int cantida
         return rel_hasmin;
 }
 
-bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cantidad_clusters){
+bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cantidad_clusters, void** vector_documentos){
 	bool iterar = true;
 
 	char* registro_char = malloc (sizeof(char)* CANTIDAD_FUNCIONES * 5 *10);
@@ -574,20 +595,10 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 		lista_iter_t* mi_iterador = lista_iter_crear(lista_elementos);
 		while(!lista_iter_al_final(mi_iterador) ){
 	    	//
-
 			int numero = lista_iter_ver_actual(mi_iterador);
-			//printf("HOLA PUTO2 \n");
 			status = R_READ(fd_relativo_hasmin, numero , registro_char);
 			int documento = lista_iter_ver_actual(mi_iterador);
 		    registro_int = vector_a_int(registro_char);
-
-		    //printf("IMPRIMO EL VECTOR HASHMIN: ");
-		    //for(int j=0; j< CANTIDAD_FUNCIONES; j++){
-		    //	printf("%d ", registro_int[j]);
-		    //	acumulador[j]+= registro_int[j];
-		    //}
-		    //printf("\n");
-		    //printf("\n");
 
 			lista_iter_avanzar(mi_iterador);
 		}
@@ -619,6 +630,9 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 		//printf("LLEGA HASTA ACAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa \n");
 		free(iter);
 		cluster->centro = mas_parecido;
+		documento_t* doc = vector_documentos[mas_parecido];
+		doc->cluster1=cluster;
+		doc->cluster2=NULL;
 
 
 	}
@@ -649,7 +663,8 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 
         int cantidad_archivos = devuelve_cantidad_archivos(argc, directorio);
         printf("La Cantidad de archivos es: %d \n", cantidad_archivos);
-        int fd_relativo_nombres = creador_relativo_archivos( argc, directorio);
+        void** vector_documentos = malloc(sizeof(documento_t*) * cantidad_archivos);
+        int fd_relativo_nombres = creador_relativo_archivos( argc, directorio, vector_documentos);
         //cantidad_clusters = k;
         //int cantidad_lideres = 3;
         int cantidad_lideres = 20*log10(cantidad_archivos);
@@ -691,7 +706,7 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 
         int** matriz = creador_matriz_hashmin(fd_relativo_hasmin, vector_clusters, cantidad_clusters, cantidad_lideres, lideres);
         printf("MATRIZ DE HASHMIN CREADA \n");
-        asignar_documentos_a_clusters(matriz, fd_relativo_hasmin, cantidad_clusters, lideres, vector_clusters, agregar_doble);
+        asignar_documentos_a_clusters(matriz, fd_relativo_hasmin, cantidad_clusters, lideres, vector_clusters, agregar_doble, vector_documentos);
         //free(vector); //hay que destruir cada shingle
 
         if (listar_clusters){
@@ -709,7 +724,7 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 
         	}
         }
-        iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters);
+        iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
         return 0;
 }
 
