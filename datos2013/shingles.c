@@ -224,7 +224,7 @@ int creador_shingles(char* nombre_archivo, abb_t* arbol){
 	return 0;
 }
 
-/*int creador_shingles2(char* nombre_archivo, abb_t* arbol){
+int creador_shingles2(char* nombre_archivo, abb_t* arbol){
         FILE* archivo;
         char* shingle_old = malloc((TAM_SHINGLE+1) * sizeof(char));
         char* shingle_new = malloc((TAM_SHINGLE+1) * sizeof(char));
@@ -767,6 +767,10 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
         }
         // HACER EL WHILE NO CAMBIEN LOS CENTROS/
         // crear vector centros
+        bool iterar_k = false;
+        while (iterar_k){
+
+        }
         int iteraciones = 0;
         while ((iterar == true) && (iteraciones < MAX_ITERACIONES)){
         	printf("***************ITERACION NUMERO: %d *******************************\n",iteraciones+1);
@@ -804,16 +808,12 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 			}
 			printf("\n");
 			iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
-			//reiniciar_cluster2_doc(vector_documentos, cantidad_archivos);
+			reiniciar_cluster2_doc(vector_documentos, cantidad_archivos);
         	iteraciones ++;
-        	//iterar = false;
         }
 
 
 
-        //for (int j=0; j < cantidad_archivos; j++){
-        //	printf("en el vector documentos en la posicion %d hay %d \n", j, vector_documentos[j]);
-        //}
         if (opcion_l == true) {
         	printf("OPCION -l ACTIVADA \n");
         	for (int i=0; i<cantidad_archivos; i++){
@@ -822,26 +822,11 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
         		//printf("LLEGA HASTA ACA 2 \n");
         		cluster_t* cluster = doc->cluster1;
         		cluster_t* cluster2 = doc->cluster2;
-        		printf("E; documento %d esta en el cluster: %d ", doc->nro_doc , cluster->numero);
+        		printf("El documento %d esta en el cluster: %d ", doc->nro_doc , cluster->numero);
         		if (cluster2 != NULL){
         			printf("y en el cluster: %d ",cluster2->numero);
         		}
         		printf("\n");
-        		/*printf("LLEGA HASTA ACA 3 \n");
-				lista_t* elementos = obtener_lista_elementos(cluster);
-				printf("LLEGA HASTA ACA 4 \n");
-				lista_iter_t* mi_iterador = lista_iter_crear(elementos); // SE ROMPE ACAAAAAAAAA
-				printf("LLEGA HASTA ACA 5 \n");
-				printf("AL documento %d lo metio en el cluster que contiene estos documentos: \n", doc->nro_doc);
-				printf("CANTIDAD DE ELEMENTOS EN LA LISTA %d \n", lista_largo(elementos));
-				while( !lista_iter_al_final(mi_iterador) ){
-					printf("texto%d ", lista_iter_ver_actual(mi_iterador));
-					lista_iter_avanzar(mi_iterador);
-				}
-				lista_iter_destruir(mi_iterador);
-				printf("LLEGA HASTA ACA 6 \n");
-				printf("\n");
-				*/
         	}
         }
 
