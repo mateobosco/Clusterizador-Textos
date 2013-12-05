@@ -721,7 +721,6 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
         			lista_iter_avanzar(mi_iterador);
         		}
         		printf("\n");
-
         	}
         }
         iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
