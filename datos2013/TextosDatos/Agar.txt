@@ -1,0 +1,85 @@
+
+
+Agar or agar-agar is a gelatinous substance derived by boiling Cyclopædia of India and of eastern and southern Asia, commercial ..., Volume 2 (1871), edited by Edward Balfour from a polysaccharide in red algae, where it accumulates in the cell walls of agarophyte and serve as the primary structural support for the algae's cell walls. Davidson, Alan, and Tom Jaine. The Oxford companion to food. Oxford University Press, USA, 2006. 805. Print. Retrieved Aug. 08, 2010, from Agar is a mixture of two components: the linear polysaccharide agarose, and a heterogeneous mixture of smaller molecules called agaropectin.
+
+Throughout history into modern times, agar has been chiefly used as an ingredient in desserts throughout Asia and also as a solid substrate to contain culture medium for microbiological work. Agar (agar-agar) can be used as a laxative, an appetite suppressant, vegetarian gelatin substitute, a thickener for soups, in fruit preserves, ice cream, and other desserts, as a clarifying agent in brewing, and for sizing paper and fabrics. Cyclopaedia of India and of Eastern and Southern Asia, commercial ... By Edward Green Balfour 
+
+The gelling agent is an unbranched polysaccharide obtained from the cell walls of some species of red algae, primarily from the genera Gelidium and Gracilaria, or seaweed (Sphaerococcus euchema). For commercial purposes, it is derived primarily from Gelidium amansii. In chemical terms, agar is a polymer made up of subunits of the sugar galactose.
+
+== Background ==
+The structure of an agarose polymer.
+
+Agar consists of a mixture of agarose and agaropectin. Agarose, the predominant component of agar, is a linear polymer, made up of the repeating monomeric unit of agarobiose. Agarobiose is a disaccharide made up of D-galactose and 3,6-anhydro-L-galactopyranose. Agaropectin is a heterogeneous mixture of smaller molecules that occur in lesser amounts. Agar at lsbu.ac.uk Water Structure and Science 
+
+Agar exhibits hysteresis, melting at 85 °C (358 K, 185 °F) and solidifying from 32-40 °C (305-313 K, 90-104 °F). This property lends a suitable balance between easy melting and good gel stability at relatively high temperatures. Since many scientific applications require incubation at temperatures close to human body temperature (37 °C), agar is more appropriate than other solidifying agents that melt at this temperature, such as gelatin.
+
+The word "agar" comes from agar-agar, the Malay name for red algae (Gigartina, Gracilaria) from which the jelly is produced. It is also known as kanten, China grass, Japanese isinglass, Ceylon moss or Jaffna moss. Agar-Agar at Agar-Agar.org Gracilaria lichenoides is specifically referred to as agal-agal or Ceylon agar. Agar-Agar at Botanical.com 
+
+==Uses==
+=== Microbiology ===
+100mm diameter Petri dishes containing agar jelly for bacterial culture
+
+Agar is used throughout the world to provide a solid surface containing medium for the growth of bacteria and fungi. Microbial growth does not destroy the gel structure because most microorganisms are unable to digest agar. Agar is typically sold commercially as a powder that can be mixed with water and prepared similarly to gelatin before use as a growth medium. Other ingredients are added to the agar to meet the nutritional needs of the microbes. Many specific formulations are available, because some microbes prefer certain environmental conditions over others.
+
+==== Motility assays ====
+As a gel, an agarose medium is porous and therefore can be used to measure microorganism motility and mobility. The gel's porosity is directly related to the concentration of agarose in the medium, so various levels of effective viscosity (from the cell's "point of view") can be selected, depending on the experimental objectives.
+
+A common identification assay involves culturing a sample of the organism deep within a block of nutrient agar. Cells will attempt to grow within the gel structure. Motile species will be able to migrate, albeit slowly, throughout the gel and infiltration rates can then be visualized, whereas non-motile species will show growth only along the now-empty path introduced by the invasive initial sample deposition.
+
+Another setup commonly used for measuring chemotaxis and chemokinesis utilizes the under-agarose cell migration assay, whereby a layer of agarose gel is placed between a cell population and a chemoattractant. As a concentration gradient develops from the diffusion of the chemoattractant into the gel, various cell populations requiring different stimulation levels to migrate can then be visualized over time using microphotography as they tunnel upward through the gel against gravity along the gradient.
+
+=== Plant biology ===
+Physcomitrella patens plants growing axenically in vitro on agar plates (Petri dish, 9 cm diameter).
+
+Research grade agar is used extensively in plant biology as it is supplemented with a nutrient and vitamin mixture that allows for seedling germination in Petri dishes under sterile conditions (given that the seeds are sterilized as well). Nutrient and vitamin supplementation for Arabidopsis thaliana is standard across most experimental conditions. Murashige & Skoog (MS) nutrient mix and Gamborg's B5 vitamin mix in general are used. A 1.0% agar/0.44% MS+vitamin dH2O solution is suitable for growth media between normal growth temps.
+
+The solidification of the agar within any growth media (GM) is pH-dependent, with an optimal range between 5.4-5.7. Usually, the application of KOH is needed to increase the pH to this range. A general guideline is about 600 µl 0.1M KOH per 250 ml GM. This entire mixture can be sterilized using the liquid cycle of an autoclave.
+
+This medium nicely lends itself to the application of specific concentrations of phytohormones etc. to induce specific growth patterns in that one can easily prepare a solution containing the desired amount of hormone, add it to the known volume of GM, and autoclave to both sterilize and evaporate off any solvent that may have been used to dissolve the often-polar hormones. This hormone/GM solution can be spread across the surface of Petri dishes sown with germinated and/or etiolated seedlings.
+
+Experiments with the moss Physcomitrella patens, however, have shown that choice of the gelling agent — agar or Gelrite - does influence phytohormone sensitivity of the plant cell culture. 
+ 
+
+=== Molecular biology ===
+
+Agar is a heterogeneous mixture of two classes of polysaccharide: agaropectin and agarose. Although both polysaccharide classes share the same galactose-based backbone, agaropectin is heavily modified with acidic side-groups, such as sulfate and pyruvate.
+
+The neutral charge and lower degree of chemical complexity of agarose make it less likely to interact with biomolecules, and, therefore, agarose has become the preferred matrix for work with proteins and nucleic acids. Gels made from purified agarose have a relatively large pore size, making them useful for separation of large molecules, such as proteins and protein complexes >200 kilodaltons, as well as DNA fragments >100 basepairs. Agarose has been used widely for immunodiffusion and immunoelectrophoresis, as the agarose fibers functions as an anchor for immunocomplexes. Agarose is used generally as the medium for analytical scale electrophoretic separation in agarose gel electrophoresis and for column-based preparative scale separation as in gel filtration chromatography and affinity chromatography.
+
+=== Culinary ===
+Sago at gulaman in Filipino cuisine is made from agar (gulaman), sago (tapioca pearls), and fruit juice flavored with pandan
+Agar-agar is a natural vegetable gelatin counterpart. White and semi-translucent, it is sold in packages as washed and dried strips or in powdered form. It can be used to make jellies, puddings, and custards. For making jelly, it is boiled in water until the solids dissolve. Sweetener, flavouring, colouring, fruit or vegetables are then added and the liquid is poured into molds to be served as desserts and vegetable aspics, or incorporated with other desserts, such as a jelly layer in a cake.
+
+Agar-agar is approximately 80% fiber, so it can serve as an intestinal regulator. Its bulk quality is behind one of the latest fad diets in Asia, the kanten (the Japanese word for agar-agar ) diet. Once ingested, kanten triples in size and absorbs water. This results in the consumer's feeling more full. This diet has recently received some press coverage in the United States as well. The diet has shown promise in obesity studies. 
+
+In Philippine cuisine, it is used to make the jelly bars in the various gulaman refreshments or desserts such as sago gulaman (aka gulaman at sago), buko pandan, agar flan, halo-halo, the various Filipino fruit salads, black gulaman, and red gulaman. One use of agar in Japanese cuisine is anmitsu, a dessert made of small cubes of agar jelly and served in a bowl with various fruits or other ingredients. It is also the main ingredient in Mizuyōkan, another popular Japanese food. (See very top image.) In Vietnamese cuisine, jellies made of flavored layers of agar agar, called thạch, are a popular dessert, and are often made in ornate molds for special occasions. In Indian cuisine, agar agar is known as "China grass" and is used for making desserts. In Burmese cuisine, a sweet jelly known as kyauk kyaw (​ေကျာက်​ေကြာ ) is made from agar. In Russia, it is used in addition or as a replacement to pectin in jams and marmalades, as a substitute to gelatin for its superior gelling properties, and as a strengthening ingredient in souffles and custards. Another use of agar-agar is in Ptich'ye moloko (Bird's Milk), a rich gellied custard (or soft meringue) used as a cake filling or chocolate-glazed as individual sweets. Agar-agar may also be used as the gelling agent in gel clarification, a culinary technique used to clarify stocks, sauces, and other liquids.
+
+=== Other uses ===
+Agar is used:
+* As an impression material in dentistry.
+* To make salt bridges for use in electrochemistry.
+* In formicariums as a transparent substitute for sand and a source of nutrition.
+* By Kanten Clay Studio as a natural ingredient to form modelling clay for young children to play with.
+
+== See also ==
+
+* Agarose gel electrophoresis
+* Algaculture
+* Anmitsu
+* Asepsis
+* Carrageenan
+* Gulaman
+* Halo-halo
+* Immunodiffusion, Immunoelectrophoresis
+* Kanten Clay Studio
+* Petri dish
+* R2a agar
+* Rhodophyta
+* Robert Koch
+* SEAgel
+* Walter Hesse
+
+== References ==
+
+
+

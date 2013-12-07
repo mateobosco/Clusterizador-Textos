@@ -16,9 +16,9 @@
 
 #define NELEMS(x)  (sizeof(x) / sizeof(x[0])) //SIZE DEL ARRAY
 #define TAM_SHINGLE 7
-#define CANTIDAD_FUNCIONES 50
+#define CANTIDAD_FUNCIONES 100
 #define MAX_ITERACIONES 100
-#define CONSTANTE 0.5
+#define CONSTANTE 0.005
 
 struct cluster{
 	lista_t* lista_elementos;
@@ -69,6 +69,16 @@ float jaccard (int* vector1, int* vector2){
 		}
 	}
 	return (iguales*1.0)/CANTIDAD_FUNCIONES;
+}
+
+int char_a_int(char* numero){
+	int valor;
+	unsigned char num0 = numero[0];
+	unsigned char num1 = numero[1];
+	unsigned char num2 = numero[2];
+	unsigned char num3 = numero[3];
+	valor =(int) pow(2,24) * num0 + (int) pow(2,16) * num1 + (int) pow(2,8) * num2 + (int) num3;
+	return valor;
 }
 
 int* vector_a_int(char* vector){
@@ -216,7 +226,7 @@ int creador_relativo_archivos( int argc, char* directorio, void** vector_documen
         // ELEGIR 'J' LIDERES EN ESTA PARTE.
         //int j = 20*log10(cantidad); // J lideres1
         lista_t* lideres = lista_crear();
-        rel_nombres = R_CREATE(nombres, 50, cantidad); //esta linea rompia todo, decia long_max y le puse 30, despues ver bien
+        rel_nombres = R_CREATE(nombres, 100, cantidad); //esta linea rompia todo, decia long_max y le puse 30, despues ver bien
 
         lista_iter_t* mi_iterador = lista_iter_crear(lista_aux);
         cantidad = 0;
@@ -287,7 +297,7 @@ int creador_shingles(char* nombre_archivo, abb_t* arbol){
 
 
 void llamar_a_creador(int fd_relativo_nombres , abb_t* arbol_shingles){
-        char* registro = malloc(50 * sizeof(char));
+        char* registro = malloc(100* sizeof(char));
         //char registro[100];
         int status;
         if(R_SEEK(fd_relativo_nombres,0) >= R_OK ){
@@ -365,15 +375,6 @@ int* generador_funciones_hasmin(void){
         return funciones;
 }
 
-int char_a_int(char* numero){
-	int valor;
-	unsigned char num0 = numero[0];
-	unsigned char num1 = numero[1];
-	unsigned char num2 = numero[2];
-	unsigned char num3 = numero[3];
-	valor =(int) pow(2,24) * num0 + (int) pow(2,16) * num1 + (int) pow(2,8) * num2 + (int) num3;
-	return valor;
-}
 
 char* int_a_char(int numero){
 	char* resultado = malloc(sizeof(char) * 5);
@@ -511,11 +512,11 @@ void asignar_documentos_a_clusters(int** matriz, int rel_hashmin, int cantidad_c
 
 		if (similitud == 0 && cantidad_clusters > 1){
 			mas_parecido=rand()%(cantidad_clusters-1);
-			printf("similitud % d , NO SE PARECE A NINGUNO, ASIGNO RANDOM A %d \n",similitud ,mas_parecido);
+			//printf("similitud % d , NO SE PARECE A NINGUNO, ASIGNO RANDOM A %d \n",similitud ,mas_parecido);
 		}
 		if (similitud == 0 && cantidad_clusters == 1){
 			mas_parecido=0;
-			printf("similitud % d , NO SE PARECE A NINGUNO, ASIGNO RANDOM A %d \n",similitud ,mas_parecido);
+			//printf("similitud % d , NO SE PARECE A NINGUNO, ASIGNO RANDOM A %d \n",similitud ,mas_parecido);
 		}
 		//printf("HOLA \n");
 		similitud = 0;
@@ -602,7 +603,7 @@ void reiniciar_cluster2_doc(void** vector_documentos, int cantidad_documentos){
 }
 
 char* devolver_nombre_documento(int fd_relativo_nombres, int nro_doc){
-	char* nombre = malloc(sizeof(char)*50);
+	char* nombre = malloc(sizeof(char)*100);
 	int status = R_READ(fd_relativo_nombres,nro_doc, nombre);
 	return nombre;
 }
@@ -615,7 +616,7 @@ int mostrar_donde_guardo_documento (int fd_relativo_nombres, void** vector_docum
 	printf("AL documento que le pasamos por parametro %s lo metio en el cluster que contiene estos documentos \n", nombre_doc);
 	while( !lista_iter_al_final(mi_iterador) ){
 		char* nombre = devolver_nombre_documento(fd_relativo_nombres, lista_iter_ver_actual(mi_iterador));
-		printf("%s - ",nombre);
+		printf("%s - \n",nombre);
 		//printf("texto%d ", lista_iter_ver_actual(mi_iterador));
 		lista_iter_avanzar(mi_iterador);
 	}
@@ -674,18 +675,19 @@ bool recalcular_centros(int fd_relativo_hasmin, void** vector_clusters, int cant
 		if (centro != mas_parecido){
 			//printf("iterar pasa a ser true \n");
 			iterar=true;
+			int nro_cluster = cluster->numero;
+			float radio_viejo = cluster->radio;
+			cluster_destruir(cluster);
+			cluster = cluster_crear(mas_parecido);
+			cluster->numero = nro_cluster;
+			cluster->radio = radio_viejo;
+			//cluster->centro = mas_parecido;
+			documento_t* doc = vector_documentos[mas_parecido];
+			doc->cluster1=cluster;
+			doc->cluster2=NULL;
 		}
 		free(iter);
-		int nro_cluster = cluster->numero;
-		float radio_viejo = cluster->radio;
-		cluster_destruir(cluster);
-		cluster = cluster_crear(mas_parecido);
-		cluster->numero = nro_cluster;
-		cluster->radio = radio_viejo;
-		//cluster->centro = mas_parecido;
-		documento_t* doc = vector_documentos[mas_parecido];
-		doc->cluster1=cluster;
-		doc->cluster2=NULL;
+
 
 
 	}
@@ -713,8 +715,9 @@ int llamar_a_iterar_k(int fd_relativo_nombres,int fd_relativo_hasmin, int cantid
 			printf("CANTIDAD DE CLUSTERS %d \n",cantidad_clusters);
 			asignar_documentos_a_clusters(matriz, fd_relativo_hasmin, cantidad_clusters, lideres, vector_clusters, agregar_doble, vector_documentos);
 			//free(vector); //hay que destruir cada shingle
-			if (listar_clusters){
-				printf("LOS TEXTOS QUEDARON ASIGNADOS DE LA SIGUIENTE MANERA: \n");
+			iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
+			if (listar_clusters && iterar ==false){
+				//printf("LOS TEXTOS QUEDARON ASIGNADOS DE LA SIGUIENTE MANERA: \n");
 				for (int i = 0; i<cantidad_clusters; i++){
 					printf("CLUSTER %d \n", i);
 					cluster_t* cluster = vector_clusters[i];
@@ -725,19 +728,19 @@ int llamar_a_iterar_k(int fd_relativo_nombres,int fd_relativo_hasmin, int cantid
 					while( !lista_iter_al_final(mi_iterador) ){
 						//printf("texto%d ", lista_iter_ver_actual(mi_iterador));
 						char* nombre = devolver_nombre_documento(fd_relativo_nombres, lista_iter_ver_actual(mi_iterador));
-						printf("%s - ",nombre);
+						printf("%s -  \n",nombre);
 						lista_iter_avanzar(mi_iterador);
 					}
 					printf("(centro es: %d )", obtener_centro(cluster));
 					printf("\n");
 				}
 			}
-			if(nombre_doc != NULL){
+			if(nombre_doc != NULL && iterar ==false){
 				mostrar_donde_guardo_documento(fd_relativo_nombres,vector_documentos, nombre_doc);
 				printf("\n");
 			}
 			printf("\n");
-			iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
+
 			reiniciar_cluster2_doc(vector_documentos, cantidad_archivos);
 			iteraciones ++;
 		}
@@ -759,7 +762,7 @@ int llamar_a_iterar_k(int fd_relativo_nombres,int fd_relativo_hasmin, int cantid
 	return 0;
 }
 
-int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_doble, bool listar_clusters, char* nombre_doc, bool opcion_l ){
+int principal( int argc, char* directorio, int cantidad_clusters, bool agregar_doble, bool listar_clusters, char* nombre_doc, bool opcion_l ){
 		bool iterar_k =false;
 		if (cantidad_clusters == 0){
 			iterar_k = true;
@@ -797,11 +800,11 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 
         int* lideres = selector_lideres(cantidad_clusters, cantidad_archivos, cantidad_lideres);
         void** vector_clusters = creador_vector_clusters(cantidad_clusters, cantidad_archivos, lideres);
-       // printf("CREO EL ARBOL \n");
+       //printf("CREO EL ARBOL \n");
         abb_t* arbol_shingles = abb_crear(strcmp,NULL);
         //printf("LLAMO AL CREADOR DE SHINGLES \n");
         llamar_a_creador(fd_relativo_nombres , arbol_shingles );
-        //printf("PASO LOS SHINGLES AL VECTOR \n");
+        printf("PASO LOS SHINGLES AL VECTOR \n");
         char** vector = pasar_a_vector(arbol_shingles);
         int tamano_arbol = abb_cantidad(arbol_shingles);
         //printf("EL ARBOL TIENE %d SHINGLES \n", tamano_arbol);
@@ -829,7 +832,9 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 				asignar_documentos_a_clusters(matriz, fd_relativo_hasmin, cantidad_clusters, lideres, vector_clusters, agregar_doble, vector_documentos);
 				//free(vector); //hay que destruir cada shingle
 
-				if (listar_clusters){
+
+				iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
+				if (listar_clusters && iterar ==false){
 					printf("LOS TEXTOS QUEDARON ASIGNADOS DE LA SIGUIENTE MANERA: \n");
 					for (int i = 0; i<cantidad_clusters; i++){
 						printf("CLUSTER %d \n", i);
@@ -842,14 +847,14 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 						while( !lista_iter_al_final(mi_iterador) ){
 							//printf("texto%d ", lista_iter_ver_actual(mi_iterador));
 							char* nombre = devolver_nombre_documento(fd_relativo_nombres, lista_iter_ver_actual(mi_iterador));
-							printf("%s - ",nombre);
+							printf("%s - \n ",nombre);
 							lista_iter_avanzar(mi_iterador);
 						}
 						printf("(centro es: %d )", obtener_centro(cluster));
 						printf("\n");
 					}
 				}
-				if(nombre_doc != NULL){
+				if(nombre_doc != NULL && iterar == false){
 					documento_t* doc = vector_documentos[0];
 					cluster_t* cluster = doc->cluster1;
 					lista_t* elementos = obtener_lista_elementos(cluster);
@@ -862,7 +867,6 @@ int el_main( int argc, char* directorio, int cantidad_clusters, bool agregar_dob
 					printf("\n");
 				}
 				printf("\n");
-				iterar = recalcular_centros(fd_relativo_hasmin, vector_clusters, cantidad_clusters , vector_documentos);
 				reiniciar_cluster2_doc(vector_documentos, cantidad_archivos);
 				iteraciones ++;
 			}
@@ -964,7 +968,7 @@ int main( int argc, char *argv[] ){
 					break;
 				}
 		}
-		el_main(argc, directorio, cantidad_clusters, agregar_doble, listar_clusters, nombre_doc, opcion_l);
+		principal(argc, directorio, cantidad_clusters, agregar_doble, listar_clusters, nombre_doc, opcion_l);
 		return 0;
 
 }

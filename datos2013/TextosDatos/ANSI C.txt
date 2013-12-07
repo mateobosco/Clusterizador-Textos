@@ -1,0 +1,69 @@
+
+
+ANSI C refers to the family of successive standards published by the American National Standards Institute (ANSI) for the C programming language. Software developers writing in C are encouraged to conform to the standards, as doing so aids portability between compilers.
+
+==History and outlook==
+The first standard for C was published by ANSI. Although this document was subsequently adopted by International Organization for Standardization (ISO) and subsequent revisions published by ISO have been adopted by ANSI, the name ANSI C (rather than ISO C) is still more widely used. While some software developers use the term ISO C, others are standards body–neutral and use Standard C.
+
+===C89 and C90===
+In 1983, the American National Standards Institute formed a committee, X3J11, to establish a standard specification of C. After a long and arduous process, the standard was completed in 1989 and ratified as ANSI X3.159-1989 "Programming Language C." This version of the language is often referred to as "ANSI C", or sometimes "C89" (to distinguish it from C99).
+
+The same standard was ratified by the International Organization for Standardization as ISO/IEC 9899:1990, with only formatting changes, which is sometimes referred to as C90. Therefore, the terms "C89" and "C90" refer to essentially the same language.
+
+ISO also published in 1994 an amendment, referred to as AMD1, introducing minor changes to the language and the library.
+
+This standard has been withdrawn by both INCITS and ISO/IEC. 
+
+===C99===
+
+In March 2000, ANSI adopted the ISO/IEC 9899:1999 standard. This standard is commonly referred to as C99.
+
+This standard has been withdrawn by ISO/IEC, but is still approved by INCITS.
+
+===C11===
+
+"C11" is the new standard for the C programming language.
+
+==Support from major compilers==
+
+ANSI C is now supported by almost all the widely used compilers. Most of the C code being written nowadays is based on ANSI C. Any program written only in standard C and without any hardware dependent assumptions is virtually guaranteed to compile correctly on any platform with a conforming C implementation. Without such precautions, most programs may compile only on a certain platform or with a particular compiler, due, for example, to the use of non-standard libraries, such as GUI libraries, or to the reliance on compiler- or platform-specific attributes such as the exact size of certain data types and byte endianness.
+
+===Compliance detectability===
+To mitigate the differences between K&R C and the ANSI C standard, the __STDC__ ("standard c") macro can be used to split code into ANSI and K&R sections.
+
+ #if __STDC__
+ extern int getopt(int, char * const *, const char *);
+ #else
+ extern int getopt();
+ #endif
+
+It's better to use "#if __STDC__" as above rather than "#ifdef __STDC__" because some implementation may set __STDC__ to zero to indicate non-ANSI compliance. "#if" will treat any identifiers that couldn't be replaced by a macro as zero (0). Thus even if the macro "__STDC__" is not defined to signify non-ANSI compliance, "#if" will work as shown.
+
+In the above example, a prototype is used in a function declaration for ANSI compliant implementations, while an obsolescent non-prototype declaration is used otherwise. Those are still ANSI-compliant as of C99 and C90, but their use is discouraged.
+
+==Compilers supporting ANSI C==
+* GCC
+* Microsoft Visual C++ (C90. A few features of C99)
+* LabWindows/CVI
+* ARM RealView
+* LCC
+* OpenWatcom (C89/90 and some C99)
+
+==External links==
+* ISO C working group
+* Draft ANSI C Standard (ANSI X3J11/88-090) (May 13, 1988), Third Public Review
+* Draft ANSI C Rationale (ANSI X3J11/88-151) (Nov 18, 1988)
+* C Information Bulletin #1 (ANSI X3J11/93-007) (May 27, 1992)
+* ANSI C Yacc grammar
+** ANSI C grammar, Lex specification
+* 
+* 
+
+* 
+
+==References==
+ 
+ http://www.techstreet.com/cgi-bin/detail?doc_no=incits_iso_iec%7C9899;product_id=232462 
+
+
+

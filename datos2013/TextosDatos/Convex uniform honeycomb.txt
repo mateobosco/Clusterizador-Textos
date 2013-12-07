@@ -1,0 +1,238 @@
+
+
+The alternated cubic honeycomb is one of 28 space-filling uniform tessellations in Euclidean 3-space, composed of alternating yellow tetrahedra and red octahedra.
+In geometry, a convex uniform honeycomb is a uniform tessellation which fills three-dimensional Euclidean space with non-overlapping convex uniform polyhedral cells.
+
+Twenty-eight such honeycombs exist:
+* the familiar cubic honeycomb and 7 truncations thereof;
+* the alternated cubic honeycomb and 4 truncations thereof;
+* 10 prismatic forms based on the uniform plane tilings (11 if including the cubic honeycomb);
+* 5 modifications of some of the above by elongation and/or gyration.
+
+They can be considered the three-dimensional analogue to the uniform tilings of the plane.
+
+== History ==
+* 1900: Thorold Gosset enumerated the list of semiregular convex polytopes with regular cells (Platonic solids) in his publication On the Regular and Semi-Regular Figures in Space of n Dimensions, including one regular cubic honeycomb, and two semiregular forms with tetrahedra and octahedra.
+* 1905: Alfredo Andreini enumerated 25 of these tessellations.
+* 1991: Norman Johnson's manuscript Uniform Polytopes identified the complete list of 28.
+* 1994: Branko Grünbaum, in his paper Uniform tilings of 3-space, also independently enumerated all 28, after discovering errors in Andreini's publication. He found the 1905 paper, which listed 25, had 1 wrong, and 4 being missing. Grünbaum states in this paper that Norman Johnson deserves priority for achieving the same enumeration in 1991. He also mentions that I. Alexeyev of Russia had contacted him regarding a putative enumeration of these forms, but that Grünbaum was unable to verify this at the time.
+* 2006: George Olshevsky, in his manuscript Uniform Panoploid Tetracombs, along with repeating the derived list of 11 convex uniform tilings, and 28 convex uniform honeycombs, expands a further derived list of 143 convex uniform tetracombs (Honeycombs of uniform polychora in 4-space).
+
+Only 14 of the convex uniform polyhedra appear in these patterns:
+* three of the five Platonic solids,
+* six of the thirteen Archimedean solids, and
+* five of the infinite family of prisms.
+
+=== Names ===
+This set can be called the regular and semiregular honeycombs. It has been called the Archimedean honeycombs by analogy with the convex uniform (non-regular) polyhedra, commonly called Archimedean solids. Recently Conway has suggested naming the set as the Architectonic tessellations and the dual honeycombs as the Catoptric tessellations.
+
+The individual honeycombs are listed with names given to them by Norman Johnson. (Some of the terms used below are defined in Uniform polychoron#Geometric derivations.)
+
+For cross-referencing, they are given with list indices from Andreini (1-22), Williams(1-2,9-19), Johnson (11-19, 21-25, 31-34, 41-49, 51-52, 61-65), and Grünbaum(1-28).
+
+== Compact Euclidean uniform tessellations (by their infinite Coxeter group families) ==
+Fundamental domains in a cubic element of three groups.
+Family correspondences
+The fundamental infinite Coxeter groups for 3-space are:
+# The , , cubic, (8 unique forms plus one alternation)
+# The , , alternated cubic, (11 forms, 3 new)
+# The cyclic group, or )], (5 forms, one new)
+
+There is a correspondence between all three families. Removing one mirror from produces , and removing one mirror from produces . This allows multiple constructions of the same honeycombs. If cells are colored based on unique positions within each Wythoff construction, these different symmetries can be shown.
+
+In addition there are 5 special honeycombs which don't have pure reflectional symmetry and are constructed from reflectional forms with elongation and gyration operations.
+
+The total unique honeycombs above are 18.
+
+The prismatic stacks from infinite Coxeter groups for 3-space are:
+# The x, x prismatic group, (2 new forms)
+# The x, x prismatic group, (7 unique forms)
+# The x, (3 3 3)x prismatic group, (No new forms)
+# The xx, xx prismatic group, (These all become a cubic honeycomb)
+
+In addition there is one special elongated form of the triangular prismatic honeycomb.
+
+The total unique prismatic honeycombs above (excluding the cubic counted previously) are 10.
+
+Combining these counts, 18 and 10 gives us the total 28 uniform honeycombs.
+
+=== The C~3, group (cubic) ===
+The regular cubic honeycomb, represented by Schläfli symbol {4,3,4}, offers seven unique derived uniform honeycombs via truncation operations. (One redundant form, the runcinated cubic honeycomb, is included for completeness though identical to the cubic honeycomb.)
+
+ReferenceIndices Honeycomb nameCoxeter-Dynkinand Schläflisymbols Cell counts/vertexand positions in cubic honeycomb 
+ (0) (1) (2) (3) Alt Solids(Partial) Frames(Perspective) Vertex figure 
+ J11,15A1W1G22 cubic (chon) t0{4,3,4} (8)30px(4.4.4) 75px ] 75pxoctahedron 
+ J12,32A15W14G7 rectified cubic (rich) t1{4,3,4} (2)30px(3.3.3.3) (4)30px(3.4.3.4) 75px ] 75pxcuboid 
+ J13A14W15G8 truncated cubic (tich) t0,1{4,3,4} (1)30px(3.3.3.3) (4)30px(3.8.8) 75px 75px 75pxsquare pyramid 
+ J14A17W12G9 cantellated cubic (srich) t0,2{4,3,4} (1)30px(3.4.3.4) (2)30px(4.4.4) (2)30px(3.4.4.4) 75px ] 75pxoblique triangular prism 
+ J11,15 runcinated cubic(same as regular cubic) (chon)t0,3{4,3,4} (1)30px(4.4.4) (3)30px(4.4.4) (3)30px(4.4.4) (1)30px(4.4.4) 75px ] 75pxoctahedron 
+ J16A3W2G28 bitruncated cubic (batch) t1,2{4,3,4} (2)30px(4.6.6) (2)30px(4.6.6) 75px ] 75px(disphenoid tetrahedron) 
+ J17A18W13G25 cantitruncated cubic (grich) t0,1,2{4,3,4} (1)30px(4.6.6) (1)30px(4.4.4) (2)30px(4.6.8) 75px ] 75pxirregular tetrahedron 
+ J18A19W19G20 runcitruncated cubic (prich)t0,1,3{4,3,4} (1)30px(3.4.4.4) (1)30px(4.4.4) (2)30px(4.4.8) (1)30px(3.8.8) 75px ] 75pxoblique trapezoidal pyramid 
+ J19A22W18G27 omnitruncated cubic (otch)t0,1,2,3{4,3,4} (1)30px(4.6.8) (1)30px(4.4.8) (1)30px(4.4.8) (1)30px(4.6.8) 75px ] 75pxirregular tetrahedron 
+ J21,31,51A2W9G1 alternated cubic (octet) h0{4,3,4} (8)30px(3.3.3) (6)30px(3.3.3.3) 76px ] 75pxcuboctahedron 
+ J21,31,51A2W9G1 Alternated runcinated cubic(same as alternated cubic)h0,3{4,3,4} (2)30px(3.3.3) (2)30px(3.3.3) (2)30px(3.3.3) (2)30px(3.3.3) (6)30px(3.3.3.3) 75pxcuboctahedron 
+ Nonuniform Alternated bitruncated cubich1,2{4,3,4} 30px(3.3.3.3.3) 30px(3.3.3.3.3) 30px(3.3.3) 
+ Nonuniform Alternated cantitruncated cubic h0,1,2{4,3,4} 30px(3.3.3.3.3) 30px(3.3.3) 30px(3.3.3.3.4) 30px(3.3.3) 
+ Nonuniform Snub cubics{4,3,4} 30px(3.3.3.3.4) 30px(3.3.3.4) 30px(3.3.3.4) 30px(3.3.3.3.4) 30px(3.3.3) 
+
+=== B~4, group ===
+
+The group offers 11 derived forms via truncation operations, four being unique uniform honeycombs.
+
+The honeycombs from this group are called alternated cubic because the first form can be seen as a cubic honeycomb with alternate vertices removed, reducing cubic cells to tetrahedra and creating octahedron cells in the gaps.
+
+Nodes are indexed left to right as 0,1,0',3 with 0' being below and interchangeable with 0. The alternate cubic names given are based on this ordering.
+
+Referencedindices Honeycomb nameCoxeter-Dynkindiagram Cells by location(and count around each vertex) Solids(Partial) Frames(Perspective) vertex figure 
+ (0) (1) (0') (3) Alt 
+ J21,31,51A2W9G1 alternated cubic (octet) 30px (6)(3.3.3.3) 30px(8)(3.3.3) 76px ] 75pxcuboctahedron 
+ J22,34A21W17G10 truncated alternated cubic (tatoh) 30px (1)(3.4.3.4) 30px (2)(4.6.6) 30px (2)(3.6.6) 75px ] 75pxrectangular pyramid 
+ J12,32A15W14G7 rectified cubic(rectified alternate cubic) (rich) 30px (2)(3.4.3.4) 30px (2)(3.4.3.4) 30px (2)(3.3.3.3) 75px ] 75pxcuboid 
+ J12,32A15W14G7 rectified cubic(cantellated alternate cubic) (rich) 30px (1)(3.3.3.3) 30px (1)(3.3.3.3) 30px (4)(3.4.3.4) 75px ] 75pxcuboid 
+ J16A3W2G28 bitruncated cubic(cantitruncated alternate cubic) (batch) 30px (1)(4.6.6) 30px (1)(4.6.6) 30px (2)(4.6.6) 75px ] 75pxisosceles tetrahedron 
+ J13A14W15G8 truncated cubic(bicantellated alternate cubic) (tich) 30px (2)(3.8.8) 30px (2)(3.8.8) 30px (1)(3.3.3.3) 75px 75px 75pxsquare pyramid 
+ J11,15A1W1G22 cubic(trirectified alternate cubic) (chon) 30px (4)(4.4.4) 30px (4)(4.4.4) 75px ] 75pxoctahedron 
+ J23A16W11G5 runcinated alternated cubic (ratoh) 30px (1)cube 30px (3)(3.4.4.4) 30px (1)(3.3.3) 75px ] 75pxtapered triangular prism 
+ J14A17W12G9 cantellated cubic(runcicantellated alternate cubic) (srich) 30px (1)(3.4.4.4) 30px (2)(4.4.4) 30px (1)(3.4.4.4) 30px (1)(3.4.3.4) 75px ] 75pxobilique triangular prism 
+ J24A20W16G21 cantitruncated alternated cubic(runcitruncated alternate cubic) (gratoh) 30px (1)(3.8.8) 30px(2)(4.6.8) 30px (1)(3.6.6) 75px 75px 75pxIrregular tetrahedron 
+ J17A18W13G25 cantitruncated cubic(omnitruncated alternated cubic) (grich) 30px (1)(4.6.8) 30px (1)(4.4.4) 30px (1)(4.6.8) 30px(1)(4.6.6) 75px ] 75pxirregular tetrahedron 
+ J21,31,51A2W9G1 alternated cubic (octet) (4)30px(3.3.3) (4)30px(3.3.3) (6)30px(3.3.3.3) 
+ Nonuniform Alternated bitruncated cubic 30px(3.3.3.3.3) 30px(3.3.3.3.3) 30px(3.3.3.3.3) 30px(3.3.3) 
+ Nonuniform Alternated cantitruncated cubic 30px(3.3.3.3.4) 30px(3.3.3) 30px(3.3.3.3.4) 30px(3.3.3.3.3) 30px(3.3.3) 
+
+=== A~3, group ===
+
+There are 5 forms , A000029 6-1 cases, skipping one with zero marks constructed from the group, of which only the quarter cubic honeycomb is unique.
+
+Referencedindices Honeycomb nameCoxeter-Dynkindiagram Cells by location(and count around each vertex) Solids(Partial) Frames(Perspective) vertex figure 
+ (0) (1) (2) (3) Alt 
+ J21,31,51A2W9G1 alternated cubic (octet) 30px (4)(3.3.3) 30px (6)(3.3.3.3) 30px (4)(3.3.3) 75px ] 75pxcuboctahedron 
+ J12,32A15W14G7 rectified cubic (rich) 30px (2)(3.4.3.4) 30px (1)(3.3.3.3) 30px (2)(3.4.3.4) 30px (1)(3.3.3.3) 75px ] 75pxcuboid 
+ J25,33A13W10G6 quarter cubic (batatoh) 30px (1)(3.3.3) 30px (1)(3.3.3) 30px (3)(3.6.6) 30px (3)(3.6.6) 75px ] 75pxtriangular antiprism 
+ J22,34A21W17G10 truncated alternated cubic (tatoh) 30px (1)(3.6.6) 30px (1)(3.4.3.4) 30px (1)(3.6.6) 30px (2)(4.6.6) 75px ] 75pxRectangular pyramid 
+ J16A3W2G28 bitruncated cubic (batch) 30px (1)(4.6.6) 30px (1)(4.6.6) 30px (1)(4.6.6) 30px (1)(4.6.6) 75px ] 75pxisosceles tetrahedron 
+ Nonuniform Alternated cantitruncated cubic 30px(3.3.3.3.3) 30px(3.3.3.3.3) 30px(3.3.3.3.3) 30px(3.3.3.3.3) 30px(3.3.3) 
+
+=== Nonwythoffian forms (gyrated and elongated) ===
+Three more uniform honeycombs are generated by breaking one or another of the above honeycombs where its faces form a continuous plane, then rotating alternate layers by 60 or 90 degrees (gyration) and/or inserting a layer of prisms (elongation).
+
+The elongated and gyroelongated alternated cubic tilings have the same vertex figure, but are not alike. In the elongated form, each prism meets a tetrahedron at one triangular end and an octahedron at the other. In the gyroelongated form, prisms that meet tetrahedra at both ends alternate with prisms that meet octahedra at both ends.
+
+The gyroelongated triangular prismatic tiling has the same vertex figure as one of the plain prismatic tilings; the two may be derived from the gyrated and plain triangular prismatic tilings, respectively, by inserting layers of cubes.
+
+Referencedindices symbol Honeycomb name cell types (# at each vertex) Solids(Partial) Frames(Perspective) vertex figure 
+ J52A2'G2 h{4,3,4}:g gyrated alternated cubic (gytoh) tetrahedron (8)octahedron (6) 75px ] 75px triangular orthobicupola 
+ J61A?G3 h{4,3,4}:ge gyroelongated alternated cubic (gyetoh) triangular prism (6)tetrahedron (4)octahedron (3) 75px ] - 
+ J62A?G4 h{4,3,4}:e elongated alternated cubic (etoh) triangular prism (6)tetrahedron (4)octahedron (3) ] ] 75px 
+ J63A?G12 {3,6}:g x {∞} gyrated triangular prismatic (gytoph) triangular prism (12) ] ] 75px 
+ J64A?G15 {3,6}:ge x {∞} gyroelongated triangular prismatic (gyetaph) triangular prism (6)cube (4) ] ] 75px 
+
+=== Prismatic stacks ===
+Eleven prismatic tilings are obtained by stacking the eleven uniform plane tilings, shown below, in parallel layers. (One of these honeycombs is the cubic, shown above.) The vertex figure of each is an irregular bipyramid whose faces are isosceles triangles.
+
+==== The C~2×I~1(&infin;), ×, prismatic group ====
+
+There's only 3 unique honeycombs from the square tiling, but all 6 tiling truncations are listed below for completeness, and tiling images are shown by colors corresponding to each form.
+
+Indices Coxeter-Dynkinand Schläflisymbols Honeycomb name Planetiling Solids(Partial) Tiling 
+ J11,15A1G22 {4,4}×{∞} Cubic(Square prismatic) (chon) (4.4.4.4) 80px 80px 
+ J45A6G24 t0,1{4,4}×{∞} Truncated/Bitruncated square prismatic (tassiph) (4.8.8) 80px 80px 
+ J11,15A1G22 t1{4,4}×{∞} Cubic(Rectified square prismatic) (chon) (4.4.4.4) 80px 80px 
+ J11,15A1G22 t0,2{4,4}×{∞} Cubic(Cantellated square prismatic) (chon) (4.4.4.4) 80px 80px 
+ J45A6G24 t0,1,2{4,4}×{∞} Truncated square prismatic(Omnitruncated square prismatic) (tassiph) (4.8.8) 80px 80px 
+ J44A11G14 s{4,4}×{∞} Snub square prismatic (sassiph) (3.3.4.3.4) 80px 80px 
+ Nonuniform s{4,4,2,∞} 
+
+==== The G~2xI~1(&infin;), x prismatic group ====
+
+Indices Coxeter-Dynkinand Schläflisymbols Honeycomb name Planetiling Solids(Partial) Tiling 
+ J42A5G26 t0{6,3} x {∞} Hexagonal prismatic (hiph) (63) 80px 80px 
+ J46A7G19 t0,1{6,3} x {∞} Truncated hexagonal prismatic (thaph) (3.12.12) 80px 80px 
+ J43A8G18 t1{6,3} x {∞} Trihexagonal prismatic (thiph) (3.6.3.6) 80px 80px 
+ J42A5G26 t1,2{6,3} x {∞} Truncated triangular prismaticHexagonal prismatic (hiph) (6.6.6) 80px 80px 
+ J41A4G11 t2{6,3} x {∞} Triangular prismatic (tiph) (36) 80px 80px 
+ J47A9G16 t0,2{6,3} x {∞} Rhombi-trihexagonal prismatic (rothaph) (3.4.6.4) 80px 80px 
+ J49A10G23 t0,1,2{6,3} x {∞} Omnitruncated trihexagonal prismatic (otathaph) (4.6.12) 80px 80px 
+ J48A12G17 s{6,3} x {∞} Snub trihexagonal prismatic (snathaph) (3.3.3.3.6) 80px 80px 
+ J65A11'G13 {3,6}:e x {∞} elongated triangular prismatic (etoph) (3.3.3.4.4) 80px 80px 
+ J52A2'G2 gyrated tetrahedral-octahedral 80px 
+ J52A2'G2 gyrated tetrahedral-octahedral 80px 
+ Nonuniform s{3,6,2,∞} 
+
+===Examples===
+All 28 of these tessellations are found in crystal arrangements.
+
+The alternated cubic honeycomb is of special importance since its vertices form a cubic close-packing of spheres. The space-filling truss of packed octahedra and tetrahedra was apparently first discovered by Alexander Graham Bell and independently re-discovered by Buckminster Fuller (who called it the octet truss and patented it in the 1940s).
+
+. Octet trusses are now among the most common types of truss used in construction.
+
+== Noncompact forms ==
+
+ Examples (partially drawn) 
+ 160px 161px 
+ Cubic slab honeycomb Alternated hexagonal slab honeycomb 
+
+If cells are allowed to be uniform tilings, more uniform honeycombs can be defined:
+
+Families:
+*x: Cubic prismatic slab honeycomb (3 forms)
+*x: Tri-hexagonal prismatic slab honeycomb (8 forms)
+* x: Triangular prismatic slab (No new forms)
+*xx: = Cubic column honeycomb (1 form)
+*x: Prismatic column honeycomb
+* xx: = - = (Same as cubic slab honeycomb family)
+
+== Hyperbolic forms ==
+The {5,3,4} honeycomb in 3D hyperbolic space, viewed in perspective
+
+There are 9 Coxeter group families of compact uniform honeycombs in hyperbolic 3-space, generated as Wythoff constructions, and represented by ring permutations of the Coxeter-Dynkin diagrams for each family. 
+
+From these 9 families, there are a total of 76 unique honeycombs generated:
+* : - 9 forms
+* : - 15 forms
+* : - 9 forms
+* : - 11 forms (7 overlap with family, 4 are unique)
+* : - 9 forms
+* : - 6 forms
+* : - 9 forms
+* : - 9 forms
+* : - 6 forms
+
+The full list of hyperbolic uniform honeycombs has not been proven and an unknown number of non-Wythoffian forms exist. One known example is in the {3,5,3} family.
+
+There are also 23 noncompact Coxeter groups of rank 4. These families can produce uniform honeycombs with unbounded facets or vertex figure, including ideal vertices at infinity:
+
+ Hyperbolic noncompact groups 
+ 7 , , , , , , 
+ 7 , , ,, , , 
+ 6 , , , , , 
+ 3 , , 
+
+== References ==
+ 
+
+* John H. Conway, Heidi Burgiel, Chaim Goodman-Strass, (2008) The Symmetries of Things, ISBN 978-1-56881-220-5 (Chapter 21, Naming the Archimedean and Catalan polyhedra and tilings, Architectonic and Catoptric tessellations, p 292-298, includes all the nonprismatic forms)
+* George Olshevsky, (2006, Uniform Panoploid Tetracombs, Manuscript (Complete list of 11 convex uniform tilings, 28 convex uniform honeycombs, and 143 convex uniform tetracombs)
+* Branko Grünbaum, (1994) Uniform tilings of 3-space. Geombinatorics 4, 49 - 56.
+* Norman Johnson (1991) Uniform Polytopes, Manuscript
+* (Chapter 5: Polyhedra packing and space filling)
+* 
+* Kaleidoscopes: Selected Writings of H.S.M. Coxeter, edited by F. Arthur Sherk, Peter McMullen, Anthony C. Thompson, Asia Ivic Weiss, Wiley-Interscience Publication, 1995, ISBN 978-0-471-01003-6 
+** (Paper 22) H.S.M. Coxeter, Regular and Semi Regular Polytopes I, Zeit. 46 (1940) 380-407, MR 2,10 (1.9 Uniform space-fillings)
+* A. Andreini, (1905) Sulle reti di poliedri regolari e semiregolari e sulle corrispondenti reti correlative (On the regular and semiregular nets of polyhedra and on the corresponding correlative nets), Mem. Società Italiana della Scienze, Ser.3, 14 75–129.
+* D. M. Y. Sommerville, (1930) An Introduction to the Geometry of n Dimensions. New York, E. P. Dutton, . 196 pp. (Dover Publications edition, 1958) Chapter X: The Regular Polytopes
+
+==External links==
+* 
+*Uniform Honeycombs in 3-Space VRML models
+*Elementary Honeycombs Vertex transitive space filling honeycombs with non-uniform cells.
+* Uniform partitions of 3-space, their relatives and embedding, 1999
+*The Uniform Polyhedra
+*Virtual Reality Polyhedra The Encyclopedia of Polyhedra
+*octet truss animation
+*Review: A. F. Wells, Three-dimensional nets and polyhedra, H. S. M. Coxeter (Source: Bull. Amer. Math. Soc. Volume 84, Number 3 (1978), 466-470.)
+* 
+
+
+

@@ -1,0 +1,166 @@
+
+
+Administrative law in the United States often involves the regulatory activities of so-called "independent agencies", such as the Federal Trade Commission ("FTC"), whose Washington D.C. headquarters are shown above.
+
+Administrative law is the body of law that governs the activities of administrative agencies of government. Government agency action can include rulemaking, adjudication, or the enforcement of a specific regulatory agenda. Administrative law is considered a branch of public law. As a body of law, administrative law deals with the decision-making of administrative units of government (for example, tribunals, boards or commissions) that are part of a national regulatory scheme in such areas as police law, international trade, manufacturing, the environment, taxation, broadcasting, immigration and transport. Administrative law expanded greatly during the twentieth century, as legislative bodies worldwide created more government agencies to regulate the increasingly complex social, economic and political spheres of human interaction.
+
+Civil law countries often have specialized courts, administrative courts, that review these decisions. The plurality of administrative decisions contested in administrative courts are related to taxation.
+
+== Administrative law in common law countries ==
+
+Generally speaking, most countries that follow the principles of common law have developed procedures for judicial review that limit the reviewability of decisions made by administrative law bodies. Often these procedures are coupled with legislation or other common law doctrines that establish standards for proper rulemaking. Administrative law may also apply to review of decisions of so-called semi-public bodies, such as non-profit corporations, disciplinary boards, and other decision-making bodies that affect the legal rights of members of a particular group or entity.
+
+While administrative decision-making bodies are often controlled by larger governmental units, their decisions could be reviewed by a court of general jurisdiction under some principle of judicial review based upon due process (United States) or fundamental justice (Canada). Judicial review of administrative decisions is different from an administrative appeal. When sitting in review of a decision, the Court will only look at the method in which the decision was arrived at, whereas in an administrative appeal the correctness of the decision itself will be examined, usually by a higher body in the agency. This difference is vital in appreciating administrative law in common law countries.
+
+The scope of judicial review may be limited to certain questions of fairness, or whether the administrative action is ultra vires. In terms of ultra vires actions in the broad sense, a reviewing court may set aside an administrative decision if it is unreasonable (under Canadian law, following the rejection of the "Patently Unreasonable" standard by the Supreme Court in Dunsmuir v. New Brunswick), Wednesbury unreasonable (under British law), or arbitrary and capricious (under U.S. Administrative Procedure Act and New York State law). Administrative law, as laid down by the Supreme Court of India, has also recognized two more grounds of judicial review which were recognized but not applied by English Courts viz. legitimate expectation and proportionality.
+
+The powers to review administrative decisions are usually established by statute, but were originally developed from the royal prerogative writs of English law, such as the writ of mandamus and the writ of certiorari. In certain Common Law jurisdictions, such as India or Pakistan, the power to pass such writs is a Constitutionally guaranteed power. This power is seen as fundamental to the power of judicial review and an aspect of the independent judiciary.
+
+=== Australia ===
+
+=== Canada ===
+
+=== England ===
+
+=== Singapore ===
+
+=== United States ===
+
+In the United States, many government agencies are organized under the executive branch of government, although a few are part of the judicial or legislative branches.
+
+In the federal government, the executive branch, led by the president, controls the federal executive departments, which are led by secretaries who are members of the United States Cabinet. The many important independent agencies of the United States government created by statutes enacted by Congress exist outside of the federal executive departments but are still part of the executive branch.
+
+Congress has also created some special judicial bodies known as Article I tribunals to handle some areas of administrative law.
+
+The actions of executive agencies and independent agencies are the main focus of American administrative law. In response to the rapid creation of new independent agencies in the early twentieth century (see discussion below), Congress enacted the Administrative Procedure Act (APA) in 1946. Many of the independent agencies operate as miniature versions of the tripartite federal government, with the authority to "legislate" (through rulemaking; see Federal Register and Code of Federal Regulations), "adjudicate" (through administrative hearings), and to "execute" administrative goals (through agency enforcement personnel). Because the United States Constitution sets no limits on this tripartite authority of administrative agencies, Congress enacted the APA to establish fair administrative law procedures to comply with the constitutional requirements of due process.
+
+The American Bar Association's official journal concerning administrative law is the Administrative Law Review, a quarterly publication that is managed and edited by students at the Washington College of Law.
+
+==== Historical development ====
+
+Stephen Breyer, a U.S. Supreme Court Justice since 1994, divides the history of administrative law in the United States into six discrete periods, according to his book, Administrative Law & Regulatory Policy (3d Ed., 1992):
+
+* English antecedents & the American experience to 1875
+* 1875 - 1930: the rise of regulation & the traditional model of administrative law
+* The New Deal
+* 1945 - 1965: the Administrative Procedure Act & the maturation of the traditional model of administrative law
+* 1965 - 1985: critique and transformation of the administrative process
+* 1985 - ?: retreat or consolidation
+
+==== Agriculture ====
+
+The agricultural sector is one of the most heavily regulated sectors in the U.S. economy, as it is regulated in various ways at the international, federal, state, and local levels. Consequently, administrative law is a significant component of the discipline of Agricultural Law. The United States Department of Agriculture and its myriad agencies such as the Agricultural Marketing Service are the primary sources of regulatory activity, although other administrative bodies such as the Environmental Protection Agency play a significant regulatory role as well.
+
+== Administrative law in civil law countries ==
+
+Unlike most Common-law jurisdictions, the majority of civil law jurisdictions have specialized courts or sections to deal with administrative cases which, as a rule, will apply procedural rules specifically designed for such cases and different from that applied in private-law proceedings, such as contract or tort claims.
+
+=== France ===
+
+In France, most claims against the national or local governments are handled by administrative courts, which use the Conseil d'État (Council of State) as a court of last resort. The main administrative courts are the "Tribunaux Administratifs" and appeal courts are the "Cours Administratives d'Appel".
+
+=== Germany ===
+
+Administrative law in Germany, called “Verwaltungsrecht”(Deutschland)], generally rules the relationship between authorities and the citizens and therefore, it establishes citizens’ rights and obligations against the
+authorities. It is a part of the public law, which deals with the organization, the tasks and the acting of the public administration. It also contains rules, regulations, orders and decisions created by and related to administrative agencies, such as federal agencies, federal state authorities, urban administrations, but also admission offices and fiscal authorities etc. Administrative law in Germany follows three basic principles.
+
+* Principle of the legality of the authority, which means that there is no acting against the law and no acting without a law.
+* Principle of legal security, which includes a principle of legal certainty and the principle of nonretroactivity
+* Principle of proportionality, which says that an act of an authority has to be suitable, necessary and appropriate Oberath, öffentliches Wirtschaftsrecht p. 12-14 
+
+The administrative law in Germany can be divided into three main parts, which are constitutional law,
+general administrative law and special administrative law.
+
+==== Constitutional law ====
+
+The constitutional law in Germany is ruled in the Basic Law for the Federal Republic of Germany (German Grundgesetz, ) from 23.05.1949. The first nineteen articles of the “Grundgesetz” represent the constitution in narrower sense and determine the fundamental rights of German citizens. Articles 20 to 146 GG regulate the organization of Germany and legitimize and rule its bodies such as German Bundestag, Bundesrat of Germany or the government and the legislation based on the constitution. Article 20 I GG is exceptionally significant for the basic organization of Germany. It determines that Germany is a federal state. That implies the several individual states to be interconnected in such a way, that they still keep their own sovereignty; but the resulting compound also has state-character (Bundesstaat). In contrast to the European Union, which is a community (confederation) of 27 sovereign countries without state-character the moment (Staatenbund). The welfare state principle, which obliged the state to ensure a rightful social system, can be also
+derived from Art. 20 I GG. Oberath, öffentliches Wirtschaftsrecht p. 16 
+
+==== General administrative law ====
+
+The general administration law is basically ruled in the Administrative Procedures Law (Verwaltungsverfahrensgesetz ). Other legal sources are the Rules of the Administrative Courts (Verwaltungsgerichtsordnung ), the social security code (Sozialgesetzbuch ) and the general fiscal law (Abgabenordnung ). Oberath, öffentliches Wirtschaftsrecht p. 148 
+
+===== Administrative Procedures Law =====
+
+The Verwaltungsverfahrensgesetz (VwVfG), which was enacted in 1977, Kopp / Rammsauer Verwaltungsverfahrensgesetz Kommentar No. 1 and 26 regulates the main administrative procedures of the federal government. It serves the purpose to ensure a treatment in accordance with the rule of law by the public authority. Furthermore, it contains the regulations for mass processes and expands the legal protection against the authorities. The VwVfG basically applies for the entire public administrative activities of federal agencies as well as federal state authorities, in case of making federal law. One of the central clause is § 35 VwVfG. It defines the administrative act, the most common form of action in which the public administration occurs against a citizen. The definition in § 35 says, that an administration act is characterized by the following features:
+
+It is an official act Kopp / Rammsauer Verwaltungsverfahrensgesetz Kommentar §35 No.59 of an authority Kopp / Rammsauer Verwaltungsverfahrensgesetz Kommentar §35 No.65 in the field of public law Kopp / Rammsauer Verwaltungsverfahrensgesetz Kommentar §35 No.70 to resolve an individual case Kopp / Rammsauer Verwaltungsverfahrensgesetz Kommentar §35 No. 118 with effect to the outside. Kopp / Rammsauer Verwaltungsverfahrensgesetz Kommentar §35 No. 124 
+
+§§ 36 – 39, §§ 58 – 59 and § 80 VwVfG rule the structure and the necessary elements of the
+administrative act. § 48 and § 49 VwVfG have a high relevance in practice, as well. In these
+paragraphs, the prerequisites for redemption of an unlawful administration act (§ 48 VwVfG ) and
+withdrawal of a lawful administration act (§ 49 VwVfG ), are listed. Oberath, öffentliches Wirtschaftsrecht 161-163 
+
+===== Other legal sources =====
+
+Administration procedural law (Verwaltungsgerichtsordnung ), which was enacted in 1960, rules the court procedures at the administrative court. The VwVGo is divided into five parts, which are the constitution of the courts, Kopp / Rammsauer Verwaltungsgerichtsordnung Kommentar p. 1-94 action, remedies and retrial, costs and enforcement15 and final clauses and temporary arrangements. Kopp / Rammsauer Verwaltungsgerichtsordnung Kommentar p. 605,1517,1760,1882 
+
+In absence of a rule, the VwVGO is supplemented by the code of civil procedure (Zivilprozessordnung ) and the judicature act (Gerichtsverfassungsgesetz ). Kopp / Rammsauer Verwaltungsgerichtsordnung Kommentar §173 No. 1 In addition to the regulation of the administrative procedure, the VwVfG also constitutes the legal protection in administrative law beyond the court procedure. §68 VwVGO rules the preliminary proceeding, called “Vorverfahren” or “Widerspruchsverfahren”, Oberath, öffentliches Wirtschaftsrecht p. 211 which is a stringent prerequisite for the administrative procedure, if an action for rescission or a writ of mandamus against an authority is aimed. Kopp / Rammsauer Verwaltungsgerichtsordnung Kommentar §68 No.1 The preliminary proceeding gives each citizen, feeling unlawfully mistreated by an authority, the possibility to object and to force a review of an administrative act without going to court. The prerequisites to open the public law remedy are listed in § 40 I VwGO. Therefore, it is necessary to have the existence of a conflict in public law Kopp / Rammsauer Verwaltungsgerichtsordnung Kommentar §40 No. 6 without any constitutional aspects Kopp / Rammsauer Verwaltungsgerichtsordnung Kommentar $40 No. 31 and no assignment to another jurisdiction. Kopp / Rammsauer Verwaltungsgerichtsordnung Kommentar § 40 No. 48 
+
+The social security code (Sozialgesetzbuch ) and the general fiscal law are less important for the administrative law. They supplement the VwVfG and the VwGO in the fields of taxation and social legislation, such as social welfare or financial support for students (BaFÖG) etc.
+
+==== Special Administrative Law ====
+
+The special administrative law consists of various laws. Each special sector has its own law. The most important ones are the
+
+* Town and Country Planning Code (Baugesetzbuch )
+* Federal Control of Pollution Act (Bundesimmissionsschutzgesetz )
+* Industrial Code (Gewerbeordnung )
+* Police Law (Polizei- und Ordnungsrecht)
+* Statute Governing Restaurants (Gaststättenrecht ). Oberath, öffentliches Wirtschaftsrecht 
+
+In Germany, the highest administrative court for most matters is the federal administrative court Bundesverwaltungsgericht. There are federal courts with special jurisdiction in the fields of social security law (Bundessozialgericht) and tax law (Bundesfinanzhof).
+
+=== The Netherlands ===
+
+In The Netherlands, administrative law provisions are usually contained in separate laws. There is however a single General Administrative Law Act ("Algemene wet bestuursrecht" or Awb) that applies both to the making of administrative decisions and the judicial review of these decisions in courts. On the basis of the Awb, citizens can oppose a decision ('besluit') made by a public body ('bestuursorgaan') within the administration and apply for judicial review in courts if unsuccessful.
+
+Unlike France or Germany, there are no special administrative courts of first instance in the Netherlands, but regular courts have an administrative "chamber" which specializes in administrative appeals. The courts of appeal in administrative cases however are specialized depending on the case, but most administrative appeals end up in the judicial section of the Council of State (Raad van State).
+
+In addition to the system described above there is another part of administrative law which is called "administratief beroep" (administrative appeal). This procedure is available only if the law on which the primary decision is based specifically provides for it and involves an appeal to a higher ranking administrative body. If administrative appeal is available, no appeal to the judicial system may be made.
+
+=== Sweden ===
+
+The Stenbockska Palace is the seat of the Supreme Administrative Court of Sweden.
+
+In Sweden, there is a system of administrative courts that considers only administrative law cases, and is completely separate from the system of general courts. The Swedish courts, accessed on February 20, 2009 This system has three tiers, with 12 county administrative courts (förvaltningsrätt) as the first tier, four administrative courts of appeal (kammarrätt) as the second tier, and the Supreme Administrative Court of Sweden (Regeringsrätten) as the third tier.
+
+Migration cases are handled in a two-tier system, effectively within the system general administrative courts. Three of the administrative courts serve as migration courts (migrationsdomstol) with the Administrative Court of Appeal in Stockholm serving as the Migration Court of Appeal (Migrationsöverdomstolen).
+
+=== Brazil ===
+
+In Brazil, unlike most Civil-law jurisdictions, there is no specialized court or section to deal with administrative cases. In 1998, a constitutional reform, led by the government of the President Fernando Henrique Cardoso, introduced regulatory agencies as a part of the executive branch. Since 1988, Brazilian administrative law has been strongly influenced by the judicial interpretations of the constitutional principles of public administration (art. 37 of Federal Constitution): legality, impersonality, publicity of administrative acts, morality and efficiency...
+
+=== Chile ===
+
+The President of the Republic exercises the administrative function, in collaboration with several Ministries or other authorities with ministerial rank. Each Ministry has one or more under-secretary that performs through public services the actual satisfaction of public needs. There is not a single specialized court to deal with actions against the Administrative entities, but instead there are several specialized courts and procedures of review.
+
+=== People's Republic of China ===
+
+Administrative law in the People's Republic of China was virtually non-existent before the economic reform era initiated by Deng Xiaoping. Since the 1980s, the People's Republic of China has constructed a new legal framework for administrative law, establishing control mechanisms for overseeing the bureaucracy and disciplinary committees for the Communist Party of China. However, many have argued that the usefulness of these laws is vastly inadequate in terms of controlling government actions, largely because of institutional and systemic obstacles like a weak judiciary, poorly trained judges and lawyers, and corruption.
+
+In 1990, the Administrative Supervision Regulations (行政检查条例) and the Administrative Reconsideration Regulations (行政复议条例) were passed. Both regulations have since been amended and upgraded into laws. The 1993 State Civil Servant Provisional Regulations (国家公务员暂行条例) changed the way government officials were selected and promoted, requiring that they pass exams and yearly appraisals, and introduced a rotation system. In 1994, the State Compensation Law (国家赔偿法) was passed, followed by the Administrative Penalties Law (行政处罚法) in 1996.
+
+=== Ukraine ===
+
+As a homogeneous legal substance isolated in a system of jurisprudence, the administrative law of Ukraine is characterized as: 1) a branch of law; 2) a science; 3) a discipline. Administrative law of Ukraine nowadays (the beginning of the 21st cent.): monograph. Edited by Valentyn Galunko. – Kherson, 2010. 
+
+== See also ==
+
+* Administrative Law Review
+* Constitutional law
+* Constitutionalism
+* Rule of law
+* Rechtsstaat
+* Civil society
+
+== References ==
+
+== Further reading ==
+
+* 
+
+ 
+
+
+

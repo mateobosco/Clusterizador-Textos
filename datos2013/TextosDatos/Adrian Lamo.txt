@@ -1,0 +1,138 @@
+
+
+Adrian Lamo is a Colombian-American threat analyst and "grey hat" hacker. He first gained media attention for breaking into several high-profile computer networks, including those of The New York Times, Yahoo!, and Microsoft, culminating in his 2003 arrest. Wired 12.04: The Homeless Hacker v. The New York Times. Wired.com. Retrieved on March 10, 2011. In 2010, Lamo became embroiled in the WikiLeaks scandal involving Bradley Manning, who was arrested after Lamo reported to federal authorities that Manning had leaked hundreds of thousands of sensitive U.S. government documents. 
+
+ 
+
+ 
+
+==Personal==
+Lamo was born in Boston, Massachusetts to Mario Lamo-Jiménez and Mary Lamo-Atwood in 1981. 
+
+ He spent his early childhood in Arlington, Virginia, until moving to Bogotá, Colombia around the age of 10. When his family moved back to the United States two years later, they settled in San Francisco, where Lamo lived until he tested out of high school a year early. Popularly called the "homeless hacker" for his transient lifestyle, Lamo spent most of his travels couch-surfing, squatting in abandoned buildings and traveling to Internet cafes, libraries and universities to investigate networks, and sometimes exploiting security holes. Despite performing authorized and unauthorized vulnerability assessments for several large, high-profile entities, Lamo refused to accept payment for his services. 
+
+In the mid-1990s, Lamo became a volunteer for the gay and lesbian media firm PlanetOut.com. In 1998, Lamo was appointed to the Lesbian, Gay, Bisexual, Transgender, Queer and Questioning Youth Task Force by the San Francisco Board of Supervisors. Worldtribune.com 
+
+ 
+
+During this period, in 2001, he overdosed on prescription amphetamines. 
+
+In a 2004 interview with Wired, an ex-girlfriend of Lamo's described him as "very controlling," stating, "He carried a stun gun, which he used on me." According to the same article, a court issued a restraining order against Lamo. 
+
+ Lamo disputed the accuracy of the article and wrote, "I have never been subject to a restraining order in my life". 
+
+Lamo claimed in a Wired article that in May 2010, after reporting his backpack stolen, an investigating officer noted unusual behavior and detained him. He was diagnosed with Asperger's syndrome after having been placed on a 72-hour involuntary psychiatric hold, which was extended to a total of nine days. 
+
+ The police report contradicts Lamo's version of events and states that Lamo was hospitalised as a result of his father calling Sacramento County Sheriff's department three times with concerns that he was over-medicating on his prescription drugs. The Wired article received a subsequent clarification. 
+
+As of March 2011, he is in hiding, stating that his "life was under threat" after turning in Bradley Manning. 
+ 
+
+==Activities==
+Lamo first became known for operating AOL watchdog site Inside-AOL.com. 
+
+ 
+
+ 
+
+===Security compromise===
+In February 2002 he broke into the internal computer network of The New York Times, adding his name to the internal database of expert sources, and using the paper's LexisNexis account to conduct research on high-profile subjects. The New York Times filed a complaint, and a warrant for Lamo's arrest was issued in August 2003 following a 15 month investigation by federal prosecutors in New York. At 10:15 AM on September 9, after spending a few days in hiding, he surrendered to the US Marshals in Sacramento, California. He re-surrendered to the FBI in New York City on September 11, and pled guilty to one felony count of computer crimes against Microsoft, LexisNexis and The New York Times on January 8, 2004. "Adrian Lamo Cuts Deal With Feds", Wired.com, January 9, 2004. "Lamo Pleads Guilty to Times Hack", SecurityFocus, January 8, 2004. 
+
+Later in 2004, Lamo was sentenced to six months detention at his parents' home plus two years probation, and was ordered to pay roughly $65,000 in restitution. He was convicted of compromising security at The New York Times and Microsoft, 
+
+ 
+
+ Yahoo! 
+
+ and MCI WorldCom. 
+
+ 
+
+When challenged for a response to allegations that he was glamorizing crime for the sake of publicity, his response was "Anything I could say about my person or my actions would only cheapen what they have to say for themselves". When approached for comment during his criminal case, Lamo frustrated reporters with non sequiturs such as "Faith manages", 
+
+ (probably a reference to science fiction television show Babylon 5) and "It's a beautiful day." 
+
+ 
+
+At his sentencing, Lamo expressed remorse for harm he had caused through his intrusions, with the court record quoting him as adding "I want to answer for what I have done and do better with my life." 
+
+ 
+
+===DNA controversy===
+On May 9, 2006, while 18 months into a two year probation sentence, Adrian Lamo refused to give the United States government a blood sample, one that they had demanded in order to record his DNA in their CODIS system. 
+
+ According to his attorney, Adrian Lamo has a religious objection to giving blood, but is willing to give his DNA in another form. On June 15, 2007, lawyers for Lamo filed a motion citing the Book of Genesis as one basis for Lamo's religious opposition to the frivolous spilling of blood.
+
+On June 21, 2007, it was reported that Lamo's legal counsel had reached a settlement agreement with the U.S. Department of Justice granting Lamo's original request. According to Kevin Poulsen's blog, "the Justice Department formally settled the case, filing a joint stipulation along with Lamo's federal public defender dropping the demand for blood, and accepting cheek swabs instead." Reached for comment, Lamo reportedly affirmed to Poulsen his intention to "comply vigorously" with the order. 
+
+ 
+
+===WikiLeaks and Bradley Manning===
+
+In February 2009, a partial list of the anonymous donors to the WikiLeaks not-for-profit website was leaked and published on the WikiLeaks website. Some media sources indicated at the time that hacker Adrian Lamo was among the donors on the list. Wired reported that Adrian Lamo commented on his Twitter page, "Thanks WikiLeaks, for leaking your donor list... That's dedication." 
+
+In May 2010, U.S. Intelligence Analyst Arrested in Wikileaks Video Probe | Threat Level. Wired.com. Retrieved on March 10, 2011. Adrian Lamo reported to U.S. Army authorities that Specialist Bradley Manning had claimed to have leaked a large body of classified documents, including 260,000 classified United States diplomatic cables. Lamo stated that Manning also "took credit for leaking" the controversial, classified video footage of the July 12, 2007 Baghdad airstrike, which has since come to be known as the "Collateral Murder" video. 
+
+ 
+
+ 
+
+Lamo has stated that he would not have turned Manning in "if lives weren’t in danger... was in a war zone and basically trying to vacuum up as much classified information as he could, and just throwing it up into the air." WikiLeaks responded by denouncing Lamo and Wired Magazine reporter Kevin Poulsen as "notorious felons, informers & manipulators" and said that "journalists should take care." 
+
+According to Andy Greenberg of Forbes, Forbes.com: Andy Greenberg: Stealthy Government Contractor Monitors U.S. Internet Providers, Worked With Wikileaks Informant, August 1, 2010. Adrian Lamo may have worked as a "security specialist" with Project Vigilant, a private security institution that works with the FBI and the NSA. FAZ.Net 4. August 2010 „'Collateral Murder'-Video – Erstaunliche Wendung in Sachen Wikileaks“ ("surprising turn in wikileaks case") Chet Uber, the head of Project Vigilant, has claimed, "I’m the one who called the U.S. government... All the people who say that Adrian is a narc, he did a patriotic thing. He sees all kinds of hacks, and he was seriously worried about people dying." 
+
+Lamo has been criticized by fellow hackers such as at those at the Hackers on Planet Earth conference in 2010, who called him a "snitch". "According to Emmanuel Goldstein, who organized the panel discussion, 90 percent of the conference was anti-Lamo." 'WikiLeaks 'Snitch' Hacker Faces Wrath of His Peers', AOL News Another commented to Lamo following his speech during a panel discussion saying: "From my perspective, I see what you have done as treason." "WikiLeaks Is Not One Person...We Are All the Threat" – Hacker Magazine Editor Says WikiLeaks Is Bigger Than Julian Assange. Democracynow.org. Retrieved on March 10, 2011. 
+
+Julian Assange calls Adrian Lamo "a very disreputable character", and says that Lamo's monetary support for WikiLeaks amounted to only 20 U.S. dollars on one occasion. "WikiSecrets" | full interview footage. wikileaks.org. Retrieved on May 29, 2011. See video at 21:25. Assange says that it is "not right to call a contributor to WikiLeaks", and questions the electronic record associated with the Manning-Lamo chats, because, according to Assange, Lamo has "strange motivations" and "had been in a mental hospital three weeks beforehand". 
+
+====Greenwald, Lamo, Wired magazine====
+Lamo's role in the Manning case drew the ire of Glenn Greenwald, of Salon Magazine. An ardent supporter of WikiLeaks, Greenwald has been a passionate critic of Lamo, suggesting that Lamo lied to Manning by turning him in, and also lied after the fact to cover up the circumstances of Manning's confessions. 
+
+ Greenwald places the incident in the context of what he calls "the Obama administration's unprecedented war on whistle-blowers". Greenwald's critique of Wired Magazine has drawn a response from that magazine which suggests that Greenwald is writing disingenuously: "At his most reasonable, Greenwald impugns our motives, attacks the character of our staff and carefully selects his facts and sources to misrepresent the truth and generate outrage in his readership." Putting the Record Straight on the Lamo-Manning Chat Logs | Threat Level. Wired.com. Retrieved on March 10, 2011. In an article about the Bradley Manning case, Greenwald mentions Wired reporter Kevin Poulsen's 1994 felony conviction for computer hacking, suggesting that "over the years, Poulsen has served more or less as Lamo's personal media voice." Greenwald is skeptical of an earlier story written by Poulsen about Lamo's institutionalization on psychiatric grounds, writing: "Lamo claimed he was diagnosed with Asperger's Syndrome, a somewhat fashionable autism diagnosis which many stars in the computer world have also claimed." In his response, Poulsen accused Greenwald of "name-calling, bizarre conspiracy theories and ad hominem attacks". 
+
+Greenwald called for Wired to release more of the chat logs in its possession that pertain to a conversation between Bradley Manning and Adrian Lamo: "there are clearly relevant parts of those chats which Wired continues to conceal". Wireds editor-in-chief reiterated that "the logs include sensitive personal information with no bearing on WikiLeaks, and it would serve no purpose to publish them at this time." In an article entitled "The Worsening Journalistic Disgrace at Wired", Greenwald claimed that Wired was "actively conceal from the public, for months on end, the key evidence in a political story that has generated headlines around the world." The worsening journalistic disgrace at Wired – Glenn Greenwald. Salon.com (December 27, 2010). Retrieved on March 10, 2011. 
+
+On July 13, 2011, Wired published the logs in full, stating that "The most significant of the unpublished details have now been publicly established with sufficient authority that we no longer believe any purpose is served by withholding the logs." Greenwald wrote of the newly-released logs that they validated his claim that Wired had concealed important evidence: "In sum, the full chat logs — in particular the parts Wired concealed for over a year — prove that Adrian Lamo is a serial liar whose claims are inherently unreliable." The Guardian wrote of the Wired-Greenwald dispute, "An early view of the logs suggests that Wired's defence stands up — much of the new material relates to Manning's sexuality and other personal matters." 
+
+==Film and television==
+Lamo was removed from a segment of NBC Nightly News when, after being asked to demonstrate his skills for the camera, he gained access to NBC's internal network. 
+
+ NBC was concerned that they broke the law by taping Lamo while he (possibly) broke the law. Lamo was a guest on The Screen Savers five times beginning in 2002. 
+
+ 
+
+Hackers Wanted, a documentary film focusing on Lamo's life as a hacker, was produced by Trigger Street Productions, and narrated by Kevin Spacey. Lost Hacking Documentary Surfaces on Pirate Bay | Threat Level. Wired.com. Retrieved on March 10, 2011. Focusing on the 2003 hacking scene, the film features interviews with Kevin Rose and Steve Wozniak. The film has not been conventionally released. In May 2009, a video purporting to be a trailer for Hackers Wanted was allegedly leaked to or by Internet film site Eye Crave. 
+
+ In May 2010, an earlier cut of the film was leaked on Bittorrent. 
+
+ According to an insider, what was leaked on the Internet was a very different film from the newer version which includes additional footage. On June 12, 2010, a director's cut version of the film was also leaked onto torrent sites. 
+
+ 
+
+==Notes==
+
+==References==
+* 
+* Re-printed in The Best American Science and Nature Writing 2005.
+* 
+* 
+*
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+==External links==
+*
+*
+*
+*"I'm sorry that I could not be a friend to Manning": Adrian Lamo - Adrian Lamo's exclusive interview to AlJazeera English's Mónica Villamizar, 13 March 2011.
+
+The Hacker Quarterly]
+
+
+

@@ -1,0 +1,36 @@
+
+
+A file archiver is a computer program that combines a number of files together into one archive file, or a series of archive files, for easier transportation or storage. Many file archivers employ archive formats that provide lossless data compression to reduce the size of the archive which is often useful for transferring a large number of individual files over a high latency network like the Internet.
+
+The most basic archivers just take a list of files and concatenate their contents sequentially into the archive. In addition the archive must also contain some information about at least the names and lengths of the originals, so that proper reconstruction is possible. Most archivers also store metadata about a file that the operating system provides, such as timestamps, ownership and access control.
+
+The process of making an archive file is called archiving or packing. Reconstructing the original files from the archive is termed unarchiving, unpacking or extracting.
+
+==Discussion==
+===Unix Archiver Tools===
+Unlike integrated archival and compression tools like PKZIP, WinZip, and WinRAR, the Unix tools ar, tar, cpio (for "archiver", "tape archiver" and "copy in/out" respectively) act as archivers but not compressors. Users of the Unix tools typically add compression by compressing the result of packing (and uncompressing before unpacking), most often using the gzip or bzip2 programs. Modern tar programs can automatically invoke a (de)compression program, giving the appearance that tar itself handles compression and decompression.
+
+This approach has two advantages:
+
+*It follows the Unix toolbox concept that each program should accomplish a single, well-done task, as opposed to attempting to accomplish everything with one tool. As compression technology progresses, users may use different compression programs without having to modify or abandon their archiver.
+*The archives use solid compression. Unlike an archiver that compresses each file in isolation, an archiver that combines files before compressing them can exploit redundancy across several archived files.
+
+Solid compression does have disadvantages as compared with compressing within the archive:
+
+*Extracting one file requires decompressing all the files that are before the file in the archive. This may take many minutes for a large archive.
+*Modification is even more inconvenient than extraction - just changing a single character of one of the archived files will typically require that the entire archive be uncompressed, updated, and then recompressed.
+*It's impossible to take advantage of redundancy between files unless the compression window is larger than the size of an individual file. For example, gzip uses DEFLATE, which typically operates with a 32768 byte window, whereas bzip2 uses a Burrows-Wheeler transform roughly 30 times bigger.
+
+== See also ==
+* Comparison of file archivers
+* Archive format
+* List of archive formats
+* Comparison of archive formats
+
+== External links ==
+* 
+
+ 
+
+
+

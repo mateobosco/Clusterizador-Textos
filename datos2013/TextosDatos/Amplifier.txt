@@ -1,0 +1,134 @@
+
+
+An amplifier is a device for increasing the power of a signal by use of an external energy source.
+
+In an electronic amplifier, the input "signal" is usually a voltage or a current. Other types exist; a fluidic amplifier increases the power of signals represented as flow of gas or liquid, for example. Amplifiers may be classified in a variety of ways depending on their application, the frequency range they cover, or the active devices used. Ideally an amplifier increases the power of a signal without otherwise altering it; practical amplifiers have finite distortion and noise which they invariably add to the signal. 
+
+A device that converts signals from one type to another (for example, a light signal in photons to a DC signal in amperes) is a transducer, a transformer, or a sensor. However, none of these amplify power.
+
+== Figures of merit ==
+The quality of an amplifier can be characterized by a number of specifications, listed below.
+
+=== Gain ===
+The gain of an amplifier is the ratio of output to input power or amplitude, and is usually measured in decibels. (When measured in decibels it is logarithmically related to the power ratio: G(dB)=10 log(Pout /(Pin)). RF amplifiers are often specified in terms of the maximum power gain obtainable, while the voltage gain of audio amplifiers and instrumentation amplifiers will be more often specified (since the amplifier's input impedance will often be much higher than the source impedance, and the load impedance higher than the amplifier's output impedance). For example, an audio amplifier with a gain given as 20 dB will have a voltage gain of ten (but a power gain of 100 would only occur in the event the input and output impedances were identical).
+
+If two equivalent amplifiers are being compared, the amplifier with higher gain settings would be more sensitive as it would take less input signal to produce a given amount of power. http://www.bcae1.com/gaincon2.htm 
+
+=== Bandwidth===
+The bandwidth of an amplifier is the range of frequencies for which the amplifier gives "satisfactory performance". The definition of "satisfactory performance" may be different for different applications. However, a common and well-accepted metric is the half power points (i.e. frequency where the power goes down by half its peak value) on the output vs. frequency curve. Therefore bandwidth can be defined as the difference between the lower and upper half power points. This is therefore also known as the −3 dB bandwidth. Bandwidths (otherwise called "frequency responses") for other response tolerances are sometimes quoted (−1 dB, −6 dB etc.) or "plus or minus 1dB" (roughly the sound level difference people usually can detect).
+
+The gain of a good quality full-range audio amplifier will be essentially flat between 20 Hz to about 20 kHz (the range of normal human hearing). In ultra high fidelity amplifier design, the amp's frequency response should extend considerably beyond this (one or more octaves either side) and might have −3 dB points 65 kHz. Professional touring amplifiers often have input and/or output filtering to sharply limit frequency response beyond 20 Hz-20 kHz; too much of the amplifier's potential output power would otherwise be wasted on infrasonic and ultrasonic frequencies, and the danger of AM radio interference would increase. Modern switching amplifiers need steep low pass filtering at the output to get rid of high frequency switching noise and harmonics.
+
+=== Efficiency ===
+Efficiency is a measure of how much of the power source is usefully applied to the amplifier's output. Class A amplifiers are very inefficient, in the range of 10–20% with a max efficiency of 25% for direct coupling of the output. Inductive coupling of the output can raise their efficiency to a maximum of 50%.
+
+Drain efficiency is the ratio of output RF power to input DC power when primary input DC power has been fed to the drain of an FET. Based on this definition, the drain efficiency cannot exceed 25% for a class A amplifier that is supplied drain bias current through resistors (because RF signal has its zero level at about 50% of the input DC). Manufacturers specify much higher drain efficiencies, and designers are able to obtain higher efficiencies by providing current to the drain of the transistor through an inductor or a transformer winding. In this case the RF zero level is near the DC rail and will swing both above and below the rail during operation. While the voltage level is above the DC rail current is supplied by the inductor.
+
+Class B amplifiers have a very high efficiency but are impractical for audio work because of high levels of distortion (See: Crossover distortion). In practical design, the result of a tradeoff is the class AB design. Modern Class AB amplifiers commonly have peak efficiencies between 30–55% in audio systems and 50-70% in radio frequency systems with a theoretical maximum of 78.5%.
+
+Commercially available Class D switching amplifiers have reported efficiencies as high as 90%. Amplifiers of Class C-F are usually known to be very high efficiency amplifiers. RCA manufactured an AM broadcast transmitter employing a single class-C low mu triode with an RF efficiency in the 90% range.
+
+More efficient amplifiers run cooler, and often do not need any cooling fans even in multi-kilowatt designs. The reason for this is that the loss of efficiency produces heat as a by-product of the energy lost during the conversion of power. In more efficient amplifiers there is less loss of energy so in turn less heat.
+
+In RF linear Power Amplifiers, such as cellular base stations and broadcast transmitters, special design techniques can be used to improve efficiency. Doherty designs, which use a second output stage as a "peak" amplifier, can lift efficiency from the typical 15% up to 30-35% in a narrow bandwidth. Envelope Tracking designs are able to achieve efficiencies of up to 60%, by modulating the supply voltage to the amplifier in line with the envelope of the signal.
+
+=== Linearity ===
+An ideal amplifier would be a totally linear device, but real amplifiers are only linear within limits. 
+
+When the signal drive to the amplifier is increased, the output also increases until a point is reached where some part of the amplifier becomes saturated and cannot produce any more output; this is called clipping, and results in distortion.
+
+In most amplifiers a reduction in gain takes place before hard clipping occurs; the result is a compression effect, which (if the amplifier is an audio amplifier) sounds much less unpleasant to the ear. For these amplifiers, the 1 dB compression point is defined as the input power (or output power) where the gain is 1 dB less than the small signal gain. Sometimes this non linearity is deliberately designed in to reduce the audible unpleasantness of hard clipping under overload.
+
+Ill effects of non linearity can be reduced with negative feedback.
+
+Linearization is an emergent field, and there are many techniques, such as feed forward, predistortion, postdistortion, in order to avoid the undesired effects of the non-linearities.
+
+=== Noise ===
+This is a measure of how much noise is introduced in the amplification process. Noise is an undesirable but inevitable product of the electronic devices and components; also, much noise results from intentional economies of manufacture and design time. The metric for noise performance of a circuit is noise figure or noise factor. Noise figure is a comparison between the output signal to noise ratio and the thermal noise of the input signal.
+
+=== Output dynamic range ===
+Output dynamic range is the range, usually given in dB, between the smallest and largest useful output levels. The lowest useful level is limited by output noise, while the largest is limited most often by distortion. The ratio of these two is quoted as the amplifier dynamic range. More precisely, if S = maximal allowed signal power and N = noise power, the dynamic range DR is DR = (S + N ) /N. 
+
+ 
+
+In many switched mode amplifiers, dynamic range is limited by the minimum output step size.
+
+=== Slew rate ===
+Slew rate is the maximum rate of change of the output, usually quoted in volts per second (or microsecond). Many amplifiers are ultimately slew rate limited (typically by the impedance of a drive current having to overcome capacitive effects at some point in the circuit), which sometimes limits the full power bandwidth to frequencies well below the amplifier's small-signal frequency response.
+
+===Rise time===
+The rise time, tr, of an amplifier is the time taken for the output to change from 10% to 90% of its final level when driven by a step input.
+For a Gaussian response system (or a simple RC roll off), the rise time is approximated by: 
+
+tr * BW = 0.35, where tr is rise time in seconds and BW is bandwidth in Hz.
+
+=== Settling time and ringing===
+The time taken for the output to settle to within a certain percentage of the final value (for instance 0.1%) is called the settling time, and is usually specified for oscilloscope vertical amplifiers and high accuracy measurement systems. Ringing refers to an output variation that cycles above and below an amplifier's final value and leads to a delay in reaching a stable output. Ringing is the result of overshoot caused by an underdamped circuit.
+
+===Overshoot===
+In response to a step input, the overshoot is the amount the output exceeds its final, steady-state value.
+
+===Stability===
+Stability is an issue in all amplifiers with feedback, whether that feedback is added intentionally or results unintentionally. It is especially an issue when applied over multiple amplifying stages.
+
+Stability is a major concern in RF and microwave amplifiers. The degree of an amplifier's stability can be quantified by a so-called stability factor. There are several different stability factors, such as the Stern stability factor and the Linvil stability factor, which specify a condition that must be met for the absolute stability of an amplifier in terms of its two-port parameters.
+
+== Electronic amplifiers ==
+
+There are many types of electronic amplifiers, commonly used in radio and television transmitters and receivers, high-fidelity ("hi-fi") stereo equipment, microcomputers and other electronic digital equipment, and guitar and other instrument amplifiers. Critical components include active devices, such as vacuum tubes or transistors.
+
+== Other amplifier types ==
+=== Carbon microphone ===
+One of the first devices used to amplify signals was the carbon microphone (effectively a sound-controlled variable resistor). By channeling a large electric current through the compressed carbon granules in the microphone, a small sound signal could produce a much larger electric signal. The carbon microphone was extremely important in early telecommunications; analog telephones in fact work without the use of any other amplifier. Before the invention of electronic amplifiers, mechanically coupled carbon microphones were also used as amplifiers in telephone repeaters for long distance service.
+
+=== Magnetic amplifier ===
+
+A magnetic amplifier is a transformer-like device that makes use of the saturation of magnetic materials to produce amplification. It is a non-electronic electrical amplifier with no moving parts. The bandwidth of magnetic amplifiers extends to the hundreds of kilohertz.
+
+=== Rotating electrical machinery amplifier ===
+A Ward Leonard control is a rotating machine like an electrical generator that provides amplification of electrical signals by the conversion of mechanical energy to electrical energy. Changes in generator field current result in larger changes in the output current of the generator, providing gain. This class of device was used for smooth control of large motors, primarily for elevators and naval guns.
+
+Field modulation of a very high speed AC generator was also used for some early AM radio transmissions. OTB - Below 535, A Historical Review of Continuous Wave Radio Frequency Power Generators See Alexanderson alternator.
+
+=== Johnsen–Rahbek effect amplifier ===
+The earliest form of audio power amplifier was Edison's "electromotograph" loud-speaking telephone, which used a wetted rotating chalk cylinder in contact with a stationary contact. The friction between cylinder and contact varied with the current, providing gain. Edison discovered this effect in 1874, but the theory behind the Johnsen–Rahbek effect was not understood until the semiconductor era.
+
+=== Mechanical amplifiers ===
+Mechanical amplifiers were used in the pre-electronic era in specialized applications.
+
+Early autopilot units designed by Elmer Ambrose Sperry incorporated a mechanical amplifier using belts wrapped around rotating drums; a slight increase in the tension of the belt caused the drum to move the belt. A paired, opposing set of such drives made up a single amplifier.
+This amplified small gyro errors into signals large enough to move aircraft control surfaces.
+A similar mechanism was used in the Vannevar Bush differential analyzer.
+
+The electrostatic drum amplifier used a band wrapped partway around a rotating drum, and fixed at its anchored end to a spring. The other end connected to a speaker cone. The input signal was transformed up to high voltage, and added to a high voltage dc supply line. This voltage was connected between drum and belt. Thus the input signal varied the electric field between belt and drum, and thus the friction between them, and thus the amount of lateral movement of the belt and thus speaker cone.
+
+Other variations on the theme also existed at one time.
+
+=== Pneumatic amplifier === 
+A pneumatic amplifier may be realised by using some kind of sensitive valve, which requires little force to operate, to modulate the flow of a stream of compressed air. They were used in compressed air gramophones before the days of electronic amplification, as in the Auxetophone, the Stentorphone, and similar devices. The basic principle of the valves used in these devices was to pass the stream of compressed air through two partially overlapping combs. The sound vibrations to be amplified were applied to one of the combs, causing it to move laterally in relation to the other comb, varying the degree of overlap and so altering the flow of compressed air in sympathy with the sound vibrations. The Auxetophone was capable of producing sufficient volume to broadcast public music performances from the top of the Blackpool Tower, and was said to be loud enough to cause people to vacate the front rows of seats in an auditorium. http://www.douglas-self.com/MUSEUM/COMMS/auxetophone/auxetoph.htm "The Auxetophone & Other Compressed-Air Gramophones" Retrieved 19th June 2012 
+
+=== Optical amplifiers ===
+
+Optical amplifiers amplify light through the process of stimulated emission. See Laser and Maser.
+
+=== Miscellaneous types ===
+*There are also mechanical amplifiers, such as the automotive servo used in braking.
+*Relays can be included under the above definition of amplifiers, although their transfer function is not linear (that is, they are either open or closed).
+*Also purely mechanical manifestations of such digital amplifiers can be built (for theoretical, instructional purposes, or for entertainment), see e.g. domino computer.
+*Another type of amplifier is the fluidic amplifier, based on the fluidic triode.
+
+== See also ==
+
+*Attenuator (electronics)
+*Guitar amplifier
+*Low noise amplifier
+*Negative feedback amplifier
+*Preamplifier
+
+==References==
+
+==External links==
+*Efficiency of Microwave Devices
+
+
+

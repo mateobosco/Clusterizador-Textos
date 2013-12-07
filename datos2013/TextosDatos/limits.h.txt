@@ -1,0 +1,15 @@
+ file. Java's primitive byte data type is always defined as consisting of 8 bits and being a signed data type, holding values from −128 to 127. The C# programming language, along with other .NET-languages, has both the unsigned byte (named byte) and the signed byte (named sbyte), holding values from 0 to 255 and -128 to 127, respectively.
+
+In data transmission systems a byte is defined as a contiguous sequence of binary bits in a serial data stream, such as in modem or satellite communications, which is the smallest meaningful unit of data. These bytes might include start bits, stop bits, or parity bits, and thus could vary from 7 to 12 bits to contain a single 7-bit ASCII code.
+
+==Notes==
+ 
+
+==See also==
+* Data hierarchy
+* Primitive data type
+
+==References==
+
+
+

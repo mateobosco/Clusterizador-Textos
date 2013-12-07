@@ -1,0 +1,27 @@
+
+
+The Au file format is a simple audio file format introduced by Sun Microsystems. The format was common on NeXT systems and on early Web pages. Originally it was headerless, being simply 8-bit µ-law-encoded data at an 8000 Hz sample rate. Hardware from other vendors often used sample rates as high as 8192 Hz, often integer factors of video clock signals. Newer files have a header that consists of six unsigned 32-bit words, an optional information chunk and then the data (in big endian format).
+
+Although the format now supports many audio encoding formats, it remains associated with the µ-law logarithmic encoding. This encoding was native to the SPARCstation 1 hardware, where SunOS exposed the encoding to application programs through the /dev/audio interface. This encoding and interface became a de facto standard for Unix sound.
+
+==New format==
+All fields are stored in big-endian format, including the sample data.
+
+ 32 bit word (unsigned) field Description/Content Hexadecimal numbers in C notation 
+ 0 magic number the value 0x2e736e64 (four ASCII characters \".snd\") 
+ 1 data offset the offset to the data in bytes, must be divisible by 8. The minimum valid number is 24 (decimal), since this is the header length (six 32-bit words) with no space reserved for extra information. 
+ 2 data size data size in bytes. If unknown, the value 0xffffffff should be used. 
+ 3 encoding Data encoding format: *1 = 8-bit G.711 µ-law *2 = 8-bit linear PCM *3 = 16-bit linear PCM *4 = 24-bit linear PCM *5 = 32-bit linear PCM *6 = 32-bit IEEE floating point *7 = 64-bit IEEE floating point *8 = Fragmented sample data *9 = DSP program *10 = 8-bit fixed point *11 = 16-bit fixed point *12 = 24-bit fixed point *13 = 32-bit fixed point *18 = 16-bit linear with emphasis *19 = 16-bit linear compressed *20 = 16-bit linear with emphasis and compression *21 = Music kit DSP commands *23 = 4-bit ISDN u-law compressed using the ITU-T G.721 ADPCM voice data encoding scheme *24 = ITU-T G.722 ADPCM *25 = ITU-T G.723 3-bit ADPCM *26 = ITU-T G.723 5-bit ADPCM *27 = 8-bit G.711 A-law 
+ 4 sample rate the number of samples/second, e.g., 8000 
+ 5 channels the number of interleaved channels, e.g., 1 for mono, 2 for stereo; more channels possible, but may not be supported by all readers. 
+
+The type of encoding depends on the value of the "encoding" field (word 3 of the header). Formats 2 through 7 are uncompressed PCM, therefore lossless. Formats 23 through 26 are ADPCM, which is a lossy, roughly 4:1 compression. Formats 1 and 27 are μ-law and A-law, respectively, both lossy. Several of the others are DSP commands or data, designed to be processed by the NeXT MusicKit software.
+
+Note: PCM data appear to be encoded as signed, rather than unsigned.
+
+== External links ==
+*Sample .AU file
+*Sun .au sound file format
+
+
+

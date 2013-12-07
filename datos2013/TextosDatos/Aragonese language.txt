@@ -1,0 +1,243 @@
+
+
+Aragonese (; aragonés: in Aragonese) is a Romance language spoken by between 10,000 and 30,000 people throughout the valleys of the Pyrenees in Aragon, Spain, mainly in the comarcas of Somontano de Barbastro, Jacetania, Alto Gállego, Sobrarbe, and Ribagorza. It is the only modern language that developed from medieval Navarro-Aragonese.
+
+While informally known as fabla ("talk" or "speech"), Aragonese is also commonly referred to by the names of its numerous local dialects which arose from fragmentation the language underwent over the centuries.
+
+==History==
+Aragonese originated in the early Middle Ages, as one of many Latin dialects developed in the Pyrenees on top of a strong Basque-like substratum. The original Kingdom of Aragon (formed by the counties of Aragon, Sobrarbe and Ribagorza) was progressively expanded from the mountain ranges towards the South, pushing the Moors farther south in the Reconquista and spreading the Aragonese language.
+
+The dynastic union of the Catalan Counties and the Kingdom of Aragon&mdash;which formed the Aragonese Crown in the twelfth century&mdash;did not result in a merging of the language forms of the two territories; Catalan continued to be spoken in the east, and Navarro-Aragonese in the west, although with blurred limits because of dialectal continuity. The Aragonese reconquista to the south ended in the kingdom of Murcia, which was ceded by James I of Aragon to the Kingdom of Castile as a dowry for an Aragonese princess.
+
+The spread of Castilian, now more commonly known as Spanish, and the Castilian origin of the Trastámara dynasty and a strong similarity between Castilian and Aragonese, meant that further recession was to follow. One of the key moments in the history of Aragonese was when a king of Castilian origin was appointed in the fifteenth century: Ferdinand I of Aragon, also known as Ferdinand of Antequera.
+
+The mutual union of the crowns of Aragon and Castile and the progressive suspension of all capacity of self-rule from the sixteenth century meant that Aragonese, while still widely spoken, was limited to a rural and colloquial use, as the nobility chose Spanish as their symbol of power.
+
+During the rule of Francisco Franco in the twentieth century and the spreading of compulsory schooling, Aragonese was regarded as a mere dialect of Spanish, and therefore was frowned upon (for example, pupils were punished in schools for using it).
+
+Then, the constitutional democracy voted by the people in 1978 also meant the debut of literary works and studies conducted in and about the Aragonese language.
+
+===Modern Aragonese===
+Today, Aragonese is still spoken natively within its core area, the Aragonese mountain ranges of the Pyrenees, in the comarcas of Somontano, Jacetania, Sobrarbe, and Ribagorza.
+
+These are the major cities and towns where Aragonese speakers can still be found: Huesca, Graus, Monzón, Barbastro, Bielsa, Chistén, Fonz, Echo, Estadilla, Benasque, Campo, Sabiñánigo, Jaca, Plan, Ansó, Ayerbe, Broto, and El Grado.
+
+Aragonese is also learnt as a second language by other inhabitants of the country in areas like Huesca, Zaragoza, Ejea de los Caballeros, and Teruel. According to recent polls, altogether they only make up around 10,000 active speakers and about 30,000 passive speakers.
+
+In 2009 the Languages Act of Aragon gives recognition of "native language, original and historic" of Aragon, therefore there are a number of linguistic rights, as the utilisation of Aragonese language in the public administrations of Aragon. Languages Act of Aragon Official Bulletin of Aragon 
+
+== Phonology ==
+===Phonological characteristics===
+The Aragonese language expanded into new territories of the Kingdom of Aragon, from the 12th century until the 16th century.
+Aragonese has many historical traits that join it to Catalan rather than Spanish. Some of these are conservative features that are also shared with Astur-Leonese and Portuguese, where Spanish innovated in ways that did not spread to nearby languages.
+
+;Traits shared with Catalan:
+
+*Romance initial F- is preserved, e.g. FILIUM > ("son", Sp. , Cat. , Pt. ).
+
+*Romance yod (GE-, GI-, I-) consistently became medieval , as in medieval Catalan and Portuguese. This becomes modern ch , as a result of the devoicing of sibilants (see below). In Spanish, the medieval result was either (modern ), or nothing, depending on the context. E.g. IUVENEM > ("young man", Sp. , Cat. ), GELARE > ("to freeze", Sp. , Cat. ).
+
+*Romance groups -LT-, -CT- result in , e.g. FACTUM > ("done", Sp. , Cat. , Gal./Port. ), MULTUM > ("many"/"much", Sp. , Cat. , Gal. , Port. ).
+
+*Romance groups -X-, -PS-, SCj- result in voiceless palatal fricative ix , e.g. COXU > ("crippled", Sp. , Cat. ).
+
+*Romance groups -Lj-, -C'L-, -T'L- result in palatal lateral ll , e.g. MULIERE > ("woman", Sp. , Cat. ), ACUT'LA > ("needle", Sp. , Cat. ).
+
+;Traits shared partly with Catalan, partly with Spanish:
+
+*Open O, E from Romance result systematically in diphthongs , , e.g. VET'LA > ("old woman", Sp. , Cat. ). This includes before a yod, e.g. > ("eight", Sp. , Cat. ). Spanish diphthongizes except before yod, while Catalan diphthongizes only before yod.
+
+*Loss of final unstressed -E but not -O, e.g. GRANDE > ("big"), FACTUM > ("done"). Catalan loses both -O and -E; Spanish preserves -O, and sometimes -E.
+
+;Traits shared with Spanish but not Catalan:
+
+*Former voiced sibilants become voiceless (, ).
+
+;Conservative traits not found in either Spanish or Catalan:
+
+*Latin -B- is maintained in past imperfect endings of verbs of the second and third conjugations: ("he had", Sp. , Cat. ), ("he was sleeping", Sp. , Cat. ).
+
+*High Aragonese dialects (alto aragonés), along with some dialects of Gascon, have preserved the voicelessness of many intervocalic stop consonants, e.g. CLETAM > ("sheep hurdle", Cat. , Fr. ), CUCULLIATAM > cocullata ("crested lark", Sp. , Cat. ).
+
+*A few Aragonese dialects maintain Latin as geminate .
+
+=== Vowels ===
+
+ Front Central Back 
+ Close 300px i u e o a 
+ 
+ 
+ Mid 
+ 
+ 
+ Open 
+
+=== Consonants ===
+
+ labial labiovelar interdental dental oralveolar palatal orpostalveolar velar 
+ unvoiced voiced unvoiced voiced unvoiced voiced unvoiced voiced unvoiced voiced unvoiced voiced 
+ plosive p/p/ b, v/b/ t/t/ d/d/ c, qu/k/ g, gu/g/ 
+ fricative f/f/ z/θ/ s/s/ x, ix/ʃ/ 
+ affricate ch/tʃ/ 
+ nasal m/m/ n/n/ ny/ɲ/ 
+ lateral l/l/ ll/ʎ/ 
+ alveolar trip rr, r-/rr/ 
+ alveolar flap r/r/ (u /ɾ/) 
+ approximant u/w/ i, y/j/ 
+
+==Orthography==
+
+In 2010, the Academia de l'Aragonés, formed in 2006, established a single orthographic standard in order to modernize medieval orthography and look for a more etymological language. This new orthography is used by the Aragonese Wikipedia. Orthographic Proposal for Aragonese language 
+
+Previously, Aragonese had two orthographic standards:
+* The grafía de Uesca codified in 1987 by the Consello d'a Fabla Aragonesa (CFA) at a convention in Huesca (Aragonese: Uesca) is used by a majority of Aragonese writers. It uses a more uniform system when assigning letters to phonemes with less regard to the etymology of a word. For example, words traditionally written with "v" and "b" are uniformly written with "b" in the Uesca system. Likewise "ch", "j", "g(+e)", and "g(+i)" are all written "ch". In addition, the orthography uses letters more strongly associated with Spanish (e.g., "ñ"). Normas graficas de l'aragonés 
+* The grafía SLA devised in 2004 by the Sociedat de Lingüistica Aragonesa (SLA) is used by a minority of Aragonese writers. It uses more etymological-based forms that are closer to Catalan, Occitan, and medieval Aragonese sources. With the SLA system, "v" and "b" and "ch", "j", "g(+e)", and "g(+i)" are distinct forms and "ny" is used instead of "ñ".
+
+In the sixteenth century, Aragonese Moriscoes wrote some Romance texts in Arabic writing, probably because of their inability to write in Arabic; the language in these texts shows a mixture of Aragonese and Castilian traits, and they can be considered among the last written examples of the Aragonese formerly spoken in Central and Southern Aragón. Aragonese in Aljamiado literature 
+
+ Comparison between the three Aragonese orthographies Certain orthographic details related with local speeches are not listed. 
+ phonemes Academia de l'Aragonés grafía de Uesca (1987) grafía SLA 
+ a a a 
+ b, v according to Latin etymology.Ex: bien, servicio, val, activo, cantaba, debant bEx: bien, serbizio, bal, autibo, cantaba, debán b, v according to Romance etymology, as in Catalan and OCcitan.Ex: bien, servício, val, activo, cantava, devant 
+ * c * qu before e, i * c * qu before e, i * c * qu before e, i 
+ If there is an etymological 'q', as in Catalan and a bit in Occitan: * qu before a, o. * qü before e, i. Ex: quan, qüestión. cu as in SpanishEx: cuan, cuestión If there is an etymologic 'q', as in Catalan and a bit in Occitan: * qu before a, o. * qü before e, i. Ex: quan, qüestion. 
+ chEx: chaminera, minchar, chusticia, cheografía chEx: chaminera, minchar, chustizia, cheografía * ch. * j (g before e, i) according to etymology, as in Catalan and Occitan. Ex: chaminera, minjar, justícia, geografia 
+ d d d 
+ e e e 
+ f f f 
+ * g * gu before e, i * g * gu before e, i * g * gu before e, i 
+ * gu before a, o * gü before e, i * gu before a, o * gü before e, i * gu before a, o * gü before e, i 
+ etymologic h, mute after Latin Written according to etymology.Ex: historia, hibierno Not written.Ex: istoria, ibierno Written as in Medieval Aragonese and in Catalan.Ex: história, hivierno 
+ i i i 
+ l l l 
+ ll ll ll 
+ m m m 
+ n n n 
+ ny as in Medieval Aragonese and CatalanEx: anyada ñ as in SpanishEx: añada nyas in Medieval Aragonese and CatalanEx: anyada 
+ o o o 
+ p p p 
+ r r r 
+ * rr * r- (word-initially) * rr * r- (word-initially) * rr * r- (word-initially) 
+ s (also between two vowels, never ss*) s (also between two vowels, never ss*) s (also between two vowels, never ss*) 
+ t t t 
+ Etymologic final -t, mute in Modern Aragonese Written as in Medieval Aragonese, Catalan and OccitanEx: sociedat, debant, chent Not written.Ex: soziedá, debán, chen Written as in Medieval Aragonese, Catalan and OccitanEx: sociedat, devant, gent 
+ u u u 
+ (Eastern dialects) (Western dialects) ix as unifying grapheme for all dialectsEx: baixo xEx: baxo * ix (Eastern dialects). * x (Western dialects). Ex: baixo (Eastern) = baxo (Western) 
+ * y initial and between vowels * i en os atros casos * y initial and between vowels * i in other cases * y initial and between vowels * i in other cases 
+ * z before a, o, u. * c before e, i (in non-international words, and certain words with Greek or Arabic origin). * z in final position (but tz as grapheme for plurals and verbals forms from t+s that in Benasquese become ts). Ex: zona, Provenza, fetz, centro, servicio, realizar, verdatz. zEx: zona, Probenza, fez, zentro, serbizio, realizar, berdaz. * z before e a, o, u, in initial position. * ç before a, o, u, in inner position. * z in final position. * c before e, i. * z in international formations (Greek cultisms, loans, with a 'z' in the original word). Ex: zona, Provença, fez, centro, servício, realizar, verdaz. 
+ Cultisms Assimilation tendences not written.Ex: dialecto, extension y lexico. Assimilation tendences written.Ex: dialeuto, estensión pero lecsico. Not every assimilation tendences written.Ex: dialecto, extension y lexico. 
+ Accent written (in black in the examples) Spanish model, just in acute words, being permitted non-accentuation.Ex: * historia, gracia, servicio * mitolochía, cheografía, María, río * atención * choven, cantaban Spanish model.Ex: * istoria, grazia, serbizio * mitolochía, cheografía, María, río * atenzión * choben, cantaban Portuguese, Catalan and Occitan model.Ex: * história, grácia, servício * mitologia, geografia, Maria, rio * atencion * joven, cantavan 
+
+==Grammar==
+
+Aragonese grammar is similar to the grammar of other Iberian Romance languages, such as Spanish and Catalan.
+
+=== Article ===
+==== Definite article ====
+Definite article in Aragonese has undergone certain changes that have become characteristics of dialectal differentiation. The oldest ones are lo, los, la, las and the most widespread are o, a, os, as. Francho Nagore "GRAMATICA DE LA LENGUA ARAGONESA". Mira Editores. (1989). 
+
+=== Lexicology ===
+Aragonese lexicology shows the origin of Aragonese words from different languages that have influenced it. 
+
+The influence of other Romance languages on Aragonese is evident, especially from neighboring languages. Catalan and Occitan influenced Medieval Aragonese, and the Catalan influence continued, under the Crown of Aragon, in the territory where the languages are in contact (Ribagorça), a fact that explains the main characteristics of Eastern Aragonese. Since the 15th century, the Romance language that has influenced Aragonese the most is Spanish, having been adopted in almost all of Aragon as the first language and reducing Aragonese to the Pirineos.
+
+Another Romance language with certain influence is French, the only official language in the neighboring country. Italian loans have come through other languages such as Catalan, and words from Portuguese, through Spanish.
+
+Germanic words came through the conquest of Germanic peoples in the 5th century.
+
+Aragonese has also loans from Arabic and Mozarabic languages due to the Umayyad conquest of Hispania in the 8th century. Arabic has brought words from other languages such as Persian and Sanskrit.
+
+Finally, English, with its international importance, has introduced a lot of new words into the language.
+
+=== Gender ===
+
+Words that derive from the second declension or assimilated to the second conjugation are usually masculine:
+
+*FILIU(M) > fillo.
+
+*SCIURU + OLU(M) > esquiruelo.
+
+Words derived from the first declension are usually feminine:
+*FILIA(M) > filla
+
+There are neutral plurals assimilated to the first declension that become feminine-gender singular: 
+*FOLIA(M) > fuella
+
+Words that end in -or are feminine:
+*a honor, a calor, a color, and in medieval Aragonese la amor.
+
+The names of fruit trees usually end in -era, a suffix derived from Latin -ARIA and they are usually feminine:
+*a perera, a manzanera, a nuquera, a castanyera, a tellera/o tilero, a olivera, a ciresera, l'almendrera
+
+The genders of the names of rivers vary according to the river:
+
+*Many of them that end in -a are feminine: a Cinca/a Cinga, a Cinqueta, a Garona, L'Arba, a Noguera, a Isuela, La Uecha, La Uerva, etc. The last one was called in the 16th century río de la Uerba.
+*Many that come from the second and the third declension are masculine: L'Ebro, O Galligo, O Flumen, L'Alcanadre.
+
+===Pronouns===
+Aragonese preserves the system of clitic pronouns derived from the Latin forms 'inde' and 'ibi', as 'en/ne' and ''.
+
+This feature is shared with other Romance languages (Catalan, Occitan, French, Italian), and makes Aragonese different from other Ibero-Romance languages without those clitics (Spanish, Asturian, Portuguese).
+
+'En/ne' is used for:
+* Partitive object: No n'he visto como aquello (I haven't seen anything like that, literally Not (of it) I have seen like that).
+* Partitive subject: En fa tanto de mal (it hurts so much, literally (of it) it causes so much of pain)
+* Ablative, place where a movement starts: Se'n va ra memoria (memory goes away, literally It (away from here) memory goes)
+
+'' is used for:
+* Locative, place where: N'ibi heba uno (there was one of them), literally (Of them) there was one
+* Allative, movement towards somewhere: Vés-be ((you) go there (imperative))
+
+==Dialects==
+Francho Nagore's proposal
+
+There are about 25-30 dialectal variants of Aragonese, the majority of which are in the province of Huesca, due to its mountainous terrain where natural isoglosses have developed around valley enclaves, and where the highest incidence of spoken Aragonese is found. Ribagorçan, is one such variant: an eastern Aragonese dialect, which is transitional to Gascon Occitan, Catalan, and Spanish.
+
+There is a proposal to classify the language varieties into four main dialects:
+* Central
+* Western
+* Eastern
+* Southern
+
+For certains linguistics, these groups are complex dialects formed by various varieties. For other, these four groups are Aragonese dialects and Hecho Aragonese and Chistau Valley Aragonese are comarcal varieties.
+
+== Literature ==
+
+=== Medieval Ages ===
+At no point in its history did the Aragonese language acquire the prestige literature developed in other Romance languages from the Iberian Peninsula.
+
+Not until the 12th - 13th centuries did Aragonese begin to be used in written documents. From this period are featured Liber Regum I Curso sobre lengua y literatura en Aragón: (Edad Media) (a book of general history), Razón feita d'amor, I Curso sobre lengua y literatura en Aragón: (Edad Media) Libre dels tres reys d'orient I Curso sobre lengua y literatura en Aragón: (Edad Media) and Vida de Santa María Egipcíaca. I Curso sobre lengua y literatura en Aragón: (Edad Media) La vida de Santa Maria Egipciaca: a fourteenth-century translation into Old Castilian from Latin of a work by Paul the Deacon 
+
+=== Early modern period literature ===
+Spanish was from 1500 the first language of culture in Aragon: a lot of Aragonese stood out with writtings in the Spanish language, to the point that in the 17th century the Argensola brothers went to Castile to teach Spanish. Alazet: revista de filología, Número 5 
+
+Aragonese became a familiar and village language and each day acquired popular traces. The 16th was obscure: there is no document in Aragonese, just in Aljamia. El aragonés de la literatura aljamiado-morisca In the 17th century appeared certain texts that used the language to characterised popular characters.
+
+In a literary contest held in Huesca in 1650 it were presented three poems in Aragonese by Matías Pradas, Isabel de Rodas and "Fileno, montañés".
+
+The first pastoradas come from the 16th and the 17th century.
+
+=== Contemporary literature ===
+The 19th and 20th centuries have seen a renaissance of the Aragonese literature; however, due to the lack of a standard language, authors write about local topics, each using his own variety of the language. In 1944, the novel Vida de Pedro Saputo, by Braulio Foz, appeared in Almudévar Aragonese. In the 20th century the costumbrist comedies written by Domingo Miral gained importance, as well as the poetry of Veremundo Méndez Coarasa, both in Hecho Aragonese; in Graus Aragonese, one can highlight Cleto Torrodellas' verses and Tonón de Baldomera's popular writings; in Somontano Aragonese, there are Pedro Arnal Cavero's costumbrist narrations, as well as Juana Coscujuela' novel, A Lueca, historia d'una moceta d'o Semontano.
+
+==See also==
+*Aragonese language literature
+*Aragonese dialects
+*Aragonese writing systems
+*Academia de l'Aragonés
+
+==References==
+
+==External links==
+
+*Academia de l'Aragonés, Cultural association.
+*Consello d'a Fabla Aragonesa, Cultural association and language academy.
+*Ligallo de Fablans de l'Aragonés, Cultural association and language academy.
+*A.C. Nogará, Cultural association and language academy.
+*Sociedat de Lingüistica Aragonesa, Cultural association.
+*Aragonese language
+*Ethnologue report for Aragonese
+*Arredol - Diario digital en aragonés
+
+
+

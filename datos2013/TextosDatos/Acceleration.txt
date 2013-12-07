@@ -1,0 +1,122 @@
+
+
+In physics, acceleration is the rate at which the velocity of a body changes with time. In general, velocity and acceleration are vector quantities, with magnitude and direction , though in many cases only magnitude is considered (sometimes with negative values for deceleration). Acceleration is accompanied by a force, as described by Newton's Second Law; the force, as a vector, is the product of the mass of the object being accelerated and the acceleration (vector). The SI unit of acceleration is the metre per second per second (or "meter per second squared", m/s2).
+
+For example, an object such as a car that starts from standstill, then travels in a straight line at increasing speed, is accelerating in the direction of travel. If the car changes direction at constant speedometer reading, there is strictly speaking an acceleration although it is often not so described; passengers in the car will experience a force pushing them back into their seats in linear acceleration, and a sideways force on changing direction. If the speed of the car decreases, it is usual and meaningful to speak of deceleration; mathematically it is acceleration in the opposite direction to that of motion.
+
+==Definition and properties==
+Acceleration is the rate of change of velocity. At any point on a trajectory, the magnitude of the acceleration is given by the rate of change of velocity in both magnitude and direction at that point. The true acceleration at time t is found in the limit as time interval Δt → 0.
+Mathematically, instantaneous acceleration—acceleration over an infinitesimal interval of time—is the change in velocity divided by the duration of the interval :
+
+: i.e. the derivative of the velocity vector as a function of time.
+
+(Here and elsewhere, if motion is in a straight line, vector quantities can be substituted by scalars in the equations.)
+
+Mean acceleration over a period if time is the change in velocity divided by the duration of the period 
+
+:
+
+Acceleration has the dimensions of velocity (L/T) divided by time, i.e., L T −2. The SI unit of acceleration is the meter per second squared (m/s2); this can be called more meaningfully "meter per second per second", as the velocity in meters per second changes by the acceleration value, every second.
+
+An object moving in a circular motion&mdash;such as a satellite orbiting the earth&mdash;is accelerating due to the change of direction of motion, although the magnitude (speed) may be constant.
+When an object is executing such a motion where it changes direction, but not speed, it is said to be undergoing centripetal (directed towards the center) acceleration. Oppositely, a change in the speed of an object, but not its direction of motion, is a tangential acceleration.
+
+Proper acceleration, the acceleration of a body relative to a free-fall condition, is measured by an instrument called an accelerometer.
+
+In classical mechanics, for a body with constant mass, the (vector) acceleration of the body is proportional to the net force vector acting on it (Newton's second law):
+:
+where F is the resultant force acting on the body, m is the mass of the body, and a is its acceleration. As speeds approach that of light in a vacuum, relativistic effects become increasingly large and acceleration becomes less.
+
+==Tangential and centripetal acceleration==
+An oscillating pendulum, with velocity and acceleration marked. It experiences both tangential and centripetal acceleration.
+Components of acceleration for a planar curved motion. The tangential component at is due to the change in speed of traversal, and points along the curve in the direction of the velocity vector. The centripetal component ac is due to the change in direction of the velocity vector and is normal to the trajectory, pointing toward the center of curvature of the path.
+
+The velocity of a particle moving on a curved path as a function of time can be written as:
+:
+
+with v(t) equal to the speed of travel along the path, and
+
+:
+
+a unit vector tangent to the path pointing in the direction of motion at the chosen moment in time. Taking into account both the changing speed v(t) and the changing direction of ut, the acceleration of a particle moving on a curved path on a planar surface can be written using the chain rule of differentiation http://mathworld.wolfram.com/ChainRule.html and the derivative of the product of two functions of time as:
+
+:
+
+where un is the unit (inward) normal vector to the particle's trajectory, and R is its instantaneous dimension in two dimensions: Curvature of plane curves|radius of curvature] based upon the osculating circle at time t. These components are called the tangential acceleration and the radial acceleration or centripetal acceleration (see also circular motion and centripetal force).
+
+Extension of this approach to three-dimensional space curves that cannot be contained on a planar surface leads to the Frenet–Serret formulas. 
+
+==Special cases==
+===Uniform acceleration===
+Uniform or constant acceleration is a type of motion in which the velocity of an object changes by an equal amount in every equal time period. 
+
+A frequently cited example of uniform acceleration is that of an object in free fall in a uniform gravitational field. The acceleration of a falling body in the absence of resistances to motion is dependent only on the gravitational field strength g (also called acceleration due to gravity). By Newton's Second Law the force, F, acting on a body is given by:
+
+:
+
+Due to the simple algebraic properties of constant acceleration in the one-dimensional case (that is, the case of acceleration aligned with the initial velocity), there are simple formulas that relate the following quantities: displacement, initial velocity, final velocity, acceleration, and time: 
+
+:
+
+:
+
+:
+
+where 
+
+: = displacement
+
+: = initial velocity
+
+: = final velocity
+
+: = uniform acceleration
+
+: = time.
+
+In the case of uniform acceleration of an object that is initially moving in a direction not aligned with the acceleration, the motion can be resolved into two orthogonal parts, one of constant velocity and the other according to the above equations. As Galileo showed, the net result is parabolic motion, as in the trajectory of a cannonball, neglecting air resistance. 
+ 
+
+===Circular motion===
+Uniform circular motion is an example of a body experiencing acceleration resulting in velocity of a constant magnitude but change of direction. In this case, because the direction of the object's motion is constantly changing, being tangential to the circle, the object's velocity also changes, but its speed does not. This acceleration is directed toward the centre of the circle and takes the value:
+
+:
+
+where v is the object's speed. Equivalently, the radial acceleration may be calculated from the object's angular velocity , whence:
+
+:
+
+The acceleration, hence also the force acting on a body in uniform circular motion, is directed toward the center of the circle; that is, it is centripetal – the so called 'centrifugal force' appearing to act outward on a body is really a pseudo force experienced in the frame of reference of the body in circular motion, due to the body's linear momentum at a tangent to the circle.
+
+==Relation to relativity==
+
+===Special relativity===
+
+The special theory of relativity describes the behaviour of objects travelling relative to other objects at speeds approaching that of light in a vacuum. Newtonian mechanics is exactly revealed to be an approximation to reality, valid to great accuracy at lower speeds. Acceleration no longer follows classical equations.
+
+As speeds approach that of light, the acceleration produced by a given force decreases, becoming infinitesimally small as light speed is approached; an object with mass can approach this speed asymptotically, but never reach it.
+
+===General relativity===
+
+Unless the state of motion of an object is known, it is totally impossible to distinguish whether an observed force is due to gravity or to acceleration—gravity and inertial acceleration have identical effects. Albert Einstein called this the principle of equivalence, and said that only observers who feel no force at all - including the force of gravity - are justified in concluding that they are not accelerating. Brian Greene, The Fabric of the Cosmos, page 67. Vintage ISBN 0-375-72720-5 
+
+== See also ==
+* Angular acceleration
+* Gravitational acceleration
+* Kinematics
+* Equations of motion
+* Proper acceleration
+* 0 to 60 mph (0 to 100 km/h)
+* Shock (mechanics)
+* Shock and vibration data logger measuring 3-axis acceleration
+* Specific force
+
+==References==
+
+==External links==
+
+* Acceleration Calculator Simple acceleration unit converter
+* Measurespeed.com - Acceleration Calculator Based on starting & ending speed and time elapsed.
+
+
+

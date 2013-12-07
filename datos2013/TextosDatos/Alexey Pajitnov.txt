@@ -1,0 +1,62 @@
+
+
+Alexey Leonidovich Pajitnov (, ; born 14 March 1956) is a Russian computer engineer, residing in the United States. Pajitnov developed the popular game Tetris while working for the Dorodnitsyn Computing Centre of the Soviet Academy of Sciences, a Soviet government-founded R&D center.
+
+Despite being the developer of Tetris, Pajitnov did not receive royalties from his creation, as rights were owned by his employer, the Soviet government, which distributed it throughout the USSR and Eastern Europe. He only started to get royalties from his creation by 1996 when he and Henk Rogers formed The Tetris Company. 
+
+==Biography==
+Alexey Pajitnov created Tetris with the help of Dmitry Pavlovsky and Vadim Gerasimov in 1985. The game, first available in the Soviet Union, appeared in the West in 1986.
+
+Pajitnov also created the lesser known sequel to Tetris, entitled Welltris, which has the same principle but in a three dimensional environment where you see the "board" from above. Tetris was licensed and managed by Soviet company Elorg which had been founded specially for this purpose, and advertised with the slogan "From Russia with Love" (on NES: "From Russia With Fun!"). Because he was employed by the Soviet government, Pajitnov did not receive royalties. Pajitnov, together with Vladimir Pokhilko, moved to the United States in 1991 and later, in 1996, founded The Tetris Company with Henk Rogers.
+
+He helped design the puzzles in the Super NES versions of Yoshi's Cookie and designed the game Pandora's Box, which incorporates more traditional jigsaw-style puzzles.
+
+He began working for Microsoft in October 1996. Pajitnov worked for the , MSN Mind Aerobics and MSN Games groups. Pajitnov's new, enhanced version of Hexic, Hexic HD, was included with every new Xbox 360 Premium package. He left Microsoft in 2005.
+
+On August 18, 2005 WildSnake Software announced Pajitnov will be collaborating with them to release a new line of puzzle games. 
+
+==Works==
+
+ Game Name First Released System Name(s) Pajitnov's Role(s) 
+ Tetris 1985 Electronica 60, IBM-PC Original Concept (with Vadim Gerasimov & Dmitry Pavlovsky) 
+ Welltris 1989 Amiga, Atari ST, Commodore 64, DOS, Macintosh & ZX Spectrum Designer (with Andrei Sgenov) 
+ Faces 1990 DOS, Macintosh Original Concept (with Vladimir Pokhilko) 
+ Hatris 1990 TurboGrafx-16, Arcade, Game Boy & NES Original Concept 
+ Knight Move 1990 Famicom Disk System (Japan) Idealist 
+ Wordtris 1991 DOS, Game Boy, Mac OS, SNES Designer 
+ El-Fish 1993 DOS Original Concept (with Vladimir Pokhilko) 
+ Wild Snake 1994 Game Boy & Super NES Designer 
+ BreakThru! 1994 PC & Super NES Designer 
+ Knight Moves 1995 Microsoft Windows Idealist 
+ Ice & Fire 1995 Windows, Macintosh & PlayStation Original Concept (with Vladimir Pokhilko) 
+ Tetrisphere 1997 Nintendo 64 Contributor 
+ 1997 Windows & Game Boy Color Designer 
+ Microsoft Pandora's Box 1999 Windows Designer 
+ Microsoft A.I. Puzzler 2001 Windows Designer 
+ Hexic 2003 Windows Original Concept and design 
+ Hexic HD 2005 Xbox 360 (Pre-loaded on every Xbox 360 hard drive) Original Concept and design 
+ Dwice 2006 Windows Designer 
+ Hexic 2 2007 Xbox 360 (Sold through Xbox Live Arcade) Designer 
+
+==Awards and recognition==
+*In 1996, GameSpot named him as the fourth most influential computer game developer of all time. 
+*On March 7, 2007, he received the Game Developers Choice Awards First Penguin Award. The award was given for pioneering the casual games market. 
+*On June 24, 2009, he received the honorary award at the LARA - Der Deutsche Games Award in Cologne, Germany. 
+*In 2012, IGN included Pajitnov on their list of 5 Memorable Video Game Industry One-Hit Wonders, calling him "the ultimate video game one-hit wonder." 
+
+==See also==
+*ClockWerx, video game endorsed by Pajitnov
+
+==References==
+
+==Notes==
+*Angela Gunn (December 9&ndash;15, 1999). "Game boy". Seattle Weekly.
+
+==External links==
+*Alexey Pajitnov profile at MobyGames
+*Tetris - From Russia with Love, BBC documentary (website).
+*Video Interview with Alexey Pajitnov at GameZombie.tv
+*Tetris Creator Claims Free and Open Source Software Destroys the Market.
+
+
+

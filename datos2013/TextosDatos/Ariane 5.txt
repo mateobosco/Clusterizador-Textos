@@ -1,0 +1,202 @@
+
+
+Ariane 5 is, as a part of Ariane rocket family, an expendable launch system used to deliver payloads into geostationary transfer orbit (GTO) or low Earth orbit (LEO). Ariane 5 rockets are manufactured under the authority of the European Space Agency (ESA) and the Centre National d'Etudes Spatiales (CNES). Astrium, an EADS company, is the prime contractor for the vehicles, leading a consortium of sub-contractors. Ariane 5 is operated and marketed by Arianespace as part of the Ariane programme. Astrium builds the rockets in Europe and Arianespace launches them from the Guiana Space Centre in French Guiana.
+
+Ariane 5 succeeded Ariane 4, but was not derived from it directly. Ariane 5 has been refined since the first launch in successive versions, "G", "G+", "GS", "ECA", and most recently, "ES". ESA originally designed Ariane 5 to launch the manned mini shuttle Hermes, and thus intended it to be "human rated" from the beginning.
+
+Two satellites can be mounted using a SYLDA carrier (SYstème de Lancement Double Ariane). Three main satellites are possible depending on size using SPELTRA (Structure Porteuse Externe Lancement TRiple Ariane). Up to eight secondary payloads, usually small experiment packages or minisatellites, can be carried with an ASAP (Ariane Structure for Auxiliary Payloads) platform.
+
+By mid 2007, Arianespace has ordered a total of 99 Ariane 5 launchers from Astrium. The first batch ordered in 1995 consisted of 14 launchers, while the second—P2—batch ordered in 1999 consisted of 20 launchers. A third—PA—batch consisting of 25 ECA and 5 ES launchers was ordered in 2004. The latest batch ordered in mid 2007 consist of another 35 ECA launchers. 
+ Through these orders, the Ariane 5 will be the workhorse of Arianespace at least through 2015.
+
+==Vehicle Description==
+Cut drawing of an Ariane 5 ECA
+150px
+
+===Cryogenic main stage===
+Ariane 5’s cryogenic H158 main stage (H173 for Ariane 5 ECA) is called the EPC (Étage Principal Cryotechnique - Cryotechnic Main Stage). It consists of a large tank 30.5 metres high with two compartments, one for 130 tonnes of liquid oxygen and one for 25 tonnes of liquid hydrogen, and a Vulcain engine at the base with thrust of 115 tonnes-force (1.13 meganewtons). This part of the first stage weighs about 15 tonnes when empty.
+
+===Solid boosters===
+Attached to the sides are two solid rocket boosters (SRBs or EAPs from the French Étages d’Accélération à Poudre), P238 (P241 for Ariane 5 ECA), each weighing about 277 tonnes full. Each delivers a thrust of about 630 tonnes-force (6.2 MN). These SRBs are usually allowed to sink to the bottom of the ocean, but like the Space Shuttle Solid Rocket Boosters they can be recovered with parachutes, and this is occasionally done for post-flight analysis. (Unlike Space Shuttle SRBs Ariane 5 boosters are not reused.) The most recent attempt was for the first Ariane 5 ECA mission. One of the two boosters was successfully recovered and returned to the Guiana Space Center for analysis. Prior to that mission, the last such recovery and testing was done in 2003.
+
+The French M51 SLBM shares a substantial amount of technology with these boosters.
+
+In March 2000 the nose cone of an Ariane 5 booster washed ashore on the South Texas coast, and was recovered by beachcombers. 
+
+===Second stage===
+The second stage is on top of the main stage and below the payload. The Ariane 5G used the EPS (Étage à Propergols Stockables - Storable Propellant Stage), which is fueled by monomethylhydrazine (MMH) and nitrogen tetroxide, whereas the Ariane 5 ECA uses the ESC (Étage Supérieur Cryotechnique - Cryogenic Upper Stage), which is fueled by liquid hydrogen and liquid oxygen. Ariane 5G+ used and Ariane 5 GS and ES use an improved EPS upper stage.
+
+The EPS upper stage is capable of re-ignition, which has been demonstrated four times. The first demonstration occurred during flight V26, which was launched on 5 October 2007. This was purely to test the engine, and occurred after the payloads had been deployed. The first operational use of restart capability as part of a mission, came on 9 March 2008, when two burns were made to deploy the first Automated Transfer Vehicle into a circular parking orbit, followed by a third burn after atv deployment to de-orbit the stage. the exact procedure has since been used at least 2 more times on subsequent ATVs
+
+===Fairing===
+The payload and all upper stages are covered at launch by a fairing, which splits off once sufficient altitude has been reached (typically above 150 km).
+
+==Variants==
+* The original version is dubbed Ariane 5 G (Generic) with a launch mass of 737 tonnes. Its payload capability to geostationary transfer orbit (GTO) was initially specified as 5970 kg, but was increased after the qualification flights to 6200 kg.
+
+* The Ariane 5 G+ had an improved second stage, with a GTO capacity of 6950 kg for a single payload. It flew three times in 2004.
+
+* It was replaced in 2005 by the Ariane 5 GS, with the same EAP boosters as the ECA and ES variants and a first stage based on the later Evolution EPC, but with the original tank volumes and a Vulcain 1B engine. The GS was introduced following the failure of the first Ariane 5 ECA flight - since all the vehicles then in production were ECA versions, it was decided to modify some of them to use the original Vulcain engine while the failure was investigated. It can carry a single payload of 6100 kg to GTO. The last of 6 Ariane 5 GS rockets was launched in 2009.
+
+* The Ariane 5 ECA (Evolution Cryotechnique type A) has a GTO launch capacity of 10000 kg for dual payloads or 10500 kg for a single payload. This variant uses a new Vulcain 2 first-stage engine, and an ESC-A (Etage Supérieur Cryogénique-A) second stage, powered by an HM-7B engine, weighing 2100 kg and carrying 14000 kg of cryogenic propellant. The second stage uses the liquid oxygen tank and lower structure from the Ariane 4's H10 third stage, mated to a new liquid hydrogen tank. The revised Vulcain has a longer, more efficient nozzle with more efficient flow cycle and denser propellant ratio. The new ratio demanded length modifications to the first-stage tanks. Also, the solid EAP casings have been lightened with new welds, and packed with more propellant. The ESC-A cryogenic second stage does not improve the performance to Low Earth orbit compared to Ariane 5G, and for this reason the Ariane 5 ECA will not be used to launch the Automated Transfer Vehicle (ATV).
+
+* The Ariane 5 ES (Evolution Storable) is used to launch the Automated Transfer Vehicle (ATV) into a 260 km circular low Earth orbit inclined at 51.6°. It includes all the performance improvements of Ariane 5 ECA on EPC ESA launchers glossary (Etage Principal Cryogénique—main stage) and EAP (Etage d'Accélération à Poudre—solid rocket booster) stages while the second stage is the EPS (Etage à Propergols Stockable) used on Ariane 5 GS variants. It is estimated that the Ariane 5 ES can put up to 21000 kg in LEO. The first such launch occurred at 04:03 GMT on 9 March 2008.
+
+* The Ariane 5 ES Galileo is a modification of the standard ES version able to launch four Galileo satellites at a time into 23,000 km circular orbits and due to enter service in the latter half of 2014. It will feature modifications to the payload fairing and payload delivery system to grant the ability to launch four satellites into unique orbits in a single launch. The variant was approved in February 2012 and alongside Soyuz launching two at a time will deliver the second Galileo constellation of 16 satellites during 2014 and 2015. 
+
+Comparable rockets:
+Delta IV
+Atlas V
+Chang Zheng 5
+Angara
+Proton
+Falcon 9
+H-IIB
+
+==Future developments==
+right
+
+===Ariane 5 ME===
+
+The Ariane 5 ME (Mid-life Evolution) is currently in development, with first flight planned for 2016-2017. The Ariane 5 ME will use a new upper stage, with increased propellant volume, powered by the Vinci expander cycle engine. Unlike the ECA's HM7B engine, the Vinci engine can restart up to five times, allowing for more complex missions (such as direct GEO insertion). The ME will also include a longer payload fairing and SYLDA dual payload attach fitting to accommodate larger satellites. The Vinci engine, combined with the higher propellant volume, increases payload to 11,200 kg to GTO. 
+
+The Ariane 5 ME, originally known as the Ariane 5 ECB, was to have its first flight in 2006. However, the failure of the first ECA flight in 2002, combined with a deteriorating satellite industry, caused ESA to cancel development in 2003. Development of the Vinci engine continued, though at a lower pace. The ESA Council of Ministers agreed to fund development of the new upper stage in November 2008. 
+On December 21, 2009 ESA awarded a €200 million contract to EADS Astrium to develop the ECB, now called the Ariane 5 ME, and on April 10, 2012 ESA gave a €112 million contract to Astrium to continue development. 
+
+===Solid propellant stage===
+Work on the Ariane 5 EAP motors have been continued in the Vega programme.
+The Vega 1st stage engine—the P80 engine—is a shorter derivation of the EAP. The P80 booster casing is made of filament wound graphite epoxy, much lighter than the current stainless steel casing. A new composite steerable nozzle has been developed while new thermal insulation material and a narrower throat improve the expansion ratio and subsequently the overall performance. Additionally, the nozzle now has electromechanical actuators which have replaced the heavier hydraulic ones used for thrust vector control.
+
+These developments will probably later make their way back into the Ariane programme. 
+ The incorporation of the ESC-B with the improvements to the solid motor casing and an uprated Vulcain engine would deliver 27000 kg to LEO. This would be developed for any lunar missions but the performance of such a design may not be possible if the higher Max-Q for the launch of this rocket poses a constraint on the mass delivered to orbit. 
+
+==Notable launches==
+Launch of the 34th Ariane 5 at Kourou.
+
+Ariane 5's first test flight (Ariane 5 Flight 501) on 4 June 1996 failed, with the rocket self-destructing 37 seconds after launch because of a malfunction in the control software. Wired.com: "History's Worst Software Bugs" (Retrieved 3 September 2009) A data conversion from 64-bit floating point value to 16-bit signed integer value to be stored in a variable representing horizontal bias caused a processor trap (operand error) Ariane 5 Flight 501 Failure, Report by the Inquiry Board http://esamultimedia.esa.int/docs/esa-x-1819eng.pdf because the floating point value was too large to be represented by a 16-bit signed integer. The software was originally written for the Ariane 4 where efficiency considerations (the computer running the software had an 80% maximum workload requirement ) led to 4 variables being protected with a handler while 3 others, including the horizontal bias variable, were left unprotected because it was thought that they were "physically limited or that there was a large margin of error". The software, written in Ada, was included in the Ariane 5 through the reuse of an entire Ariane 4 subsystem despite the fact that the particular software containing the bug, which was just a part of the subsystem, was not required by the Ariane 5 because it has a different preparation sequence than the Ariane 4.
+
+The second test flight (L502, on 30 October 1997) was a partial failure. The Vulcain nozzle caused a roll problem, leading to premature shutdown of the core stage. The upper stage operated successfully but could not reach the intended orbit.
+
+A subsequent test flight (L503, on 21 October 1998) proved successful and the first commercial launch (L504) occurred on 10 December 1999 with the launch of the XMM-Newton X-ray observatory satellite.
+
+Another partial failure occurred on 12 July 2001, with the delivery of two satellites into an incorrect orbit, at only half the height of the intended GTO. The ESA Artemis telecommunications satellite was able to reach its intended orbit on 31 January 2003, through the use of its experimental ion propulsion system.
+
+The next launch did not occur until 1 March 2002, when the Envisat environmental satellite successfully reached an orbit 800 km above the Earth in the 11th launch. At 8111 kg, it was the heaviest single payload until the launch of the first ATV on March 9, 2008 (~9000 kg).
+
+The first launch of the ECA variant on 11 December 2002 ended in failure when a main booster problem caused the rocket to veer off-course, forcing its self-destruction three minutes into the flight. Its payload of two communications satellites (Stentor and Hot Bird 7), valued at about EUR 630 million, was lost in the ocean. The fault was determined to have been caused by a leak in coolant pipes allowing the nozzle to overheat. After this failure, Arianespace SA delayed the expected January 2003 launch for the Rosetta mission to 26 February 2004, but this was again delayed to early March 2004 due to a minor fault in the foam that protects the cryogenic tanks on the Ariane 5. As of November 2010, the failure of the first ECA launch was the last failure of an Ariane 5; since then, all subsequent launches have been successful, with 44 consecutive successes that stretch back to 9 April 2003 with the launch of INSAT-3A and Galaxy 12 satellites.
+
+On 27 September 2003 the last Ariane 5 G boosted three satellites (including the first European lunar probe, SMART-1), in Flight 162. On 18 July 2004 an Ariane 5 G+ boosted what was at the time the heaviest telecommunication satellite ever, Anik F2, weighing almost 6,000 kg.
+
+The first successful launch of the Ariane 5 ECA took place on 12 February 2005. The payload consisted of the XTAR-EUR military communications satellite, a 'SLOSHSAT' small scientific satellite and a MaqSat B2 payload simulator. The launch had been originally scheduled for October 2004, but additional testing and the military requiring a launch at that time (of an Helios 2A observation satellite) delayed the attempt.
+
+On 11 August 2005, the first Ariane 5GS (featuring the Ariane 5 ECA's improved solid motors) boosted Thaïcom-4/iPStar-1, the heaviest telecommunications satellite to date at 6,505 kg, Gunter's Space Page - Information on Launch vehicles, Satellites, Space Shuttle and Astronautics into orbit.
+
+On 16 November 2005, the third Ariane 5 ECA launch (the second successful ECA launch) took place. It carried a dual payload consisting of Spaceway-F2 for DirecTV and Telkom-2 for PT Telekomunikasi of Indonesia. This was the rocket's heaviest dual payload to date, at more than 8,000 kg.
+
+On 27 May 2006, an Ariane 5 ECA rocket set a new commercial payload lifting record of 8.2 tonnes. The dual-payload consisted of the Thaicom 5 and Satmex 6 satellites. 
+
+On 4 May 2007 the Ariane 5 ECA set another new commercial record, lifting into transfer orbit the Astra 1L and Galaxy 17 communication satellites with a combined weight of 8.6 tonnes, and a total payload weight of 9.4 tonnes. This record was again broken by another Ariane 5 ECA, launching the Skynet 5B and Star One C1 satellites, on 11 November 2007. The total payload weight for this launch was 9,535 kg. 
+
+On 9 March 2008, the first Ariane 5 ES-ATV was launched to deliver the first ATV called Jules Verne to the International Space Station. The ATV was the heaviest payload ever launched by a European rocket, providing supplies to the space station with necessary propellant, water, air and dry cargo. This was the first operational Ariane mission which involved an engine restart in the upper stage. (The ES-ATV Aestus EPS upper stage was restartable while the ECA HM7-B engine was not.)
+
+On 1 July 2009, an Ariane 5 ECA launched TerreStar-1, the largest commercial telecommunication satellite ever built.
+
+On 28 October 2010, an Ariane 5 ECA launched Eutelsat's W3B (part of its W Series of satellites) and Broadcasting Satellite System Corporation (B-SAT)'s BSAT-3b satellites into orbit. However, the W3B satellite failed to operate shortly after the successful launch and was written off as a total loss due to an oxidizer leak in the satellite's main propulsion system. The BSAT-3b satellite, however, is operating normally. 
+
+On 22 April 2011, the Ariane 5 ECA flight VA-201 broke a commercial record, lifting Yahsat 1A and Intelsat New Dawn with a total payload weight of 10,064 kg to transfer orbit. 
+
+==Ariane 5 flights==
+
+ Date & Time (UTC) Flight (Vol) Configuration Serial number Payload Result # 
+ 1996-06-04 12:34:06 V-88 5G 501 Cluster Failure 1 
+ 1997-10-30 13:43:00 V-101 5G 502 MaqSat-H, TEAMSAT, MaqSat-B, YES Partial failure 2 
+ 1998-10-21 16:37:21 V-112 5G 503 MaqSat 3, ARD Success 3 
+ 1999-12-10 14:32:07 V-119 5G 504 XMM-Newton Success 4 
+ 2000-03-21 23:28:19 V-128 5G 505 INSAT-3B, AsiaStar Success 5 
+ 2000-09-14 22:54:07 V-130 5G 506 Astra 2B, GE-7 Success 6 
+ 2000-11-16 01:07:07 V-135 5G 507 PAS-1R, Amsat P3D, STRV 1C, STRV 1D Success 7 
+ 2000-12-20 00:26:00 V-138 5G 508 Astra 2D, GE-8, LDREX Success 8 
+ 2001-03-08 22:51:00 V-140 5G 509 Eutelsat 28A, BSAT-2a Success 9 
+ 2001-07-12 22:58:00 V-142 5G 510 Artemis, BSAT-2b Partial failure 10 
+ 2002-03-01 01:07:59 V-145 5G 511 Envisat Success 11 
+ 2002-07-05 23:22:00 V-153 5G 512 Stellat 5, N-Star c Success 12 
+ 2002-08-28 22:45:00 V-155 5G 513 Atlantic Bird 1, Meteosat 8 Success 13 
+ 2002-12-11 22:22:00 V-157 5ECA 517 Hot Bird 7, Stentor Failure 14 
+ 2003-04-09 22:52:19 V-160 5G 514 INSAT-3A, Galaxy 12 Success 15 
+ 2003-06-11 22:38:15 V-161 5G 515 Optus and Defence C1, BSAT-2c Success 16 
+ 2003-09-27 23:14:46 V-162 5G 516 INSAT-3E, eBird 1, SMART-1 Success 17 
+ 2004-03-02 07:17:44 V-158 5G+ 518 Rosetta Success 18 
+ 2004-07-18 00:44:00 V-163 5G+ 519 Anik F2 Success 19 
+ 2004-12-18 16:26:00 V-165 5G+ 520 Helios 2A, Essaim 1, 2, 3, 4, PARASOL, Nanosat 01 Success 20 
+ 2005-02-12 21:03:00 V-164 5ECA 521 XTAR-EUR, Maqsat-B2, Sloshsat Success 21 
+ 2005-08-11 08:20:00 V-166 5GS 523 Thaicom 4 Success 22 
+ 2005-10-13 22:32:00 V-168 5GS 524 Syracuse 3A, Galaxy 15 Success 23 
+ 2005-11-16 23:46:00 V-167 5ECA 522 Spaceway F2, TELKOM-2 Success 24 
+ 2005-12-21 22:33:00 V-169 5GS 525 INSAT-4A, Meteosat 9 Success 25 
+ 2006-03-11 22:32:50 V-170 5ECA 527 Spainsat, Hot Bird 7A Success 26 
+ 2006-05-26 21:09 V-171 5ECA 529 Satmex 6, Thaicom 5 Success 27 
+ 2006-08-11 22:15 V-172 5ECA 531 JCSAT-10, Syracuse 3B Success 28 
+ 2006-10-13 20:56:00 V-173 5ECA 533 DirecTV-9S, Optus D1, LDREX-2 Success 29 
+ 2006-12-08 22:08:00 V-174 5ECA 534 WildBlue 1, AMC-18 Success 30 
+ 2007-03-11 22:03 V-175 5ECA 535 Skynet 5A, INSAT-4B Success 31 
+ 2007-05-04 22:29 V-176 5ECA 536 Astra 1L, Galaxy 17 Success 32 
+ 2007-08-14 23:44 V-177 5ECA 537 Spaceway-3, BSAT-3A Success 33 
+ 2007-10-05 22:02 V-178 5GS 526 Intelsat 11, Optus D2 Success 34 
+ 2007-11-14 22:06 V-179 5ECA 538 Skynet 5B, Star One C1 Success 35 
+ 2007-12-21 21:41 V-180 5GS 530 RASCOM-QAF 1, Horizons-2 Success 36 
+ 2008-03-09 04:03 V-181 5ES 528 ATV-1 \"Jules Verne\" Success 37 
+ 2008-04-18 22:17 V-182 5ECA 539 Star One C2, Vinasat-1 Success 38 
+ 2008-06-12 22:05 V-183 5ECA 540 Turksat 3A, Skynet 5C Success 39 
+ 2008-07-07 21:47 V-184 5ECA 541 Badr-6, ProtoStar I Success 40 
+ 2008-08-14 20:44 V-185 5ECA 542 AMC-21, Superbird 7 Success 41 
+ 2008-12-20 22:35 V-186 5ECA 543 Eutelsat W2M, Hot Bird 9 Success 42 
+ 2009-02-12 22:09 V-187 5ECA 545 Hot Bird 10, NSS-9, Spirale A, Spirale B Success 43 
+ 2009-05-14 13:12 V-188 5ECA 546 Herschel, Planck Success 44 
+ 2009-07-01 19:52 V-189 5ECA 547 TerreStar-1 Success 45 
+ 2009-08-21 22:09 V-190 5ECA 548 JCSAT-12, Optus D3 Success 46 
+ 2009-10-01 21:59 V-191 5ECA 549 Amazonas 2, COMSATBw-1 Success 47 
+ 2009-10-29 20:00 V-192 5ECA 550 NSS-12, Thor 6 Success 48 
+ 2009-12-18 16:26 V-193 5GS 532 Helios 2B Success 49 
+ 2010-05-21 22:01 V-194 5ECA 551 Astra 3B, COMSATBw-2 Success 50 
+ 2010-06-26 21:41 V-195 5ECA 552 Arabsat-5A, COMS-1 Success 51 
+ 2010-08-04 20:59 V-196 5ECA 554 Nilesat 201, RASCOM-QAF 1R Success 52 
+ 2010-10-28 21:51 V-197 5ECA 555 Eutelsat W3B, BSAT-3b Success 53 
+ 2010-11-26 18:39 V-198 5ECA 556 Intelsat 17, HYLAS 1 Success 54 
+ 2010-12-29 21:27 V-199 5ECA 557 Koreasat 6, HispaSat-1E Success 55 
+ 2011-02-16 21:50 V-200 5ES 544 ATV-2 \"Johannes Kepler\" Success 56 
+ 2011-04-22 21:37 VA-201 5ECA 558 Yahsat 1A, Intelsat New Dawn Success 57 
+ 2011-05-20 20:38 VA-202 5ECA 559 ST-2, GSAT-8 Success 58 
+ 2011-08-06 22:52 VA-203 5ECA 560 Astra 1N, BSAT 3c Success 59 
+ 2011-09-21 21:38 VA-204 5ECA 561 Arabsat 5C, SES-2 Success 60 
+ 2012-03-23 04:34 VA-205 5ES 553 ATV-3 \"Edoardo Amaldi\" Success 61 
+ 2012-05-15 22:13 VA-206 5ECA 562 JCSAT-13, Vinasat-2 Success 62 
+ 2012-07-05 21:36 VA-207 5ECA 563 EchoStar XVII, MSG-3 Success 63 
+ 2012-08-02 22:54 VA-208 5ECA 564 INTELSAT 20, HYLAS 2 Success 64 
+
+==See also==
+* Future Launchers Preparatory Programme
+* Comparison of orbital launchers families
+* Comparison of orbital launch systems
+
+==References==
+
+==External links==
+
+*Astrium Ariane 5 page
+*Ariane 5 User's Manual
+*Ariane 5 Explodes on Maiden Flight by Charles Atkeison
+*Ariane launches page on LyngSat
+*ESA description of the Ariane 5
+* Ariane 5 technical notes, available as PDF from http://www.arianespace.com/site/documents/document_sub_index.html
+* 
+* Actually Launch on Arianespace Homepage
+* The last and the next Launch
+*BBC News report on the (delayed) successful launch of the Ariane 5 ECA flight on November 16, 2005.
+*Vinci Engine development
+*Watch an Ariane 5 launch (webcast begins 20 mins before launch).
+*Ariane 5 rocket explodes
+*Ariane 5 launch schedules
+* Astrium Ariane 5 launch kits
+
+
+

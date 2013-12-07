@@ -1,0 +1,42 @@
+
+
+Adware, or advertising-supported software, is any software package which automatically renders advertisements. These advertisements can be in the form of a pop-up. They may also be in the user interface of the software or on a screen presented to the user during the installation process. The object of the Adware is to generate revenue for its author. Adware, by itself, is harmless; however, some adware may come with integrated spyware such as keyloggers and other privacy-invasive software. 
+
+== Application ==
+Advertising functions are integrated into or bundled with the software, which is often designed to note what Internet sites the user visits and to present advertising pertinent to the types of goods or services featured there. Adware is usually seen by the developer as a way to recover development costs, and in some cases it may allow the software to be provided to the user free of charge or at a reduced price. The income derived from presenting advertisements to the user may allow or motivate the developer to continue to develop, maintain and upgrade the software product. Conversely, the advertisements may be seen by the user as interruptions or annoyances, or as distractions from the task at hand.
+
+Some adware is also shareware, and so the word may be used as term of distinction to differentiate between types of shareware software. What differentiates adware from other shareware is that it is primarily advertising-supported. Users may also be given the option to pay for a "registered" or "licensed" copy to do away with the advertisements. The Eudora e-mail client is an example of an adware "mode" in a program. After a trial period during which all program features are available, the user is offered a choice: free of charge with limited functionality, a mode with full functionality which displays advertisements for Eudora, or a paid mode that enables all features and turns off the ads.
+
+Software such as Corel's PaintShop Photo Pro X3 actively engages in Adware by frequently displaying upgrade ads and ads for other fully paid-for Corel products that the user has no means to stop or switch off. The "Do not display this message again" checkbox (lower left corner of the pop-up ad) has zero effect whatsoever in disabling these ads.
+
+=== Malware ===
+Some adware can also be classified as spyware, a type of malware (malicious software) which steals information.
+
+== Prevention and detection ==
+Programs have been developed to detect, quarantine, and remove spyware, including Ad-Aware, Malwarebytes' Anti-Malware, Spyware Doctor and Spybot - Search & Destroy. In addition, almost all commercial antivirus software currently detect adware and spyware, or offer a separate spyware detection package. 
+
+The reluctance to add adware and spyware detection to commercial antivirus products was fueled by a fear of lawsuits. Kaspersky, for example, was sued by Zango for blocking the installation of their products. Zango software and components are almost universally detected as adware nowadays.
+
+== Devices ==
+The Amazon Kindle 3 family of e-book readers have versions called "Kindle with Special Offers" that display ads on the home page and in sleep mode, in exchange for substantially lower pricing compared to the ad-free devices. 
+
+== See also ==
+* Computer insecurity
+* Greynet
+* Hosts file
+* Play mp3.exe (trojan)
+* Typhoid adware
+
+== References ==
+
+== Further reading ==
+* 
+* 
+
+== External links ==
+* 
+
+ 
+
+
+

@@ -1,0 +1,63 @@
+
+
+Adenylate cyclase (, also known as adenylyl cyclase, adenyl cyclase or AC) is part of the G protein signaling cascade, which transmits chemical signals from outside the cell across the membrane to the inside of the cell (cytoplasm). 
+
+The outside signal binds to a receptor, which transmits a signal to the G protein, which transmits a signal to adenylate cyclase, which transmits a signal by converting adenosine triphosphate to cyclic adenosine monophosphate (cAMP). cAMP is known as a second messenger. 
+
+==Types==
+There are ten known adenylate cyclases in mammals:
+
+* ADCY1
+* ADCY2
+* ADCY3
+* ADCY4
+* ADCY5
+* ADCY6
+* ADCY7
+* ADCY8
+* ADCY9
+* ADCY10
+
+==Reaction==
+Adenylate cyclase catalyzes the conversion of ATP to 3',5'-cyclic AMP (cAMP) and pyrophosphate.
+
+The reaction that Adenylate Cyclase catalyzes is the conversion of ATP to 3',5'-cyclic AMP
+
+cAMP (cyclic adenosine monophosphate) is an important molecule in eukaryotic signal transduction, a so-called second messenger. Adenylate cyclase can be activated or inhibited by G proteins, which are coupled to membrane receptors and thus can respond to hormonal or other stimuli. Following activation of adenylate cyclase, the resulting cAMP acts as a second messenger by interacting with and regulating other proteins such as protein kinase A and cyclic nucleotide-gated ion channels.
+
+Photoactivatable adenylate cyclase (PAC) was discovered in E. gracilis and can be expressed in other organisms through genetic manipulation. Shining blue light on a cell containing PAC activates it and abruptly increases the rate of conversion of ATP to cAMP. This is a useful technique for researchers in neuroscience because it allows them to quickly increase the intracellular cAMP levels in particular neurons, and to study the effect of that increase in neural activity on the behavior of the organism. For example, PAC expression in certain neurons has been shown to alter the grooming behavior in fruit flies exposed to blue light . Researchers also use channelrhodopsin-2 in a similar fashion.
+
+==Structure==
+Structure of adenylate cyclase
+Adenylyl cyclase is a transmembrane protein. It passes through the plasma membrane twelve times. 
+
+The important parts for its function are located in the cytoplasm and can be subdivided into the N-terminus, C1a, C1b, C2a, and C2b. 
+
+The C1 region exists between transmembrane helices six and seven, and the C2 region follows transmembrane helix 12. 
+
+The C1a and C2a domains form a catalytic dimer where ATP binds and is converted to cAMP.
+
+==Regulation==
+Adenylate cyclase is dually regulated by G proteins (Gs stimulating activity and Gi inhibiting it), and by forskolin, as well as other class-specific substrates:
+* Isoforms I, III and VIII are also stimulated by Ca2+/calmodulin.
+* Isoforms V and VI are inhibited by Ca2+ in a calmodulin-independent manner.
+* Isoforms II, IV and IX are stimulated by beta gamma subunits of the G protein.
+* Isoforms I, V and VI are most clearly inhibited by Gi, while other isoforms show less dual regulation by the inhibitory G protein.
+* Soluble AC (sAC) is not a transmembrane form and is not regulated by G proteins or forskolin, instead acts as a bicarbonate/pH sensor.
+
+In neurons, calcium-sensitive adenylate cyclases are located next to calcium ion channels for faster reaction to Ca2+ influx; they are suspected of playing an important role in learning processes. This is supported by the fact that adenylate cyclases are coincidence detectors, meaning that they are activated only by several different signals occurring together. In peripheral cells and tissues adenylate cyclases appear to form molecular complexes with specific receptors and other signaling proteins in an isoform-specific manner.
+
+==Additional images==
+
+ Image:BARK10161982.JPG|Beta adrenergic receptor kinase pathway
+
+==References==
+ 
+* Sodeman W and Sodeman T (1985). "Physiologic- and Adenylate Cyclase-Coupled Beta-Adrenergic Receptors", "Pathologic Physiology Mechanisms of Disease",143-145.
+
+==External links==
+* 
+* Interactive 3D views of Adenylate cyclase at 
+
+
+

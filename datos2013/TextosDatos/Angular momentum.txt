@@ -1,0 +1,250 @@
+
+
+This gyroscope remains upright while spinning due to its angular momentum.
+
+In physics, angular momentum, moment of momentum, or rotational momentum is a vector quantity that represents the product of a body's rotational inertia and rotational velocity about a particular axis. The angular momentum of a system of particles (e.g. a rigid body) is the sum of angular momenta of the individual particles. For a rigid body rotating around an axis of symmetry (e.g. the blades of a ceiling fan), the angular momentum can be expressed as the product of the body's moment of inertia, I, (i.e. a measure of an object's resistance to changes in its rotation rate) and its angular velocity ω:
+:
+
+In this way, angular momentum is sometimes described as the rotational analog of linear momentum.
+
+For the case of an object that is small compared with the radial distance to its axis of rotation, such as a tin can swinging from a long string or a planet orbiting in a circle around the Sun, the angular momentum can be expressed as its linear momentum, mv, crossed by its position from the origin, r. Thus, the angular momentum L of a particle with respect to some point of origin is
+:
+
+Angular momentum is conserved in a system where there is no net external torque, and its conservation helps explain many diverse phenomena. For example, the increase in rotational speed of a spinning figure skater as the skater's arms are contracted is a consequence of conservation of angular momentum. The very high rotational rates of neutron stars can also be explained in terms of angular momentum conservation. Moreover, angular momentum conservation has numerous applications in physics and engineering (e.g. the gyrocompass).
+
+== Angular momentum in classical mechanics ==
+
+=== Definition ===
+
+Relationship between force (F), torque (τ), momentum (p), and angular momentum (L) vectors in a rotating system
+
+The angular momentum L of a particle about a given origin is defined as:
+
+:
+
+where r is the position vector of the particle relative to the origin, p is the linear momentum of the particle, and × denotes the cross product.
+
+As seen from the definition, the derived SI units of angular momentum are newton meter seconds (N·m·s or kg·m2s−1) or joule seconds (J·s). Because of the cross product, L is a pseudovector perpendicular to both the radial vector r and the momentum vector p and it is assigned a sign by the right-hand rule.
+
+For an object with a fixed mass that is rotating about a fixed symmetry axis, the angular momentum is expressed as the product of the moment of inertia of the object and its angular velocity vector:
+
+:
+
+where I is the moment of inertia of the object (in general, a tensor quantity), and ω is the angular velocity.
+
+The angular momentum of a particle or rigid body in rectilinear motion (pure translation) is a vector with constant magnitude and direction. If the path of the particle or centre of mass of the rigid body passes through the given origin, its angular momentum is zero.
+
+Angular momentum is also known as moment of momentum.
+
+=== Angular momentum of a collection of particles ===
+
+If a system consists of several particles, the total angular momentum about a point can be obtained by adding (or integrating) all the angular momenta of the constituent particles.
+
+i.e. 
+
+===Angular momentum simplified using the center of mass===
+It is very often convenient to consider the angular momentum of a collection of particles about their center of mass, since this simplifies the mathematics considerably. The angular momentum of a collection of particles is the sum of the angular momentum of each particle:
+
+:
+
+where Ri is the position vector of particle i from the reference point, mi is its mass, and Vi is its velocity. The center of mass is defined by:
+
+:
+
+where the total mass of all particles is given by
+
+:
+
+It follows that the velocity of the center of mass is
+
+:
+
+If we define ri as the displacement of particle i from the center of mass, and vi as the velocity of particle i with respect to the center of mass, then we have
+
+: and 
+
+and also
+
+: and 
+
+so that the total angular momentum with respect to the center is
+
+:
+
+The first term is just the angular momentum of the center of mass. It is the same angular momentum one would obtain if there were just one particle of mass M moving at velocity V located at the center of mass. The second term is the angular momentum that is the result of the particles moving relative to their center of mass. This second term can be even further simplified if the particles form a rigid body, in which case it is the product of moment of inertia and angular velocity of the spinning motion (as above). The same result is true if the discrete point masses discussed above are replaced by a continuous distribution of matter.
+
+=== Fixed axis of rotation ===
+
+Angular momentum in terms of scalar and vector components.
+
+For many applications where one is only concerned about rotation around one axis, it is sufficient to discard the pseudovector nature of angular momentum, and treat it like a scalar where it is positive when it corresponds to a counter-clockwise rotation, and negative clockwise. To do this, just take the definition of the cross product and discard the unit vector, so that angular momentum becomes:
+
+:
+
+where θ'r,p is the angle between r and p measured from r to p; an important distinction because without it, the sign of the cross product would be meaningless. From the above, it is possible to reformulate the definition to either of the following:
+
+:
+
+where is called the lever arm distance to p.
+
+The easiest way to conceptualize this is to consider the lever arm distance to be the distance from the origin to the line that p travels along. With this definition, it is necessary to consider the direction of p (pointed clockwise or counter-clockwise) to figure out the sign of L. Equivalently:
+
+:
+
+where is the component of p that is perpendicular to r. As above, the sign is decided based on the sense of rotation.
+
+For an object with a fixed mass that is rotating about a fixed symmetry axis,
+the angular momentum is expressed as the product of the moment of inertia of the object and its angular
+velocity vector:
+
+:
+
+where I is the moment of inertia of the object (in general, a tensor quantity) and ω is the angular velocity.
+
+It is a misconception that angular momentum is always about the same axis as angular velocity. Sometime this may not be possible, in these cases the angular momentum component along the axis of rotation is the product of angular velocity and moment of inertia about the given axis of rotation.
+
+As the kinetic energy K of a massive rotating body is given by
+
+:
+
+it is proportional to the square of the angular velocity.
+
+===Conservation of angular momentum===
+An example of angular momentum conservation. A spinning figure skater reduces her moment of inertia by pulling in her arms, causing her rotation rate to increase. 
+
+The law of conservation of angular momentum states that when no external torque acts on an object or a closed system of objects, no change of angular momentum can occur. Hence, the angular momentum before an event involving only internal torques or no torques is equal to the angular momentum after the event. This conservation law mathematically follows from continuous directional symmetry of space (no direction in space is any different from any other direction). See Noether's theorem. 
+
+The time derivative of angular momentum is called torque:
+
+:
+
+(The cross-product of velocity and momentum is zero, because these vectors are parallel.) So requiring the system to be "closed" here is mathematically equivalent to zero external torque acting on the system:
+
+:
+
+where is any torque applied to the system of particles.
+It is assumed that internal interaction forces obey Newton's third law of motion in its strong form, that is, that the forces between particles are equal and opposite and act along the line between the particles.
+
+In orbits, the angular momentum is distributed between the spin of the planet itself and the angular momentum of its orbit:
+
+:;
+
+If a planet is found to rotate slower than expected, then astronomers suspect that the planet is accompanied by a satellite, because the total angular momentum is shared between the planet and its satellite in order to be conserved.
+
+Conservation of angular momentum; distributed between the spin and orbital angular momenta. The moment of inertia and angular velocity of the spinning body are about its own spin axes, and its position is radial from the orbital axes and momentum tangential to the curve. Here circular orbits are shown - similar illustrations would follow for an elliptical orbit.
+
+The conservation of angular momentum is used extensively in analyzing what is called central force motion. If the net force on some body is directed always toward some fixed point, the center, then there is no torque on the body with respect to the center, and so the angular momentum of the body about the center is constant. Constant angular momentum is extremely useful when dealing with the orbits of planets and satellites, and also when analyzing the Bohr model of the atom.
+
+The torque caused by the two opposing forces Fg and -Fg causes a change in the angular momentum L in the direction of that torque (since torque is the time derivative of angular momentum). This causes the top to precess.
+
+The conservation of angular momentum explains the angular acceleration of an ice skater as she brings her arms and legs close to the vertical axis of rotation. By bringing part of mass of her body closer to the axis she decreases her body's moment of inertia. Because angular momentum is constant in the absence of external torques, the angular velocity (rotational speed) of the skater has to increase.
+
+The same phenomenon results in extremely fast spin of compact stars (like white dwarfs, neutron stars and black holes) when they are formed out of much larger and slower rotating stars (indeed, decreasing the size of object 104 times results in increase of its angular velocity by the factor 108).
+
+The conservation of angular momentum in Earth–Moon system results in the transfer of angular momentum from Earth to Moon (due to tidal torque the Moon exerts on the Earth). This in turn results in the slowing down of the rotation rate of Earth (at about 42 nsec/day ), and in gradual increase of the radius of Moon's orbit (at ~4.5 cm/year rate ).
+
+== Angular momentum in relativistic mechanics ==
+
+In modern (late 20th century) theoretical physics, angular momentum is described using a different formalism. Under this formalism, angular momentum is the 2-form Noether charge associated with rotational invariance (As a result, angular momentum is not conserved for general curved spacetimes, unless it happens to be asymptotically rotationally invariant). For a system of point particles without any intrinsic angular momentum (see below), it turns out to be
+
+:
+
+(Here, the wedge product is used.). 
+
+In the language of four-vectors and tensors the angular momentum of a particle in relativistic mechanics is expressed as an antisymmetric tensor of second order
+
+:
+
+== Angular momentum in quantum mechanics ==
+
+Angular momentum in quantum mechanics differs in many profound respects from angular momentum in classical mechanics.
+
+===Spin, orbital, and total angular momentum===
+
+The classical definition of angular momentum as can be carried over to quantum mechanics, by reinterpreting r as the quantum position operator and p as the quantum momentum operator. L is then an operator, specifically called the orbital angular momentum operator.
+
+However, in quantum physics, there is another type of angular momentum, called spin angular momentum, represented by the spin operator S. Almost all elementary particles have spin. Spin is often depicted as a particle literally spinning around an axis, but this is a misleading and inaccurate picture: Spin is an intrinsic property of a particle, fundamentally different from orbital angular momentum. All elementary particles have a characteristic spin, for example electrons always have "spin 1/2" while photons always have "spin 1".
+
+Finally, there is total angular momentum J, which combines both the spin and orbital angular momentum of all particles and fields. (For one particle, J=L+S.) Conservation of angular momentum applies to J, but not to L or S; for example, the spin–orbit interaction allows angular momentum to transfer back and forth between L and S, with the total remaining constant.
+
+===Quantization===
+In quantum mechanics, angular momentum is quantized – that is, it cannot vary continuously, but only in "quantum leaps" between certain allowed values. For any system, the following restrictions on measurement results apply, where is reduced Planck constant and is any direction vector such as x, y, or z:
+
+ If you measure... The result can be... 
+ 
+ or 
+ () , where 
+ or , where 
+
+In this standing wave on a circular string, the circle is broken into exactly 8 wavelengths. A standing wave like this can have 0,1,2, or any integer number of wavelengths around the circle, but it cannot have a non-integer number of wavelengths like 8.3. In quantum mechanics, angular momentum is quantized for a similar reason.
+(There are additional restrictions as well, see angular momentum operator for details.)
+
+The reduced Planck constant is tiny by everyday standards, about 10−34 J s, and therefore this quantization does not noticeably affect the angular momentum of macroscopic objects. However, it is very important in the microscopic world. For example, the structure of electron shells and subshells in chemistry is significantly affected by the quantization of angular momentum.
+
+Quantization of angular momentum was first postulated by Niels Bohr in his Bohr model of the atom.
+
+===Uncertainty===
+In the definition , six operators are involved: The position operators , , , and the momentum operators , , . However, the Heisenberg uncertainty principle tells us that it is not possible for all six of these quantities to be known simultaneously with arbitrary precision. Therefore, there are limits to what can be known or measured about a particle's angular momentum. It turns out that the best that one can do is to simultaneously measure both the angular momentum vector's magnitude and its component along one axis.
+
+The uncertainty is closely related to the fact that different components of an angular momentum operator do not commute, for example . (For the precise commutation relations, see angular momentum operator.)
+
+===Total angular momentum as generator of rotations===
+As mentioned above, orbital angular momentum L is defined as in classical mechanics: , but total angular momentum J is defined in a different, more basic way: J is defined as the "generator of rotations". More specifically, J is defined so that the operator
+:
+is the rotation operator that takes any system and rotates it by angle about the axis .
+
+The relationship between the angular momentum operator and the rotation operators is the same as the relationship between lie algebras and lie groups in mathematics. The close relationship between angular momentum and rotations is reflected in Noether's theorem that proves that angular momentum is conserved whenever the laws of physics are rotationally invariant.
+
+==Angular momentum in electrodynamics==
+When describing the motion of a charged particle in the presence of an electromagnetic field, the canonical momentum p is not gauge invariant. As a consequence, the canonical angular momentum is not gauge invariant either. Instead, the momentum that is physical, the so-called kinetic momentum, is
+
+:
+
+where is the electric charge, c the speed of light and A the vector potential. Thus, for example, the Hamiltonian of a charged particle of mass m in an electromagnetic field is then
+
+:
+
+where is the scalar potential. This is the Hamiltonian that gives the Lorentz force law. The gauge-invariant angular momentum, or "kinetic angular momentum" is given by
+
+:
+
+The interplay with quantum mechanics is discussed further in the article on canonical commutation relations.
+
+== See also ==
+* Angular momentum coupling
+* Angular momentum of light
+* Angular momentum operator
+* Areal velocity
+* Balancing machine
+* Control moment gyroscope
+* Falling cat problem
+* Linear-rotational analogs
+* List of moments of inertia
+* Moment of inertia
+* Noether's theorem
+* Precession
+* Relative angular momentum
+* Rigid rotor
+* Rotational energy
+* Specific relative angular momentum
+* Spin (physics)
+* Yrast
+
+==Footnotes==
+
+==References==
+* 
+*
+* 
+* 
+*
+* 
+*
+
+==External links==
+
+*Conservation of Angular Momentum - a chapter from an online textbook
+*Angular Momentum in a Collision Process - derivation of the three dimensional case
+
+
+

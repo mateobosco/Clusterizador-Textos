@@ -1,0 +1,45 @@
+
+
+Accumulators on a tabulating machine circa 1936. Each of the four registers can store a 10-digit decimal number.
+In a computer's central processing unit (CPU), an accumulator is a register in which intermediate arithmetic and logic results are stored. Without a register like an accumulator, it would be necessary to write the result of each calculation (addition, multiplication, shift, etc.) to main memory, perhaps only to be read right back again for use in the next operation. Access to main memory is slower than access to a register like the accumulator because the technology used for the large main memory is slower (but cheaper) than that used for a register.
+
+The canonical example for accumulator use is summing a list of numbers. The accumulator is initially set to zero, then each number in turn is read and added to the value in the accumulator. Only when all numbers have been added is the result held in the accumulator written to main memory or to another, non-accumulator, CPU register.
+
+An accumulator machine, also called a 1-operand machine, or a CPU with accumulator-based architecture, is a kind of CPU where, although it may have several registers, the CPU mostly stores the results of calculations in one special register, typically called "the accumulator". Historically almost all early computers were accumulator machines; and many microcontrollers still popular as of 2010 (such as the 68HC12, the PICmicro, the 8051 and several others) are basically accumulator machines.
+
+Modern CPUs are typically 2-operand or 3-operand machines—the additional operands specify which one of many general purpose registers (also called "general purpose accumulators" ) are used as the source and destination for calculations. These CPUs are not considered "accumulator machines".
+
+The characteristic which distinguishes one register as being the accumulator of a computer architecture is that the accumulator (if the architecture were to have one) would be used as an implicit operand for arithmetic instructions. For instance, a CPU might have an instruction like:
+
+ ADD memaddress
+
+This instruction would add the value read from the memory location at memaddress to the value from the accumulator, placing the result in the accumulator. The accumulator is not identified in the instruction by a register number; it is implicit in the instruction and no other register can be specified in the instruction. Some architectures use a particular register as an accumulator in some instructions, but other instructions use register numbers for explicit operand specification.
+
+== History of the computer accumulator ==
+Historical convention dedicates a register to "the accumulator", an "arithmetic organ" that literally accumulates its number during a sequence of arithmetic operations:
+
+:"The first part of our arithmetic organ ... should be a parallel storage organ which can receive a number and add it to the one already in it, which is also able to clear its contents and which can store what it contains. We will call such an organ an Accumulator. It is quite conventional in principle in past and present computing machines of the most varied types, e.g. desk multipliers, standard IBM counters, more modern relay machines, the ENIAC" (Goldstine and von Neumann, 1946; p. 98 in Bell and Newell 1971).
+
+Just a few of the instructions are, for example (with some modern interpretation):
+* Clear accumulator and add number from memory location X
+* Clear accumulator and subtract number from memory location X
+* Add number copied from memory location X to the contents of the accumulator
+* Subtract number copied from memory location X from the contents of the accumulator
+* Clear accumulator and shift contents of register into accumulator
+
+No convention exists regarding the names for operations from registers to accumulator and from accumulator to registers. Tradition (e.g. Donald Knuth's (1973) hypothetical MIX computer), for example, uses two instructions called load accumulator from register/memory (e.g. "LDA r") and store accumulator to register/memory (e.g. "STA r"). Knuth's model has many other instructions as well.
+
+== Notable accumulator-based computers ==
+Front panel of an IBM 701 computer with lights displaying the accumulator and other registers
+Most of IBM's early binary "scientific" computers, beginning with the vacuum tube IBM 701 in 1952, used a single 36-bit accumulator, along with a separate multiplier/quotient register to handle operations with longer results. The IBM 650, a decimal machine, had one 10 digit accumulator; the IBM 7070, a later, transistorized decimal machine had three accumulators.
+
+The 12-bit PDP-8 was one of the first minicomputers to use accumulators, and inspired many later machines. The PDP-8 had but one accumulator. The HP 2100 and Data General Nova had 2 and 4 accumulators. The Nova was created when this follow-on to the PDP-8 was rejected in favor of what would become the PDP-11. The Nova provided four accumulators, AC0-AC3, although AC2 and AC3 could also be used to provide offset addresses, tending towards more generality of usage for the registers. The PDP-11 introduced a more contemporary model of general registers, numbered R0-R7 or more, adopted by most later CISC and RISC machines.
+
+Early 4-bit and 8-bit microprocessors such as the 4004, 8008 and numerous others, typically had single accumulators. The 8051 microcontroller has two, a primary accumulator and a secondary accumulator, where the second is used by instructions only when multiplying (MUL AB) or dividing (DIV AB); the former splits the 16-bit result between the two 8-bit accumulators, whereas the latter stores the quotient on the primary accumulator A and the remainder in the secondary accumulator B. As a direct descendent of the 8008, the 8080, and the 8086, the modern ubiquitous Intel x86 processors still uses the primary accumulator EAX and the secondary accumulator EDX for multiplication and division of large numbers. For instance, MUL ECX will multiply the 32-bit registers ECX and EAX and split the 64-bit result between EAX and EDX. However, MUL and DIV are special cases, other arithmetic-logical instructions (ADD, SUB, CMP, AND, OR, XOR, TEST) may specify any of the eight registers EAX, ECX, EDX, EBX, ESP, EBP, ESI, EDI as the accumulator (i.e. left operand and destination); x86 is thus a fairly general register architecture, despite being based on an accumulator model. The 64-bit extension of x86, x86-64, has been further generalized to 14 instead of 6 general registers.
+
+== References ==
+ 
+*Goldstine, Herman H., and von Neumann, John, "Planning and Coding of the Problems for an Electronic Computing Instrument", Rep. 1947, Institute for Advanced Study, Princeton. Reprinted on pp. 92–119 in Bell, C. Gordon and Newell, Allen (1971), Computer Structures: Readings and Examples, McGraw-Hill Book Company, New York. ISBN 0-07-004357-4}. A veritable treasure-trove of detailed descriptions of ancient machines including photos.
+
+
+

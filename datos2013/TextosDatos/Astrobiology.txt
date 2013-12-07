@@ -1,0 +1,212 @@
+
+
+Nucleic acids may not be the only biomolecules in the Universe capable of coding for life. 
+
+Astrobiology is the study of the origin, evolution, distribution, and future of extraterrestrial life. This interdisciplinary field encompasses the search for habitable environments in our Solar System and habitable planets outside our Solar System, the search for evidence of prebiotic chemistry, laboratory and field research into the origins and early evolution of life on Earth, and studies of the potential for life to adapt to challenges on Earth and in outer space. Astrobiology addresses the question of whether life exists beyond Earth, and how humans can detect it if it does. (The term exobiology is similar but more specific — it covers the search for life beyond Earth, and the effects of extraterrestrial environments on living things.) Mirriam Webster Dictionary entry "Exobiologists" (accessed 16 April 2011) 
+
+Astrobiology makes use of physics, chemistry, astronomy, biology, molecular biology, ecology, planetary science, geography, and geology to investigate the possibility of life on other worlds and help recognize biospheres that might be different from the biosphere on Earth. iTWire - Scientists will look for alien life, but Where and How? Astrobiology concerns itself with interpretation of existing scientific data; given more detailed and reliable data from other parts of the universe, the roots of astrobiology itself—physics, chemistry and biology—may have their theoretical bases challenged. Although speculation is entertained to give context, astrobiology concerns itself primarily with hypotheses that fit firmly into existing scientific theories. 
+
+Earth is the only place in the universe known to harbor life. However, recent advances in planetary science have changed fundamental assumptions about the possibility of life in the universe, raising the estimates of habitable zones around other stars and the search for extraterrestrial microbial life. The possibility of life on Mars, either currently or in the past, is an active area of research.
+
+== Overview ==
+It is not known whether life elsewhere in the universe would utilize cell structures like those found on Earth. (Chloroplasts within plant cells shown here.) The Martian meteorite ALH84001 shows microscopic formations that may have been created by life.
+
+Astrobiology is etymologically derived from the Greek , astron, "constellation, star"; , bios, "life"; and , -logia, study. The synonyms of astrobiology are diverse; however, the synonyms were structured in relation to the most important sciences implied in its development: astronomy and biology. A synonym is exobiology from the Greek , "external"; Βίος, bios, "life"; and λογία, -logia, study. Another term used in the past is xenobiology, ("biology of the foreigners") a word coined in 1954 by science fiction writer Robert Heinlein in his work The Star Beast. 
+
+The term xenobiology has come to be used in a more specialized sense, to mean "biology based on foreign chemistry", whether of extraterrestrial or terrestrial (possibly synthetic) origin. Since alternate chemistry analogs to some life-processes have been created in the laboratory, xenobiology can be said to be an extant subject. 
+
+While it is an emerging and developing field, the question of whether life exists elsewhere in the universe is a verifiable hypothesis and thus a valid line of scientific inquiry. Though once considered outside the mainstream of scientific inquiry, astrobiology has become a formalized field of study. Planetary scientist David Grinspoon calls astrobiology a field of natural philosophy, grounding speculation on the unknown, in known scientific theory. Grinspoon 2004 NASA's interest in exobiology first began with the development of the U.S. Space Program. In 1959, NASA funded its first exobiology project, and in 1960, NASA founded an Exobiology Program; Exobiology research is now one of four elements of NASA's current Astrobiology Program. In 1971, NASA funded the Search for Extra-Terrestrial Intelligence (SETI) to search radio frequencies of the electromagnetic spectrum for signals being transmitted by extraterrestrial life outside the Solar System. NASA's Viking missions to Mars, launched in 1976, included three biology experiments designed to look for possible signs of present life on Mars. The Mars Pathfinder lander in 1997 carried a scientific payload intended for exopaleontology in the hopes of finding microbial fossils entombed in the rocks. 
+
+In the 21st century, astrobiology is a focus of a growing number of NASA and European Space Agency Solar System exploration missions. The first European workshop on astrobiology took place in May 2001 in Italy, and the outcome was the Aurora programme. Currently, NASA hosts the NASA Astrobiology Institute and a growing number of universities in the United States (e.g., University of Arizona, Penn State University, Montana State University, University of Washington, and Arizona State University), Astrobiology at Arizona State University Britain (e.g., The University of Glamorgan), CASE Undergraduate Degrees Canada, Ireland, and Australia (e.g., The University of New South Wales) The Australian Centre for Astrobiology, University of New South Wales now offer graduate degree programs in astrobiology. The International Astronomical Union regularly organizes international conferences through its Bioastronomy Commission. Commission 51: Bioastronomy 
+
+Advancements in the fields of astrobiology, observational astronomy and discovery of large varieties of extremophiles with extraordinary capability to thrive in the harshest environments on Earth, have led to speculation that life may possibly be thriving on many of the extraterrestrial bodies in the universe. A particular focus of current astrobiology research is the search for life on Mars due to its proximity to Earth and geological history. There is a growing body of evidence to suggest that Mars has previously had a considerable amount of water on its surface, water being considered an essential precursor to the development of carbon-based life. NOVA | Mars | Life's Little Essential | PBS 
+
+Missions specifically designed to search for life include the Viking program and Beagle 2 probes, both directed to Mars. The Viking results were inconclusive, and Beagle 2 failed to transmit from the surface and is assumed to have crashed. A future mission with a strong astrobiology role would have been the Jupiter Icy Moons Orbiter, designed to study the frozen moons of Jupiter&mdash;some of which may have liquid water&mdash;had it not been cancelled. In late 2008, the Phoenix lander probed the environment for past and present planetary habitability of microbial life on Mars, and to research the history of water there.
+
+In November 2011, NASA launched the Mars Science Laboratory (MSL) rover, nicknamed Curiosity, which continues the search for past or present life on Mars. Curiosity landed on Mars at Gale Crater in August 2012. The European Space Agency is developing the ExoMars astrobiology rover, which is to be launched in 2018.
+
+==Methodology==
+=== Planetary habitability ===
+
+When looking for life on other planets like the earth, some simplifying assumptions are useful to reduce the size of the task of the astrobiologist. One is to assume that the vast majority of life forms in our galaxy are based on carbon chemistries, as are all life forms on Earth. Carbon is well known for the unusually wide variety of molecules that can be formed around it. Carbon is the fourth most abundant element in the universe and the energy required to make or break a bond is just at an appropriate level for building molecules which are not only stable, but also reactive. The fact that carbon atoms bond readily to other carbon atoms allows for the building of arbitrarily long and complex molecules.
+
+The presence of liquid water is a useful assumption, as it is a common molecule and provides an excellent environment for the formation of complicated carbon-based molecules that could eventually lead to the emergence of life. Some researchers posit environments of ammonia, or more likely, water-ammonia mixtures. 
+
+A third assumption is to focus on sun-like stars. This comes from the idea of planetary habitability. Very big stars have relatively short lifetimes, meaning that life would not likely have time to evolve on planets orbiting them. Very small stars provide so little heat and warmth that only planets in very close orbits around them would not be frozen solid, and in such close orbits these planets would be tidally "locked" to the star. Without a thick atmosphere, one side of the planet would be perpetually baked and the other perpetually frozen. In 2005, the question was brought back to the attention of the scientific community, as the long lifetimes of red dwarfs could allow some biology on planets with thick atmospheres. This is significant, as red dwarfs are extremely common. (See Habitability of red dwarf systems).
+
+It is estimated that 10% of the stars in our galaxy are sun-like; there are about a thousand such stars within 100 light-years of our Sun. These stars would be useful primary targets for interstellar listening. Since Earth is the only planet known to harbor life, there is no evident way to know if any of the simplifying assumptions are correct.
+
+===Communication attempts===
+
+The illustration on the Pioneer plaque 
+Research on communication with extraterrestrial intelligence (CETI) focuses on composing and deciphering messages that could theoretically be understood by another technological civilization. Communication attempts by humans have included broadcasting mathematical languages, pictorial systems such as the Arecibo message and computational approaches to detecting and deciphering 'natural' language communication. The SETI program, for example, uses both radio telescopes and optical telescopes to search for deliberate signals from extraterrestrial intelligence.
+
+While some high-profile scientists, such as Carl Sagan, have advocated the transmission of messages, Sagan, Carl. Communication with Extraterrestrial Intelligence. MIT Press, 1973, 428 pgs. An Awkward History of Our Space Transmissions scientist Stephen Hawking has warned against it, suggesting that aliens might simply raid Earth for its resources and then move on. Don’t talk to aliens, warns Stephen Hawking. (April 25, 2010) 
+
+===Elements of astrobiology===
+==== Astronomy ====
+
+Artist's impression of the extrasolar planet OGLE-2005-BLG-390Lb orbiting its star 20,000 light-years from Earth; this planet was discovered with gravitational microlensing.
+The NASA Kepler mission, launched in March 2009, searches for extrasolar planets
+Most astronomy-related astrobiological research falls into the category of extrasolar planet (exoplanet) detection, the hypothesis being that if life arose on Earth, then it could also arise on other planets with similar characteristics. To that end, a number of instruments designed to detect Earth-like exoplanets have been considered, most notably NASA's Terrestrial Planet Finder (TPF) and ESA's Darwin programs, both of which have been cancelled. Additionally, NASA has launched the Kepler mission in March 2009, and the French Space Agency has launched the COROT space mission in 2006. There are also several less ambitious ground-based efforts underway. (See exoplanet).
+
+The goal of these missions is not only to detect Earth-sized planets, but also to directly detect light from the planet so that it may be studied spectroscopically. By examining planetary spectra, it would be possible to determine the basic composition of an extrasolar planet's atmosphere and/or surface; given this knowledge, it may be possible to assess the likelihood of life being found on that planet. A NASA research group, the Virtual Planet Laboratory, is using computer modeling to generate a wide variety of virtual planets to see what they would look like if viewed by TPF or Darwin. It is hoped that once these missions come online, their spectra can be cross-checked with these virtual planetary spectra for features that might indicate the presence of life. The photometry temporal variability of extrasolar planets may also provide clues to their surface and atmospheric properties.
+
+An estimate for the number of planets with intelligent extraterrestrial life can be gleaned from the Drake equation, essentially an equation expressing the probability of intelligent life as the product of factors such as the fraction of planets that might be habitable and the fraction of planets on which life might arise: 
+
+where, N = The number of communicative civilizations, R* = The rate of formation of suitable stars (stars such as our Sun), fp = The fraction of those stars with planets. (Current evidence indicates that planetary systems may be common for stars like the Sun), ne = The number of Earth-like worlds per planetary system, fl = The fraction of those Earth-like planets where life actually develops, fi = The fraction of life sites where intelligence develops, fc = The fraction of communicative planets (those on which electromagnetic communications technology develops), L = The "lifetime" of communicating civilizations.
+
+However, whilst the rationale behind the equation is sound, it is unlikely that the equation will be constrained to reasonable error limits any time soon. The first term, Number of Stars, is generally constrained within a few orders of magnitude. The second and third terms, Stars with Planets and Planets with Habitable Conditions, are being evaluated for the sun's neighborhood. The problem of the formula is that it is not usable to emit hypothesis because it contains units that can never be verified. Drake originally formulated the equation merely as an agenda for discussion at the Green Bank conference, but some applications of the formula had been taken literally and related to simplistic or pseudoscientific arguments. Another associated topic is the Fermi paradox, which suggests that if intelligent life is common in the universe, then there should be obvious signs of it. This is the purpose of projects like SETI, which tries to detect signs of radio transmissions from intelligent extraterrestrial civilizations.
+
+Another active research area in astrobiology is planetary system formation. It has been suggested that the peculiarities of our Solar System (for example, the presence of Jupiter as a protective shield) may have greatly increased the probability of intelligent life arising on our planet. No firm conclusions have been reached so far.
+
+====Biology====
+
+Hydrothermal vents are able to support extremophile bacteria on Earth and may also support life in other parts of the cosmos.
+Biology and chemistry, as opposed to physics, do not admit ideological contexts: either the biological phenomena are real, or they are abstract. Biologists cannot say that a process or phenomenon, by being mathematically possible, have to exist forcibly in the real nature. For biologists, the ground of speculations is well noticeable, and biologists specify what is speculative and what is not. 
+
+Until the 1970s, life was believed to be entirely dependent on energy from the Sun. Plants on Earth's surface capture energy from sunlight to photosynthesize sugars from carbon dioxide and water, releasing oxygen in the process, and are then eaten by oxygen-respiring animals, passing their energy up the food chain. Even life in the ocean depths, where sunlight cannot reach, was believed to obtain its nourishment either from consuming organic detritus rained down from the surface waters or from eating animals that did. A world's ability to support life was thought to depend on its access to sunlight. However, in 1977, during an exploratory dive to the Galapagos Rift in the deep-sea exploration submersible Alvin, scientists discovered colonies of giant tube worms, clams, crustaceans, mussels, and other assorted creatures clustered around undersea volcanic features known as black smokers. These creatures thrive despite having no access to sunlight, and it was soon discovered that they comprise an entirely independent food chain. Instead of plants, the basis for this food chain is a form of bacterium that derives its energy from oxidization of reactive chemicals, such as hydrogen or hydrogen sulfide, that bubble up from the Earth's interior. This chemosynthesis revolutionized the study of biology by revealing that life need not be sun-dependent; it only requires water and an energy gradient in order to exist. 
+
+Extremophiles (organisms able to survive in extreme environments) are a core research element for astrobiologists. Such organisms include biota, which are able to survive several kilometers below the ocean's surface near hydrothermal vents and microbes that thrive in highly acidic environments. It is now known that extremophiles thrive in ice, boiling water, acid, the water core of nuclear reactors, salt crystals, toxic waste and in a range of other extreme habitats that were previously thought to be inhospitable for life. It opened up a new avenue in astrobiology by massively expanding the number of possible extraterrestrial habitats. Characterization of these organisms&mdash;their environments and their evolutionary pathways&mdash;is considered a crucial component to understanding how life might evolve elsewhere in the universe. According to astrophysicist Dr. Steinn Sigurdsson, "There are viable bacterial spores that have been found that are 40 million years old on Earth - and we know they're very hardened to radiation." Some organisms able to withstand exposure to the vacuum and radiation of space include the lichen fungi Rhizocarpon geographicum and Xanthoria elegans, Article: Lichens survive in harsh environment of outer space the bacterium Bacillus safensis, The Planetary Report, Volume XXIX, number 2, March/April 2009, "We make it happen! Who will survive? Ten hardy organisms selected for the LIFE project, by Amir Alexander Deinococcus radiodurans, Bacillus subtilis, yeast Saccharomyces cerevisiae, seeds from Arabidopsis thaliana ('mouse-ear cress'), as well as the invertebrate animal Tardigrade. 
+
+On 27 June 2011, it was reported that a new E. coli bacterium was produced from an engineered DNA in which approximately 90% of its thymine was replaced with the synthetic building block 5-chlorouracil, a substance "toxic to other organisms". . Jupiter's moon, Europa, and Saturn's moon, Enceladus, are now considered the most likely locations for extant extraterrestrial life in the solar system. 
+
+The origin of life, distinct from the evolution of life, is another ongoing field of research. Oparin and Haldane postulated that the conditions on the early Earth were conducive to the formation of organic compounds from inorganic elements and thus to the formation of many of the chemicals common to all forms of life we see today. The study of this process, known as prebiotic chemistry, has made some progress, but it is still unclear whether or not life could have formed in such a manner on Earth. The alternative hypothesis of panspermia is that the first elements of life may have formed on another planet with even more favorable conditions (or even in interstellar space, asteroids, etc.) and then have been carried over to Earth by a variety of means. 
+In October 2011, scientists found that the cosmic dust permeating the universe contains complex organic matter ("amorphous organic solids with a mixed aromatic-aliphatic structure") that could be created naturally, and rapidly, by stars. As one of the scientists noted, "Coal and kerogen are products of life and it took a long time for them to form ... How do stars make such complicated organics under seemingly unfavorable conditions and it so rapidly?" Further, the scientist suggested that these compounds may have been related to the development of life on earth and said that, "If this is the case, life on Earth may have had an easier time getting started as these organics can serve as basic ingredients for life." 
+
+On August 29, 2012, and in a world first, astronomers at Copenhagen University reported the detection of a specific sugar molecule, glycolaldehyde, in a distant star system. The molecule was found around the protostellar binary IRAS 16293-2422, which is located 400 light years from Earth. Glycolaldehyde is needed to form ribonucleic acid, or RNA, which is similar in function to DNA. This finding suggests that complex organic molecules may form in stellar systems prior to the formation of planets, eventually arriving on young planets early in their formation. 
+
+==== Astrogeology ====
+
+Astrogeology is a planetary science discipline concerned with the geology of the celestial bodies such as the planets and their moons, asteroids, comets, and meteorites. The information gathered by this discipline allows the measure of a planet's or a natural satellite's potential to develop and sustain life, or planetary habitability.
+
+An additional discipline of astrogeology is geochemistry, which involves study of the chemical composition of the Earth and other planets, chemical processes and reactions that govern the composition of rocks and soils, the cycles of matter and energy and their interaction with the hydrosphere and the atmosphere of the planet. Specializations include cosmochemistry, biochemistry and organic geochemistry.
+
+The fossil record provides the oldest known evidence for life on Earth. By examining this evidence, paleontologists are able to understand better the types of organisms that arose on the early Earth. Some regions on Earth, such as the Pilbara in Western Australia and the McMurdo Dry Valleys of Antarctica, are also considered to be geological analogs to regions of Mars, and as such, might be able to provide clues on how to search for past life on Mars.
+
+==Life in the Solar System==
+
+Europa, due to the ocean that exists under its icy surface, might host some form of microbial life.
+People have long speculated about the possibility of life in settings other than Earth, however, speculation on the nature of life elsewhere often has paid little heed to constraints imposed by the nature of biochemistry. The likelihood that life throughout the universe is probably carbon-based is encouraged by the fact that carbon is one of the most abundant of the higher elements. Only two of the natural atoms, carbon and silicon, are known to serve as the backbones of molecules sufficiently large to carry biological information. As the structural basis for life, one of carbon's important features is that unlike silicon it can readily engage in the formation of chemical bonds with many other atoms, thereby allowing for the chemical versatility required to conduct the reactions of biological metabolism and propagation. The various organic functional groups, composed of hydrogen, oxygen, nitrogen, phosphorus, sulfur, and a host of metals, such as iron, magnesium, and zinc, provide the enormous diversity of chemical reactions necessarily catalyzed by a living organism. Silicon, in contrast, interacts with only a few other atoms, and the large silicon molecules are monotonous compared with the combinatorial universe of organic macromolecules. Indeed, it seems likely that the basic building blocks of life anywhere will be similar to our own, in the generality if not in the detail. Although terrestrial life and life that might arise independently of Earth are expected to use many similar, if not identical, building blocks, they also are expected to have some biochemical qualities that are unique. If life has had a comparable impact elsewhere in the solar system, the relative abundances of chemicals key for its survival - whatever they may be - could betray its presence. Whatever extraterrestrial life may be, its tendency to chemically alter its environment might just give it away. 
+Thought on where in the Solar System life might occur was limited historically by the belief that life relies ultimately on light and warmth from the Sun and, therefore, is restricted to the surfaces of planets. The three most likely candidates for life in the Solar System are the planet Mars, the Jovian moon Europa, and Saturn's moon Titan. More recently, Saturn's moon Enceladus may be considered a likely candidate as well. This speculation of likely candidates of life is primarily based on the fact that (in the cases of Mars and Europa) the planetary bodies may have liquid water, a molecule essential for life as we know it, for its use as a solvent in cells. Water on Mars is found in its polar ice caps, and newly carved gullies recently observed on Mars suggest that liquid water may exist, at least transiently, on the planet's surface, and possibly in subsurface environments such as hydrothermal springs as well. At the Martian low temperatures and low pressure, liquid water is likely to be highly saline. As for Europa, liquid water likely exists beneath the moon's icy outer crust. This water may be warmed to a liquid state by volcanic vents on the ocean floor (an especially intriguing theory considering the various types of extremophiles that live near Earth's volcanic vents), but the primary source of heat is probably tidal heating. 
+
+Another planetary body that could potentially sustain extraterrestrial life is Saturn's largest moon, Titan. Titan has been described as having conditions similar to those of early Earth. On its surface, scientists have discovered the first liquid lakes outside of Earth, but they seem to be composed of ethane and/or methane, not water. After Cassini data was studied, it was reported on March 2008 that Titan may also have an underground ocean composed of liquid water and ammonia. Additionally, Saturn's moon Enceladus may have an ocean below its icy surface and, according to NASA scientists in May 2011, "is emerging as the most habitable spot beyond Earth in the Solar System for life as we know it". 
+
+On 26 April 2012, scientists reported that lichen survived and showed remarkable results on the adaptation capacity of photosynthetic activity within the simulation time of 34 days under Martian conditions in the Mars Simulation Laboratory (MSL) maintained by the German Aerospace Center (DLR). In June, 2012, scientists reported that measuring the ratio of hydrogen and methane levels on Mars may help determine the likelihood of life on Mars. According to the scientists, "...low H2/CH4 ratios (less than approximately 40) indicate that life is likely present and active." Other scientists have recently reported methods of detecting hydrogen and methane in extraterrestrial atmospheres. 
+
+== Rare Earth hypothesis ==
+
+This hypothesis states that based on astrobiological findings, multi-cellular life forms found on Earth may actually be more of a rarity than scientists initially assumed. It provides a possible answer to the Fermi paradox which suggests, "If extraterrestrial aliens are common, why aren't they obvious?" It is apparently in opposition to the principle of mediocrity, assumed by famed astronomers Frank Drake, Carl Sagan, and others. The Principle of Mediocrity suggests that life on Earth is not exceptional, but rather that life is more than likely to be found on innumerable other worlds.
+
+The anthropic principle states that fundamental laws of the universe work specifically in a way that life would be possible. The anthropic principle supports the Rare Earth Hypothesis by arguing the overall elements that are needed to support life on Earth are so fine-tuned that it is nearly impossible for another just like it to exist by random chance (note that these terms are used by scientists in a different way from the vernacular conception of them). However, Stephen Jay Gould compared the claim that the universe is fine-tuned for the benefit of our kind of life to saying that sausages were made long and narrow so that they could fit into modern hot dog buns, or saying that ships had been invented to house barnacles. 
+
+==Research==
+The systematic search for possible life outside of Earth is a valid multidisciplinary scientific endeavor. NASA Astrobiology Institute The University of Glamorgan, UK, started just such a degree in 2006, and the American government funds the NASA Astrobiology Institute. However, characterization of non-Earth life is unsettled; hypotheses and predictions as to its existence and origin vary widely, but at the present, the development of theories to inform and support the exploratory search for life may be considered astrobiology's most concrete practical application.
+
+Biologist Jack Cohen and mathematician Ian Stewart, amongst others, consider xenobiology separate from astrobiology. Cohen and Stewart stipulate that astrobiology is the search for Earth-like life outside of our solar system and say that xenobiologists are concerned with the possibilities open to us once we consider that life need not be carbon-based or oxygen-breathing, so long as it has the defining characteristics of life. (See carbon chauvinism).
+
+=== Research outcomes ===
+
+Asteroid(s) may have transported life to Earth.
+, no evidence of extraterrestrial life has been identified. Examination of the Allan Hills 84001 meteorite, which was recovered in Antarctica in 1984 and believed to have originated from Mars, is thought by David McKay, Chief Scientist for Astrobiology at NASA's Johnson Space Center, as well as other scientists, to contain microfossils of extraterrestrial origin; this interpretation is controversial. On 5 March 2011, Richard B. Hoover, a scientist with the Marshall Space Flight Center, speculated on the finding of alleged microfossils similar to cyanobacteria in CI1 carbonaceous meteorites. However, NASA formally distanced itself from Hoover's claim. According to American astrophysicist Neil deGrasse Tyson: "At the moment, life on Earth is the only known life in the Universe, but there are compelling arguments to suggest we are not alone." 
+
+;Methane
+In 2004, the spectral signature of methane was detected in the Martian atmosphere by both Earth-based telescopes as well as by the Mars Express probe. Because of solar radiation and cosmic radiation, methane is predicted to disappear from the Martian atmosphere within several years, so the gas must be actively replenished in order to maintain the present concentration. 
+ Planetary Fourier Spectrometer website (ESA, Mars Express) The Mars Science Laboratory rover will perform precision measurements of oxygen and carbon isotope ratios in carbon dioxide (CO2) and methane (CH4) in the atmosphere of Mars in order to distinguish between a geochemical and a biological origin. 
+
+;Planetary systems
+It is possible that some planets, like the gas giant Jupiter in our solar system, may have moons with solid surfaces or liquid oceans that are more hospitable. Most of the planets so far discovered outside our solar system are hot gas giants thought to be inhospitable to life, so it is not yet known whether our solar system, with a warm, rocky, metal-rich inner planet such as Earth, is of an aberrant composition. Improved detection methods and increased observing time will undoubtedly discover more planetary systems, and possibly some more like ours. For example, NASA's Kepler Mission seeks to discover Earth-sized planets around other stars by measuring minute changes in the star's light curve as the planet passes between the star and the spacecraft. Progress in infrared astronomy and submillimeter astronomy has revealed the constituents of other star systems. Infrared searches have detected belts of dust and asteroids around distant stars, underpinning the formation of planets.
+
+;Planetary habitability
+
+Efforts to answer questions such as the abundance of potentially habitable planets in habitable zones and chemical precursors have had much success. Numerous extrasolar planets have been detected using the wobble method and transit method, showing that planets around other stars are more numerous than previously postulated. The first Earth-like extrasolar planet to be discovered within its star's habitable zone is Gliese 581 c, which was found using radial velocity. 
+
+== Missions ==
+Research into the environmental limits of life and the workings of extreme ecosystems is ongoing, enabling researchers to better predict what planetary environments might be most likely to harbor life. Missions such as the Phoenix lander, Mars Science Laboratory, ExoMars to Mars, and the Cassini probe to Saturn's moon Titan hope to further explore the possibilities of life on other planets in our solar system.
+
+===Viking program===
+
+Carl Sagan posing with a model of the Viking Lander.
+The two Viking spacecraft each carried four types of biological experiments to the surface of Mars in the late 1970s. These were the only Mars landers to carry out experiments to look specifically for biosignatures of life on Mars. The landers used a robotic arm to put soil samples into sealed test containers on the craft. The two landers were identical, so the same tests were carried out at two places on Mars' surface; Viking 1 near the equator and Viking 2 further north. The result was inconclusive, Levin, G and P. Straaf. 1976. Viking Labeled Release Biology Experiment: Interim Results. Science: 194. 1322-1329. and is still disputed by some scientists. 
+
+=== Beagle 2 ===
+
+Replica of the 33.2 kg Beagle-2 lander
+Mars Science Laboratory rover concept artwork
+Beagle 2 was an unsuccessful British Mars lander that formed part of the European Space Agency's 2003 Mars Express mission. Its primary purpose was to search for signs of life on Mars, past or present. All contact with it was lost upon its entry into the atmosphere. Beagle 2 lander 
+
+===Mars Science Laboratory===
+
+The Mars Science Laboratory (MSL) mission landed a rover that currently in operation on Mars. It was launched November 26, 2011, and landed at Gale Crater on August 6, 2012. Mission objectives are to help assess Mars' habitability and in doing so, determine whether Mars is or has ever been able to support life, collect data for a future manned mission, study Martian geology, its climate, and further assess the role that water, an essential ingredient for life as we know it, played in forming minerals on Mars.
+
+===ExoMars===
+
+ExoMars rover model
+ExoMars is a robotic mission to Mars to search for possible biosignatures of Martian life, past or present. This astrobiological mission is currently under development by the European Space Agency (ESA) with likely collaboration by the Russian Federal Space Agency (Roscosmos); it is planned for a 2018 launch. 
+
+===Red Dragon===
+
+Red Dragon is a proposed concept for a low-cost Mars lander mission that would utilize a SpaceX Falcon Heavy launch vehicle, and a modified Dragon capsule to enter the Martian atmosphere. The lander's primary mission would be to search for evidence of life on Mars (biosignatures), past or present. The concept will be proposed for funding in 2012/2013 as a NASA Discovery mission, for launch in 2018. 
+
+==See also==
+
+* Abiogenesis
+* Active SETI
+* Alien language
+* Astrosciences
+* Aurelia and Blue Moon
+* Back-contamination
+* Cosmic dust
+* Extraterrestrial life
+* Forward-contamination
+* Gravitational biology
+* Hypothetical types of biochemistry
+* Living Interplanetary Flight Experiment
+* Planetary habitability
+* Purple Earth Hypothesis
+* Rare Earth hypothesis
+* Shadow biosphere
+
+==References==
+
+==Bibliography==
+
+* The International Journal of Astrobiology, published by Cambridge University Press, is the forum for practitioners in this interdisciplinary field.
+* Astrobiology, published by Mary Ann Liebert, Inc., is a peer-reviewed journal that explores the origins of life, evolution, distribution, and destiny in the universe.
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+==External links==
+
+* Exobiologist.Org - Astrobiology news page from NASA.
+* Xenobiology Wiki
+* Astrobio.eu
+* Astrobiology.nasa.gov
+* Beyond the Basics In Astrobiology Research
+* Astrobiology Lecture Course Network (a.y. 2005–2006)
+* The Astrobiology Web
+* Astrobiology Magazine
+* Astrobiology Instant Expert on New Scientist
+* Australian Centre for Astrobiology
+* Conditions for Life Everywhere
+* Standard3D Stereoscopic Space Simulator including 30 exoplanets
+* European Astrobiology Network Association (EANA)
+* International Astronomical Union Commission 51: Bioastronomy, official website
+* NASA Astrobiology Institute
+* NASA-Macquarie University Pilbara Education Project
+* NASA's PlanetQuest
+* Official Exoplanetology Website
+* Podcast Interview with NAI's Director Dr. Carl Pilcher
+* Possible Connections Between Interstellar Chemistry and the Origin of Life on the Earth
+* Snaiad, a world-building project with creatures designed with evolutionary biology in mind.
+* Stars and Habitable Planets
+* Spanish Centro de Astrobiología
+* "The Habitable Exoplanets Catalog" (PHL/UPR Arecibo)
+
+
+

@@ -1,0 +1,67 @@
+
+
+The Anti-Ballistic Missile Treaty (ABM Treaty or ABMT) was a treaty between the United States and the Soviet Union on the limitation of the anti-ballistic missile (ABM) systems used in defending areas against missile-delivered nuclear weapons. 
+
+Signed in 1972, it was in force for the next 30 years until the US unilaterally withdrew from it in June 2002.
+
+==Background==
+
+Projected U.S. ABM suppression strike, 1968.
+Throughout the late 1950s and into the 1960s, the United States and the Soviet Union had been developing a series of missile systems with the ability to shoot down incoming ICBM warheads. During this period the US considered the defense of the US as a part of reducing the overall damage inflicted in a full nuclear exchange. As part of this defense, Canada and the US established the North American Air Defense Command (now called North American Aerospace Defense Command NORAD).
+
+By the early 1960s, US research on the Nike Zeus missile system had developed to the point where small improvements would allow it to be used as the basis of a "real" ABM system. Work started on a short-range, high-speed counterpart known as the Sprint to provide defense for the ABM sites themselves. By the mid-1960s, both systems showed enough promise to start development of base selection for a limited ABM system dubbed Sentinel. However, due to political debate, Sentinel never expanded beyond defense of missile-bases. 
+
+An intense debate broke out in public over the merits of such a system. A number of serious concerns about the technical abilities of the system came to light, many of which reached popular magazines such as Scientific American. This was based on lack of intelligence information and reflected the American nuclear warfare theory and military doctrines. The Soviet doctrine called for development of their own ABM system and return to strategic parity with the US. This was achieved with the operational deployment of the A-35 ABM system and its successors, which remain operational to this day. 
+
+As this debate continued, a new development in ICBM technology essentially rendered the points moot. This was the deployment of the Multiple Independently targetable Reentry Vehicle (MIRV) system, allowing a single ICBM to deliver as many as ten separate warheads at a time. This way, any ABM defense system could be overwhelmed with the sheer numbers of warheads. Upgrading it to counter the additional warheads would be economically infeasible—the defenders required one rocket per incoming warhead, whereas the attackers could place 10 warheads on a single missile at a reasonable cost. To further protect against ABM systems, the Soviet MIRV missiles were equipped with electronic countermeasures and heavy decoys. R-36M heavy missiles were carrying as many as 40 of them. These decoys would appear as warheads to ABM, effectively requiring engagement of 50 times more targets than before and rendering defense even less effective.
+
+At about the same time, the USSR reached strategic parity with the US in terms of ICBM forces. A nuclear war would no longer be a favorable exchange for the US, as both countries would be devastated. This led in the West to the concept of mutually assured destruction, MAD, in which any changes to the strategic balance had to be carefully weighed. To the U.S., ABMs now seemed far too risky—it was better to have no defense than one that might trigger a war.
+
+==ABM Treaty==
+
+As relations between the US and USSR warmed in the later years of the 1960s, the US first proposed an ABM treaty in 1967. This proposal was rejected. Following the proposal of the Sentinel and Safeguard decisions on American ABM systems, the Strategic Arms Limitation Talks began in November 1969 (SALT I). By 1972 an agreement had been reached to limit strategic defensive systems. Each country was allowed two sites at which it could base a defensive system, one for the capital and one for ICBM silos (Art. III). 
+
+The treaty was signed in Moscow on May 26, 1972 by the President of the United States, Richard Nixon and the General Secretary of the Communist Party of the Soviet Union, Leonid Brezhnev; and ratified by the US Senate on August 3, 1972.
+
+The 1974 Protocol reduced the number of sites to one per party, largely because neither country had developed a second site. The sites were Moscow for the USSR and Grand Forks Air Force Base, North Dakota, since its Safeguard facility was already under construction, for the US.
+
+It was seen by many in the West as a key piece in nuclear arms control, being an implicit recognition of the need to protect the nuclear balance by ensuring neither side could hope to reduce the effects of retaliation to acceptable levels.
+
+In the East, however, it was seen as a way to avoid having to maintain an anti-missile technology race at the same time as maintaining a missile race.
+
+For many years the ABM Treaty was, in the West, considered one of the landmarks in arms limitations. It was perceived as requiring two enemies to agree not to deploy a potentially useful weapon, deliberately to maintain the balance of power and as such, was also taken as confirmation of the Soviet adherence to the MAD doctrine.
+
+===Missiles limited by the treaty===
+The Treaty limited only ABMs capable of defending against "strategic ballistic missiles", without attempting to define "strategic". It was understood that both ICBMs and SLBMs are obviously "strategic". Both countries did not intend to stop the development of counter-tactical ABMs. The topic became disputable as soon as most potent counter-tactical ABMs started to be capable of shooting down SLBMs (SLBMs naturally tend to be much slower than ICBMs), nevertheless both sides continued counter-tactical ABM development. 
+
+==After the SDI announcement==
+The treaty was undisturbed until Ronald Reagan announced his Strategic Defense Initiative (SDI) on March 23, 1983. On the one hand, Reagan stated that SDI was "consistent with... the ABM Treaty", but on the other hand, he viewed it as a defensive system that would help reduce the possibility that mutual assured destruction (MAD) would become reality; he even suggested that the Soviets would be given access to the SDI technology. Nevertheless, SDI was against the spirit—if not the letter—of the ABM Treaty, which sought to pursue the principle of MAD.
+
+The project was a blow to Yuri Andropov's so-called "peace offensive". Andropov said that "It is time they stopped... search for the best ways of unleashing nuclear war... Engaging in this is not just irresponsible. It is insane". Pravda, March 27, 1983 
+
+SDI research went ahead, although it did not achieve the hoped-for result. SDI research was cut back following the end of Reagan's presidency, and in 1995 it was reiterated in a presidential joint statement that "missile defense systems may be deployed... will not pose a realistic threat to the strategic nuclear force of the other side and will not be tested to... that capability." This was reaffirmed in 1997.
+
+Regardless of the opposition, Reagan gave every indication that SDI would not be used as a bargaining chip and that the United States would do all in its power to build the system. The Soviets were threatened because the Americans might have been able to make a nuclear first strike possible. In The Nuclear Predicament, Beckman claims that one of the central goals of Soviet diplomacy was to terminate SDI. A surprise attack from the Americans would destroy much of the Soviet ICBM fleet, allowing SDI to defeat a “ragged” Soviet retaliatory response. Furthermore, if the Soviets chose to enter this new arms race, they would further cripple their economy. The Soviets could not afford to ignore Reagan’s new endeavor, therefore their policy at the time was to enter negotiations with the Americans. Peter R. Beckman et al., The Nuclear Predicament: Nuclear Weapons In The Cold War And Beyond, 2nd ed. (New Jersey: Prentice-Hall Inc, 1992), 183. B. Wayne Howell, "Reagan and Reykjavík: Arms Control, SDI, and the Argument From Human RIghts," Rhetoric & Public Affairs, Vol. 11, No. 3, 2008, pp. 389–415 By 1987, however, the USSR withdrew its opposition, concluding the SDI posed no threat. Norman A. Graebner, Richard Dean Burns, and Joseph M. Siracusa, Reagan, Bush, Gorbachev: Revisiting the End of the Cold War, p. 95, 2008. ISBN-10: 0313352410, ISBN-13: 978-0313352416 
+
+==US withdrawal==
+After the dissolution of the Soviet Union in December 1991 the status of the treaty became unclear, debated by members of Congress and professors of law. Succession of the ABM Treaty State Succession and the Legal Status of the ABM Treaty Miron-Feith Memorandum In 1997, a memorandum of understanding ABM Treaty: Memorandum of Understanding between the US and four of the former USSR states was signed and subject to ratification by each signatory, but it was not presented to the US Senate for advice and consent by Bill Clinton.
+
+On December 13, 2001, George W. Bush gave Russia notice of the United States' withdrawal from the treaty, in accordance with the clause that required six months' notice before terminating the pact—the first time in recent history that the United States has withdrawn from a major international arms treaty. This led to the eventual creation of the American Missile Defense Agency. "Announcement of Withdrawal from the ABM Treaty", White House press release 
+
+Supporters of the withdrawal argued that it was a necessity in order to test and build a limited National Missile Defense to protect the United States from nuclear blackmail by a rogue state. The withdrawal had many critics as well as supporters. John Rhinelander, a negotiator of the ABM treaty, predicted that the withdrawal would be a "fatal blow" to the Nuclear Non-Proliferation Treaty and would lead to a "world without effective legal constraints on nuclear proliferation." The construction of a missile defense system was also feared to enable the US to attack with a nuclear first strike.
+
+Reaction to the withdrawal by both the Russian Federation and the People's Republic of China was much milder than many had predicted, following months of discussion with both Russia and China aimed at convincing both that development of a National Missile Defense was not directed at them. In the case of Russia, the United States stated that it intended to discuss a bilateral reduction in the numbers of nuclear warheads, which would allow Russia to reduce its spending on missiles without decrease of comparative strength. Discussions led to the signing of the Strategic Offensive Reductions Treaty in Moscow on May 24, 2002. This treaty mandates cuts in deployed strategic nuclear warheads, but without actually mandating cuts to total stockpiled warheads, and without any mechanism for enforcement.
+
+The American Missile Defense Agency started a no AMD treaty with Russia, Europe and the USA in July 2003. There was much dispute about the questionability of the reason why there was another AMD treaty when one had failed not many years before. There were union conferences about this matter held in August 2009 which reached the conclusion to keep the treaty until pending investigation.
+
+==References==
+
+Anti-Ballistic Missile Treaty 
+1974 Protocol 
+
+==External links==
+*US Announcement of withdrawal (2001)
+*Global Security Institute
+
+
+

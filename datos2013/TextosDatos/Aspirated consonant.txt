@@ -1,0 +1,61 @@
+
+
+In phonetics, aspiration is the strong burst of air that accompanies either the release or, in the case of preaspiration, the closure of some obstruents. To feel or see the difference between aspirated and unaspirated sounds, one can put a hand or a lit candle in front of one's mouth, and say pin and then bin . One should either feel a puff of air or see a flicker of the candle flame with pin that one does not get with bin. In most dialects of English, the initial consonant is aspirated in pin and unaspirated in bin.
+
+The diacritic for aspiration in the International Phonetic Alphabet (IPA) is a superscript "h", ⟨⟩. In Unicode, it is encoded at . Unaspirated consonants are not normally marked explicitly, but there is a diacritic for non-aspiration in the Extensions to the IPA, the superscript equal sign, ⟨⟩.
+
+The term "aspiration" is sometimes also used for the replacement of a (usually fricative) consonant with an sound, but that process is more accurately termed debuccalization.
+
+== Description ==
+
+Voiceless consonants are produced with the vocal cords open and voiced consonants are produced when the vocal folds are fractionally closed. Voiceless aspiration occurs when the vocal cords remain open after a consonant is released. An easy way to measure this is by noting the consonant's voice onset time, as the voicing of a following vowel cannot begin until the vocal cords close.
+
+== Usage patterns ==
+
+English voiceless stops are aspirated for most native speakers when they are word-initial or begin a stressed syllable, as in pen, ten, Ken. They are unaspirated for almost all speakers when immediately following word-initial s, as in spun, stun, skunk. After an s elsewhere in a word they are normally unaspirated as well, except when the cluster is heteromorphemic and the stop belongs to an unbound morpheme; compare vs. . Word-final voiceless stops optionally aspirate.
+
+Aspirated consonants are not always followed by vowels or other voiced sounds. For example, in Eastern Armenian, aspiration is contrastive even word-finally so that տաք ('hot') contrasts with տակ ('under').
+
+In addition to Eastern Armenian, many languages, such as Korean, Thai, Indo-Aryan languages, Dravidian languages, Icelandic, Ancient Greek, and the dialects of Chinese etc. and etc. are different phonemes altogether.
+
+Alemannic German dialects have unaspirated as well as aspirated ; the latter series are usually viewed as consonant clusters. In Danish and most southern varieties of German, the "lenis" consonants transcribed for historical reasons as are distinguished from their fortis counterparts , mainly in their lack of aspiration.
+
+Icelandic and Faroese have preaspirated ; some scholars interpret these as consonant clusters as well. Preaspirated stops also occur in some Sami languages; for example, in Sami, the unvoiced stop phonemes , , , are pronounced preaspirated (, ) when they occur in medial or final position.
+
+French, 
+ Dutch, Italian, and Latvian are languages that do not have aspirated consonants.
+
+There are degrees of aspiration. Armenian and Cantonese have aspiration that lasts about as long as English aspirated stops, in addition to unaspirated stops. Korean has lightly aspirated stops that fall between the Armenian and Cantonese unaspirated and aspirated stops, as well as strongly aspirated stops whose aspiration lasts longer than that of Armenian or Cantonese. (See voice onset time.) An old IPA symbol for light aspiration was (that is, like a rotated ejective symbol), but this is no longer commonly used. There is no specific symbol for strong aspiration, but can be iconically doubled for, say, Korean vs. . Note however that Korean is nearly universally transcribed as vs. , with the details of voice onset time given numerically. 
+
+Aspiration also varies with place of articulation. Spanish /p t k/, for example, have voice onset times (VOTs) of about 5, 10, and 30 milliseconds, whereas English /p t k/ have VOTs of about 60, 70, and 80 ms. Korean has been measured at 20, 25, and 50 ms for and 90, 95, and 125 for .
+
+Although most aspirated obstruents in the world's language are stops and affricates, aspirated fricatives such as , or have also been documented in a few Tibeto-Burman languages, in some Oto-Manguean languages and in the Siouan language Ofo. Some languages, such as Cone Tibetan, have up to four contrastive aspirated fricatives , and Guillaume Jacques 2011. A panchronic study of aspirated fricatives, with new evidence from Pumi, Lingua 121.9:1518-1538 
+
+True aspirated voiced stops, as opposed to murmured voiced stops such as are extremely rare, but have been described in the Kelabit language. Robert Blust, 2006, "The Origin of the Kelabit Voiced Aspirates: A Historical Hypothesis Revisited", Oceanic Linguistics 45:311 
+
+== Usage of the diacritic ⟨⟩ ==
+
+The word 'aspiration' and the aspiration diacritic are sometimes used with voiced stops, such as ⟨⟩. However, such voiced aspiration, also known as breathy voice or murmur, is less ambiguously transcribed with dedicated diacritics, as ⟨⟩ or ⟨⟩.
+
+Some linguists restrict the double-dot subscript ⟨⟩ to murmured sonorants, such as vowels and nasals, which are murmured throughout their duration, and use the superscript hook-aitch ⟨⟩ for the breathy-voiced release of obstruents. When murmur is included under the term aspiration, as is common in Indo-Aryan linguistics, "voiceless aspiration" is called just that to avoid ambiguity.
+
+The diacritic may be doubled to indicate especially long aspiration, as in Navajo: ⟨⟩ etc.
+
+==See also==
+
+*Aspirated h
+*Voice onset time
+*List of phonetic topics
+*Phonation
+*Preaspiration
+*Rough breathing
+*Smooth breathing
+*Breathy voice
+
+==Notes==
+
+==References==
+*Cho, T., & Ladefoged, P., "Variations and universals in VOT". In Fieldwork Studies of Targeted Languages V: UCLA Working Papers in Phonetics vol. 95. 1997.
+
+
+

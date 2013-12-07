@@ -1,0 +1,72 @@
+
+
+Amygdalin (from Greek: "almond"), C20H27NO11, is a glycoside initially isolated from the seeds of the tree Prunus dulcis, also known as bitter almonds, by Pierre-Jean Robiquet
+and Antoine Boutron-Charlard, in 1830. and subsequently investigated by Liebig and Wöhler in 1830. Several other related species in the genus of Prunus, including apricot (Prunus armeniaca) and black cherry (Prunus serotina), also contain amygdalin.
+
+Since the early 1950s, a modified form of amygdalin has been promoted under the names laetrile and "Vitamin B17" as a cancer cure. In reality, neither amygdalin nor any derivative such as laetrile is in any sense a vitamin. Studies have found such compounds to be dangerously toxic as well as being clinically ineffective in the treatment of cancer. Taken by mouth they are potentially lethal because certain enzymes (in particular, glucosidases that occur in the gut and in various kinds of seeds, edible or inedible) act on them to produce cyanide. Moss, M. ; Khalil, N. ; Gray, J. "Deliberate self-poisoning with Laetrile"; CMA JOURNAL/NOVEMBER 15, 1981/VOL. 125 pp.1126-1127 The promotion of laetrile to treat cancer has been described in the medical literature as a canonical example of quackery, and as "the slickest, most sophisticated, and certainly the most remunerative cancer quack promotion in medical history." 
+
+==Chemistry==
+Amygdalin is extracted from almond or apricot kernel cake by boiling in ethanol; on evaporation of the solution and the addition of diethyl ether, amygdalin is precipitated as white minute crystals. Liebig and Wöhler were already able to find three decomposition products of the newly discovered amygdalin: sugar, benzaldehyde, and prussic acid (hydrogen cyanide). Later research showed that sulfuric acid decomposes it into D-glucose, benzaldehyde, and prussic acid; while hydrochloric acid gives mandelic acid, D-glucose, and ammonia. 
+ 
+
+Several glucosidase enzymes are known to act on amygdalin, leading to its decomposition by various pathways. Maltase causes partial degradation, giving D-glucose and mandelic nitrile glucoside, C6H5CH(CN)O·C6H11O5. Emulsin, on the other hand, decomposes it into benzaldehyde, cyanide, and two molecules of glucose; this enzyme occurs in the bitter almond, and consequently the seeds invariably contain free cyanide and benzaldehyde. An "amorphous amygdalin" is said to occur in the cherry laurel (Prunus laurocerasus). Lastly, amygdalin beta-glucosidase and prunasin beta-glucosidase consecutively catalyze loss of the two glucose units to yield mandelonitrile, which can then decompose to form free cyanide and benzaldehyde.
+
+Natural amygdalin has the R configuration at the chiral benzyl center. Under mild basic conditions, this stereogenic center epimerizes; the S epimer is called neoamygdalin. 
+
+==Laetrile==
+Laetrile (CAS No. 1332-94-1)
+Amygdalin is sometimes confused with laevomandelonitrile, also called laetrile for short; however, amygdalin and laetrile are different chemical compounds. Laetrile, which was patented in the United States, is a semi-synthetic molecule sharing part of the amygdalin structure, while the "laetrile" made in Mexico is usually amygdalin, the natural product obtained from crushed apricot pits, or neoamygdalin. What is laetrile?, National Cancer Institute, Retrieved on 14 January 2007 
+
+Laetrile has a melting point of 214 to 216 degrees Celsius. Its Chemical Abstracts Service Registry Number is 1332-94-1 and its International Union of Pure and Applied Chemistry nomenclature name is (2S,3S,4S,5R,6R)-6--3,4,5-trihydroxyoxane-2-carboxylic acid. Laetrile's chemical formula is C14H15NO7 and its PubChem number is 5484354. Laetrile data in PubChem. Its molecular weight is 309.2714 grams/mole. Laetrile is also classified as a cyanogenic glycoside. 
+
+Though it is sometimes sold as "Vitamin B17", it is not a vitamin. Amygdalin/laetrile was claimed to be a vitamin by chemist Ernst T. Krebs in the hope that if classified as a nutritional supplement it would escape the federal legislation regarding the marketing of drugs. He could also capitalise on the public fad for vitamins at that time. 
+
+==Toxicity==
+The metabolism of amygdalin produces hydrogen cyanide, a potent toxin. Beta-glucosidase, one of the enzymes that catalyzes the release of cyanide from amygdalin, is present in the human small intestine and in a variety of common foods. This leads to an unpredictable and potentially lethal toxicity when amygdalin or laetrile is taken orally. Ingestion of purified amygdalin or apricot kernels can cause severe toxicity and death due to cyanide poisoning. Numerous case reports in medical literature describe serious cyanide poisoning in patients who ingested laetrile as a cancer treatment. Blood cyanide concentrations may be measured as a means of confirming the diagnosis in hospitalized patients or to assist in the forensic investigation of a fatal overdose. R. Baselt, Disposition of Toxic Drugs and Chemicals in Man, 8th edition, Biomedical Publications, Foster City, CA, 2008, pp. 91-93. 
+
+Some laetrile promoters have claimed that the cyanide generated by laetrile is harmlessly detoxified by the mitochondrial enzyme rhodanese. However, these claims are false, as regardless of the level of rhodanese present, the body's available stores of cystine, cysteine, and other sulfur compounds necessary to detoxify cyanide are rapidly depleted in laetrile poisoning. 
+
+==Cancer treatment==
+Amygdalin was first isolated in 1830. In 1845 it was used as a cancer treatment in Russia, and in the 1920s in the United States, but it was considered too poisonous. In the 1950s, a purportedly non-toxic, synthetic form was patented for use as a meat preservative, and later marketed as laetrile for cancer treatment. 
+
+The U.S. Food and Drug Administration prohibited the interstate shipment of amygdalin and laetrile in 1977. Thereafter, 27 U.S. states legalized the use of amygdalin within those states. 
+
+=== Initial studies at Sloan-Kettering ===
+In 1972, Memorial Sloan-Kettering Cancer Center (MSKCC) board member Benno C. Schmidt, Sr. convinced the hospital to test laetrile so that he could assure others of its ineffectiveness "with some conviction." Kanematsu Sugiura, the scientist who performed the requested tests, found that laetrile inhibited secondary tumors in mice, though it did not destroy the primary tumors. He repeated the experiment several times with the same results. However, three other researchers were unable to confirm Sugiura's results. While these uncontrolled and inconclusive results were considered too preliminary to publish, they were leaked to laetrile advocates, resulting in significant public attention. 
+
+To expand on Sugiura's results, MSKCC researchers conducted a controlled experiment in which they injected some mice with laetrile (as Sugiura had done) and others with placebo. Sugiura, who was unaware of which mice had received laetrile, performed the pathologic analysis. In this controlled, blinded follow-up of Sugiura's initial uncontrolled experiment, laetrile showed no more activity than placebo. 
+
+Subsequently, laetrile was tested on 14 tumor systems without evidence of effectiveness. Given this collection of results, MSKCC concluded that "laetrile showed no beneficial effects." Mistakes in the MSKCC press release were highlighted by a group of laetrile proponents led by Ralph Moss, former public affairs official of MSKCC who was fired following his appearance at a press conference accusing the hospital of covering up the benefits of laetrile. These mistakes were considered scientifically inconsequential, but Nicholas Wade in Science stated that "even the appearance of a departure from strict objectivity is unfortunate." The results from these studies were published all together. 
+ 
+
+=== Subsequent clinical studies ===
+
+A 2006 systematic review by the Cochrane Collaboration concluded: "The claim that aetrile has beneficial effects for cancer patients is not supported by data from controlled clinical trials. This systematic review has clearly identified the need for randomised or controlled clinical trials assessing the effectiveness of aetrile or amygdalin for cancer treatment." Given the lack of evidence, laetrile has not been approved by the U.S. Food and Drug Administration. 
+
+The U.S. National Institutes of Health evaluated the evidence separately and concluded that clinical trials of amgydalin showed little or no effect against cancer. Laetrile/Amygdalin - National Cancer Institute For example, a 1982 trial of 175 patients found that tumor size had increased in all but one patient. http://www.cancerhelp.org.uk/about-cancer/treatment/complementary-alternative/therapies/laetrile The authors reported that "the hazards of amygdalin therapy were evidenced in several patients by symptoms of cyanide toxicity or by blood cyanide levels approaching the lethal range." 
+
+The study concluded "Patients exposed to this agent should be instructed about the danger of cyanide poisoning, and their blood cyanide levels should be carefully monitored. Amygdalin (Laetrile) is a toxic drug that is not effective as a cancer treatment".
+
+=== Advocacy and legality ===
+
+Laetrile was proven clinically ineffective more than 30 years ago and is considered a canonical example of "quackery". Nonetheless, advocates for laetrile dispute this label, asserting that there is a conspiracy between the U.S. Food and Drug Administration, the pharmaceutical industry and the medical community, including the American Medical Association and the American Cancer Society, to exploit the American people, and especially cancer patients. Advocates of the use of laetrile have also changed the rationale for its use, first as a treatment of cancer, then as a vitamin, then as part of a "holistic" nutritional regimen, or as treatment for cancer pain, among others, none of which have any significant evidence supporting its use. Despite the lack of evidence for its use, laetrile developed a significant following due to its wide promotion as a "pain-free" treatment of cancer as an alternative to surgery and chemotherapy that have significant side effects. The use of laetrile in place of known effective treatments of cancer led to a number of deaths. 
+
+The FDA & AMA crackdown, begun in the 1970s, effectively escalated prices on the black market, played into the conspiracy narrative, and helped unscrupulous profiteers foster multi-million dollar smuggling empires. Laetrile: The Cult of Cyanide Poisoning; Promoting Poison for Profit, American Journal of Clinical Nutrition, May, 1979, pg. 1121-1158. http://www.ajcn.org/content/32/5/1121.full.pdf retrieved: Jan. 2012. The Los Angelos Times, April, 1979. http://news.google.com/newspapers?id=bmstAAAAIBAJ&sjid=U4oFAAAAIBAJ&dq=laetrile%20profits&pg=6915%2C1486838 retrieved: Jan. 2012. Rome News Tribune; March, 1977. http://news.google.com/newspapers?id=ouotAAAAIBAJ&sjid=0zIDAAAAIBAJ&dq=laetrile&pg=4755%2C2326000 retrieved: Jan. 2012. 
+
+Some North American cancer patients have traveled to Mexico for treatment with the substance, allegedly under the auspices of Dr. Ernesto Contreras. Actor Steve McQueen died in Mexico following cancer treatment with laetrile and surgery to remove a stomach tumor while undergoing treatment for peritoneal mesothelioma (a cancer that attacks the lining of the abdomen) under the care of William D. Kelley, a dentist and orthodontist who devised a supposed cancer treatment based on laetrile. 
+
+Laetrile advocates in the United States include Dean Burk (now deceased), a former chief chemist of the National Cancer Institute cytochemistry laboratory, and national arm wrestling champion Jason Vale, who claimed that his kidney and pancreatic cancers were cured by eating apricot seeds. Vale was convicted in 2003 for, among other things, marketing laetrile. The court also found that Vale, who had made at least $500,000 from his illegal sales of laetrile, had fraudulently marketed the substance. 
+
+The US Food and Drug Administration continues to seek jail sentences for vendors marketing laetrile for cancer treatment, calling it a "highly toxic product that has not shown any effect on treating cancer." US FDA (June 22, 2004). Lengthy Jail Sentence for Vendor of Laetrile—A Quack Medication to Treat Cancer Patients. FDA News 
+
+==References==
+* 
+
+== External links ==
+* Laetrile/Amygdalin information from the National Cancer Institute (U.S.A.)
+* Laetrile treatment for cancer, from the Cochrane Library
+* Food and Drug Administration Commissioner's Decision on Laetrile
+* The Rise and Fall of Laetrile
+
+
+

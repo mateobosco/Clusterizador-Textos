@@ -1,0 +1,87 @@
+
+
+The Community acquis EuroVoc: Community acquis or acquis communautaire (; ), sometimes called the EU acquis, and often shortened to acquis, is the accumulated legislation, legal acts, and court decisions which constitute the body of European Union law. The term is French: acquis meaning "that which has been agreed upon", and communautaire meaning "of the community".
+
+==Chapters==
+During the process of the enlargement of the European Union, the acquis was divided into 31 chapters for the purpose of negotiation between the EU and the candidate member states for the fifth enlargement (the ten that joined in 2004 plus Romania and Bulgaria which joined in 2007). These chapters were:
+
+ #Free movement of goods #Free movement of persons #Freedom to provide services #Free movement of capital #Company law #Competition policy #Agriculture #Fisheries #Transport policy #Taxation #Economic and Monetary Union #Statistics #Social policy and employment #Energy #Industrial policy #Small and medium-sized enterprises Science and research Education and training Telecommunication and information technologies Culture and audio-visual policy Regional policy and coordination of structural instruments Environment Consumers and health protection Cooperation in the field of Justice and Home Affairs Customs union External relations Common Foreign and Security Policy (CFSP) Financial control Financial and budgetary provisions Institutions Others 
+
+For the negotiations with Croatia (acceding country), Iceland, Turkey and, in the future, with Macedonia, Montenegro, Serbia (candidate countries), the acquis was/will be split up into 35 chapters instead, with the purpose of better balancing between the chapters: dividing the most difficult ones into separate chapters for easier negotiation, uniting some easier chapters, moving some policies between chapters, as well as renaming a few of them in the process:
+
+ #Free movement of goods #Freedom of movement for workers #Right of establishment and freedom to provide services #Free movement of capital #Public procurement #Company law #Intellectual property law #Competition policy #Financial services #Information society and media #Agriculture and rural development #Food safety, veterinary and phytosanitary policy #Fisheries #Transport policy #Energy #Taxation #Economic and monetary policy #Statistics Social policy and employment(including anti-discrimination and equal opportunities for women and men) Enterprise and industrial policy Trans-European networks Regional policy and coordination of structural instruments Judiciary and fundamental rights Justice, freedom and security Science and research Education and culture Environment Consumer and health protection Customs union External relations Foreign, security and defence policy Financial control Financial and budgetary provisions Institutions Other issues 
+
+Correspondence between chapters of the 5th and the 6th Enlargement:
+
+ 5th Enlargement 6th Enlargement 
+ 1. Free movement of goods 1. Free movement of goods 
+ 7. Intellectual property law 
+ 2. Free movement of persons 2. Freedom of movement for workers 
+ 3. Right of establishment and freedom to provide services 
+ 3. Freedom to provide services 3. Right of establishment and freedom to provide services 
+ 9. Financial services 
+ 4. Free movement of capital 4. Free movement of capital 
+ 5. Company law 6. Company law 
+ 6. Competition policy 8. Competition policy 
+ 5. Public procurement 
+ 7. Agriculture 11. Agriculture and rural development 
+ 12. Food safety, veterinary and phytosanitary policy 
+ 8. Fisheries 13. Fisheries 
+ 9. Transport policy 14. Transport policy 
+ 21. Trans-European networks (one half of it) 
+ 10. Taxation 16. Taxation 
+ 11. Economic and Monetary Union 17. Economic and monetary policy 
+ 12. Statistics 18. Statistics 
+ 13. Social policy and employment 19. Social policy and employment(including anti-discrimination and equal opportunities for women and men) 
+ 14. Energy 15. Energy 
+ 21. Trans-European networks (one half of it) 
+ 15. Industrial policy 20. Enterprise and industrial policy 
+ 16. Small and medium-sized enterprises 
+ 17. Science and research 25. Science and research 
+ 18. Education and training 26. Education and culture10. Information society and media 
+ 19. Telecommunication and information technologies 
+ 20. Culture and audio-visual policy 
+ 21. Regional policy and coordination of structural instruments 22. Regional policy and coordination of structural instruments 
+ 22. Environment 27. Environment 
+ 23. Consumer and health protection 28. Consumer and health protection 
+ 24. Cooperation in the field of Justice and Home Affairs 23. Judiciary and fundamental rights 
+ 24. Justice, freedom and security 
+ 25. Customs union 29. Customs union 
+ 26. External relations 30. External relations 
+ 27. Common Foreign and Security Policy (CFSP) 31. Foreign, security and defence policy 
+ 28. Financial control 32. Financial control 
+ 29. Financial and budgetary provisions 33. Financial and budgetary provisions 
+ 30. Institutions 34. Institutions 
+ 31. Others 35. Other issues 
+
+Such negotiations usually involved agreeing transitional periods before new member states needed to implement the laws of the European Union fully and before they and their citizens acquired full rights under the acquis.
+
+==Terminology==
+The term acquis is also used to describe laws adopted under the Schengen Agreement, prior to its integration into the European Union legal order by the Treaty of Amsterdam, in which case one speaks of the Schengen acquis.
+
+The term acquis has been borrowed by the World Trade Organization Appellate Body, in the case Japan &ndash; Taxes on Alcoholic Beverages, to refer to the accumulation of General Agreement on Tariffs and Trade (GATT) and WTO law ("acquis gattien"), though this usage is not well established.
+
+It has been used to describe the achievements of the Council of Europe (an international organisation unconnected with the European Union): Section 12, Parliamentary Assembly of the Council of Europe Resolution 1290 
+:The Council of Europe’s acquis in standard setting activities in the fields of democracy, the rule of law and fundamental human rights and freedoms should be considered as milestones towards the great European political project, and the European Court of Human Rights should be recognised as the pre-eminent judicial pillar of any future architecture.
+
+It has also been applied to the body of "principles, norms and commitments" of the Organization for Security and Co-operation in Europe (OSCE): Intervention by Ambassador Aleksi Härkönen, Permanent Representative of Finland to the OSCE, Annual Security Review Conference.
+ 
+
+:Another question under debate has been how the Partners and others could implement the OSCE acquis, in other words its principles, norms and commitments on a voluntary basis.
+
+The Organisation for Economic Cooperation and Development (OECD) introduced the concept of the OECD Acquis in its "Strategy for enlargement and outreach", May 2004.
+
+==See also==
+* Official Journal of the European Union
+* European Union law
+
+==References==
+
+==External links==
+
+*EUR-Lex: European Union Law.
+*JRC-Acquis, Aligned multilingual parallel corpus: 23,000 Acquis-related texts per language, available in 22 languages. Total size: 1 Billion words.
+*Translation Memory of the EU-Acquis: Up to 1 Million translation units each, for 231 language pairs.
+
+
+

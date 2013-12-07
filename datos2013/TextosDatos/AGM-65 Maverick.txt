@@ -1,0 +1,149 @@
+
+
+The AGM-65 Maverick is an air-to-ground tactical missile (AGM) designed for close air support. The most widely-produced precision-guided missile in the Western world, it is effective against a wide range of tactical targets, including armor, air defenses, ships, ground transportation and fuel storage facilities. Originally designed and built by Hughes Missile Systems, development of the AGM-65 spanned from 1966 to 1972, after which it entered service with the United States Air Force in August 1972. Since then, it has been exported to more than 30 countries and is certified on 25 aircraft. The Maverick served during the Vietnam, Yom Kippur, Iran–Iraq and Gulf Wars, along with other smaller conflicts, destroying enemy forces and installations with varying degrees of success.
+
+Since its introduction into service, numerous Maverick versions had been designed and produced, utilising electro-optical, laser, charge-coupled device and infra-red guidance systems. The AGM-65 has two types of warheads: one has a contact fuze in the nose, the other has a heavyweight warhead fitted with a delayed-action fuze, which penetrates the target with its kinetic energy before detonating. The Maverick shares the same configuration as Hughes's AIM-4 Falcon and AIM-54 Phoenix, and measures more than 8 ft (2.4 m) in length and 12 in (30 cm) in diameter.
+
+==Development==
+The Maverick's development history began in 1965, when the United States Air Force (USAF) began a program to develop a replacement to the AGM-12 Bullpup. With a range of 8.8 nm (14.8 km), the radio-guided Bullpup was introduced in 1959 and was considered a "silver bullet" by operators. However, the launch aircraft was required to fly straight towards the target during the missile's flight instead of performing evasive manoeuvres, thus placing the crew in significant risks. 
+
+From 1966 to 1968, Hughes Missile Systems and Rockwell competed for the contract to build the new missile. Each were allocated $3 million for preliminary design and engineering of the Maverick in 1966. In 1968, Hughes emerged with the $95 million contract for further development and testing of the missile; at the same time, contract options called for 17,000 missiles to be procured. Hughes conducted a smooth development of the AGM-65 Maverick, culminating in the first, and successful, firing of the AGM-65 on a tank at Air Force Missile Development Center at Holloman Air Force Base, New Mexico, on 18 December 1969. In July 1971, the USAF and Hughes signed a $69.9 million contract for 2,000 missiles, the first of which was delivered in 1972. 
+
+Although early operational results were favorable, military planners predicted that the Maverick would fare less successfully in the hazy conditions in Central Europe, where it planned to be used against Warsaw Pact forces. As such, development of the AGM-65B began in 1975 before it was delivered during the late 1970s. When production of the AGM-65A/B was ended in 1978, more than 35,000 Mavericks had been built. 
+
+More versions of the Maverick appeared, among which was laser-guided AGM-65C/E. Development of the AGM-65C started in 1978 by Rockwell, who built a number of development missiles for the USAF. Due to high cost, the version was not procured by the USAF, and instead entered service with the United States Marine Corps (USMC) as the AGM-65E. Another major development was the AGM-65D, which employed an imaging infrared (IIR) seeker and thus is all-weather operable. The five-year development period of the AGM-65D started in 1977 and ended with the first delivery to the USAF in October 1983. The version received initial operating capability in February 1986. 
+
+The AGM-65F is a hybrid Maverick combining the AGM-65D's IIR seeker and warhead and propulsion components of the AGM-65E. Deployed by the United States Navy (USN), the AGM-65F is optimised for maritime strike roles. The first AGM-65F launch from the P-3C took place in 1989, and in 1994, the USN awarded Unisys a contract to integrate the version with the P-3C. Meanwhile, Hughes produced the AGM-65G, which essentially has the same guidance system as the D, with some software modifications that track larger targets, coupled with a shaped-charge warhead. 
+
+In the mid-1990s to early 2000s, there were several ideas of enhancing the Maverick's potential. Among them was the stillborn plan to incorporate to Mavericks active millimeter wave radars, which can determine the exact shape of a target. Another study called "Longhorn Project" was conducted by Hughes, and later Raytheon following the absorption of Hughes into Raytheon, looked a Maverick version equipped with turbojet engines instead of rocket motors. The "Maverick ER", as it was dubbed, would have a "significant increase
+in range" compared to the Maverick's current range of . The proposal was abandoned, but if the Maverick ER had entered production, it would have replaced the AGM-119B Penguin carried on the MH-60R. 
+
+The most modern versions of the Maverick are the AGM-65H/K, which were in production as of 2007. The AGM-65H was developed by taking coupling the AGM-56B with a charge-coupled device (CCD) seeker optimised for desert operations and which has three times the range of the original TV-sensor; a parallel USN program aimed at rebuilding AGM-65Fs with newer CCD seekers resulted in the AGM-65J. The AGM-65K, meanwhile, was developed by replacing the AGM-65G's IR guidance system with an electro-optical television guidance system. 
+
+==Design==
+The Maverick has a modular design construction, allowing different combination of the guidance package and warhead to be attached to the rocket motor section to produce a different weapon. It has long-chord delta wings and a cylindrical body, reminiscent of the AIM-4 Falcon and the AIM-54 Phoenix. 
+
+Different models of the AGM-65 have used electro-optical, laser, and infra-red guidance systems. The AGM-65 has two types of warheads: one has a contact fuze in the nose, the other has a heavyweight warhead fitted with a delayed-action fuze, which penetrates the target with its kinetic energy before detonating. The latter is most effective against large, hard targets. The propulsion system for both types is a solid-fuel rocket motor behind the warhead. 
+
+The Maverick missile is unable to lock onto targets on its own; it has to be given input by the pilot or Weapon Systems Officer (WSO) after which it follows the path to the target autonomously, allowing the WSO to fire and forget. In an A-10, for example, the video fed from the seeker head is relayed to a screen in the cockpit, where the pilot can check the locked target of the missile before launch. A crosshair on the head-up display is shifted by the pilot to set the approximate target while the missile will then automatically recognize and lock on to the target. Once the missile is launched, it requires no further assistance from the launch vehicle and tracks its target automatically. This fire-and-forget property is not shared by the E version that uses semi-active laser homing. 
+
+==Variants==
+Laser AGM-65 Maverick on a USN F/A-18C, 2004.
+
+ Comparisons of different Mavericks versions 
+ AGM-65A/B AGM-65D AGM-65E AGM-65F/G AGM-65H AGM-65J AGM-65K 
+ Length 8 ft 2 in (2.49 m) 
+ Wingspan 28.3 in (71.9 cm) 
+ Diameter 12 in (30.5 cm) 
+ Weight 462 lb (209 kg) 485 lb (220 kg) 645 lb (293 kg) 675 lb (307 kg) Unknown 654 lb (297 kg) 675 lb (307 kg) 
+ Speed 620 kt (715 mph / 1,150 km/h) 
+ Range Greater than 12 nmi 
+ Guidance Electro-optical TV Imaging infrared Laser Imaging infrared Charge-coupled device 
+ Propulsion Thiokol SR109-TC-1 solid-fuel rocket Thiokol SR114-TC-1 (or Aerojet SR115-AJ-1) solid-fuel rocket 
+ Warhead 125 lb (57 kg) WDU-20/B shaped-charge 300 lb (136 kg) WDU-24/B penetrating blast-fragmentation 125 lb (57 kg) WDU-20/B shaped-charge 300 lb (136 kg) WDU-24/B penetrating blast-fragmentation 
+
+*Maverick A is the basic model and uses an electro-optical television guidance system. No longer in U.S. service.
+*Maverick B is similar to the A model, although the B model added optical zooming to lock onto small or distant targets.
+*Maverick C was to be a laser-guided variant for the United States Marine Corps (USMC). It was canceled before production, however its requirement was later met by the Maverick E.
+*Maverick D replaced the electro-optical guidance with an imaging infrared system which doubled practical firing distance and allowed for use at night and during bad weather. A reduced smoke rocket engine was also introduced in this model. Achieved initial operation capability in 1983.
+*Maverick E uses a laser designator guidance system optimized for fortified installations and heavier penetrating blast-fragmentation warhead (300 lb vs. 125 lb in older models). Achieved IOC in 1985 and used mainly by USMC aviation.
+*Maverick F, designed specially for US Navy, uses a modified Maverick D infrared guidance system optimized for tracking ships fitted onto Maverick-E body and warhead.
+*Maverick G model essentially has the same guidance system as the D with some software modification that enables the pilot to track larger targets. The G model's major difference is its heavier penetrator warhead taken from Maverick E, compared to the D model's shaped-charge warhead. Completed tests in 1988.
+*Maverick H model is an AGM-65B/D missile upgraded with a new charge-coupled device (CCD) seeker better suited for desert environment.
+*Maverick J model is a Navy AGM-65F missile upgraded with the new CCD seeker. However this conversion is not confirmed.
+*Maverick K model is an AGM-65G upgraded with the CCD seeker, at least 1200, but possibly up to 2500, AGM-65G rounds are planned for conversion to AGM-65K standard. 
+*Maverick L model incorporates a laser-guided seeker. 
+http://www.defenseindustrydaily.com/Raytheon-Restarts-Production-of-Laser-Maverick-Missiles-05397/ 
+
+==Deployment==
+
+The Maverick was declared operational on 30 August 1972 with the F-4D/Es and A-7s initially cleared for the type; the missile made its combat debut four months later with the USAF in the Vietnam War. During the Yom Kippur War in October 1973, the Israelis used Mavericks to destroy and disable enemy vehicles. Deployment of early versions of the Mavericks in these two wars were successful due to the favorable atmospheric conditions that suited the electro-optical TV seeker. Ninety-nine missiles were fired during the two wars, eighty-four of which were successful. 
+
+In June 1975, during a border confrontation, Iranian troops fired twelve Mavericks, all successful, at Iraqi tanks. Five years later, during Operation Morvarid as part of the Iran–Iraq War, Iranian F-4s used Mavericks to sink three OSA IIs and four P-6s combat ships. 
+
+In August 1990, Iraq invaded Kuwait in what was a widely-condemned move by many countries, including the United States. As a result, in early 1991, the U.S.-led Coalition executed Operation Desert Storm during which Mavericks played a crucial role in the ousting of Iraqi forces from Kuwait. Employed by F-15Es, F-18, AV-8Bs, F-16s and A-10s, but used mainly by the last two, more than 5,000 Mavericks were deployed to attack armored targets. The mostly-used variant by the USAF was the IIR-guided AGM-65D. The reported hit rate by USAF Mavericks was 80–90 percent, while for the USMC it was 60 percent. The Maverick was again used in Iraq during the 2003 Iraq War, during which 918 were fired. 
+
+The first time the Maverick were fired from a Lockheed P-3 Orion at a hostile vessel was when the USN and coalition units came to aid of Libyan rebels to engage Libyan Coast Guard vessel Vittoria in the port of Misrata, Libya, during the late evening of 28 March 2011. Vittoria was engaged and fired upon by a USN P-3C Maritime Patrol aircraft with AGM-65 Maverick missiles. 
+Iranian AGM-65 Maverick missiles have been used in various operations such as Fatholmobin whereas Iranian AH-1J's fired 11 Mavericks. [hhttp://axgig.com/images/79016160811542429413.jpg ] [hhttp://shahedmag.com/official/shahed/toc.asp?magID=5237&No=80 ] 
+
+==Launch platforms==
+===United States===
+US Navy F-A-18C Hornet armed with AGM-65 Maverick
+A IRIAF F-4E Phantom II carrying four AGM-65 Maverick
+LAU-117 Maverick launchers have been used on USN, USAF, and USMC aircraft:
+* Bell AH-1W SuperCobra 
+* Boeing AH-64 Apache 
+* Boeing F/A-18E/F Super Hornet 
+* Douglas A-4M Skyhawk 
+* Grumman A-6 Intruder 
+* Fairchild Republic A-10 Thunderbolt II 
+* General Dynamics F-111 Aardvark 
+* General Dynamics F-16 Fighting Falcon 
+* Kaman SH-2G Seasprite 
+* Lockheed P-3 Orion 
+* LTV A-7 Corsair II 
+* McDonnell Douglas AV-8B Harrier II 
+* McDonnell Douglas F-4 Phantom II 
+* McDonnell Douglas F-15E Strike Eagle 
+* McDonnell Douglas F/A-18 Hornet 
+
+===Export===
+The Maverick has been widely exported to at least 30 countries:
+
+* Royal Australian Air Force: F/A-18 
+* Belgian Air Component: F-16 (AGM-65G)
+* Royal Canadian Air Force: CF-18 
+* Chilean Air Force: F-16 AM/BM MLU, F-16 Block 50+
+* Czech Air Force: L-159 
+* Royal Danish Air Force: F-16
+* Egyptian Air Force: F-4 and F-16 (AGM-65A/B/E)
+* Hellenic Air Force: F-4 and F-16 Blocks 30, 50, and 52+
+* Hungarian Air Force: JAS 39
+* Indonesian Air Force: F-16A/B Block 15 OCU, Hawk 209
+* Islamic Republic of Iran Air Force: F-4E and SH-3D
+* Israeli Air Force: F-4E and F-16
+* Italian Navy: AV-8B
+* Royal Jordanian Air Force: F-16 MLU and F-5E/F
+* Kuwait Air Force. 
+* Royal Malaysian Air Force: F/A-18D, Hawk 208 and MiG-29N
+* Royal Moroccan Air Force: F-16 Block 52+, F-5E/F
+* Royal Netherlands Air Force: F-16 MLU
+* Royal New Zealand Navy: SH-2G; and Royal New Zealand Air Force: A-4 (after being upgraded in the late 1980s under Project Kahu, retired 2001) 
+* Pakistan Air Force: F-16
+* Polish Air Force: F-16 Block 50/52+
+* Portuguese Air Force: F-16A/B Block 15 OCU and F-16AM/BM MLU
+* Royal Saudi Air Force: F-5E 
+* Serbian Air Force: J-22 and G-4 
+* Republic of Singapore Air Force: A-4SU, F-5S and F-16C/D Block 52
+* Republic of Korea Air Force: A-50, F-16C/D Block 52D, F-15K, F-4 
+* Spanish Air Force: F/A-18; and Spanish Navy: AV-8B
+* Swedish Air Force: AJ37 JAS 39
+* Swiss Air Force: F-5E and Hunter 
+* Republic of China Air Force (Taiwan): F-16A/B Block 20 (AGM-65G), F-CK-1 and F-5E/F (AGM-65B)
+* Royal Thai Air Force: F-16A/B Block 15 OCU/ADF and JAS 39
+* Turkish Air Force: F-16 and F-4 
+* Royal Air Force: Harrier GR7 
+* JASDF: F-1, F-2 and F-4
+
+==See also==
+
+==References==
+;Notes
+
+;Citations
+
+;Bibliography
+
+* 
+*
+*
+*
+*
+
+==External links==
+
+*Video clip of a T50 trainer firing a Maverick
+*Video clip detailing the Maverick's operation
+
+
+

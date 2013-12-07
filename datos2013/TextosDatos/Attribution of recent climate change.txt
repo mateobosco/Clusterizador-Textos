@@ -1,0 +1,305 @@
+
+
+Attribution of recent climate change is the effort to scientifically ascertain mechanisms responsible for recent changes observed in the Earth's climate. The effort has focused on changes observed during the period of instrumental temperature record, when records are most reliable; particularly on the last 50 years, when human activity has grown fastest and observations of the troposphere have become available. The dominant mechanisms (to which recent climate change has been attributed) are anthropogenic, i.e., the result of human activity. They are: 
+
+* increasing atmospheric concentrations of greenhouse gases
+* global changes to land surface, such as deforestation
+* increasing atmospheric concentrations of aerosols.
+
+There are also natural mechanisms for variation including climate oscillations, changes in solar activity, variations in the Earth's orbit, and volcanic activity.
+
+Attribution of recent change to anthropogenic forcing is based on the following facts:
+
+* The observed change is not consistent with natural variability.
+* Known natural forcings would, if anything, be negative over this period.
+* Known anthropogenic forcings are consistent with the observed response.
+* The pattern of the observed change is consistent with the anthropogenic forcing.
+
+The Intergovernmental Panel on Climate Change (IPCC) has concluded that " of the observed increase in globally averaged temperatures since the mid-20th century is very likely due to the observed increase in anthropogenic greenhouse gas concentrations." 
+, in .
+ The IPCC defines "very likely" as indicating a probability of greater than 90%, based on expert judgement. 
+In the IPCC Fourth Assessment Report, the following scale is used to quantify uncertainty: "virtually certain" >99%; "extremely likely" >95%; "very likely" >90%; "likely" >66%; "more likely than not" >50%; "about as likely as not" 33 to 66%; "unlikely" <33%; "very unlikely" <10%; "extremely unlikely" <5%; "exceptionally unlikely" <1%. , in .
+ The IPCC's attribution of recent global warming to human activities is a view shared by most scientists, "The IPCC’s conclusion that most of the observed warming of the last 50 years is likely to have been due to the increase in greenhouse gas concentrations accurately reflects the current thinking of the scientific community on this issue" (page 3). "Most scientists agree that the warming in recent decades has been caused primarily by human activities that have increased the amount of greenhouse gases in the atmosphere " (page 2). 
+and is also supported by a number of scientific organizations (see scientific opinion on climate change).
+
+==Background==
+
+ Global annual average temperature (as measured over both land and oceans). Red bars indicate temperatures above and blue bars indicate temperatures below the average temperature for the period 1901-2000. The black line shows atmospheric carbon dioxide () concentration in parts per million (ppm). While there is a clear long-term global warming trend, each individual year does not show a temperature increase relative to the previous year, and some years show greater changes than others. These year-to-year fluctuations in temperature are due to natural processes, such as the effects of El Niños, La Niñas, and the eruption of large volcanoes.
+This image shows three examples of internal climate variability measured between 1950 and 2012: the El Niño–Southern oscillation, the Arctic oscillation, and the North Atlantic oscillation. 
+
+ 
+
+This section introduces some concepts in climate science that are used in the following sections:
+
+Factors affecting Earth's climate can be broken down into feedbacks and forcings. 
+ 
+A forcing is something that is imposed externally on the climate system. External forcings include natural phenomena such as volcanic eruptions and variations in the sun's output. Le Treut et al., Chapter 1: Historical Overview of Climate Change Science, FAQ 1.1, What Factors Determine Earth’s Climate?, in . Human activities can also impose forcings, for example, through changing the composition of the atmosphere.
+
+Radiative forcing is a measure of how various factors alter the energy balance of the Earth's atmosphere. Forster et al., Chapter 2: Changes in Atmospheric Constituents and Radiative Forcing, FAQ 2.1, How do Human Activities Contribute to Climate Change and How do They Compare with Natural Influences? in . A positive radiative forcing will tend to increase the energy of the Earth-atmosphere system, leading to a warming of the system. Between the start of the Industrial Revolution in 1750, and the year 2005, the increase in the atmospheric concentration of carbon dioxide (chemical formula: CO2) led to a positive radiative forcing, averaged over the Earth's surface area, of about 1.66 watts per square metre (abbreviated W m−2). IPCC, Summary for Policymakers, Human and Natural Drivers of Climate Change, Figure SPM.2, in . 
+
+Climate feedbacks can either amplify or dampen the response of the climate to a given forcing. 
+There are many feedback mechanisms in the climate system that can either amplify (a positive feedback) or diminish (a negative feedback) the effects of a change in climate forcing.
+
+Aspects of the climate system will show variation in response to changes in forcings. 
+
+ 
+In the absence of forcings imposed on it, the climate system will still show internal variability (see images opposite). This internal variability is a result of complex interactions between components of the climate system, such as the coupling between the atmosphere and ocean. Albritton et al., Technical Summary, Box 1: What drives changes in climate?, in . An example of internal variability is the El Niño-Southern Oscillation.
+
+==Detection vs. attribution==
+
+Detection and attribution of climate signals, as well as its common-sense meaning, has a more precise definition within the climate change literature, as expressed by the IPCC. Mitchell et al., Chapter 12: Detection of Climate Change and Attribution of Causes, Section 12.1.1: The Meaning of Detection and Attribution, in . 
+
+Detection of a signal requires demonstrating that an observed change is statistically significantly different from that which can be explained by natural internal variability.
+
+Attribution requires demonstrating that a signal is:
+
+* unlikely to be due entirely to internal variability;
+* consistent with the estimated responses to the given combination of anthropogenic and natural forcing
+* not consistent with alternative, physically plausible explanations of recent climate change that exclude important elements of the given combination of forcings.
+
+Detection does not imply attribution, and is easier to show than attribution. Unequivocal attribution would require controlled experiments with multiple copies of the climate system, which is not possible. Therefore, attribution, as described above, can only be done within some margin of error. For example, the IPCC's Fourth Assessment Report says "it is extremely likely that human activities have exerted a substantial net warming influence on climate since 1750," where "extremely likely" indicates a probability greater than 95%. 
+
+==Key attributions==
+
+=== Greenhouse gases ===
+
+This graph is known as the "Keeling Curve" and it shows the long-term increase of atmospheric carbon dioxide (CO2) concentrations from 1958-2008. Monthly CO2 measurements display seasonal oscillations in an upward trend; each year's maximum occurs during the Northern Hemisphere's late spring, and declines during its growing season as plants remove some atmospheric CO2.
+Emission Database for Global Atmospheric Research version 3.2, fast track 2000 project
+
+Carbon dioxide is the primary greenhouse gas that is contributing to recent climate change. 
+Quote from public-domain source: 
+ is absorbed and emitted naturally as part of the carbon cycle, through animal and plant respiration, volcanic eruptions, and ocean-atmosphere exchange. Human activities, such as the burning of fossil fuels and changes in land use (see below), release large amounts of carbon to the atmosphere, causing concentrations in the atmosphere to rise. See also: , in 
+ 
+
+The high-accuracy measurements of atmospheric CO2 concentration, initiated by Charles David Keeling in 1958, constitute the master time series documenting the changing composition of the atmosphere. 
+, in .
+ These data have iconic status in climate change science as evidence of the effect of human activities on the chemical composition of the global atmosphere. 
+
+Along with CO2, methane and nitrous oxide are also major forcing contributors to the greenhouse effect. The Kyoto Protocol lists these together with hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), and sulphur hexafluoride (SF6), which are entirely artificial (i.e. anthropogenic) gases which also contribute to radiative forcing in the atmosphere. The chart at right attributes anthropogenic greenhouse gas emissions to eight main economic sectors, of which the largest contributors are power stations (many of which burn coal or other fossil fuels), industrial processes, transportation fuels (generally fossil fuels), and agricultural by-products (mainly methane from enteric fermentation and nitrous oxide from fertilizer use). see Stern (2006) for more details: , in 
+ 
+
+====Water vapor====
+
+Water vapor is the most abundant greenhouse gas and also the most important in terms of its contribution to the natural greenhouse effect, despite having a short atmospheric lifetime (about 10 days). Some human activities can influence local water vapor levels. However, on a global scale, the concentration of water vapor is controlled by temperature, which influences overall rates of evaporation and precipitation. Therefore, the global concentration of water vapor is not substantially affected by direct human emissions. 
+
+===Land use===
+Climate change is attributed to land use for two main reasons. Between 1750-2007, about two-thirds of anthropogenic dioxide|] emissions were produced from burning fossil fuels, and about one-third of emissions from changes in land use, 
+, in .
+ primarily deforestation. 
+, in . 
+ Deforestation both reduces the amount of carbon dioxide absorbed by deforested regions and releases greenhouse gases directly, together with aerosols, through biomass burning that frequently accompanies it.
+
+A second reason that climate change has been attributed to land use is that the terrestrial albedo is often altered by use, which leads to radiative forcing. This effect is more significant locally than globally. 
+
+====Livestock and land use====
+Worldwide, livestock production occupies 70% of all land used for agriculture, or 30% of the ice-free land surface of the Earth. 
+More than 18% of anthropogenic greenhouse gas emissions are attributed to livestock and livestock-related activities such as deforestation and increasingly fuel-intensive farming practices. Specific attributions to the livestock sector include:
+* 9% of global anthropogenic carbon dioxide emissions
+* 35–40% of global anthropogenic methane emissions (chiefly due to enteric fermentation and manure)
+* 64% of global anthropogenic nitrous oxide emissions, chiefly due to fertilizer use. 
+
+===Aerosols===
+With virtual certainty, scientific consensus has attributed various forms of climate change, chiefly cooling effects, to aerosols, which are small particles or droplets suspended in the atmosphere. ?? in . 
+Key sources to which anthropogenic aerosols are attributed include:
+
+* biomass burning such as slash and burn deforestation. Aerosols produced are primarily black carbon.
+* industrial air pollution, which produces soot and airborne sulfates, nitrates, and ammonium
+* dust produced by land use effects such as desertification
+
+== Attribution of 20th century climate change ==
+
+One global climate model's reconstruction of temperature change during the 20th century as the result of five studied forcing factors and the amount of temperature change attributed to each.
+
+Over the past 150 years human activities have released increasing quantities of greenhouse gases into the atmosphere. This has led to increases in mean global temperature, or global warming. Other human effects are relevant—for example, sulphate aerosols are believed to have a cooling effect. Natural factors also contribute. According to the historical temperature record of the last century, the Earth's near-surface air temperature has risen around 0.74 ± 0.18 °Celsius (1.3 ± 0.32 °Fahrenheit).
+
+A historically important question in climate change research has regarded the relative importance of human activity and non-anthropogenic causes during the period of instrumental record. In the 1995 Second Assessment Report (SAR), the IPCC made the widely quoted statement that "The balance of evidence suggests a discernible human influence on global climate". The phrase "balance of evidence" suggested the (English) common-law standard of proof required in civil as opposed to criminal courts: not as high as "beyond reasonable doubt". In 2001 the Third Assessment Report (TAR) refined this, saying "There is new and stronger evidence that most of the warming observed over the last 50 years is attributable to human activities". The 2007 Fourth Assessment Report (AR4) strengthened this finding:
+* "Anthropogenic warming of the climate system is widespread and can be detected in temperature observations taken at the surface, in the free atmosphere and in the oceans. Evidence of the effect of external influences, both anthropogenic and natural, on the climate system has continued to accumulate since the TAR." Solomon et al., Technical Summary, p. ?. in . )
+
+Other findings of the IPCC Fourth Assessment Report include:
+*"It is extremely unlikely (95%) that human activities have exerted a substantial net warming influence on climate since 1750." 
+, in .
+ 
+* "It is virtually certain that anthropogenic aerosols produce a net negative radiative forcing (cooling influence) with a greater magnitude in the Northern Hemisphere than in the Southern Hemisphere." 
+
+Over the past five decades there has been a global warming of approximately 0.65 °C (1.17 °F) at the Earth's surface (see historical temperature record). Among the possible factors that could produce changes in global mean temperature are internal variability of the climate system, external forcing, an increase in concentration of greenhouse gases, or any combination of these. Current studies indicate that the increase in greenhouse gases, most notably , is mostly responsible for the observed warming. Evidence for this conclusion includes:
+
+* Estimates of internal variability from climate models, and reconstructions of past temperatures, indicate that the warming is unlikely to be entirely natural.
+* Climate models forced by natural factors and increased greenhouse gases and aerosols reproduce the observed global temperature changes; those forced by natural factors alone do not. IPCC, Summary for Policymakers. in . 
+* "Fingerprint" methods (see below) indicate that the pattern of change is closer to that expected from greenhouse gas-forced change than from natural change. Mitchell et al., Chapter 12: Detection of Climate Change and Attribution of Causes Section 12.4.3, Optimal Fingerprint Methods, in . 
+* The plateau in warming from the 1940s to 1960s can be attributed largely to sulphate aerosol cooling. Figure 4, Simulated annual global mean surface temperatures, in . 
+
+===Details on attribution===
+
+ 
+this section is quoted from a public-domain source (Karl et al., 2009), with some minor changes: , in 
+ 
+Recent scientific assessments find that most of the warming of the Earth’s surface over the past 50 years has been caused by human activities (see also the section on scientific literature and opinion). This conclusion rests on multiple lines of evidence. Like the warming “signal” that has gradually emerged from the “noise” of natural climate variability, the scientific evidence for a human influence on global climate has accumulated over the past several decades, from many hundreds of studies. No single study is a “smoking gun.” Nor has any single study or combination of studies undermined the large body of evidence supporting the conclusion that human activity is the primary driver of recent warming.
+
+For Northern Hemisphere temperature, recent decades appear to be the warmest since at least about 1000AD, and the warming since the late 19th century is unprecedented over the last 1000 years. 
+
+ Older data are insufficient to provide reliable hemispheric temperature estimates. 
+ 
+The first line of evidence is based on a physical understanding of how greenhouse gases trap heat, how the climate system responds to increases in greenhouse gases, and how other human and natural factors influence climate. The second line of evidence is from indirect estimates of climate changes over the last 1,000 to 2,000 years. These records are obtained from living things and their remains (like tree rings and corals) and from physical quantities (like the ratio between lighter and heavier isotopes of oxygen in ice cores) which change in measurable ways as climate changes. The lesson from these data is that global surface temperatures over the last several decades are clearly unusual, in that they were higher than at any time during at least the past 400 years. For the Northern Hemisphere, the recent temperature rise is clearly unusual in at least the last 1,000 years (see graph opposite).
+
+ 
+The third line of evidence is based on the broad, qualitative consistency between observed changes in climate and the computer model simulations of how climate would be expected to change in response to human activities. For example, when climate models are run with historical increases in greenhouse gases, they show gradual warming of the Earth and ocean surface, increases in ocean heat content and the temperature of the lower atmosphere, a rise in global sea level, retreat of sea ice and snow cover, cooling of the stratosphere, an increase in the amount of atmospheric water vapor, and changes in large-scale precipitation and pressure patterns. These and other aspects of modelled climate change are in agreement with observations.
+
+===="Fingerprint" studies====
+
+ 
+Finally, there is extensive statistical evidence from so-called “fingerprint” studies. Each factor that affects climate produces a unique pattern of climate response, much as each person has a unique fingerprint. Fingerprint studies exploit these unique signatures, and allow detailed comparisons of modelled and observed climate change patterns. Scientists rely on such studies to attribute observed changes in climate to a particular cause or set of causes. In the real world, the climate changes that have occurred since the start of the Industrial Revolution are due to a complex mixture of human and natural causes. The importance of each individual influence in this mixture changes over time. Of course, there are not multiple Earths, which would allow an experimenter to change one factor at a time on each Earth, thus helping to isolate different fingerprints. Therefore, climate models are used to study how individual factors affect climate. For example, a single factor (like greenhouse gases) or a set of factors can be varied, and the response of the modelled climate system to these individual or combined changes can thus be studied.
+
+The blue band shows how global average temperatures would have changed due to natural forces only, as simulated by climate models. The red band shows model projections of the effects of human and natural forces combined. The black line shows actual observed global average temperatures. As the blue band indicates, without human influences, temperature over the past century would actually have first warmed and then cooled slightly over recent decades. 
+ 
+For example, when climate model simulations of the last century include all of the major influences on climate, both human-induced and natural, they can reproduce many important features of observed climate change patterns. When human influences are removed from the model experiments, results suggest that the surface of the Earth would actually have cooled slightly over the last 50 years (see figure opposite). The clear message from fingerprint studies is that the observed warming over the last half-century cannot be explained by natural factors, and is instead caused primarily by human factors.
+
+ 
+Another fingerprint of human effects on climate has been identified by looking at a slice through the layers of the atmosphere, and studying the pattern of temperature changes from the surface up through the stratosphere (see the section on solar activity). The earliest fingerprint work focused on changes in surface and atmospheric temperature. Scientists then applied fingerprint methods to a whole range of climate variables, identifying human-caused climate signals in the heat content of the oceans, the height of the tropopause (the boundary between the troposphere and stratosphere, which has shifted upward by hundreds of feet in recent decades), the geographical patterns of precipitation, drought, surface pressure, and the runoff from major river basins.
+
+ 
+Studies published after the appearance of the IPCC Fourth Assessment Report in 2007 have also found human fingerprints in the increased levels of atmospheric moisture (both close to the surface and over the full extent of the atmosphere), in the decline of Arctic sea ice extent, and in the patterns of changes in Arctic and Antarctic surface temperatures.
+
+ 
+The message from this entire body of work is that the climate system is telling a consistent story of increasingly dominant human influence – the changes in temperature, ice extent, moisture, and circulation patterns fit together in a physically consistent way, like pieces in a complex puzzle.
+
+ 
+Increasingly, this type of fingerprint work is shifting its emphasis. As noted, clear and compelling scientific evidence supports the case for a pronounced human influence on global climate. Much of the recent attention is now on climate changes at continental and regional scales, and on variables that can have large impacts on societies. For example, scientists have established causal links between human activities and the changes in snowpack, maximum and minimum (diurnal) temperature, and the seasonal timing of runoff over mountainous regions of the western United States. Human activity is likely to have made a substantial contribution to ocean surface temperature changes in hurricane formation regions. Researchers are also looking beyond the physical climate system, and are beginning to tie changes in the distribution and seasonal behaviour of plant and animal species to human-caused changes in temperature and precipitation.
+
+ 
+For over a decade, one aspect of the climate change story seemed to show a significant difference between models and observations. In the tropics, all models predicted that with a rise in greenhouse gases, the troposphere would be expected to warm more rapidly than the surface. Observations from weather balloons, satellites, and surface thermometers seemed to show the opposite behaviour (more rapid warming of the surface than the troposphere). This issue was a stumbling block in understanding the causes of climate change. It is now largely resolved. Research showed that there were large uncertainties in the satellite and weather balloon data. When uncertainties in models and observations are properly accounted for, newer observational data sets (with better treatment of known problems) are in agreement with climate model results.
+
+ 
+This does not mean, however, that all remaining differences between models and observations have been resolved. The observed changes in some climate variables, such as Arctic sea ice, some aspects of precipitation, and patterns of surface pressure, appear to be proceeding much more rapidly than models have projected. The reasons for these differences are not well understood. Nevertheless, the bottom-line conclusion from climate fingerprinting is that most of the observed changes studied to date are consistent with each other, and are also consistent with our scientific understanding of how the climate system would be expected to respond to the increase in heat-trapping gases resulting from human activities.
+
+====Extreme weather events====
+
+ 
+Scientists are sometimes asked whether extreme weather events can be linked to human activities. Scientific research has concluded that human influences on climate are indeed changing the likelihood of certain types of extreme events. For example, an analysis of the European summer heat wave of 2003 found that the risk of such a heat wave is now roughly four times greater than it would have been in the absence of human-induced climate change.
+
+== Scientific literature and opinion ==
+
+There are a number of examples of published and informal support for the consensus view. As mentioned earlier, the IPCC has concluded that most of the observed increase in globally averaged temperatures since the mid-20th century is "very likely" due to human activities. The IPCC's conclusions are consistent with those of several reports produced by the US National Research Council. 
+A report published in 2009 by the U.S. Global Change Research Program concluded that " warming is unequivocal and primarily human-induced." , Excutive Summary, p. 12. 
+A number of scientific organizations have issued statements that support the consensus view. Two examples include:
+*a joint statement made in 2005 by the national science academies of the G8, and Brazil, China and India; 
+*a joint statement made in 2008 by the Network of African Science Academies. 
+
+===Detection and attribution studies===
+
+* In 1996, in a paper in Nature titled "A search for human influences on the thermal structure of the atmosphere", Benjamin D. Santer et al. wrote: "The observed spatial patterns of temperature change in the free atmosphere from 1963 to 1987 are similar to those predicted by state-of-the-art climate models incorporating various combinations of changes in carbon dioxide, anthropogenic sulphate aerosol and stratospheric ozone concentrations. The degree of pattern similarity between models and observations increases through this period. It is likely that this trend is partially due to human activities, although many uncertainties remain, particularly relating to estimates of natural variability."
+* A 2002 paper in the Journal of Geophysical Research says "Our analysis suggests that the early twentieth century warming can best be explained by a combination of warming due to increases in greenhouse gases and natural forcing, some cooling due to other anthropogenic forcings, and a substantial, but not implausible, contribution from internal variability. In the second half of the century we find that the warming is largely caused by changes in greenhouse gases, with changes in sulphates and, perhaps, volcanic aerosol offsetting approximately one third of the warming." 
+* A 2005 review of detection and attribution studies by the International Ad Hoc Detection and Attribution Group found that "natural drivers such as solar variability and volcanic activity are at most partially responsible for the large-scale temperature changes observed over the past century, and that a large fraction of the warming over the last 50 yr can be attributed to greenhouse gas increases. Thus, the recent research supports and strengthens the IPCC Third Assessment Report conclusion that 'most of the global warming over the past 50 years is likely due to the increase in greenhouse gases.'"
+* Barnett and colleagues (2005) say that the observed warming of the oceans "cannot be explained by natural internal climate variability or solar and volcanic forcing, but is well simulated by two anthropogenically forced climate models," concluding that "it is of human origin, a conclusion robust to observational sampling and model differences" 
+* Two papers in the journal Science in August 2005 
+ resolve the problem, evident at the time of the TAR, of tropospheric temperature trends (see also the section on "fingerprint" studies) . The UAH version of the record contained errors, and there is evidence of spurious cooling trends in the radiosonde record, particularly in the tropics. See satellite temperature measurements for details; and the 2006 US CCSP report. 
+ 
+* Multiple independent reconstructions of the temperature record of the past 1000 years confirm that the late 20th century is probably the warmest period in that time (see the preceding section -details on attribution).
+
+===Reviews of scientific opinion===
+
+* An essay in Science surveyed 928 abstracts related to climate change, and concluded that most journal reports accepted the consensus. This is discussed further in scientific opinion on climate change.
+*A 2010 paper in the Proceedings of the National Academy of Sciences found that among a pool of roughly 1,000 researchers who work directly on climate issues and publish the most frequently on the subject, 97% agree that anthropogenic climate change is happening. 
+ Referred to by: 
+ 
+*A 2011 paper from George Mason University published in the International Journal of Public Opinion Research, “The Structure of Scientific Opinion on Climate Change,” collected the opinions of scientists in the earth, space, atmospheric, oceanic or hydrological sciences. 
+ Referred to by: 
+ The 489 survey respondents — representing nearly half of all those eligible according to the survey’s specific standards — work in academia, government, and industry, and are members of prominent professional organizations. The study found that 97% of the 489 scientists surveyed agreed that that global temperatures have risen over the past century. Moreover, 84% agreed that “human-induced greenhouse warming” is now occurring.” Only 5% disagreed with the idea that human activity is a significant cause of global warming. 
+
+As described above, a small minority of scientists do disagree with the consensus: see list of scientists opposing global warming consensus. For example Willie Soon and Richard Lindzen say that there is insufficient proof for anthropogenic attribution. Generally this position requires new physical mechanisms to explain the observed warming. for example: 
+
+==Difficulties in attribution==
+
+At the time of the IPCC Fourth Assessment Report, attribution was possible for a number of observed changes in the climate (see effects of global warming). However, attribution was found to be more difficult when assessing changes over smaller regions (less than continental scale) and over short time periods (less than 50 years). Hegerl et al., Chapter 9: Understanding and Attributing Climate Change, Executive Summary, in 
+. 
+Over larger regions, averaging reduces natural variability of the climate, making detection and attribution easier.
+
+==Solar activity==
+
+ The amount of solar energy received at the top of our atmosphere has followed its natural 11-year cycle of small ups and downs, but with no net increase. Quote from public-domain source: Further details about this graph can be found in: , in Over the same period, global temperature has risen markedly. This indicates that it is extremely unlikely that solar influence has been a significant driver of global temperature change over several decades. Quote from public-domain source: , in Climate simulations of the vertical profile of temperature change due to various factors, and the effect due to all factors taken together. The panels above represent a cross-section of the atmosphere from the north pole to the south pole, and from the surface up into the stratosphere. The black lines show the location of the tropopause, the boundary between the lower atmosphere (troposphere) and the stratosphere. Contribution of natural factors and human activities to radiative forcing of climate change. Radiative forcing values are for the year 2005, relative to the pre-industrial era (1750). The contribution of solar irradiance to radiative forcing is 5% the value of the combined radiative forcing due to increases in the atmospheric concentrations of carbon dioxide, methane and nitrous oxide. 
+
+The role of the sun in recent climate change has been looked at by climate scientists. Since 1978, output from the Sun has been precisely measured by satellites. 
+These measurements indicate that the Sun's output has not increased since 1978, so the warming during the past 30 years cannot be attributed to an increase in solar energy reaching the Earth (see graph above, left). In the three decades since 1978, the combination of solar and volcanic activity probably had a slight cooling influence on the climate. Global Climate Change, in , pp. 15-16. 
+
+Climate models have been used to examine the role of the sun in recent climate change. Hegerl, et al., Chapter 9: Understanding and Attributing Climate Change, Frequently Asked Question 9.2: Can the Warming of the 20th century be Explained by Natural Variability?, in . 
+Models are unable to reproduce the rapid warming observed in recent decades when they only take into account variations in solar output and volcanic activity. Models are, however, able to simulate the observed 20th century changes in temperature when they include all of the most important external forcings, including human influences and natural forcings. As has already been stated, Hegerl et al. (2007) concluded that greenhouse gas forcing had "very likely" caused most of the observed global warming since the mid-20th century. In making this conclusion, Hegerl et al. (2007) allowed for the possibility that climate models had been underestimated the effect of solar forcing. Hegerl, et al., Chapter 9: Understanding and Attributing Climate Change, Executive Summary, in
+. 
+
+The role of solar activity in climate change has also been calculated over longer time periods using "proxy" datasets, such as tree rings. 
+ 
+Models indicate that solar and volcanic forcings can explain periods of relative warmth and cold between A.D. 1000 and 1900, but human-induced forcings are needed to reproduce the late-20th century warming. 
+ 
+
+Another line of evidence against the sun having caused recent climate change comes from looking at how temperatures at different levels in the Earth's atmosphere have changed. 
+ 
+Models and observations (see figure above, middle) show that greenhouse warming results in warming of the lower atmosphere (called the troposphere) but cooling of the upper atmosphere (called the stratosphere). Hegerl et al., Chapter 9: Understanding and Attributing Climate Change, Frequently Asked Question 9.2: Can the Warming of the 20th century be Explained by Natural Variability?, in . Depletion of the ozone layer by chemical refrigerants has also resulted in a strong cooling effect in the stratosphere. If the sun was responsible for observed warming, warming of both the troposphere and stratosphere would be expected. , p. 20. 
+
+===Non-consensus views===
+
+Habibullo Abdussamatov (2004), head of space research at St. Petersburg's Pulkovo Astronomical Observatory in Russia, has argued that the sun is responsible for recently observed climate change. 
+ "The main cause of climate change during the last millennia is the corresponding cyclic variation of the 80- and 200-year component of irradiance correlated with activity. That is why, the contemporary (climate change) is not anomalous but is ordinary secular global warming."
+ Journalists for news sources canada.com (Solomon, 2007b), 
+
+ National Geographic News (Ravillious, 2007), 
+
+ and LiveScience (Than, 2007) 
+
+ reported on the story of warming on Mars. In these articles, Abdussamatov was quoted. He stated that warming on Mars was evidence that global warming on Earth was being caused by changes in the sun.
+
+Ravillious (2007) quoted two scientists who disagreed with Abdussamatov: Amato Evan, a climate scientist at the University of Wisconsin-Madison, in the US, and Colin Wilson, a planetary physicist at Oxford University in the UK. According to Wilson, "Wobbles in the orbit of Mars are the main cause of its climate change in the current era" (see also orbital forcing). See also: 
+ Than (2007) quoted Charles Long, a climate physicist at Pacific Northwest National Laboratories in the US, who disagreed with Abdussamatov. 
+
+Than (2007) pointed to the view of Benny Peiser, a social anthropologist at Liverpool John Moores University in the UK. In his newsletter, Peiser had cited a blog which had commented on warming observed on several planetary bodies in the Solar system. These included Neptune's moon Triton, See also: 
+ Jupiter, See also: 
+ Pluto See also: 
+ and Mars. In an e-mail interview with Than (2007), Peiser stated that:“I think it is an intriguing coincidence that warming trends have been observed on a number of very diverse planetary bodies in our solar system, (...) Perhaps this is just a fluke.”Than (2007) provided alternative explanations of why warming had occurred on Triton, Pluto, Jupiter and Mars.
+
+The US Environmental Protection Agency (US EPA, 2009) responded to public comments on climate change attribution. 
+ A number of commenters had argued that recent climate change could be attributed to changes in solar irradiance. According to the US EPA (2009), this attribution was not supported by the bulk of the scientific literature. Citing the work of the IPCC (2007), the US EPA pointed to the low contribution of solar irradiance to radiative forcing since the start of the Industrial Revolution in 1750. Over this time period (1750 to 2005), IPCC, Summary for Policymakers,
+Human and Natural Drivers of Climate Change, in . the estimated contribution of solar irradiance to radiative forcing was 5% the value of the combined radiative forcing due to increases in the atmospheric concentrations of carbon dioxide, methane and nitrous oxide (see graph above, right).
+
+==Earlier climate changes==
+
+ Fluctuations in temperature and atmospheric concentration of CO2 over the past 649,000 years.
+
+Factors other than increased concentrations can initiate warming or cooling episodes (see, e.g., orbital forcing). The ice core record shows that on some occasions temperature starts rising hundreds of years before increases. Such results confirm that the relationship between and climate can go in both directions: changes in concentrations affect climate, while changes in climate can affect concentrations. One proposed mechanism for this effect is increased release of sequestered from oceans as circulation patterns shift, perhaps abruptly, in response to climate change. 
+
+A more speculative and polemical inference sometimes drawn is that the causal relationship between temperature rises and global concentrations is only one-way, so that historical increases in have been nothing more than the product of independently rising temperatures. The Great Global Warming Swindle However, a strictly "one-way" view of the relationship between and temperature contradicts basic results in physics, specifically the fact that the absorption and emission of infrared radiation by increases as its atmospheric concentration increases. 
+ 
+ 
+
+First principles as well as empirical observation suggest that positive feedbacks from concentrations amplify warming initially caused by other factors:
+Close analysis of the relationship between the two curves temperature and shows that, within the uncertainties of matching their timescales, the temperature led by a few centuries. This is expected, since it was changes in the Earth’s orbital parameters (including the shape of its orbit around the Sun, and the tilt of Earth’s axis) that caused the small initial temperature rise. This then raised atmospheric levels, in part by outgassing from the oceans, causing the temperature to rise further. By amplifying each other’s response, this "positive feedback" can turn a small initial perturbation into a large climate change. There is therefore no surprise that the temperature and rose in parallel, with the temperature initially in advance. In the current case, the situation is different, because human actions are raising the level, and we are starting to observe the temperature response. 
+
+Present levels greatly exceed the range found in the ice core data. Isotopic analysis of atmospheric confirms that fossil fuel burning is the source of most of the increase, unlike during prior interglacial periods. Schimel et al., Chapter 2: Radiative Forcing of Climate Change, Section 2.1.3: Concentration Projections and Stabilisation Calculations, p. 82 (and pp. 76–86 generally) in . As noted above, models that include increased levels when simulating recent climate match the observed data far better than those that do not. 
+
+==See also==
+
+* Aviation and climate change
+* Climate attribution
+
+==Notes==
+
+==References==
+*.
+*.
+* (pb: ).
+* (pb: ).
+* (pb: ).
+*.
+*
+
+==Further reading==
+* RealClimate – Le Quéré, How much of the recent increase is due to human activities?, 2005
+* 
+
+==External links==
+* RealClimate – Blog on current climate change issues by active climatologists
+* "The Climate of Man", The New Yorker (2005): Part 1, Part 2, Part 3
+* Anthropogenic or Solar? by Shaviv
+* Recent oppositely directed trends in solar climate forcings and the global mean surface air temperature by Mike Lockwood and Claus Frohlich
+* US EPA climate change and global warming website
+* ResearchChannel – How Do We Know? Physics, Forcings, and Fingerprints. A video by the National Science Foundation on climate change.
+* Scientific American editors' blog – Extended discussion of climate attribution
+
+
+

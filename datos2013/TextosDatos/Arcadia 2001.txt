@@ -1,0 +1,145 @@
+
+
+The Arcadia 2001 is a second-generation 8-bit console released by Emerson Radio Corp. The game library was composed of 51 unique games and about 10 variations. The graphic quality is similar to that of the Intellivision and the Odyssey².
+
+The Arcadia was not named after the company of the same name. Arcadia Corporation, manufacturer of the 2600 supercharger, was sued by Emerson for trademark infringement. Arcadia Corporation then changed its name to Starpath. The Dot Eaters - Player4 Stage3 - Classic Video Game History Emerson licensed the Arcadia 2001 worldwide, and over 30 Arcadia clones exist.
+
+==Description==
+The Arcadia is much smaller than its contemporary competitors and is powered by a standard 12-volt power supply so it can be used in a boat or a vehicle. This portability feature, however, requires a portable television, which was extremely rare in the early 1980s. It also has two outputs (or inputs) headphone jacks on the back of the unit, on the far left and far right sides.
+
+The system came with two Intellivision-style control pads, but with a lighter touch on the side 'fire' buttons. The control pads have screw holes in their centers, so that one could transform them into a joystick, as with the later Sega Master System's controller. Most games came with mylar overlays which could be applied to the controllers. The console itself had five buttons: power, start, reset, option, and select.
+
+There are at least three different types of cartridge case styles and artwork, with variations on each. Emerson-family carts come in two different lengths of black plastic cases; the short style is similar to Atari 2600 carts in overall size. This family uses a unique "sketch" type of picture label. MPT-03 family cart cases (see below) resemble Super NES carts in size and shape, except that they are molded in brown plastic. Their labels look much more modern and stylized, with only a minimal picture on each. There is also a family of what seems pirate carts, that look nothing like the others in shape, size or label artwork. The different labeled versions, however, all used the same cartridges.
+
+==Market Failure==
+The Emerson version of the console was essentially considered dead on arrival in the USA. The system came out at nearly the same time as the Atari 5200 and the ColecoVision were released. In addition, Atari's use of exclusive rights to many games made it virtually impossible for Emerson to get popular games to the console.
+
+Emerson actually created many popular arcade titles including Pac-Man, Galaxian and Defender for the Arcadia and had them manufactured. However, Atari started to sue its competitor companies for releasing games to which it had exclusive-rights agreements and Emerson was left with thousands of manufactured games that could no longer be sold.
+
+==Variants==
+The Arcadia 2001 was licensed to many different companies and sold under different names. However, not all consoles are compatible due to differences in cart slots and cases.
+
+ Name Manufacturer Country Compatibility family 
+ Advision Home Arcade Advision Emerson console 
+ Arcadia Bandai Emerson console 
+ Arcadia 2001 Emerson Emerson console 
+ Cosmos Tele-Computer Emerson console 
+ Dynavision Morning-Sun Commerce MPT-03 console 
+ Ekusera P.I.C. MPT-03 console 
+ Hanimex MPT-03 Hanimex MPT-03 console 
+ HMG-2650 Hanimex Emerson console 
+ Home Arcade Centre Hanimex Emerson console 
+ Intelligent Game MPT-03 Intelligent Game MPT-03 console 
+ Intercord XL 2000 System Intercord Emerson console 
+ Intervision 2001 Intervision Ormatu console 
+ ITMC MPT-03 ITMC MPT-03 console 
+ Leisure-Vision Leisure-Dynamics Emerson console 
+ Leonardo GiG Electronics Emerson console 
+ Ormatu 2001 Ormatu Electronics BV Ormatu console 
+ Palladium Video Computer Game Neckermann Palladium console 
+ Polybrain Video Computer Game Polybrain Palladium console 
+ Poppy MPT-03 Tele Computer Spiel Poppy MPT-03 console 
+ Prestige Video Computer Game MPT-03 Prestige MPT-03 console 
+ Robdajet MPT-03 MPT-03 console 
+ Rowtron 2000 Rowtron MPT-03 console 
+ Schmid TVG-2000 Schmid Emerson console 
+ Sheen Home Video Centre 2001 Sheen Ormatu console 
+ Soundic MPT-03 Soundic MPT-03 console 
+ Tele Brain Mr. Altus Palladium console 
+ Tele-Fever Tchibo Emerson console 
+ Tempest MPT-03 Tempest MPT-03 console 
+ Tobby MPT-03 Tobby Tobby MPT-03 console 
+ Trakton Computer Video Game Trakton Palladium console 
+ Tryom Video Game Center Tryom MPT-03 console 
+ Tunix Home Arcade Monaco Leisure Emerson console 
+ UVI Compu-Game Orbit Electronics Orbit console 
+ Video Master Grandstand Orbit console 
+
+===Bandai Arcadia===
+
+In 1982 the Bandai Arcadia, a variant of the Emerson Arcadia 2001, was released in Japan by Bandai. There were four Japan-exclusive game releases developed by Bandai which were the only known Arcadia titles written by other companies than UA Ltd.
+
+*Doraemon
+*Dr. Slump
+*Mobile Soldier Gundam
+*Super Dimension Fortress Macross
+
+== Technical specifications ==
+*Main Processor: Signetics 2650 CPU running @ 3.58 MHz
+**Some variants run a Signetics 2650A
+*RAM: 512 bytes
+*ROM: None
+*Video Display: 128 &times; 208 / 128 &times; 104, 8 Colours
+*Video Display Controller: Signetics 2637 UVI
+*Sound: Single Channel "Beeper" + Single Channel "Noise"
+*Hardware Sprites: 4 independent, single color
+*Controllers: 2 &times; 2 way
+*Keypads: 2 &times; 12 button (more buttons on some variants)
+
+==Games==
+Many of the games for the Arcadia 2001 are ports of lesser-known arcade games such as Route 16 and Jungler. 
+
+*3-D Bowling - a Bowling game released for the Arcadia by Emerson Radio Corp. in 1982.
+*3-D Raceway - 3D Raceway
+*3-D Soccer - a Soccer game released by Emerson Radio Corp. for the Arcadia in 1982.
+*Alien Invaders - is a Shoot-'Em-Up game released by Emerson Radio Corp. for the Arcadia in 1982.
+*Astro Invader
+*American Football - is a Football game released by Emerson Radio Corp. for the Arcadia in 1982.
+*Baseball
+*Brain Quiz
+*Breakaway
+*Capture
+*Cat Trax
+*Crazy Gobbler
+*Crazy Climber (unreleased)
+*Escape
+*Funky Fish
+*Galaxian
+*Grand Prix 3-D
+*Grand Slam Tennis
+*Hobo
+*Home Squadron
+*Jump Bug
+
+*Jungler
+*Kidou Senshi Gundamu (only in Japan)
+*Math Logic
+*Missile War
+*Ocean Battle
+*Pleiades
+*RD2 Tank
+*Red Clash
+*Robot Killer (clone of Berzerk)
+*Route 16
+*Soccer
+*Space Attack
+*Space Chess
+*Space Mission
+*Space Raiders
+*Space Squadron
+*Space Vultures
+*Spiders
+*Star Chess
+*Super Bug
+*Super Gobbler
+*Tanks A Lot
+*The End
+*Turtles/Turpin
+
+==Emulation==
+*WinArcadia and AmiArcadia emulators.
+*The Emerson Arcadia 2001 Emulator The first (DOS) emulator.
+*MESS: Multiple Emulator Super System.
+
+==References==
+
+==External links==
+*Emerson Arcadia 2001 Central.
+*Emerson Arcadia 2001 Gaming Guide.
+*The Dot Eaters entry on the Arcadia 2001.
+*www.old-computers.com Emerson Arcadia 2001 museum entry.
+*www.old-computers.com Article about Arcadia 2001 and "clones".
+*MESS wiki Arcadia 2001 documentation and games snapshots
+
+
+

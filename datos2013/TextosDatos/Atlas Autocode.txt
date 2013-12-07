@@ -1,0 +1,39 @@
+
+
+Atlas Autocode (AA) R.A. Brooker and J.S. Rohl, Atlas Autocode Reference Manual, University of Manchester Computer Science Department, 1965. (Original Scans) P.D. Schofoeld and M.R. Osbourne, Programming in Atlas Autocode, Computer Unit Report No.1, University of Edinburgh, 1965. (Original scan) was a programming language developed around 1965 at Manchester University for the Atlas Computer. It was developed by Tony Brooker and Derrick Morris as a variant of the ALGOL programming language, removing some Algol features such as "passing parameters by name" (which in Algol 60 means passing the address of a short subroutine to recalculate the parameter each time it was mentioned). It featured explicitly typed variables, subroutines, and functions. The AA compiler generated range-checking for array accesses, and allowed an array to have dimensions that were determined at run-time (i.e. you could declare an array as <u>integer</u> <u>array</u> Thing (i:j), where i and j were calculated values). 
+
+Machine code could be included within the high-level AA routines either to make an inner loop more efficient or to effect some operation which could not easily be done otherwise. 
+
+Atlas Autocode included a <u>complex</u> data type which would support complex numbers, partly because of pressure from the electrical engineering department, as complex numbers are used to represent the behavior of alternating current. The square root of -1 was represented by <u>i</u>, which was treated as a fixed complex constant = i. 
+
+The <u>complex</u> data type was dropped when Atlas Autocode later morphed into the Edinburgh IMP programming language. (Imp was an extension of AA and was notable for being used to write the EMAS operating system.)
+
+Keywords in AA were distinguishable from other text by being underlined; there was also an "uppercasedelimiters" mode where all uppercase letters (outside strings) were treated as underlined lowercase.
+
+In some versions (but not in the original Atlas version), for the sake of easy typing it was possible to strop keywords by placing a "%" sign in front of them, for example the keyword <u>endofprogramme</u> could be typed as %end %of %programme or %endofprogramme
+
+There were no reserved words in the language as keywords were identified by underlining, not by recognising reserved character sequences. In the statement <u>if</u> token=if <u>then</u> <u>result</u> = token, there is both a keyword <u>if</u> and a variable named if.
+
+Because of this keyword stropping, it was possible for AA to allow spaces in variable names, such as <u>integer</u> previous value. Spaces were not significant and were removed prior to parsing in a trivial pre-lexing stage called "line reconstruction". What the compiler would see in the above example would be "<u>if</u>token=if<u>thenresult</u>=token".
+
+The syntax for expressions let the multiplication operator be omitted, e.g. 3a was treated as 3*a, and a(i+j) was treated as a*(i+j) if a was not an array. In ambiguous usages, the longest possible name was taken, for example ab was not treated as a*b, whether or not a and b had been declared.
+
+Atlas Autocode's syntax was influenced by the output device which the author had available, a Friden Flexowriter. Consequently it allowed symbols like "½" for ".5" and the superscript 2 for "to the power of 2". The flexowriter supported overstriking and therefore AA did as well - up to three characters could be overstruck as a single symbol. For example the character set had no "↑" symbol, so exponentiation was an overstrike of "|" and "*". (The underlining of keywords mentioned above could also be done using overstriking.) The language is described in detail in the Atlas Autocode Reference Manual.
+
+Other Flexowriter characters that were found a use in Atlas Autocode were: α in floating-point numbers, e.g. 3.56α-7 for modern 3.56e-7 ; β to mean "the second half of an Atlas memory word"; π for the mathematical pi number.
+
+When AA was ported to the English Electric KDF9 computer, the character set was changed to ISO and that compiler has been recovered from an old paper tape by the Edinburgh Computer History Project and is available online, as is a high-quality scan of the original Edinburgh version of the Atlas Autocode manual. 
+
+Atlas Autocode's second-greatest claim to fame (after being the progenitor of Imp and EMAS) was that it had many of the features of the original "Compiler Compiler". A variant of the AA compiler included run-time support for a top-down recursive descent parser. The style of parser used in the Compiler Compiler was in use continuously at Edinburgh from the 60's until almost the turn of the millennium.
+
+Other Autocodes were developed for the Titan (computer) (a prototype Atlas 2) at Cambridge and the Ferranti Mercury.
+
+==References==
+
+== External links ==
+
+* Atlas Autocode Reference Manual
+* Programming In Atlas Autocode - Edinburgh University Computer Unit Report #1 (1965). (Original scan)
+
+
+

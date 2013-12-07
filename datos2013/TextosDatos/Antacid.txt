@@ -1,0 +1,67 @@
+
+
+ 
+Antacid tablets
+An antacid is a substance which neutralizes stomach acidity.
+
+==Mechanism of action==
+Antacids either directly neutralize acidity, increasing the pH, or reversibly reduce or block the secretion of acid by gastric cells to reduce acidity in the stomach. When gastric hydrochloric acid reaches the nerves in the gastrointestinal mucosa, they signal pain to the central nervous system. This happens when these nerves are exposed.
+
+==Indications==
+Wyeth amphojel tablets of aluminum hydroxide.
+Antacids are taken by mouth to relieve heartburn, the major symptom of gastroesophageal reflux disease, or acid indigestion. Treatment with antacids alone is symptomatic and only justified for minor symptoms. The treatment of ulcers resulting from excessive acidity may require H2-receptor antagonists or proton pump inhibitors, and eradication of H. pylori.
+
+==Side effects==
+Excess calcium from supplements, fortified food and high-calcium diets, can cause milk-alkali syndrome, which has serious toxicity and can be fatal. In 1915, Bertram Sippy introduced the "Sippy regimen" of hourly ingestion of milk and cream, the gradual addition of eggs and cooked cereal, for 10 days, combined with alkaline powders, which provided symptomatic relief for peptic ulcer disease. Over the next several decades, the Sippy regimen resulted in renal failure, alkalosis, and hypercalcaemia, mostly in men with peptic ulcer disease. These adverse effects were reversed when the regimen stopped, but it was fatal in some patients with protracted vomiting. Milk alkali syndrome declined in men after effective treatments were developed for peptic ulcer disease. But during the past 15 years, it has been reported in women taking calcium supplements above the recommended range of 1200 to 1500 mg daily, for prevention and treatment of osteoporosis, and is exacerbated by dehydration. Calcium has been added to over-the-counter products, which contributes to inadvertent excessive intake.
+The New England Journal of Medicine reported a typical case of a woman who arrived in the emergency department vomiting and in altered mental status, writhing in pain. She had consumed large quantities of chewable antacid tablets containing calcium carbonate. She gradually recovered. 
+
+Compounds containing calcium may also increase calcium output in the urine, which might be associated with kidney stones. Calcium salts may cause constipation.
+
+Other adverse effects from antacids include: 
+*Carbonate and bicarbonate: regular high doses may cause alkalosis, which in turn may result in altered excretion of other drugs, and kidney stones. A chemical reaction between the carbonate and hydrochloric acid may produce carbon dioxide gas. This causes gastric distension which may not be well tolerated. Carbon dioxide formation can also lead to headaches and decreased muscle flexibility.
+*Aluminum hydroxide: may lead to the formation of insoluble aluminium-phosphate-complexes, with a risk for hypophosphatemia and osteomalacia. Although aluminium has a low gastrointestinal absorption, accumulation may occur mainly in the presence of renal insufficiency. Aluminium-containing drugs often cause constipation and are neurotoxic. Aluminium-containing drugs are contraindicated in pregnancy.
+*Magnesium hydroxide: has laxative properties. Magnesium may accumulate in patients with renal failure leading to hypermagnesemia, with cardiovascular and neurological complications. See Milk of magnesia.
+*Sodium: increased intake of sodium may be deleterious for arterial hypertension, heart failure and many renal diseases.
+
+Side effects from antacids vary depending on the individual, and on other medications they may be taking at the time. Those who experience side effects most commonly suffer from changes in bowel functions, such as diarrhea, constipation, or flatulence.
+
+Although reactions to any drug may vary from person to person, generally those medications that contain aluminum or calcium are the likeliest to cause constipation, those that contain magnesium are the likeliest to cause diarrhea. Some products combine these ingredients, which essentially cancels them out, to forestall unpleasant side effects.
+
+==Some well-known antacid brands==
+*Alka-Seltzer – NaHCO3 and/or KHCO3
+*Andrews Antacid – CaCO3 MgCO3
+*Brioschi – NaHCO3
+*Equate – Al(OH)3 and Mg(OH)2
+*Gaviscon – Al(OH)3
+*Maalox (liquid) – Al(OH)3 and Mg(OH)2
+*Maalox (tablet) – CaCO3
+*Milk of Magnesia – Mg(OH)2
+*Pepto-Bismol – C7H5BiO4
+*Pepto-Bismol Children’s – CaCO3
+*Rennie (tablets) – CaCO3 MgCO3
+*Rolaids – CaCO3 and Mg(OH)2
+*Tums – CaCO3
+*Mylanta – contains Al(OH)3
+*Eno - NaHCO3, Citric acid, Na2CO3
+*Gelusil (available in tablet and syrup form)
+
+==Additional information==
+Heartburn, reflux, indigestion, and sour stomach are a few of the common terms used to describe digestive upset. Self-diagnosis of indigestion does carry some risk because the causes can vary from a minor dietary indiscretion to a peptic ulcer. The pain and symptoms of gastro-oesophageal reflux disease, GERD or simply "reflux", may mimic those of a heart attack. Misdiagnosis can be fatal. A bleeding ulcer can be life threatening. GERD, and pre-ulcerative conditions in the stomach are treated much more aggressively since both, if untreated, could lead to oesophageal or stomach cancer. It is primarily for this reason that the histamine H2 antagonists including cimetidine (Tagamet), famotidine (Pepcid), and ranitidine (Zantac), and the proton pump inhibitor (PPI) omeprazole (Prilosec) were made OTC. These drugs stop production of stomach acid and provide longer lasting relief but they do not neutralize any stomach acid already present in the stomach. For example, Pepcid Complete includes calcium carbonate in its formulation, allowing it a faster onset of action.
+
+==Interactions==
+Altered pH or complex formation may alter the bioavailability of other drugs, such as tetracycline and amphetamine. Urinary excretion of certain drugs may also be affected. Chelation of tetracycline with aluminium hydroxide can cause nausea, vomiting, and phosphate excretion, resulting in phosphate deficiency.
+
+==Problems with reduced stomach acidity==
+Reduced stomach acidity may result in an impaired ability to digest and absorb certain nutrients, such as iron and the B vitamins. Since the low pH of the stomach normally kills ingested bacteria, antacids increase the vulnerability to infection. It could also result in reduced bioavailability of some drugs. For example, the bioavailability of ketoconazole (antifungal) is reduced at high intragastric pH (low acid content)
+
+==See also==
+*H2 antagonists
+*Hydrotalcite
+*Layered double hydroxides
+
+==References==
+
+ 
+
+
+

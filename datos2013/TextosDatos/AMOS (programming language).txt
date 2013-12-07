@@ -1,0 +1,59 @@
+
+
+AMOS BASIC is a dialect of the BASIC programming language implemented on the Amiga computer. AMOS BASIC was published by Europress Software and originally written by François Lionet with Constantin Sotiropoulos.
+
+== History ==
+AMOS is a descendant of STOS BASIC for the Atari ST. AMOS BASIC was first produced in 1990. 
+
+AMOS competed on the Amiga platform with Acid Software's Blitz BASIC. Both BASICs differed from other dialects on different platforms, in that they allowed the easy creation of fairly demanding multimedia software, with full structured code and many high-level functions to load images, animations, sounds and display them in various ways.
+
+The original AMOS version was interpreted which, whilst working fine, suffered from performance problems. Later, an AMOS compiler was developed that reduced this problem.
+
+To speed up the animation of sprites, AMOS included the AMOS Animation Language (AMAL), a compiled sprite scripting language which runs independently of the main AMOS BASIC program. http://grove.ufl.edu/~cwarner/computers.html It was also possible to control screen and "rainbow" effects using AMAL scripts.
+
+After the original version of AMOS, Europress released two other versions: Easy AMOS, a simpler version for beginners, and AMOS Professional, a more advanced version with added features, such as a better IDE, ARexx support, a new UI sublanguage and new flow control constructs. Neither of these new versions was significantly more popular than the original AMOS.
+
+AMOS was mostly used to make video games (platformers and graphical adventures) and educational software.
+
+The language was mildly successful within the Amiga community. Its ease of use made it especially attractive to beginners.
+
+Perhaps AMOS BASIC's biggest disadvantage was its incompatibility with the Amiga's operating system functions and interfaces. Instead, AMOS BASIC controlled the computer directly, which caused programs written in it to have a non-standard user interface, and also caused compatibility problems with newer versions of the operating system.
+
+Today the language has declined in popularity along with the Amiga computer for which it was written. Despite this, a small community of enthusiasts are still using it. The source code to AMOS has since been released under a BSD style license by Clickteam - a company that includes the original programmer.
+
+As of July 13, 2011, AMOS Professional has been runnable under UAE using the free AROS-68k AmigaOS replacement ROM created by Jason McMullan and Toni Wilen. http://eab.abime.net/showthread.php?p=766617#post766617 A legal, out-of-the-box installer has been created for Microsoft Windows using WinUAE. http://www.youtube.com/watch?v=Xhp7XGDKIic 
+
+==Software using AMOS BASIC==
+* ABase
+* Miggybyte
+* Scorched Tanks
+* Spectrapaint
+* Games by Vulcan Software, amongst which the Valhalla trilogy
+* Amiga version of Ultimate Domain (called Genesia) by Microïds
+* Operation Gigabyte
+
+==See also==
+*BASIC programming language &mdash; For the Beginner's All-purpose Symbolic Instruction Code family of programming languages.
+*UAE (Amiga emulator compatible with AMOS and AMOS games, now works without a Kickstart ROM image)
+
+==References==
+ 
+
+==External links==
+*Source code for AMOS and STOS (68000 ASM)
+*The AMOS Factory (An AMOS support/community site)
+*Amigacoding website (contains in-depth info and references for AMOS)
+*Back to the Roots (Contains full AMOS downloads for Amiga or an emulator)
+*AMOS Professional manual
+*sdlBasic &mdash; a multiplatform Basic interpreter, multiplaform and open-source, using SDL libraries, very inspired by AMOS.
+*AbkViewer &mdash; a Java-based AMOS sprite and icon bank viewer. Also ported to AROS using C (SourceForge page).
+*Alvyn Basic &mdash; An attempt to recreate an open source multiplatform BASIC interpreter, syntax-compatible with AMOS Professional. Project seems to have gone inactive during 2004.
+*Mattathias BASIC (Open source AMOS compiler, early alpha)
+*XAmos A cross platform AMOS interpreter
+*jAMAL &mdash; An open-source reimplementation of the AMOS Animation Language in Java. Currently under development.
+*jAMOS &mdash; The successor to jAMAL; an open-source reimplementation of AMOS in Java. Currently under development.
+*How to install AMOS BASIC on Windows in under 30 seconds
+*History of STOS and AMOS &mdash; how they came to be published in the UK
+
+
+

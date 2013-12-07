@@ -1,0 +1,118 @@
+
+
+AutoCAD is a software application for computer-aided design (CAD) and drafting. The software supports both 2D and 3D formats. The software is developed and sold by Autodesk, Inc., first released in December 1982 by Autodesk in the year following the purchase of the first form of the software by Autodesk founder, John Walker. AutoCAD is Autodesk's flagship product and by March 1986 had become the most ubiquitous microcomputer design program in the world, utilizing functions such as "polylines" and "curve fitting". Prior to the introduction of AutoCAD, most other CAD programs ran on mainframe computers or minicomputers, with each CAD operator (user) working at a graphical terminal or workstation.
+
+According to Autodesk company information, the AutoCAD software is now used in a range of industries, employed by architects, project managers and engineers, amongst other professions, and as of 1994 there had been 750 training centers established across the world to educate users about the company's primary products. 
+
+== History ==
+AutoCAD was derived from a program called Interact, which was written in a proprietary language (SPL) by inventor Michael Riddle. This early version ran on the Marinchip Systems 9900 computer (Marinchip Systems was owned by Autodesk co-founders John Walker and Dan Drake). Walker paid Riddle US$10 million for the CAD technology. 
+
+When Marinchip Software Partners (later known as Autodesk) formed, the founders decided to re-code Interact in C and PL/1. They chose C because it seemed to be the biggest upcoming language. In the end, the PL/1 version was unsuccessful. The C version was, at the time, one of the most complex programs in that language. Autodesk had to work with a compiler developer, Lattice, to update C, enabling AutoCAD to run. . Early releases of AutoCAD used primitive entities — lines, polylines, circles, arcs, and text — to construct more complex objects. Since the mid-1990s, AutoCAD supported custom objects through its C++ Application Programming Interface (API). 
+
+The modern AutoCAD includes a full set of basic solid modeling and 3D tools. The release of AutoCAD 2007 included the improved 3D modeling that provided better navigation when working in 3D. Moreover, it became easier to edit 3D models. The mental ray engine was included in rendering and therefore it is possible to do quality renderings. AutoCAD 2010 introduced parametric functionality and mesh modeling.
+
+The latest AutoCAD releases are AutoCAD 2013 and AutoCAD 2013 for Mac. The release marked the 27th major release for the AutoCAD for Windows, and the third consecutive year for AutoCAD for Mac. 
+
+== Design ==
+=== File formats ===
+The native file format of AutoCAD is .dwg. This and, to a lesser extent, its interchange file format DXF, have become de facto, if proprietary, standards for CAD data interoperability. AutoCAD has included support for .dwg, a format developed and promoted by Autodesk, for publishing CAD data. In 2006, Autodesk estimated the number of active .dwg files at in excess of one billion. In the past, Autodesk has estimated the total number of existing .dwg files as more than three billion.
+
+ Official Name Version Release Date of release Comments 
+ AutoCAD Version 1.0 1.0 1 1982, December DWG R1.0 file format introduced. 
+ AutoCAD Version 1.2 1.2 2 1983, April DWG R1.2 file format introduced. 
+ AutoCAD Version 1.3 1.3 3 1983, August DWG R1.3 file format introduced. 
+ AutoCAD Version 1.4 1.4 4 1983, October DWG R1.4 file format introduced. 
+ AutoCAD Version 2.0 2.0 5 1984, October DWG R2.05 file format introduced. 
+ AutoCAD Version 2.1 2.1 6 1985, May DWG R2.1 file format introduced. 
+ AutoCAD Version 2.5 2.5 7 1986, June DWG R2.5 file format introduced. 
+ AutoCAD Version 2.6 2.6 8 1987, April DWG R2.6 file format introduced. Last version to run without a math co-processor. 
+ AutoCAD Release 9 9.0 9 1987, September DWG R9 file format introduced. 
+ AutoCAD Release 10 10.0 10 1988, October DWG R10 file format introduced. 
+ AutoCAD Release 11 11.0 11 1990, October DWG R11 file format introduced. 
+ AutoCAD Release 12 12.0 12 1992, June DWG R11/R12 file format introduced. Last release for Apple Macintosh till 2010. 
+ AutoCAD Release 13 13.0 13 1994, November DWG R13 file format introduced. Last release for Unix, MS-DOS and Windows 3.11. 
+ AutoCAD Release 14 14.0 14 1997, February DWG R14 file format introduced. 
+ AutoCAD 2000 15.0 15 1999, March DWG 2000 file format introduced. 
+ AutoCAD 2000i 15.1 16 2000, July 
+ AutoCAD 2002 15.6 17 2001, June 
+ AutoCAD 2004 16.0 18 2003, March DWG 2004 file format introduced. 
+ AutoCAD 2005 16.1 19 2004, March 
+ AutoCAD 2006 16.2 20 2005, March 
+ AutoCAD 2007 17.0 21 2006, March DWG 2007 file format introduced. 
+ AutoCAD 2008 17.1 22 2007, March Annotative Objects introduced. First release for the x86-64 versions of Windows XP and Vista. 
+ AutoCAD 2009 17.2 23 2008, March Revisions to the user interface including the option of a Microsoft Office 2007-like tabbed ribbon. 
+ AutoCAD 2010 18.0 24 2009, March 24 DWG 2010 file format introduced. Parametrics introduced. Mesh 3D solid modeling introduced. Both 32-bit and 64-bit versions of AutoCAD 2010 and AutoCAD LT 2010 are compatible with and supported under Microsoft Windows 7. 
+ AutoCAD 2011 18.1 25 2010, March 25 Surface Modeling, Surface Analysis and Object Transparency introduced. October 15, 2010 http://usa.autodesk.com/adsk/servlet/pc/index?siteID=123112&id=15421056 AutoCAD 2011 for Mac was released. Are compatible with and supported under Microsoft Windows 7 
+ AutoCAD 2012 18.2 26 2011, March 22 Associative Array, Model Documentation 
+ AutoCAD 2013 19.0 27 2012, March 27 DWG 2013 file format introduced. 
+ 
+
+=== Languages ===
+AutoCAD and AutoCAD LT are available for English, German, French, Italian, Spanish, Japanese, Korean, Chinese Simplified, Chinese Traditional, Russian, Czech, Polish, Hungarian, Brazilian Portuguese, Danish, Dutch, Swedish, Finnish, Norwegian, and Vietnamese. The extent of localization varies from full translation of the product to documentation only. The AutoCAD command set is localized as a part of the software localization.
+
+=== Extensions ===
+AutoCAD supports a number of APIs for customization and automation. These include AutoLISP, Visual LISP, VBA, .NET and ObjectARX. ObjectARX is a C++ class library, which was also the base for: (a) products extending AutoCAD functionality to specific fields; (b) creating products such as AutoCAD Architecture, AutoCAD Electrical, AutoCAD Civil 3D; or (c) third-party AutoCAD-based applications.
+
+=== Vertical integration ===
+Autodesk has also developed a few vertical programs for discipline-specific enhancements. For example, AutoCAD Architecture (formerly Architectural Desktop) permits architectural designers to draw 3D objects, such as walls, doors and windows, with more intelligent data associated with them rather than simple objects, such as lines and circles. The data can be programmed to represent specific architectural products sold in the construction industry, or extracted into a data file for pricing, materials estimation, and other values related to the objects represented. Additional tools generate standard 2D drawings, such as elevations and sections, from a 3D architectural model. Similarly, Civil Design, Civil Design 3D, and Civil Design Professional support data-specific objects, facilitating easy standard civil engineering calculations and representations. Civil 3D was originally developed as an Autocad add-on by a company in New Hampshire called Softdesk (originally DCA). Softdesk was acquired by Autodesk, and Civil 3D was further evolved.
+
+== Variants ==
+=== AutoCAD LT ===
+AutoCAD LT is the lower cost version of AutoCAD, with reduced capabilities, first released in November 1993. Autodesk developed AutoCAD LT to have an entry-level CAD package to compete in the lower price level. AutoCAD LT, priced at $495, became the first AutoCAD product priced below $1000. It is sold directly by Autodesk and can also be purchased at computer stores (unlike the full version of AutoCAD, which must be purchased from official Autodesk dealers). 
+
+As of the 2011 release the AutoCAD LT MSRP has risen to $1200. While there are hundreds of small differences between the full AutoCAD package and AutoCAD LT, currently there are a few recognized major differences http://images.autodesk.com/adsk/files/autocad_lt_2011_faq.pdf in the software's features:
+
+* 3D Capabilities: AutoCAD LT lacks the ability to create, visualize and render 3D models as well as 3D printing.
+* Network Licensing: AutoCAD LT cannot be used on multiple machines over a network.
+* Customization: AutoCAD LT does not support customization with LISP, ARX, and VBA.
+* Management and automation capabilities with Sheet Set Manager and Action Recorder.
+* CAD standards management tools.
+
+=== AutoCAD WS ===
+
+In 2010, Autodesk released its first AutoCAD mobile application AutoCAD WS. The mobile application allows registered users to "view, edit, and share" their work wherever they go. The application can be downloaded for free from the App Store for iOS users or from the Google Play and Amazon Appstore for Android users. A registered license is required to use the mobile application. Both the Android and iOS versions allow users to save files on-line and off-line when no Internet connection is available. Autodesk announced plans to store the majority of its software to "the cloud", starting with the AutoCAD WS mobile application. 
+
+Autodesk officially released its iOS mobile application in September 2010. This was the start of its mobile application marketing campaign. The release has since grown from just the iPhone to the iPod Touch, iPad, Android phones, and Android tablets. The AutoCAD WS application has several of the desktop AutoCAD features, but is limited in other areas. The application provides the ability to draw lines, circles, and other various shapes. Text and comment boxes are supported features. Colors, Layers, and measurement are also included features found in the mobile application. The latest version, version 1.3, was released on August 17, 2011 and added the following features: unit typing, layer visibility, area measurement, and file management. Both landscape and portrait modes are supported while using the application.
+
+Autodesk announced that it would release its Android mobile application on April 20, 2011. The application is similar to the iOS application with the same basic features and abilities. The Android AutoCAD WS mobile application has some unique features not found in the iOS version. It allows users to insert text or captions by voice commands instead of forcing them to manually input the text into the drawings. This feature is not currently supported on the iOS mobile device.
+
+=== AutoCAD Freestyle ===
+Built on the AutoCAD platform, AutoCAD Freestyle is a simplified, low-cost (US$149) application that makes it easy to create accurate 2D drawings and sketches. This software has been discontinued by Autodesk.
+
+=== Student versions ===
+AutoCAD is licensed at a significant discount over commercial retail pricing to qualifying students and teachers, with a 36-month license available. The student version of AutoCAD is functionally identical to the full commercial version, with one exception: DWG files created or edited by a student version have an internal bit-flag set (the "educational flag"). When such a DWG file is printed by any version of AutoCAD (commercial or student), the output includes a plot stamp / banner on all four sides. Objects created in the Student Version cannot be used for commercial use. Student Version objects "infect" a commercial version DWG file if it is imported. http://docs.autodesk.com/ACD/2011/ENU/filesAUG/WS1a9193826455f5ffa23ce210c4a30acaf-6050.htm 
+
+The Autodesk Education Community provides registered students and faculty with free access to different Autodesk applications.
+
+== Ports ==
+=== Microsoft Windows ===
+While the latest release of AutoCAD did not come with a major overhaul, the 2012 version did receive minor improvements. Several small changes were made to improve the 3D capabilities, and some new features were added to enhance the productivity of the program. These changes and features included: increased canvas control, associated arrays, improved 3D model manipulation, and other less noticeable additions. After the release of AutoCAD 2011 for Mac, the Windows version lacked several features found in the Mac version. Several of the Mac version canvas controls have now been added to the 2012 release. To accomplish the goal for better 3D model manipulation, Autodesk did away with the old saved history method and introduced a new plug-in that will automatically be installed, Autodesk Inventor Fusion. This plug-in allows users to directly open and edit 3D models without having to save and export their work manually. When the user is finished editing the plug-in automatically opens the updated version back in AutoCAD. Autodesk also replaced the older array feature with new associated arrays features. This now allows users to duplicate things using three different commands: polar arrays, rectangular arrays, and placing objects along a predetermined path. The new redesigned array feature will also work with both 2D and 3D objects. Autodesk has also chosen to allow users to purchase companion applications directly within the AutoCAD 2012 program. The newest release of AutoCAD also came with new system requirements and recommendations in order to run AutoCAD 2012. 
+
+=== Mac OS ===
+AutoCAD 2012 for Mac
+
+Autodesk stopped supporting Apple's computers in 1994. Over the next several years, no compatible versions for Macintosh computers were released. In 2010 Autodesk announced that it would once again support Apple's Mac OS X software in the future. Most of the features found in the 2012 Windows version can be found in the 2012 Mac version. The main difference is the user interface and layout of the program. The interface is designed so that users who are already familiar with Apple's OS X software will find it similar to other Apple applications. Autodesk has also built in various features in order to take full advantage of Apple's Trackpad capabilities as well as the full-screen mode in Apple's OS X Lion. AutoCAD 2012 for Mac supports both the editing and saving of files in DWG formatting that will allow the file to be compatible with other platforms besides the OS X. AutoCAD 2012 currently supports Mac OS 10.6.4 upwards. 
+
+AutoCAD LT 2012 is now available through the Mac App Store for $899.99. The full featured version of AutoCAD 2012 for Mac, however, is not currently available through the Mac App Store due to the price limit of $999 set by Apple. AutoCAD 2012 for Mac can currently be purchased only from Autodesk's Web site for $3995. 
+
+== See also ==
+* 3ds Max
+* AutoCAD Architecture
+* Autodesk
+* Autodesk Maya
+* Autodesk Revit
+* AutoSketch
+* Comparison of CAD editors for architecture, engineering and construction (AEC)
+* Design Web Format
+
+== References ==
+
+== External links ==
+
+* 
+* .
+
+ 
+
+
+

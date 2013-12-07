@@ -1,0 +1,34 @@
+
+
+BearShare is a peer-to-peer file sharing application originally created by Free Peers, Inc. for Microsoft Windows, and now sold by MusicLab, LLC (iMesh).
+
+== History ==
+Bearshare was a Gnutella-based peer-to-peer file sharing application, with a support forum. It was launched on December 4, 2000. The original operators of Free Peers, Inc. were Vincent Falco and Louis Tatta. BearShare History 
+
+Following the June 27, 2005 United States Supreme Court decision on the MGM Studios, Inc. v. Grokster, Ltd. case the BearShare support forums were closed.
+
+On May 4, 2006, Free Peers agreed to pay $30 million in a settlement with the RIAA and transfer all their BearShare-related assets to MusicLab, LLC. (an iMesh subsidiary).
+
+On August 17, 2006, MusicLab released BearShare v6, a new application unrelated to the original, which does not use the Gnutella protocol at all, but instead operates on the same network as the iMesh client.
+
+In August 2006, MusicLab released another version optimized for video download called BearFlix. The first release was version 1.2.1. Soft82 release history 
+
+On October 27, 2008, Bearshare v7 with iPod support was released.
+
+== Versions ==
+Three variations of the original BearShare gnutella servent were distributed by Free Peers: Free, Lite and Pro. The Free version had higher performance limits than the Lite version but contained some adware. BearShare Review - BearShare Download - Softpedia BearShare Lite The Lite version was adware-free but had lower performance limits than the Free version. The Pro version had higher limits than both the Free and Lite versions but cost US$24. Version numbers in this series ranged from 1.0 to 5.2.5.9.
+
+A variant of the original BearShare gnutella servant, called BearFlix, Free Music Downloads - Download Free MP3 Music - Best Limewire Alternative! is altered to limit sharing, searches and downloads to images and videos [hhttp://www.bearflix.com/help/faq.php?section=BearShare_users#Q3 ] which are limited in length and duration. Though its version numbers appear to start from 1.1.2.1 in the user interface it presents itself on the gnutella network as versions 6.1.2.1 and up. It is offered in Basic and Pro (US$19) versions with similar variations in performance limits [hhttp://www.bearflix.com/downloads_basic.php ] as the corresponding BearShare versions, Lite and Pro. There is no Free (adware-supported) version in the BearFlix series.
+
+MusicLab's BearShare v6 and later offer paid music downloads in the DRMed WMA format as well as free content in various formats, mostly MP3. Types of Media Content in Bearshare It also includes social networking features, somewhat similar to MySpace. Instant Messenger Questions The free content is shared by users and is automatically verified by BearShare not to infringe. This verification is done using acoustic fingerprinting. Also, video files more than 50 Mb in size and 15 minutes in length cannot be shared, guaranteeing feature-length releases cannot be transferred across the network. No other content than music and video files can be shared, which excludes executable files and zip archives amongst others.
+
+== References ==
+
+== External links ==
+* BearShare Official Website
+* McAfee's Bearshare Analysis
+* BearShare forums (at GnutellaForums.com)
+* BearShare (original) V5 or before community
+
+
+
